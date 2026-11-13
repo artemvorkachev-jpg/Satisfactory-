@@ -125,7 +125,7 @@ jobs:
         run: |
           mkdir -p assets/models/previews
           find assets/models -type f -name "*_four_variants.blend" -print0 | while IFS= read -r -d '' file; do
-            xvfb-run -a env LIBGL_ALWAYS_SOFTWARE=1 PYTHONPATH=/usr/lib/python3/dist-packages blender --background "$file" --python-use-system-env --python tools/blender/render_single_asset_preview.py
+            xvfb-run -a env LIBGL_ALWAYS_SOFTWARE=1 PYTHONPATH=/usr/lib/python3/dist-packages blender --background "$file" --python-use-system-env --python tools/blender/render_single_asset_preview_workbench.py
           done
 
       - name: Verify every model family and stereo audio files
