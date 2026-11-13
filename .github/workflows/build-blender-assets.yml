@@ -14,7 +14,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-24.04
-    timeout-minutes: 40
+    timeout-minutes: 45
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -49,11 +49,14 @@ jobs:
       - name: Generate Object Scanner variants
         run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_object_scanner_variants.py
 
+      - name: Generate Hazmat Suit variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_hazmat_suit_variants.py
+
       - name: Verify generated exports
         run: |
           find assets/models -type f \( -name "*.blend" -o -name "*.glb" \) -print
-          test "$(find assets/models -type f -name "*.blend" | wc -l)" -ge 7
-          test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 27
+          test "$(find assets/models -type f -name "*.blend" | wc -l)" -ge 8
+          test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 31
 
       - name: Commit generated Blender sources and GLB exports
         run: |
