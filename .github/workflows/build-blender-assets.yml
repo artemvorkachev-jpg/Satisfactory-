@@ -43,6 +43,9 @@ jobs:
       - name: Generate production buildings and extractors
         run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_production_buildings_batch.py
 
+      - name: Generate fauna and flora models
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_fauna_flora_batch.py
+
       - name: Generate item catalog models
         run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_item_catalog_batch.py
 
@@ -124,9 +127,9 @@ jobs:
 
       - name: Verify generated assets and review sheets
         run: |
-          test "$(find assets/models -type f -name "*.blend" | wc -l)" -ge 194
-          test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 775
-          test "$(find assets/models/previews -type f -name "*_preview.png" | wc -l)" -ge 193
+          test "$(find assets/models -type f -name "*.blend" | wc -l)" -ge 238
+          test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 951
+          test "$(find assets/models/previews -type f -name "*_preview.png" | wc -l)" -ge 237
 
       - name: Commit Blender sources, GLB exports and preview sheets
         run: |
