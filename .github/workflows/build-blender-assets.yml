@@ -18,7 +18,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-24.04
-    timeout-minutes: 50
+    timeout-minutes: 55
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -63,11 +63,14 @@ jobs:
       - name: Generate Portable Miner variants
         run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_portable_miner_variants.py
 
+      - name: Generate Drone variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_drone_variants.py
+
       - name: Verify generated exports
         run: |
           find assets/models -type f \( -name "*.blend" -o -name "*.glb" \) -print
-          test "$(find assets/models -type f -name "*.blend" | wc -l)" -ge 10
-          test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 39
+          test "$(find assets/models -type f -name "*.blend" | wc -l)" -ge 11
+          test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 43
 
       - name: Commit generated Blender sources and GLB exports
         run: |
