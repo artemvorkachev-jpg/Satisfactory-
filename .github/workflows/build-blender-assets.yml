@@ -18,7 +18,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-24.04
-    timeout-minutes: 105
+    timeout-minutes: 120
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -96,13 +96,20 @@ jobs:
       - name: Generate Railway variants
         run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_railway_variants.py
 
-      - name: Verify generated exports
+      - name: Render four-variant review sheets
         run: |
-          find assets/models -type f \( -name "*.blend" -o -name "*.glb" \) -print
+          mkdir -p assets/models/previews
+          find assets/models -type f -name "*_four_variants.blend" -print0 | while IFS= read -r -d '' file; do
+            PYTHONPATH=/usr/lib/python3/dist-packages blender --background "$file" --python-use-system-env --python tools/blender/render_single_asset_preview.py
+          done
+
+      - name: Verify generated assets and review sheets
+        run: |
           test "$(find assets/models -type f -name "*.blend" | wc -l)" -ge 21
           test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 83
+          test "$(find assets/models/previews -type f -name "*_preview.png" | wc -l)" -ge 20
 
-      - name: Commit generated Blender sources and GLB exports
+      - name: Commit Blender sources, GLB exports and preview sheets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -112,5 +119,5 @@ jobs:
             echo "No generated asset changes."
             exit 0
           fi
-          git commit -m "Generate Blender asset blockouts and GLB exports"
+          git commit -m "Generate Blender blockouts, exports and review previews"
           git push
