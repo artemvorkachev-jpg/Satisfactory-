@@ -1,0 +1,58 @@
+name: Build Blender asset blockouts
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "tools/blender/**"
+      - ".github/workflows/build-blender-assets.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Install Blender
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y blender
+          blender --version
+
+      - name: Generate starter machine assets
+        run: blender --background --python tools/blender/generate_starter_assets.py
+
+      - name: Generate Jetpack variants
+        run: blender --background --python tools/blender/generate_jetpack_variants.py
+
+      - name: Generate Hoverpack variants
+        run: blender --background --python tools/blender/generate_hoverpack_variants.py
+
+      - name: Generate Blade Runners variants
+        run: blender --background --python tools/blender/generate_blade_runners_variants.py
+
+      - name: Verify generated exports
+        run: |
+          find assets/models -type f \( -name "*.blend" -o -name "*.glb" \) -print
+          test "$(find assets/models -type f -name "*.blend" | wc -l)" -ge 4
+          test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 15
+
+      - name: Commit generated Blender sources and GLB exports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/models/
+          if git diff --cached --quiet; then
+            echo "No generated asset changes."
+            exit 0
+          fi
+          git commit -m "Generate Blender asset blockouts and GLB exports"
+          git push
