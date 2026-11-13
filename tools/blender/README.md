@@ -10,7 +10,7 @@ Install Blender 4.x, then run from the repository root:
 blender --background --python tools/blender/generate_starter_assets.py
 ```
 
-The script writes three editable `.blend` scenes and corresponding `.glb` exports under `assets/models/generated/`:
+The script writes one editable Blender library (`starter_asset_library.blend`) and three individual `.glb` exports under `assets/models/generated/`:
 
 - `constructor_prototype`
 - `conveyor_module_prototype`
