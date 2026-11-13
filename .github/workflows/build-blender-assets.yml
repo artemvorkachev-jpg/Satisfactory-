@@ -5,7 +5,8 @@ on:
   push:
     branches: [main]
     paths:
-      - "tools/blender/**"\n      - "tools/audio/**"
+      - "tools/blender/**"
+      - "tools/audio/**"
       - ".github/workflows/build-blender-assets.yml"
 
 concurrency:
@@ -33,10 +34,16 @@ jobs:
           blender --version
           python3 -c "import numpy; print('System NumPy:', numpy.__version__)"
 
-      - name: Generate original stereo sound effects\n        run: python3 tools/audio/generate_original_audio.py\n\n      - name: Generate starter machine assets
+      - name: Generate original stereo sound effects
+        run: python3 tools/audio/generate_original_audio.py
+
+      - name: Generate starter machine assets
         run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_starter_assets.py
 
-      - name: Generate production buildings and extractors\n        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_production_buildings_batch.py\n\n      - name: Generate Jetpack variants
+      - name: Generate production buildings and extractors
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_production_buildings_batch.py
+
+      - name: Generate Jetpack variants
         run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_jetpack_variants.py
 
       - name: Generate Hoverpack variants
