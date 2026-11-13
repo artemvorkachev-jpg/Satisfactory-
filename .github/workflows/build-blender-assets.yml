@@ -52,11 +52,14 @@ jobs:
       - name: Generate Hazmat Suit variants
         run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_hazmat_suit_variants.py
 
+      - name: Generate Cup variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_cup_variants.py
+
       - name: Verify generated exports
         run: |
           find assets/models -type f \( -name "*.blend" -o -name "*.glb" \) -print
-          test "$(find assets/models -type f -name "*.blend" | wc -l)" -ge 8
-          test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 31
+          test "$(find assets/models -type f -name "*.blend" | wc -l)" -ge 9
+          test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 35
 
       - name: Commit generated Blender sources and GLB exports
         run: |
