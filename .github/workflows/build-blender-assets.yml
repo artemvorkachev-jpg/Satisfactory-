@@ -18,7 +18,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-24.04
-    timeout-minutes: 80
+    timeout-minutes: 90
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -81,11 +81,17 @@ jobs:
       - name: Generate Factory Cart variants
         run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_factory_cart_variants.py
 
+      - name: Generate Electric Locomotive variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_locomotive_variants.py
+
+      - name: Generate Freight Car variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_freight_car_variants.py
+
       - name: Verify generated exports
         run: |
           find assets/models -type f \( -name "*.blend" -o -name "*.glb" \) -print
-          test "$(find assets/models -type f -name "*.blend" | wc -l)" -ge 16
-          test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 63
+          test "$(find assets/models -type f -name "*.blend" | wc -l)" -ge 18
+          test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 71
 
       - name: Commit generated Blender sources and GLB exports
         run: |
