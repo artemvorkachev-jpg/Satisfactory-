@@ -147,7 +147,7 @@ def build(kind,letter,style):
                 tor("Junction tube socket",(x,y,h*.65),.55,.12,S,r,(0,0,angle))
             cyl("Junction core",(0,0,h*.65),.42,.7,D,r)
     elif kind=="storage_container":
-        box("Storage cabinet",(0,0,h*.52),(w*.82,d*.82,h*.85),AMBER if style%2==0 else D,r,.10)
+        box("Storage cabinet",(0,0,h*.52),(w*.82,d*.82,h*.85),A if style%2==0 else D,r,.10)
         for z in (h*.25,h*.5,h*.75):
             box("Door seam",(0,-d*.42,z),(w*.68,.035,.045),D,r,.005)
         for x in (-w*.3,w*.3):
