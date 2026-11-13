@@ -107,7 +107,7 @@ def make_constructor():
     for i in range(4):
         roller = add(cylinder("Output roller", (-.24+i*.16,-1.42,.49), .075,.12,DARK,(0,math.pi/2,0)))
         roller["animation_note"] = "Rotate around local X for conveyor movement"
-    collider("Constructor", (0,0,1.45), (2.8,2.35,3.1))
+    add(collider("Constructor", (0,0,1.45), (2.8,2.35,3.1)))
     root["asset_type"] = "production_machine"
     root["physics"] = "static building; moving subassemblies animated separately"
     export_asset("constructor_prototype", made)
@@ -129,7 +129,7 @@ def make_conveyor():
             add(cube("Foot plate",(x,y,.035),(.32,.25,.07),DARK,.018))
     for y in (-.49,.49):
         add(cube("Safety edge strip",(0,y,.91),(3.65,.035,.07),YELLOW,.01))
-    collider("Conveyor", (0,0,.48), (4.15,1.18,1.05))
+    add(collider("Conveyor", (0,0,.48), (4.15,1.18,1.05)))
     root["asset_type"]="logistics_conveyor"
     root["physics"]="static frame; belt and rollers are animated by simulation state"
     export_asset("conveyor_module_prototype",made)
@@ -152,7 +152,7 @@ def make_portable_miner():
         add(cube("Foot pad",(x,y,.035),(.3,.25,.07),STEEL,.02))
     add(cube("Carry handle",(0,-.48,1.68),(.62,.12,.12),DARK,.04))
     add(cube("Status light",(0,-.43,1.28),(.18,.06,.12),YELLOW,.02))
-    collider("PortableMiner",(0,0,.8),(1.55,1.55,2.15))
+    add(collider("PortableMiner",(0,0,.8),(1.55,1.55,2.15)))
     root["asset_type"]="portable_resource_extractor"
     root["physics"]="placeable static machine; drill spindle animation driven by mining state"
     export_asset("portable_miner_prototype",made)
