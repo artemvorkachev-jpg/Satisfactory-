@@ -141,11 +141,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
           git add assets/models/ assets/audio/
           if git diff --cached --quiet; then
             echo "No generated asset changes."
             exit 0
           fi
           git commit -m "Generate Blender blockouts, exports and review previews"
+          git pull --rebase origin main
           git push
