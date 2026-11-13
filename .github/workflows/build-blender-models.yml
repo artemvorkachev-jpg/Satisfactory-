@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/build-blender-models.yml"
+      - "tools/blender/generate_logistics_infrastructure_batch.py"
 
 concurrency:
   group: blender-models-main
@@ -139,11 +140,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
           git add assets/models/ assets/audio/
           if git diff --cached --quiet; then
             echo "No generated asset changes."
             exit 0
           fi
           git commit -m "Generate Blender model variants and original stereo audio"
+          git pull --rebase origin main
           git push
