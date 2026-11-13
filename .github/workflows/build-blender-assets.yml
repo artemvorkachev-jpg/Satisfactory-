@@ -128,7 +128,10 @@ jobs:
             xvfb-run -a env LIBGL_ALWAYS_SOFTWARE=1 PYTHONPATH=/usr/lib/python3/dist-packages blender --background "$file" --python-use-system-env --python tools/blender/render_single_asset_preview.py
           done
 
-      - name: Verify generated assets and review sheets
+      - name: Verify every model family and stereo audio files
+        run: python3 tools/blender/verify_asset_outputs.py
+
+      - name: Verify generated asset totals
         run: |
           test "$(find assets/models -type f -name "*.blend" | wc -l)" -ge 301
           test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 1203
