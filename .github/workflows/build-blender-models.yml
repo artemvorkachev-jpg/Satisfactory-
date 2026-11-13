@@ -1,0 +1,148 @@
+name: Build Blender models and audio (no preview render)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/build-blender-models.yml"
+
+concurrency:
+  group: blender-models-main
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Install Blender
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y blender python3-numpy
+          blender --version
+
+      - name: Generate original stereo sound effects
+        run: python3 tools/audio/generate_original_audio.py
+
+      - name: Generate starter machine assets
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_starter_assets.py
+
+      - name: Generate production buildings and extractors
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_production_buildings_batch.py
+
+      - name: Generate remaining building models
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_remaining_buildings_batch.py
+
+      - name: Generate fauna and flora models
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_fauna_flora_batch.py
+
+      - name: Generate item catalog models
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_item_catalog_batch.py
+
+      - name: Generate noncombat equipment models
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_noncombat_equipment_batch.py
+
+      - name: Generate resource node models
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_resource_nodes_batch.py
+
+      - name: Generate logistics and infrastructure models
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_logistics_infrastructure_batch.py
+
+      - name: Generate Jetpack variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_jetpack_variants.py
+
+      - name: Generate Hoverpack variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_hoverpack_variants.py
+
+      - name: Generate Blade Runners variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_blade_runners_variants.py
+
+      - name: Generate Parachute variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_parachute_variants.py
+
+      - name: Generate Gas Mask variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_gas_mask_variants.py
+
+      - name: Generate Object Scanner variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_object_scanner_variants.py
+
+      - name: Generate Hazmat Suit variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_hazmat_suit_variants.py
+
+      - name: Generate Cup variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_cup_variants.py
+
+      - name: Generate Portable Miner variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_portable_miner_variants.py
+
+      - name: Generate Drone variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_drone_variants.py
+
+      - name: Generate Tractor variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_tractor_variants.py
+
+      - name: Generate Truck variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_truck_variants.py
+
+      - name: Generate Explorer variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_explorer_variants.py
+
+      - name: Generate Cyber Wagon variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_cyber_wagon_variants.py
+
+      - name: Generate Factory Cart variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_factory_cart_variants.py
+
+      - name: Generate Electric Locomotive variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_locomotive_variants.py
+
+      - name: Generate Freight Car variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_freight_car_variants.py
+
+      - name: Generate Train Station variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_train_station_variants.py
+
+      - name: Generate Freight Platform variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_freight_platform_variants.py
+
+      - name: Generate Railway variants
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_railway_variants.py
+
+      - name: Verify generated Blender and audio files
+        run: |
+          test "$(find assets/models -type f -name "*_four_variants.blend" | wc -l)" -ge 300
+          test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 1203
+          python3 - <<'PY'
+          import os, wave
+          root="assets/audio/generated"
+          names=["machine_motor_loop","drone_rotors_loop","train_wheel_rail_loop","conveyor_belt_loop","fluid_pump_loop","pipeline_flow_loop","alien_planet_wind_loop","soft_ui_confirmation"]
+          for name in names:
+              path=os.path.join(root,name+".wav")
+              assert os.path.isfile(path), path
+              with wave.open(path,"rb") as f:
+                  assert (f.getnchannels(),f.getframerate(),f.getsampwidth())==(2,48000,2), path
+          assert os.path.isfile(os.path.join(root,"audio_manifest.json"))
+          PY
+
+      - name: Commit Blender sources, GLB exports and audio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add assets/models/ assets/audio/
+          if git diff --cached --quiet; then
+            echo "No generated asset changes."
+            exit 0
+          fi
+          git commit -m "Generate Blender model variants and original stereo audio"
+          git push
