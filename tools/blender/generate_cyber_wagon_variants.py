@@ -16,12 +16,15 @@ bpy.context.scene.unit_settings.scale_length = 1.0
 bpy.ops.object.select_all(action="SELECT")
 bpy.ops.object.delete(use_global=False)
 
-def mat(name,color,metallic=0.0,roughness=.4):
+def mat(name,color,metallic=0.0,roughness=.4,emission=0.0):
     m=bpy.data.materials.new(name); m.diffuse_color=(*color,1); m.use_nodes=True
     bs=m.node_tree.nodes.get("Principled BSDF")
     bs.inputs["Base Color"].default_value=(*color,1)
     bs.inputs["Metallic"].default_value=metallic
     bs.inputs["Roughness"].default_value=roughness
+    if emission and "Emission Color" in bs.inputs:
+        bs.inputs["Emission Color"].default_value=(*color,1)
+        bs.inputs["Emission Strength"].default_value=emission
     return m
 
 STEEL=mat("Brushed angular alloy",(.42,.46,.48),.88,.23)
