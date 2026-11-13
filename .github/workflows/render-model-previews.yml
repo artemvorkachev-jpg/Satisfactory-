@@ -1,0 +1,60 @@
+name: Render Blender model review sheets
+
+on:
+  workflow_run:
+    workflows: ["Build Blender models and audio (no preview render)"]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - name: Check out latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Install Blender and headless display
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y blender libegl1 libgl1 libxkbcommon0 libxrender1 libxi6 libxxf86vm1 xvfb
+          blender --version
+
+      - name: Render one review sheet for every four-variant Blender source
+        run: |
+          mkdir -p assets/models/previews
+          count=0
+          while IFS= read -r -d '' file; do
+            xvfb-run -a env LIBGL_ALWAYS_SOFTWARE=1 blender --background "$file" --python-use-system-env --python tools/blender/render_single_asset_preview_workbench.py
+            count=$((count+1))
+          done < <(find assets/models -type f -name "*_four_variants.blend" -print0)
+          echo "Rendered $count model review sheets."
+
+      - name: Verify review sheet count
+        run: |
+          blend_count=$(find assets/models -type f -name "*_four_variants.blend" | wc -l)
+          preview_count=$(find assets/models/previews -type f -name "*_preview.png" | wc -l)
+          echo "Blender families: $blend_count"
+          echo "Review sheets: $preview_count"
+          test "$preview_count" -ge "$blend_count"
+
+      - name: Commit review sheets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add assets/models/previews/
+          if git diff --cached --quiet; then
+            echo "No review sheets to commit."
+            exit 0
+          fi
+          git commit -m "Render four-variant Blender model review sheets"
+          git push
