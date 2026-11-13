@@ -1,0 +1,95 @@
+{
+  "format": "WAV PCM, 48000 Hz, 16-bit, stereo",
+  "provenance": "Original procedural synthesis; no Satisfactory game audio sampled or copied.",
+  "playback": {
+    "spatial_mode": "3D positional source with stereo output",
+    "stereo_note": "The game audio mixer should preserve stereo ambience but spatialize mono point emitters with HRTF/panning as supported.",
+    "distance_model": "inverse",
+    "default_rolloff": 1.0,
+    "fade_when_far": "Smoothly attenuate to silence between min_distance and max_distance; do not hard-cut.",
+    "occlusion": "Apply low-pass filtering and gain reduction when walls or terrain block line of sight.",
+    "reverb": "Use zone-based send; factory interiors and open alien terrain use different impulse responses."
+  },
+  "events": [
+    {
+      "id": "machine_motor",
+      "file": "machine_motor_loop.wav",
+      "loop": true,
+      "min_distance_m": 3,
+      "max_distance_m": 42,
+      "gain": 0.55,
+      "pitch_jitter": 0.025,
+      "source": "moving_machine_emitter"
+    },
+    {
+      "id": "drone_rotors",
+      "file": "drone_rotors_loop.wav",
+      "loop": true,
+      "min_distance_m": 4,
+      "max_distance_m": 65,
+      "gain": 0.62,
+      "pitch_jitter": 0.04,
+      "source": "drone_body"
+    },
+    {
+      "id": "train_wheels",
+      "file": "train_wheel_rail_loop.wav",
+      "loop": true,
+      "min_distance_m": 8,
+      "max_distance_m": 120,
+      "gain": 0.7,
+      "pitch_jitter": 0.02,
+      "source": "train_bogie"
+    },
+    {
+      "id": "conveyor_belt",
+      "file": "conveyor_belt_loop.wav",
+      "loop": true,
+      "min_distance_m": 2,
+      "max_distance_m": 28,
+      "gain": 0.4,
+      "pitch_jitter": 0.015,
+      "source": "conveyor_drive"
+    },
+    {
+      "id": "fluid_pump",
+      "file": "fluid_pump_loop.wav",
+      "loop": true,
+      "min_distance_m": 3,
+      "max_distance_m": 36,
+      "gain": 0.45,
+      "pitch_jitter": 0.02,
+      "source": "pump_motor"
+    },
+    {
+      "id": "pipeline_flow",
+      "file": "pipeline_flow_loop.wav",
+      "loop": true,
+      "min_distance_m": 2,
+      "max_distance_m": 20,
+      "gain": 0.3,
+      "pitch_jitter": 0.01,
+      "source": "pipe_segment"
+    },
+    {
+      "id": "alien_wind",
+      "file": "alien_planet_wind_loop.wav",
+      "loop": true,
+      "min_distance_m": 0,
+      "max_distance_m": 180,
+      "gain": 0.3,
+      "pitch_jitter": 0.0,
+      "source": "biome_ambience"
+    },
+    {
+      "id": "ui_confirm",
+      "file": "soft_ui_confirmation.wav",
+      "loop": false,
+      "min_distance_m": 0,
+      "max_distance_m": 0,
+      "gain": 0.35,
+      "pitch_jitter": 0.0,
+      "source": "ui"
+    }
+  ]
+}
