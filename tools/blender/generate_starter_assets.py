@@ -2,6 +2,11 @@ import bpy
 import math
 from mathutils import Vector
 
+# Scene scale: 1 Blender unit = 1 metre. Dimensions below are provisional
+# engineering targets; verify against measured, lawful visual references.
+bpy.context.scene.unit_settings.system = "METRIC"
+bpy.context.scene.unit_settings.scale_length = 1.0
+
 # Original, independently designed starter assets for the Satisfactory- project.
 # Run with: blender --background --python tools/blender/generate_starter_assets.py
 # Output: assets/models/generated/*.blend and *.glb
@@ -109,6 +114,8 @@ def make_constructor():
         roller["animation_note"] = "Rotate around local X for conveyor movement"
     add(collider("Constructor", (0,0,1.45), (2.8,2.35,3.1)))
     root["asset_type"] = "production_machine"
+    root["target_dimensions_m"] = "2.8 x 2.35 x 3.1 (provisional; verify against reference measurements)"
+    root["visual_style"] = "rugged futuristic industrial colony equipment; graphite frame, amber armor, restrained status lighting"
     root["physics"] = "static building; moving subassemblies animated separately"
     export_asset("constructor_prototype", made)
     return made
@@ -131,6 +138,8 @@ def make_conveyor():
         add(cube("Safety edge strip",(0,y,.91),(3.65,.035,.07),YELLOW,.01))
     add(collider("Conveyor", (0,0,.48), (4.15,1.18,1.05)))
     root["asset_type"]="logistics_conveyor"
+    root["target_dimensions_m"]="4.15 x 1.18 x 1.05 per straight module (provisional); belt width 0.88 m"
+    root["visual_style"]="compact modular industrial logistics; belt width must remain compatible with carried items and machine ports"
     root["physics"]="static frame; belt and rollers are animated by simulation state"
     export_asset("conveyor_module_prototype",made)
     return made
@@ -154,6 +163,8 @@ def make_portable_miner():
     add(cube("Status light",(0,-.43,1.28),(.18,.06,.12),YELLOW,.02))
     add(collider("PortableMiner",(0,0,.8),(1.55,1.55,2.15)))
     root["asset_type"]="portable_resource_extractor"
+    root["target_dimensions_m"]="1.55 x 1.55 x 2.15 (provisional; verify against character scale and reference)"
+    root["visual_style"]="portable futuristic mining tool; believable mechanical construction, rugged protective housings"
     root["physics"]="placeable static machine; drill spindle animation driven by mining state"
     export_asset("portable_miner_prototype",made)
     return made
@@ -164,3 +175,4 @@ make_portable_miner()
 bpy.ops.object.select_all(action="SELECT")
 bpy.ops.wm.save_as_mainfile(filepath=OUT + "starter_asset_library.blend")
 print("Generated 3 original prototype assets in", OUT)
+print("Scale convention: 1 Blender unit = 1 metre; dimensions are provisional targets.")
