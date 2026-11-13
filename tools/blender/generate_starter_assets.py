@@ -79,7 +79,7 @@ def export_asset(name, objects):
     bpy.context.view_layer.objects.active = objects[0]
     bpy.ops.export_scene.gltf(filepath=OUT + name + ".glb", export_format="GLB",
                               use_selection=True, export_apply=True)
-    bpy.ops.wm.save_as_mainfile(filepath=OUT + name + ".blend")
+
 
 def make_constructor():
     made = []
@@ -161,4 +161,6 @@ def make_portable_miner():
 make_constructor()
 make_conveyor()
 make_portable_miner()
+bpy.ops.object.select_all(action="SELECT")
+bpy.ops.wm.save_as_mainfile(filepath=OUT + "starter_asset_library.blend")
 print("Generated 3 original prototype assets in", OUT)
