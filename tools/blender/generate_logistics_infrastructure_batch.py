@@ -102,7 +102,7 @@ def build(kind,letter,style):
         cyl("Pump outlet",(w*.48,0,1.1),.34,.35,S,r,(0,math.pi/2,0))
         tor("Motor cooling ring",(0,0,2.0),.65,.05,Y,r)
     elif kind=="fluid_buffer":
-        cyl("Tank shell",(0,0,h*.52),w*.34,h*.72,S,r,verts=48)
+        cyl("Tank shell",(0,0,h*.52),w*.34,h*.72,S,r,v=48)
         cyl("Tank top cap",(0,0,h*.90),w*.35,.25,D,r)
         tor("Tank seam",(0,0,h*.28),w*.34,.045,Y,r)
         for x in (-w*.25,w*.25):box("Tank support",(x,0,h*.22),(.25,.3,h*.4),D,r)
@@ -114,7 +114,7 @@ def build(kind,letter,style):
         for z in (h*.72,h*.82,h*.92):
             box("Crossarm",(0,0,z),(w*1.8,.28,.18),A,r)
             for x in (-w*.7,0,w*.7):
-                cyl("Insulator",(x,0,z+.25),.15,.45,GLASS,r)
+                cyl("Insulator",(x,0,z+.25),.15,.45,G,r)
                 tor("Insulator cap",(x,0,z+.48),.13,.035,Y,r)
         if kind=="power_tower":
             for side in (-1,1):
