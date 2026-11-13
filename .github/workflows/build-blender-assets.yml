@@ -43,6 +43,9 @@ jobs:
       - name: Generate production buildings and extractors
         run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_production_buildings_batch.py
 
+      - name: Generate noncombat equipment models
+        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_noncombat_equipment_batch.py
+
       - name: Generate resource node models
         run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_resource_nodes_batch.py
 
@@ -118,9 +121,9 @@ jobs:
 
       - name: Verify generated assets and review sheets
         run: |
-          test "$(find assets/models -type f -name "*.blend" | wc -l)" -ge 67
-          test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 267
-          test "$(find assets/models/previews -type f -name "*_preview.png" | wc -l)" -ge 66
+          test "$(find assets/models -type f -name "*.blend" | wc -l)" -ge 73
+          test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 291
+          test "$(find assets/models/previews -type f -name "*_preview.png" | wc -l)" -ge 72
 
       - name: Commit Blender sources, GLB exports and preview sheets
         run: |
