@@ -5,7 +5,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "tools/blender/**"
+      - "tools/blender/**"\n      - "tools/audio/**"
       - ".github/workflows/build-blender-assets.yml"
 
 concurrency:
@@ -33,7 +33,7 @@ jobs:
           blender --version
           python3 -c "import numpy; print('System NumPy:', numpy.__version__)"
 
-      - name: Generate starter machine assets
+      - name: Generate original stereo sound effects\n        run: python3 tools/audio/generate_original_audio.py\n\n      - name: Generate starter machine assets
         run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_starter_assets.py
 
       - name: Generate production buildings and extractors\n        run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_production_buildings_batch.py\n\n      - name: Generate Jetpack variants
@@ -114,7 +114,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase origin main
-          git add assets/models/
+          git add assets/models/ assets/audio/
           if git diff --cached --quiet; then
             echo "No generated asset changes."
             exit 0
