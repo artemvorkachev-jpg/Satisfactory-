@@ -1,10 +1,7 @@
 name: Render Blender model review sheets
 
 on:
-  workflow_run:
-    workflows: ["Build Blender models and audio (no preview render)"]
-    types: [completed]
-    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: write
