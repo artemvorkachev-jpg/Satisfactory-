@@ -22,7 +22,7 @@ export async function initPhysics() {
     const ground = world.createRigidBody(RAPIER.RigidBodyDesc.fixed().setTranslation(0, -0.12, 0));
     world.createCollider(RAPIER.ColliderDesc.cuboid(1000, 0.12, 1000).setFriction(0.9), ground);
     colliderCount++;
-    for (const entry of pendingStatic.splice(0)) addStaticCollider(entry.object, entry.options);
+    for (const entry of pendingStatic.splice(0)) { if (entry.model) addStaticModelCollider(entry.object, entry.options); else addStaticCollider(entry.object, entry.options); }
     return world;
   } catch (error) {
     console.warn("Rapier physics unavailable; using safe movement fallback.", error);
@@ -86,7 +86,8 @@ export function addStaticCollider(object, options = {}) {
 
 
 export function addStaticModelCollider(root, options = {}) {
-  if (!root || !world || !RAPIER || staticBodies.has(root)) return null;
+  if (!root || staticBodies.has(root)) return null;
+  if (!world || !RAPIER) { pendingStatic.push({ object: root, options, model: true }); return null; }
   root.updateWorldMatrix(true, true);
 
   const inverseRoot = new THREE.Matrix4().copy(root.matrixWorld).invert();
