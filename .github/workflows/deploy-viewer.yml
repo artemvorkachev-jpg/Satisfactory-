@@ -42,7 +42,7 @@ jobs:
           rm -rf _site
           mkdir -p _site
           cp index.html _site/index.html
-          cp -R viewer _site/viewer
+          cp -R viewer _site/viewer\n          cp -R game _site/game
           python3 - <<'PY'
           import json, os, shutil
           root = os.getcwd()
