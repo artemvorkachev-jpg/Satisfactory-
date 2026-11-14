@@ -893,7 +893,7 @@
         "c": "assets/models/buildings/refinery/refinery_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -909,7 +909,7 @@
         "d": "assets/models/buildings/resource-well-extractor/resource-well-extractor_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -925,7 +925,7 @@
         "a": "assets/models/buildings/resource-well-pressurizer/resource-well-pressurizer_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -940,8 +940,8 @@
         "b": "assets/models/buildings/signs/signs_variant_b.glb",
         "d": "assets/models/buildings/signs/signs_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -957,7 +957,7 @@
         "c": "assets/models/buildings/smart-splitter/smart-splitter_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -989,7 +989,7 @@
         "d": "assets/models/buildings/space-elevator/space-elevator_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1005,7 +1005,7 @@
         "a": "assets/models/buildings/stackable-conveyor-pole/stackable-conveyor-pole_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1021,7 +1021,7 @@
         "d": "assets/models/buildings/stairs/stairs_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1037,7 +1037,7 @@
         "c": "assets/models/buildings/train-signals/train-signals_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1053,7 +1053,7 @@
         "b": "assets/models/buildings/truck-station/truck-station_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1069,7 +1069,7 @@
         "d": "assets/models/buildings/u-jelly-landing-pad/u-jelly-landing-pad_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1085,7 +1085,7 @@
         "d": "assets/models/buildings/valve/valve_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1101,7 +1101,7 @@
         "d": "assets/models/buildings/vehicle-paths/vehicle-paths_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1117,7 +1117,7 @@
         "c": "assets/models/buildings/walkways/walkways_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1133,7 +1133,7 @@
         "a": "assets/models/buildings/wall-conveyor-perpendicular/wall-conveyor-perpendicular_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1149,7 +1149,7 @@
         "d": "assets/models/buildings/wall-conveyor-x1/wall-conveyor-x1_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1165,7 +1165,7 @@
         "c": "assets/models/buildings/wall-conveyor-x2/wall-conveyor-x2_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1181,7 +1181,7 @@
         "b": "assets/models/buildings/wall-conveyor-x3/wall-conveyor-x3_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1197,7 +1197,7 @@
         "b": "assets/models/buildings/wall-doors/wall-doors_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1213,7 +1213,7 @@
         "a": "assets/models/buildings/wall-outlet/wall-outlet_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1229,7 +1229,7 @@
         "a": "assets/models/buildings/walls/walls_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1261,7 +1261,7 @@
         "d": "assets/models/buildings/windows/windows_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
