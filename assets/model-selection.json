@@ -1805,7 +1805,7 @@
         "d": "assets/models/cyber_wagon/cyber_wagon_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1820,8 +1820,8 @@
         "c": "assets/models/drone/drone_variant_c.glb",
         "b": "assets/models/drone/drone_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "d",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1837,7 +1837,7 @@
         "b": "assets/models/explorer/explorer_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1852,8 +1852,8 @@
         "d": "assets/models/factory_cart/factory_cart_variant_d.glb",
         "a": "assets/models/factory_cart/factory_cart_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2061,7 +2061,7 @@
         "d": "assets/models/freight_car/freight_car_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2077,7 +2077,7 @@
         "d": "assets/models/freight_platform/freight_platform_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4381,7 +4381,7 @@
         "c": "assets/models/locomotive/locomotive_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4444,8 +4444,8 @@
         "a": "assets/models/railway/railway_variant_a.glb",
         "c": "assets/models/railway/railway_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4700,8 +4700,8 @@
         "c": "assets/models/train_station/train_station_variant_c.glb",
         "d": "assets/models/train_station/train_station_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "d",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
