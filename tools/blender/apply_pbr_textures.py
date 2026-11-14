@@ -5,11 +5,12 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 TEXTURE_DIR = os.path.join(ROOT, "assets", "textures", "procedural")
 os.makedirs(TEXTURE_DIR, exist_ok=True)
 
-SIZE = 256
+SIZE = 512
+TEXTURE_SUFFIX = "_v2"
 FAMILIES = ("metal", "polymer", "rubber", "organic", "glass")
 
 def make_map(family, channel):
-    path = os.path.join(TEXTURE_DIR, family + "_" + channel + ".png")
+    path = os.path.join(TEXTURE_DIR, family + "_" + channel + TEXTURE_SUFFIX + ".png")
     if os.path.isfile(path) and os.path.getsize(path) > 2048:
         return path
     img = bpy.data.images.new(family + "_" + channel, width=SIZE, height=SIZE, alpha=False, float_buffer=False)
@@ -18,28 +19,38 @@ def make_map(family, channel):
         v = y / SIZE
         for x in range(SIZE):
             u = x / SIZE
-            a = math.sin(2*math.pi*(u*17 + math.sin(v*2*math.pi*3)*.012))
-            b = math.sin(2*math.pi*(v*29 + math.sin(u*2*math.pi*5)*.008))
-            c = math.sin(2*math.pi*(u*71 + v*37))
-            d = math.sin(2*math.pi*(u*113 - v*89))
-            noise = (a*.38 + b*.28 + c*.20 + d*.14)
+            a = math.sin(2*math.pi*(u*13 + math.sin(v*2*math.pi*3)*.018))
+            b = math.sin(2*math.pi*(v*23 + math.sin(u*2*math.pi*5)*.014))
+            c = math.sin(2*math.pi*(u*67 + v*41))
+            d = math.sin(2*math.pi*(u*127 - v*97))
+            fine = math.sin(2*math.pi*(u*193 + v*151))
+            noise = a*.31 + b*.24 + c*.18 + d*.14 + fine*.13
             if family == "metal":
-                noise = noise*.62 + math.sin(2*math.pi*(v*137 + u*2))*.38
+                scratches = math.sin(2*math.pi*(v*79 + math.sin(u*2*math.pi*2)*.045))
+                brushed = math.sin(2*math.pi*(v*151 + u*7))
+                noise = noise*.48 + scratches*.34 + brushed*.18
             elif family == "polymer":
-                noise = noise*.72 + math.sin(2*math.pi*(u*53)*math.sin(v*53))*.28
+                orange_peel = math.sin(2*math.pi*u*37)*math.sin(2*math.pi*v*43)
+                noise = noise*.58 + orange_peel*.42
             elif family == "rubber":
-                noise = noise*.55 + math.sin(2*math.pi*u*43)*math.sin(2*math.pi*v*43)*.45
+                grain = math.sin(2*math.pi*u*53)*math.sin(2*math.pi*v*53)
+                ribs = math.sin(2*math.pi*(u*19 + v*3))
+                noise = noise*.48 + grain*.36 + ribs*.16
             elif family == "organic":
-                noise = noise*.5 + math.sin(2*math.pi*u*9)*math.sin(2*math.pi*v*11)*.5
+                veins = math.sin(2*math.pi*(u*11 + math.sin(v*2*math.pi*4)*.035))
+                veins *= math.sin(2*math.pi*(v*5))
+                flecks = math.sin(2*math.pi*(u*79 + v*67))
+                noise = noise*.47 + veins*.38 + flecks*.15
             else:
-                noise = noise*.9 + math.sin(2*math.pi*(u*101+v*97))*.1
+                smudges = math.sin(2*math.pi*(u*7 + v*9))
+                noise = noise*.68 + smudges*.32
             if channel == "albedo":
-                value = .91 + noise*.075
+                value = .82 + noise*.17
             elif channel == "roughness":
-                base = {"metal":.34,"polymer":.62,"rubber":.84,"organic":.78,"glass":.19}[family]
-                value = base + noise*.10
+                base = {"metal":.38,"polymer":.64,"rubber":.86,"organic":.82,"glass":.22}[family]
+                value = base + noise*.18
             else:
-                value = .42 + noise*.13
+                value = .5 + noise*.29
             value = max(0.0, min(1.0, value))
             pixels.extend((value, value, value, 1.0))
     img.pixels.foreach_set(pixels)
@@ -79,16 +90,21 @@ def texture_material(mat):
     principled = next((n for n in nodes if n.type == "BSDF_PRINCIPLED"), None)
     if not principled: return
     base_input = principled.inputs.get("Base Color")
-    if not base_input or base_input.is_linked: return
-    base = tuple(base_input.default_value)
+    if not base_input: return
     family = material_family(mat)
     tex_albedo = image_node(nodes, MAPS[family]["albedo"], "PBR Albedo - " + family)
-    tex_albedo.location = (-620, 220)
+    tex_albedo.location = (-760, 220)
     multiply = nodes.new("ShaderNodeMixRGB")
     multiply.blend_type = "MULTIPLY"
     multiply.inputs[0].default_value = 1.0
-    multiply.inputs[1].default_value = base
     multiply.location = (-350, 220)
+    if base_input.is_linked:
+        original_base = base_input.links[0].from_socket
+        for link in list(base_input.links):
+            links.remove(link)
+        links.new(original_base, multiply.inputs[1])
+    else:
+        multiply.inputs[1].default_value = tuple(base_input.default_value)
     links.new(tex_albedo.outputs["Color"], multiply.inputs[2])
     links.new(multiply.outputs["Color"], base_input)
     tex_rough = image_node(nodes, MAPS[family]["roughness"], "PBR Roughness - " + family, True)
@@ -98,8 +114,8 @@ def texture_material(mat):
     tex_height = image_node(nodes, MAPS[family]["height"], "PBR Height - " + family, True)
     tex_height.location = (-620, -300)
     bump = nodes.new("ShaderNodeBump")
-    bump.inputs["Strength"].default_value = .16
-    bump.inputs["Distance"].default_value = .018
+    bump.inputs["Strength"].default_value = .24
+    bump.inputs["Distance"].default_value = .035
     bump.location = (-300, -240)
     links.new(tex_height.outputs["Color"], bump.inputs["Height"])
     normal = principled.inputs.get("Normal")
