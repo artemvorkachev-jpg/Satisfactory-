@@ -30,8 +30,10 @@ for entry in sorted(families.values(),key=lambda x:(x["category"],x["name"])):
         if review.get("selectionStatus")=="out-of-scope":
             entry["selectionStatus"]="out-of-scope"
         else:
-            entry["selectedVariant"]=review.get("selectedVariant","b") or "b"
-            entry["selectionStatus"]=review.get("selectionStatus","provisional-default-b")
+            entry["selectionStatus"]=review.get("selectionStatus","pending-visual-review")
+            selected=review.get("selectedVariant")
+            if selected in entry["variants"]:
+                entry["selectedVariant"]=selected
         assets.append(entry)
 with open(OUT,"w",encoding="utf-8") as f: json.dump({"count":len(assets),"assets":assets},f,ensure_ascii=False,indent=2)
 print("Built viewer catalogue:",len(assets),"four-variant families")
