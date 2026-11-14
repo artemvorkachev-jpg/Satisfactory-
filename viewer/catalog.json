@@ -1,0 +1,3533 @@
+{
+  "count": 294,
+  "assets": [
+    {
+      "id": "blade_runners",
+      "name": "Blade Runners",
+      "category": "blade_runners",
+      "variants": {
+        "b": "assets/models/blade_runners/blade_runners_variant_b.glb",
+        "d": "assets/models/blade_runners/blade_runners_variant_d.glb",
+        "a": "assets/models/blade_runners/blade_runners_variant_a.glb",
+        "c": "assets/models/blade_runners/blade_runners_variant_c.glb"
+      },
+      "preview": "assets/models/previews/blade_runners_four_variants_preview.png"
+    },
+    {
+      "id": "alien-power-augmenter",
+      "name": "Alien Power Augmenter",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/alien-power-augmenter/alien-power-augmenter_variant_c.glb",
+        "d": "assets/models/buildings/alien-power-augmenter/alien-power-augmenter_variant_d.glb",
+        "a": "assets/models/buildings/alien-power-augmenter/alien-power-augmenter_variant_a.glb",
+        "b": "assets/models/buildings/alien-power-augmenter/alien-power-augmenter_variant_b.glb"
+      },
+      "preview": "assets/models/previews/alien-power-augmenter_four_variants_preview.png"
+    },
+    {
+      "id": "angled-frame-window",
+      "name": "Angled Frame Window",
+      "category": "buildings",
+      "variants": {
+        "b": "assets/models/buildings/angled-frame-window/angled-frame-window_variant_b.glb",
+        "d": "assets/models/buildings/angled-frame-window/angled-frame-window_variant_d.glb",
+        "c": "assets/models/buildings/angled-frame-window/angled-frame-window_variant_c.glb",
+        "a": "assets/models/buildings/angled-frame-window/angled-frame-window_variant_a.glb"
+      },
+      "preview": "assets/models/previews/angled-frame-window_four_variants_preview.png"
+    },
+    {
+      "id": "assembler",
+      "name": "Assembler",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/assembler/assembler_variant_a.glb",
+        "d": "assets/models/buildings/assembler/assembler_variant_d.glb",
+        "b": "assets/models/buildings/assembler/assembler_variant_b.glb",
+        "c": "assets/models/buildings/assembler/assembler_variant_c.glb"
+      },
+      "preview": "assets/models/previews/assembler_four_variants_preview.png"
+    },
+    {
+      "id": "awesome-shop",
+      "name": "Awesome Shop",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/awesome-shop/awesome-shop_variant_a.glb",
+        "c": "assets/models/buildings/awesome-shop/awesome-shop_variant_c.glb",
+        "d": "assets/models/buildings/awesome-shop/awesome-shop_variant_d.glb",
+        "b": "assets/models/buildings/awesome-shop/awesome-shop_variant_b.glb"
+      },
+      "preview": "assets/models/previews/awesome-shop_four_variants_preview.png"
+    },
+    {
+      "id": "basic-shelf-unit",
+      "name": "Basic Shelf Unit",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/basic-shelf-unit/basic-shelf-unit_variant_a.glb",
+        "b": "assets/models/buildings/basic-shelf-unit/basic-shelf-unit_variant_b.glb",
+        "d": "assets/models/buildings/basic-shelf-unit/basic-shelf-unit_variant_d.glb",
+        "c": "assets/models/buildings/basic-shelf-unit/basic-shelf-unit_variant_c.glb"
+      },
+      "preview": "assets/models/previews/basic-shelf-unit_four_variants_preview.png"
+    },
+    {
+      "id": "beams",
+      "name": "Beams",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/beams/beams_variant_d.glb",
+        "a": "assets/models/buildings/beams/beams_variant_a.glb",
+        "c": "assets/models/buildings/beams/beams_variant_c.glb",
+        "b": "assets/models/buildings/beams/beams_variant_b.glb"
+      },
+      "preview": "assets/models/previews/beams_four_variants_preview.png"
+    },
+    {
+      "id": "biomass-burner",
+      "name": "Biomass Burner",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/biomass-burner/biomass-burner_variant_a.glb",
+        "b": "assets/models/buildings/biomass-burner/biomass-burner_variant_b.glb",
+        "c": "assets/models/buildings/biomass-burner/biomass-burner_variant_c.glb",
+        "d": "assets/models/buildings/biomass-burner/biomass-burner_variant_d.glb"
+      },
+      "preview": "assets/models/previews/biomass-burner_four_variants_preview.png"
+    },
+    {
+      "id": "blender",
+      "name": "Blender",
+      "category": "buildings",
+      "variants": {
+        "b": "assets/models/buildings/blender/blender_variant_b.glb",
+        "d": "assets/models/buildings/blender/blender_variant_d.glb",
+        "c": "assets/models/buildings/blender/blender_variant_c.glb",
+        "a": "assets/models/buildings/blender/blender_variant_a.glb"
+      },
+      "preview": "assets/models/previews/blender_four_variants_preview.png"
+    },
+    {
+      "id": "blueprint-designer",
+      "name": "Blueprint Designer",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/blueprint-designer/blueprint-designer_variant_c.glb",
+        "a": "assets/models/buildings/blueprint-designer/blueprint-designer_variant_a.glb",
+        "b": "assets/models/buildings/blueprint-designer/blueprint-designer_variant_b.glb",
+        "d": "assets/models/buildings/blueprint-designer/blueprint-designer_variant_d.glb"
+      },
+      "preview": "assets/models/previews/blueprint-designer_four_variants_preview.png"
+    },
+    {
+      "id": "buffer-stop",
+      "name": "Buffer Stop",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/buffer-stop/buffer-stop_variant_d.glb",
+        "a": "assets/models/buildings/buffer-stop/buffer-stop_variant_a.glb",
+        "b": "assets/models/buildings/buffer-stop/buffer-stop_variant_b.glb",
+        "c": "assets/models/buildings/buffer-stop/buffer-stop_variant_c.glb"
+      },
+      "preview": "assets/models/previews/buffer-stop_four_variants_preview.png"
+    },
+    {
+      "id": "coal-generator",
+      "name": "Coal Generator",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/coal-generator/coal-generator_variant_d.glb",
+        "a": "assets/models/buildings/coal-generator/coal-generator_variant_a.glb",
+        "b": "assets/models/buildings/coal-generator/coal-generator_variant_b.glb",
+        "c": "assets/models/buildings/coal-generator/coal-generator_variant_c.glb"
+      },
+      "preview": "assets/models/previews/coal-generator_four_variants_preview.png"
+    },
+    {
+      "id": "constructor",
+      "name": "Constructor",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/constructor/constructor_variant_c.glb",
+        "d": "assets/models/buildings/constructor/constructor_variant_d.glb",
+        "a": "assets/models/buildings/constructor/constructor_variant_a.glb",
+        "b": "assets/models/buildings/constructor/constructor_variant_b.glb"
+      },
+      "preview": "assets/models/previews/constructor_four_variants_preview.png"
+    },
+    {
+      "id": "converter",
+      "name": "Converter",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/converter/converter_variant_d.glb",
+        "c": "assets/models/buildings/converter/converter_variant_c.glb",
+        "a": "assets/models/buildings/converter/converter_variant_a.glb",
+        "b": "assets/models/buildings/converter/converter_variant_b.glb"
+      },
+      "preview": "assets/models/previews/converter_four_variants_preview.png"
+    },
+    {
+      "id": "conveyor-floor-hole",
+      "name": "Conveyor Floor Hole",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/conveyor-floor-hole/conveyor-floor-hole_variant_c.glb",
+        "b": "assets/models/buildings/conveyor-floor-hole/conveyor-floor-hole_variant_b.glb",
+        "d": "assets/models/buildings/conveyor-floor-hole/conveyor-floor-hole_variant_d.glb",
+        "a": "assets/models/buildings/conveyor-floor-hole/conveyor-floor-hole_variant_a.glb"
+      },
+      "preview": "assets/models/previews/conveyor-floor-hole_four_variants_preview.png"
+    },
+    {
+      "id": "conveyor-throughput-monitor",
+      "name": "Conveyor Throughput Monitor",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/conveyor-throughput-monitor/conveyor-throughput-monitor_variant_d.glb",
+        "b": "assets/models/buildings/conveyor-throughput-monitor/conveyor-throughput-monitor_variant_b.glb",
+        "c": "assets/models/buildings/conveyor-throughput-monitor/conveyor-throughput-monitor_variant_c.glb",
+        "a": "assets/models/buildings/conveyor-throughput-monitor/conveyor-throughput-monitor_variant_a.glb"
+      },
+      "preview": "assets/models/previews/conveyor-throughput-monitor_four_variants_preview.png"
+    },
+    {
+      "id": "conveyor-wall-hole",
+      "name": "Conveyor Wall Hole",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/conveyor-wall-hole/conveyor-wall-hole_variant_c.glb",
+        "a": "assets/models/buildings/conveyor-wall-hole/conveyor-wall-hole_variant_a.glb",
+        "b": "assets/models/buildings/conveyor-wall-hole/conveyor-wall-hole_variant_b.glb",
+        "d": "assets/models/buildings/conveyor-wall-hole/conveyor-wall-hole_variant_d.glb"
+      },
+      "preview": "assets/models/previews/conveyor-wall-hole_four_variants_preview.png"
+    },
+    {
+      "id": "conveyor-wall-mount",
+      "name": "Conveyor Wall Mount",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/conveyor-wall-mount/conveyor-wall-mount_variant_c.glb",
+        "a": "assets/models/buildings/conveyor-wall-mount/conveyor-wall-mount_variant_a.glb",
+        "d": "assets/models/buildings/conveyor-wall-mount/conveyor-wall-mount_variant_d.glb",
+        "b": "assets/models/buildings/conveyor-wall-mount/conveyor-wall-mount_variant_b.glb"
+      },
+      "preview": "assets/models/previews/conveyor-wall-mount_four_variants_preview.png"
+    },
+    {
+      "id": "crafting-bench",
+      "name": "Crafting Bench",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/crafting-bench/crafting-bench_variant_d.glb",
+        "b": "assets/models/buildings/crafting-bench/crafting-bench_variant_b.glb",
+        "a": "assets/models/buildings/crafting-bench/crafting-bench_variant_a.glb",
+        "c": "assets/models/buildings/crafting-bench/crafting-bench_variant_c.glb"
+      },
+      "preview": "assets/models/previews/crafting-bench_four_variants_preview.png"
+    },
+    {
+      "id": "dimensional-depot-uploader",
+      "name": "Dimensional Depot Uploader",
+      "category": "buildings",
+      "variants": {
+        "b": "assets/models/buildings/dimensional-depot-uploader/dimensional-depot-uploader_variant_b.glb",
+        "c": "assets/models/buildings/dimensional-depot-uploader/dimensional-depot-uploader_variant_c.glb",
+        "d": "assets/models/buildings/dimensional-depot-uploader/dimensional-depot-uploader_variant_d.glb",
+        "a": "assets/models/buildings/dimensional-depot-uploader/dimensional-depot-uploader_variant_a.glb"
+      },
+      "preview": "assets/models/previews/dimensional-depot-uploader_four_variants_preview.png"
+    },
+    {
+      "id": "drone-port",
+      "name": "Drone Port",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/drone-port/drone-port_variant_d.glb",
+        "a": "assets/models/buildings/drone-port/drone-port_variant_a.glb",
+        "b": "assets/models/buildings/drone-port/drone-port_variant_b.glb",
+        "c": "assets/models/buildings/drone-port/drone-port_variant_c.glb"
+      },
+      "preview": "assets/models/previews/drone-port_four_variants_preview.png"
+    },
+    {
+      "id": "equipment-workshop",
+      "name": "Equipment Workshop",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/equipment-workshop/equipment-workshop_variant_d.glb",
+        "c": "assets/models/buildings/equipment-workshop/equipment-workshop_variant_c.glb",
+        "b": "assets/models/buildings/equipment-workshop/equipment-workshop_variant_b.glb",
+        "a": "assets/models/buildings/equipment-workshop/equipment-workshop_variant_a.glb"
+      },
+      "preview": "assets/models/previews/equipment-workshop_four_variants_preview.png"
+    },
+    {
+      "id": "foundations",
+      "name": "Foundations",
+      "category": "buildings",
+      "variants": {
+        "b": "assets/models/buildings/foundations/foundations_variant_b.glb",
+        "c": "assets/models/buildings/foundations/foundations_variant_c.glb",
+        "a": "assets/models/buildings/foundations/foundations_variant_a.glb",
+        "d": "assets/models/buildings/foundations/foundations_variant_d.glb"
+      },
+      "preview": "assets/models/previews/foundations_four_variants_preview.png"
+    },
+    {
+      "id": "foundry",
+      "name": "Foundry",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/foundry/foundry_variant_d.glb",
+        "c": "assets/models/buildings/foundry/foundry_variant_c.glb",
+        "a": "assets/models/buildings/foundry/foundry_variant_a.glb",
+        "b": "assets/models/buildings/foundry/foundry_variant_b.glb"
+      },
+      "preview": "assets/models/previews/foundry_four_variants_preview.png"
+    },
+    {
+      "id": "fuel-generator",
+      "name": "Fuel Generator",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/fuel-generator/fuel-generator_variant_c.glb",
+        "b": "assets/models/buildings/fuel-generator/fuel-generator_variant_b.glb",
+        "a": "assets/models/buildings/fuel-generator/fuel-generator_variant_a.glb",
+        "d": "assets/models/buildings/fuel-generator/fuel-generator_variant_d.glb"
+      },
+      "preview": "assets/models/previews/fuel-generator_four_variants_preview.png"
+    },
+    {
+      "id": "geothermal-generator",
+      "name": "Geothermal Generator",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/geothermal-generator/geothermal-generator_variant_a.glb",
+        "c": "assets/models/buildings/geothermal-generator/geothermal-generator_variant_c.glb",
+        "d": "assets/models/buildings/geothermal-generator/geothermal-generator_variant_d.glb",
+        "b": "assets/models/buildings/geothermal-generator/geothermal-generator_variant_b.glb"
+      },
+      "preview": "assets/models/previews/geothermal-generator_four_variants_preview.png"
+    },
+    {
+      "id": "hub",
+      "name": "Hub",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/hub/hub_variant_a.glb",
+        "c": "assets/models/buildings/hub/hub_variant_c.glb",
+        "b": "assets/models/buildings/hub/hub_variant_b.glb",
+        "d": "assets/models/buildings/hub/hub_variant_d.glb"
+      },
+      "preview": "assets/models/previews/hub_four_variants_preview.png"
+    },
+    {
+      "id": "hypertube-supports",
+      "name": "Hypertube Supports",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/hypertube-supports/hypertube-supports_variant_d.glb",
+        "c": "assets/models/buildings/hypertube-supports/hypertube-supports_variant_c.glb",
+        "b": "assets/models/buildings/hypertube-supports/hypertube-supports_variant_b.glb",
+        "a": "assets/models/buildings/hypertube-supports/hypertube-supports_variant_a.glb"
+      },
+      "preview": "assets/models/previews/hypertube-supports_four_variants_preview.png"
+    },
+    {
+      "id": "indicator-light",
+      "name": "Indicator Light",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/indicator-light/indicator-light_variant_d.glb",
+        "c": "assets/models/buildings/indicator-light/indicator-light_variant_c.glb",
+        "a": "assets/models/buildings/indicator-light/indicator-light_variant_a.glb",
+        "b": "assets/models/buildings/indicator-light/indicator-light_variant_b.glb"
+      },
+      "preview": "assets/models/previews/indicator-light_four_variants_preview.png"
+    },
+    {
+      "id": "industrial-fluid-buffer",
+      "name": "Industrial Fluid Buffer",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/industrial-fluid-buffer/industrial-fluid-buffer_variant_c.glb",
+        "b": "assets/models/buildings/industrial-fluid-buffer/industrial-fluid-buffer_variant_b.glb",
+        "d": "assets/models/buildings/industrial-fluid-buffer/industrial-fluid-buffer_variant_d.glb",
+        "a": "assets/models/buildings/industrial-fluid-buffer/industrial-fluid-buffer_variant_a.glb"
+      },
+      "preview": "assets/models/previews/industrial-fluid-buffer_four_variants_preview.png"
+    },
+    {
+      "id": "jump-pad",
+      "name": "Jump Pad",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/jump-pad/jump-pad_variant_d.glb",
+        "b": "assets/models/buildings/jump-pad/jump-pad_variant_b.glb",
+        "c": "assets/models/buildings/jump-pad/jump-pad_variant_c.glb",
+        "a": "assets/models/buildings/jump-pad/jump-pad_variant_a.glb"
+      },
+      "preview": "assets/models/previews/jump-pad_four_variants_preview.png"
+    },
+    {
+      "id": "ladder",
+      "name": "Ladder",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/ladder/ladder_variant_a.glb",
+        "c": "assets/models/buildings/ladder/ladder_variant_c.glb",
+        "b": "assets/models/buildings/ladder/ladder_variant_b.glb",
+        "d": "assets/models/buildings/ladder/ladder_variant_d.glb"
+      },
+      "preview": "assets/models/previews/ladder_four_variants_preview.png"
+    },
+    {
+      "id": "large-fan",
+      "name": "Large Fan",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/large-fan/large-fan_variant_c.glb",
+        "a": "assets/models/buildings/large-fan/large-fan_variant_a.glb",
+        "d": "assets/models/buildings/large-fan/large-fan_variant_d.glb",
+        "b": "assets/models/buildings/large-fan/large-fan_variant_b.glb"
+      },
+      "preview": "assets/models/previews/large-fan_four_variants_preview.png"
+    },
+    {
+      "id": "lights",
+      "name": "Lights",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/lights/lights_variant_c.glb",
+        "a": "assets/models/buildings/lights/lights_variant_a.glb",
+        "b": "assets/models/buildings/lights/lights_variant_b.glb",
+        "d": "assets/models/buildings/lights/lights_variant_d.glb"
+      },
+      "preview": "assets/models/previews/lights_four_variants_preview.png"
+    },
+    {
+      "id": "lookout-tower",
+      "name": "Lookout Tower",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/lookout-tower/lookout-tower_variant_c.glb",
+        "d": "assets/models/buildings/lookout-tower/lookout-tower_variant_d.glb",
+        "b": "assets/models/buildings/lookout-tower/lookout-tower_variant_b.glb",
+        "a": "assets/models/buildings/lookout-tower/lookout-tower_variant_a.glb"
+      },
+      "preview": "assets/models/previews/lookout-tower_four_variants_preview.png"
+    },
+    {
+      "id": "mam",
+      "name": "Mam",
+      "category": "buildings",
+      "variants": {
+        "b": "assets/models/buildings/mam/mam_variant_b.glb",
+        "a": "assets/models/buildings/mam/mam_variant_a.glb",
+        "c": "assets/models/buildings/mam/mam_variant_c.glb",
+        "d": "assets/models/buildings/mam/mam_variant_d.glb"
+      },
+      "preview": "assets/models/previews/mam_four_variants_preview.png"
+    },
+    {
+      "id": "manufacturer",
+      "name": "Manufacturer",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/manufacturer/manufacturer_variant_a.glb",
+        "d": "assets/models/buildings/manufacturer/manufacturer_variant_d.glb",
+        "c": "assets/models/buildings/manufacturer/manufacturer_variant_c.glb",
+        "b": "assets/models/buildings/manufacturer/manufacturer_variant_b.glb"
+      },
+      "preview": "assets/models/previews/manufacturer_four_variants_preview.png"
+    },
+    {
+      "id": "miner",
+      "name": "Miner",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/miner/miner_variant_c.glb",
+        "b": "assets/models/buildings/miner/miner_variant_b.glb",
+        "d": "assets/models/buildings/miner/miner_variant_d.glb",
+        "a": "assets/models/buildings/miner/miner_variant_a.glb"
+      },
+      "preview": "assets/models/previews/miner_four_variants_preview.png"
+    },
+    {
+      "id": "nuclear-power-plant",
+      "name": "Nuclear Power Plant",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/nuclear-power-plant/nuclear-power-plant_variant_a.glb",
+        "c": "assets/models/buildings/nuclear-power-plant/nuclear-power-plant_variant_c.glb",
+        "b": "assets/models/buildings/nuclear-power-plant/nuclear-power-plant_variant_b.glb",
+        "d": "assets/models/buildings/nuclear-power-plant/nuclear-power-plant_variant_d.glb"
+      },
+      "preview": "assets/models/previews/nuclear-power-plant_four_variants_preview.png"
+    },
+    {
+      "id": "oil_extractor",
+      "name": "Oil Extractor",
+      "category": "buildings",
+      "variants": {
+        "b": "assets/models/buildings/oil_extractor/oil_extractor_variant_b.glb",
+        "a": "assets/models/buildings/oil_extractor/oil_extractor_variant_a.glb",
+        "d": "assets/models/buildings/oil_extractor/oil_extractor_variant_d.glb",
+        "c": "assets/models/buildings/oil_extractor/oil_extractor_variant_c.glb"
+      },
+      "preview": "assets/models/previews/oil_extractor_four_variants_preview.png"
+    },
+    {
+      "id": "packager",
+      "name": "Packager",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/packager/packager_variant_c.glb",
+        "a": "assets/models/buildings/packager/packager_variant_a.glb",
+        "d": "assets/models/buildings/packager/packager_variant_d.glb",
+        "b": "assets/models/buildings/packager/packager_variant_b.glb"
+      },
+      "preview": "assets/models/previews/packager_four_variants_preview.png"
+    },
+    {
+      "id": "particle_accelerator",
+      "name": "Particle Accelerator",
+      "category": "buildings",
+      "variants": {
+        "b": "assets/models/buildings/particle_accelerator/particle_accelerator_variant_b.glb",
+        "a": "assets/models/buildings/particle_accelerator/particle_accelerator_variant_a.glb",
+        "d": "assets/models/buildings/particle_accelerator/particle_accelerator_variant_d.glb",
+        "c": "assets/models/buildings/particle_accelerator/particle_accelerator_variant_c.glb"
+      },
+      "preview": "assets/models/previews/particle_accelerator_four_variants_preview.png"
+    },
+    {
+      "id": "personal-storage-box",
+      "name": "Personal Storage Box",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/personal-storage-box/personal-storage-box_variant_d.glb",
+        "a": "assets/models/buildings/personal-storage-box/personal-storage-box_variant_a.glb",
+        "b": "assets/models/buildings/personal-storage-box/personal-storage-box_variant_b.glb",
+        "c": "assets/models/buildings/personal-storage-box/personal-storage-box_variant_c.glb"
+      },
+      "preview": "assets/models/previews/personal-storage-box_four_variants_preview.png"
+    },
+    {
+      "id": "personnel-elevator",
+      "name": "Personnel Elevator",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/personnel-elevator/personnel-elevator_variant_c.glb",
+        "a": "assets/models/buildings/personnel-elevator/personnel-elevator_variant_a.glb",
+        "d": "assets/models/buildings/personnel-elevator/personnel-elevator_variant_d.glb",
+        "b": "assets/models/buildings/personnel-elevator/personnel-elevator_variant_b.glb"
+      },
+      "preview": "assets/models/previews/personnel-elevator_four_variants_preview.png"
+    },
+    {
+      "id": "pillars",
+      "name": "Pillars",
+      "category": "buildings",
+      "variants": {
+        "b": "assets/models/buildings/pillars/pillars_variant_b.glb",
+        "d": "assets/models/buildings/pillars/pillars_variant_d.glb",
+        "a": "assets/models/buildings/pillars/pillars_variant_a.glb",
+        "c": "assets/models/buildings/pillars/pillars_variant_c.glb"
+      },
+      "preview": "assets/models/previews/pillars_four_variants_preview.png"
+    },
+    {
+      "id": "pipeline-support",
+      "name": "Pipeline Support",
+      "category": "buildings",
+      "variants": {
+        "b": "assets/models/buildings/pipeline-support/pipeline-support_variant_b.glb",
+        "a": "assets/models/buildings/pipeline-support/pipeline-support_variant_a.glb",
+        "c": "assets/models/buildings/pipeline-support/pipeline-support_variant_c.glb",
+        "d": "assets/models/buildings/pipeline-support/pipeline-support_variant_d.glb"
+      },
+      "preview": "assets/models/previews/pipeline-support_four_variants_preview.png"
+    },
+    {
+      "id": "portal",
+      "name": "Portal",
+      "category": "buildings",
+      "variants": {
+        "b": "assets/models/buildings/portal/portal_variant_b.glb",
+        "d": "assets/models/buildings/portal/portal_variant_d.glb",
+        "a": "assets/models/buildings/portal/portal_variant_a.glb",
+        "c": "assets/models/buildings/portal/portal_variant_c.glb"
+      },
+      "preview": "assets/models/previews/portal_four_variants_preview.png"
+    },
+    {
+      "id": "power-line",
+      "name": "Power Line",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/power-line/power-line_variant_a.glb",
+        "b": "assets/models/buildings/power-line/power-line_variant_b.glb",
+        "c": "assets/models/buildings/power-line/power-line_variant_c.glb",
+        "d": "assets/models/buildings/power-line/power-line_variant_d.glb"
+      },
+      "preview": "assets/models/previews/power-line_four_variants_preview.png"
+    },
+    {
+      "id": "priority-merger",
+      "name": "Priority Merger",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/priority-merger/priority-merger_variant_a.glb",
+        "c": "assets/models/buildings/priority-merger/priority-merger_variant_c.glb",
+        "d": "assets/models/buildings/priority-merger/priority-merger_variant_d.glb",
+        "b": "assets/models/buildings/priority-merger/priority-merger_variant_b.glb"
+      },
+      "preview": "assets/models/previews/priority-merger_four_variants_preview.png"
+    },
+    {
+      "id": "priority-power-switch",
+      "name": "Priority Power Switch",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/priority-power-switch/priority-power-switch_variant_d.glb",
+        "c": "assets/models/buildings/priority-power-switch/priority-power-switch_variant_c.glb",
+        "a": "assets/models/buildings/priority-power-switch/priority-power-switch_variant_a.glb",
+        "b": "assets/models/buildings/priority-power-switch/priority-power-switch_variant_b.glb"
+      },
+      "preview": "assets/models/previews/priority-power-switch_four_variants_preview.png"
+    },
+    {
+      "id": "programmable-splitter",
+      "name": "Programmable Splitter",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/programmable-splitter/programmable-splitter_variant_d.glb",
+        "b": "assets/models/buildings/programmable-splitter/programmable-splitter_variant_b.glb",
+        "c": "assets/models/buildings/programmable-splitter/programmable-splitter_variant_c.glb",
+        "a": "assets/models/buildings/programmable-splitter/programmable-splitter_variant_a.glb"
+      },
+      "preview": "assets/models/previews/programmable-splitter_four_variants_preview.png"
+    },
+    {
+      "id": "quantum_encoder",
+      "name": "Quantum Encoder",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/quantum_encoder/quantum_encoder_variant_c.glb",
+        "a": "assets/models/buildings/quantum_encoder/quantum_encoder_variant_a.glb",
+        "d": "assets/models/buildings/quantum_encoder/quantum_encoder_variant_d.glb",
+        "b": "assets/models/buildings/quantum_encoder/quantum_encoder_variant_b.glb"
+      },
+      "preview": "assets/models/previews/quantum_encoder_four_variants_preview.png"
+    },
+    {
+      "id": "radar-tower",
+      "name": "Radar Tower",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/radar-tower/radar-tower_variant_a.glb",
+        "b": "assets/models/buildings/radar-tower/radar-tower_variant_b.glb",
+        "d": "assets/models/buildings/radar-tower/radar-tower_variant_d.glb",
+        "c": "assets/models/buildings/radar-tower/radar-tower_variant_c.glb"
+      },
+      "preview": "assets/models/previews/radar-tower_four_variants_preview.png"
+    },
+    {
+      "id": "ramps",
+      "name": "Ramps",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/ramps/ramps_variant_d.glb",
+        "b": "assets/models/buildings/ramps/ramps_variant_b.glb",
+        "c": "assets/models/buildings/ramps/ramps_variant_c.glb",
+        "a": "assets/models/buildings/ramps/ramps_variant_a.glb"
+      },
+      "preview": "assets/models/previews/ramps_four_variants_preview.png"
+    },
+    {
+      "id": "refinery",
+      "name": "Refinery",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/refinery/refinery_variant_d.glb",
+        "a": "assets/models/buildings/refinery/refinery_variant_a.glb",
+        "b": "assets/models/buildings/refinery/refinery_variant_b.glb",
+        "c": "assets/models/buildings/refinery/refinery_variant_c.glb"
+      },
+      "preview": "assets/models/previews/refinery_four_variants_preview.png"
+    },
+    {
+      "id": "resource-well-extractor",
+      "name": "Resource Well Extractor",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/resource-well-extractor/resource-well-extractor_variant_c.glb",
+        "a": "assets/models/buildings/resource-well-extractor/resource-well-extractor_variant_a.glb",
+        "b": "assets/models/buildings/resource-well-extractor/resource-well-extractor_variant_b.glb",
+        "d": "assets/models/buildings/resource-well-extractor/resource-well-extractor_variant_d.glb"
+      },
+      "preview": "assets/models/previews/resource-well-extractor_four_variants_preview.png"
+    },
+    {
+      "id": "resource-well-pressurizer",
+      "name": "Resource Well Pressurizer",
+      "category": "buildings",
+      "variants": {
+        "b": "assets/models/buildings/resource-well-pressurizer/resource-well-pressurizer_variant_b.glb",
+        "d": "assets/models/buildings/resource-well-pressurizer/resource-well-pressurizer_variant_d.glb",
+        "c": "assets/models/buildings/resource-well-pressurizer/resource-well-pressurizer_variant_c.glb",
+        "a": "assets/models/buildings/resource-well-pressurizer/resource-well-pressurizer_variant_a.glb"
+      },
+      "preview": "assets/models/previews/resource-well-pressurizer_four_variants_preview.png"
+    },
+    {
+      "id": "signs",
+      "name": "Signs",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/signs/signs_variant_c.glb",
+        "a": "assets/models/buildings/signs/signs_variant_a.glb",
+        "b": "assets/models/buildings/signs/signs_variant_b.glb",
+        "d": "assets/models/buildings/signs/signs_variant_d.glb"
+      },
+      "preview": "assets/models/previews/signs_four_variants_preview.png"
+    },
+    {
+      "id": "smart-splitter",
+      "name": "Smart Splitter",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/smart-splitter/smart-splitter_variant_a.glb",
+        "d": "assets/models/buildings/smart-splitter/smart-splitter_variant_d.glb",
+        "b": "assets/models/buildings/smart-splitter/smart-splitter_variant_b.glb",
+        "c": "assets/models/buildings/smart-splitter/smart-splitter_variant_c.glb"
+      },
+      "preview": "assets/models/previews/smart-splitter_four_variants_preview.png"
+    },
+    {
+      "id": "smelter",
+      "name": "Smelter",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/smelter/smelter_variant_c.glb",
+        "b": "assets/models/buildings/smelter/smelter_variant_b.glb",
+        "d": "assets/models/buildings/smelter/smelter_variant_d.glb",
+        "a": "assets/models/buildings/smelter/smelter_variant_a.glb"
+      },
+      "preview": "assets/models/previews/smelter_four_variants_preview.png"
+    },
+    {
+      "id": "space-elevator",
+      "name": "Space Elevator",
+      "category": "buildings",
+      "variants": {
+        "b": "assets/models/buildings/space-elevator/space-elevator_variant_b.glb",
+        "c": "assets/models/buildings/space-elevator/space-elevator_variant_c.glb",
+        "a": "assets/models/buildings/space-elevator/space-elevator_variant_a.glb",
+        "d": "assets/models/buildings/space-elevator/space-elevator_variant_d.glb"
+      },
+      "preview": "assets/models/previews/space-elevator_four_variants_preview.png"
+    },
+    {
+      "id": "stackable-conveyor-pole",
+      "name": "Stackable Conveyor Pole",
+      "category": "buildings",
+      "variants": {
+        "b": "assets/models/buildings/stackable-conveyor-pole/stackable-conveyor-pole_variant_b.glb",
+        "d": "assets/models/buildings/stackable-conveyor-pole/stackable-conveyor-pole_variant_d.glb",
+        "c": "assets/models/buildings/stackable-conveyor-pole/stackable-conveyor-pole_variant_c.glb",
+        "a": "assets/models/buildings/stackable-conveyor-pole/stackable-conveyor-pole_variant_a.glb"
+      },
+      "preview": "assets/models/previews/stackable-conveyor-pole_four_variants_preview.png"
+    },
+    {
+      "id": "stairs",
+      "name": "Stairs",
+      "category": "buildings",
+      "variants": {
+        "b": "assets/models/buildings/stairs/stairs_variant_b.glb",
+        "c": "assets/models/buildings/stairs/stairs_variant_c.glb",
+        "a": "assets/models/buildings/stairs/stairs_variant_a.glb",
+        "d": "assets/models/buildings/stairs/stairs_variant_d.glb"
+      },
+      "preview": "assets/models/previews/stairs_four_variants_preview.png"
+    },
+    {
+      "id": "train-signals",
+      "name": "Train Signals",
+      "category": "buildings",
+      "variants": {
+        "b": "assets/models/buildings/train-signals/train-signals_variant_b.glb",
+        "a": "assets/models/buildings/train-signals/train-signals_variant_a.glb",
+        "d": "assets/models/buildings/train-signals/train-signals_variant_d.glb",
+        "c": "assets/models/buildings/train-signals/train-signals_variant_c.glb"
+      },
+      "preview": "assets/models/previews/train-signals_four_variants_preview.png"
+    },
+    {
+      "id": "truck-station",
+      "name": "Truck Station",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/truck-station/truck-station_variant_a.glb",
+        "c": "assets/models/buildings/truck-station/truck-station_variant_c.glb",
+        "d": "assets/models/buildings/truck-station/truck-station_variant_d.glb",
+        "b": "assets/models/buildings/truck-station/truck-station_variant_b.glb"
+      },
+      "preview": "assets/models/previews/truck-station_four_variants_preview.png"
+    },
+    {
+      "id": "u-jelly-landing-pad",
+      "name": "U Jelly Landing Pad",
+      "category": "buildings",
+      "variants": {
+        "b": "assets/models/buildings/u-jelly-landing-pad/u-jelly-landing-pad_variant_b.glb",
+        "a": "assets/models/buildings/u-jelly-landing-pad/u-jelly-landing-pad_variant_a.glb",
+        "c": "assets/models/buildings/u-jelly-landing-pad/u-jelly-landing-pad_variant_c.glb",
+        "d": "assets/models/buildings/u-jelly-landing-pad/u-jelly-landing-pad_variant_d.glb"
+      },
+      "preview": "assets/models/previews/u-jelly-landing-pad_four_variants_preview.png"
+    },
+    {
+      "id": "valve",
+      "name": "Valve",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/valve/valve_variant_c.glb",
+        "a": "assets/models/buildings/valve/valve_variant_a.glb",
+        "b": "assets/models/buildings/valve/valve_variant_b.glb",
+        "d": "assets/models/buildings/valve/valve_variant_d.glb"
+      },
+      "preview": "assets/models/previews/valve_four_variants_preview.png"
+    },
+    {
+      "id": "vehicle-paths",
+      "name": "Vehicle Paths",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/vehicle-paths/vehicle-paths_variant_a.glb",
+        "b": "assets/models/buildings/vehicle-paths/vehicle-paths_variant_b.glb",
+        "c": "assets/models/buildings/vehicle-paths/vehicle-paths_variant_c.glb",
+        "d": "assets/models/buildings/vehicle-paths/vehicle-paths_variant_d.glb"
+      },
+      "preview": "assets/models/previews/vehicle-paths_four_variants_preview.png"
+    },
+    {
+      "id": "walkways",
+      "name": "Walkways",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/walkways/walkways_variant_a.glb",
+        "d": "assets/models/buildings/walkways/walkways_variant_d.glb",
+        "b": "assets/models/buildings/walkways/walkways_variant_b.glb",
+        "c": "assets/models/buildings/walkways/walkways_variant_c.glb"
+      },
+      "preview": "assets/models/previews/walkways_four_variants_preview.png"
+    },
+    {
+      "id": "wall-conveyor-perpendicular",
+      "name": "Wall Conveyor Perpendicular",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/wall-conveyor-perpendicular/wall-conveyor-perpendicular_variant_c.glb",
+        "d": "assets/models/buildings/wall-conveyor-perpendicular/wall-conveyor-perpendicular_variant_d.glb",
+        "b": "assets/models/buildings/wall-conveyor-perpendicular/wall-conveyor-perpendicular_variant_b.glb",
+        "a": "assets/models/buildings/wall-conveyor-perpendicular/wall-conveyor-perpendicular_variant_a.glb"
+      },
+      "preview": "assets/models/previews/wall-conveyor-perpendicular_four_variants_preview.png"
+    },
+    {
+      "id": "wall-conveyor-x1",
+      "name": "Wall Conveyor X1",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/wall-conveyor-x1/wall-conveyor-x1_variant_a.glb",
+        "b": "assets/models/buildings/wall-conveyor-x1/wall-conveyor-x1_variant_b.glb",
+        "c": "assets/models/buildings/wall-conveyor-x1/wall-conveyor-x1_variant_c.glb",
+        "d": "assets/models/buildings/wall-conveyor-x1/wall-conveyor-x1_variant_d.glb"
+      },
+      "preview": "assets/models/previews/wall-conveyor-x1_four_variants_preview.png"
+    },
+    {
+      "id": "wall-conveyor-x2",
+      "name": "Wall Conveyor X2",
+      "category": "buildings",
+      "variants": {
+        "a": "assets/models/buildings/wall-conveyor-x2/wall-conveyor-x2_variant_a.glb",
+        "d": "assets/models/buildings/wall-conveyor-x2/wall-conveyor-x2_variant_d.glb",
+        "b": "assets/models/buildings/wall-conveyor-x2/wall-conveyor-x2_variant_b.glb",
+        "c": "assets/models/buildings/wall-conveyor-x2/wall-conveyor-x2_variant_c.glb"
+      },
+      "preview": "assets/models/previews/wall-conveyor-x2_four_variants_preview.png"
+    },
+    {
+      "id": "wall-conveyor-x3",
+      "name": "Wall Conveyor X3",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/wall-conveyor-x3/wall-conveyor-x3_variant_d.glb",
+        "c": "assets/models/buildings/wall-conveyor-x3/wall-conveyor-x3_variant_c.glb",
+        "a": "assets/models/buildings/wall-conveyor-x3/wall-conveyor-x3_variant_a.glb",
+        "b": "assets/models/buildings/wall-conveyor-x3/wall-conveyor-x3_variant_b.glb"
+      },
+      "preview": "assets/models/previews/wall-conveyor-x3_four_variants_preview.png"
+    },
+    {
+      "id": "wall-doors",
+      "name": "Wall Doors",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/wall-doors/wall-doors_variant_c.glb",
+        "d": "assets/models/buildings/wall-doors/wall-doors_variant_d.glb",
+        "a": "assets/models/buildings/wall-doors/wall-doors_variant_a.glb",
+        "b": "assets/models/buildings/wall-doors/wall-doors_variant_b.glb"
+      },
+      "preview": "assets/models/previews/wall-doors_four_variants_preview.png"
+    },
+    {
+      "id": "wall-outlet",
+      "name": "Wall Outlet",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/wall-outlet/wall-outlet_variant_d.glb",
+        "b": "assets/models/buildings/wall-outlet/wall-outlet_variant_b.glb",
+        "c": "assets/models/buildings/wall-outlet/wall-outlet_variant_c.glb",
+        "a": "assets/models/buildings/wall-outlet/wall-outlet_variant_a.glb"
+      },
+      "preview": "assets/models/previews/wall-outlet_four_variants_preview.png"
+    },
+    {
+      "id": "walls",
+      "name": "Walls",
+      "category": "buildings",
+      "variants": {
+        "d": "assets/models/buildings/walls/walls_variant_d.glb",
+        "c": "assets/models/buildings/walls/walls_variant_c.glb",
+        "b": "assets/models/buildings/walls/walls_variant_b.glb",
+        "a": "assets/models/buildings/walls/walls_variant_a.glb"
+      },
+      "preview": "assets/models/previews/walls_four_variants_preview.png"
+    },
+    {
+      "id": "water_extractor",
+      "name": "Water Extractor",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/water_extractor/water_extractor_variant_c.glb",
+        "d": "assets/models/buildings/water_extractor/water_extractor_variant_d.glb",
+        "b": "assets/models/buildings/water_extractor/water_extractor_variant_b.glb",
+        "a": "assets/models/buildings/water_extractor/water_extractor_variant_a.glb"
+      },
+      "preview": "assets/models/previews/water_extractor_four_variants_preview.png"
+    },
+    {
+      "id": "windows",
+      "name": "Windows",
+      "category": "buildings",
+      "variants": {
+        "c": "assets/models/buildings/windows/windows_variant_c.glb",
+        "b": "assets/models/buildings/windows/windows_variant_b.glb",
+        "a": "assets/models/buildings/windows/windows_variant_a.glb",
+        "d": "assets/models/buildings/windows/windows_variant_d.glb"
+      },
+      "preview": "assets/models/previews/windows_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-alpha-hog",
+      "name": "Fauna Alpha Hog",
+      "category": "creatures",
+      "variants": {
+        "d": "assets/models/creatures/fauna-alpha-hog/fauna-alpha-hog_variant_d.glb",
+        "b": "assets/models/creatures/fauna-alpha-hog/fauna-alpha-hog_variant_b.glb",
+        "a": "assets/models/creatures/fauna-alpha-hog/fauna-alpha-hog_variant_a.glb",
+        "c": "assets/models/creatures/fauna-alpha-hog/fauna-alpha-hog_variant_c.glb"
+      },
+      "preview": "assets/models/previews/fauna-alpha-hog_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-alpha-spitter-aquatic",
+      "name": "Fauna Alpha Spitter Aquatic",
+      "category": "creatures",
+      "variants": {
+        "b": "assets/models/creatures/fauna-alpha-spitter-aquatic/fauna-alpha-spitter-aquatic_variant_b.glb",
+        "d": "assets/models/creatures/fauna-alpha-spitter-aquatic/fauna-alpha-spitter-aquatic_variant_d.glb",
+        "c": "assets/models/creatures/fauna-alpha-spitter-aquatic/fauna-alpha-spitter-aquatic_variant_c.glb",
+        "a": "assets/models/creatures/fauna-alpha-spitter-aquatic/fauna-alpha-spitter-aquatic_variant_a.glb"
+      },
+      "preview": "assets/models/previews/fauna-alpha-spitter-aquatic_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-alpha-spitter-desert",
+      "name": "Fauna Alpha Spitter Desert",
+      "category": "creatures",
+      "variants": {
+        "a": "assets/models/creatures/fauna-alpha-spitter-desert/fauna-alpha-spitter-desert_variant_a.glb",
+        "b": "assets/models/creatures/fauna-alpha-spitter-desert/fauna-alpha-spitter-desert_variant_b.glb",
+        "c": "assets/models/creatures/fauna-alpha-spitter-desert/fauna-alpha-spitter-desert_variant_c.glb",
+        "d": "assets/models/creatures/fauna-alpha-spitter-desert/fauna-alpha-spitter-desert_variant_d.glb"
+      },
+      "preview": "assets/models/previews/fauna-alpha-spitter-desert_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-alpha-spitter-forest",
+      "name": "Fauna Alpha Spitter Forest",
+      "category": "creatures",
+      "variants": {
+        "a": "assets/models/creatures/fauna-alpha-spitter-forest/fauna-alpha-spitter-forest_variant_a.glb",
+        "c": "assets/models/creatures/fauna-alpha-spitter-forest/fauna-alpha-spitter-forest_variant_c.glb",
+        "d": "assets/models/creatures/fauna-alpha-spitter-forest/fauna-alpha-spitter-forest_variant_d.glb",
+        "b": "assets/models/creatures/fauna-alpha-spitter-forest/fauna-alpha-spitter-forest_variant_b.glb"
+      },
+      "preview": "assets/models/previews/fauna-alpha-spitter-forest_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-alpha-spitter-red-forest",
+      "name": "Fauna Alpha Spitter Red Forest",
+      "category": "creatures",
+      "variants": {
+        "b": "assets/models/creatures/fauna-alpha-spitter-red-forest/fauna-alpha-spitter-red-forest_variant_b.glb",
+        "c": "assets/models/creatures/fauna-alpha-spitter-red-forest/fauna-alpha-spitter-red-forest_variant_c.glb",
+        "d": "assets/models/creatures/fauna-alpha-spitter-red-forest/fauna-alpha-spitter-red-forest_variant_d.glb",
+        "a": "assets/models/creatures/fauna-alpha-spitter-red-forest/fauna-alpha-spitter-red-forest_variant_a.glb"
+      },
+      "preview": "assets/models/previews/fauna-alpha-spitter-red-forest_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-alpha-stinger",
+      "name": "Fauna Alpha Stinger",
+      "category": "creatures",
+      "variants": {
+        "a": "assets/models/creatures/fauna-alpha-stinger/fauna-alpha-stinger_variant_a.glb",
+        "d": "assets/models/creatures/fauna-alpha-stinger/fauna-alpha-stinger_variant_d.glb",
+        "c": "assets/models/creatures/fauna-alpha-stinger/fauna-alpha-stinger_variant_c.glb",
+        "b": "assets/models/creatures/fauna-alpha-stinger/fauna-alpha-stinger_variant_b.glb"
+      },
+      "preview": "assets/models/previews/fauna-alpha-stinger_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-baby-stinger-cave",
+      "name": "Fauna Baby Stinger Cave",
+      "category": "creatures",
+      "variants": {
+        "c": "assets/models/creatures/fauna-baby-stinger-cave/fauna-baby-stinger-cave_variant_c.glb",
+        "b": "assets/models/creatures/fauna-baby-stinger-cave/fauna-baby-stinger-cave_variant_b.glb",
+        "a": "assets/models/creatures/fauna-baby-stinger-cave/fauna-baby-stinger-cave_variant_a.glb",
+        "d": "assets/models/creatures/fauna-baby-stinger-cave/fauna-baby-stinger-cave_variant_d.glb"
+      },
+      "preview": "assets/models/previews/fauna-baby-stinger-cave_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-baby-stinger-normal",
+      "name": "Fauna Baby Stinger Normal",
+      "category": "creatures",
+      "variants": {
+        "d": "assets/models/creatures/fauna-baby-stinger-normal/fauna-baby-stinger-normal_variant_d.glb",
+        "c": "assets/models/creatures/fauna-baby-stinger-normal/fauna-baby-stinger-normal_variant_c.glb",
+        "a": "assets/models/creatures/fauna-baby-stinger-normal/fauna-baby-stinger-normal_variant_a.glb",
+        "b": "assets/models/creatures/fauna-baby-stinger-normal/fauna-baby-stinger-normal_variant_b.glb"
+      },
+      "preview": "assets/models/previews/fauna-baby-stinger-normal_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-beetle",
+      "name": "Fauna Beetle",
+      "category": "creatures",
+      "variants": {
+        "c": "assets/models/creatures/fauna-beetle/fauna-beetle_variant_c.glb",
+        "a": "assets/models/creatures/fauna-beetle/fauna-beetle_variant_a.glb",
+        "d": "assets/models/creatures/fauna-beetle/fauna-beetle_variant_d.glb",
+        "b": "assets/models/creatures/fauna-beetle/fauna-beetle_variant_b.glb"
+      },
+      "preview": "assets/models/previews/fauna-beetle_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-cave-bat",
+      "name": "Fauna Cave Bat",
+      "category": "creatures",
+      "variants": {
+        "c": "assets/models/creatures/fauna-cave-bat/fauna-cave-bat_variant_c.glb",
+        "a": "assets/models/creatures/fauna-cave-bat/fauna-cave-bat_variant_a.glb",
+        "b": "assets/models/creatures/fauna-cave-bat/fauna-cave-bat_variant_b.glb",
+        "d": "assets/models/creatures/fauna-cave-bat/fauna-cave-bat_variant_d.glb"
+      },
+      "preview": "assets/models/previews/fauna-cave-bat_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-cliff-hog",
+      "name": "Fauna Cliff Hog",
+      "category": "creatures",
+      "variants": {
+        "d": "assets/models/creatures/fauna-cliff-hog/fauna-cliff-hog_variant_d.glb",
+        "b": "assets/models/creatures/fauna-cliff-hog/fauna-cliff-hog_variant_b.glb",
+        "c": "assets/models/creatures/fauna-cliff-hog/fauna-cliff-hog_variant_c.glb",
+        "a": "assets/models/creatures/fauna-cliff-hog/fauna-cliff-hog_variant_a.glb"
+      },
+      "preview": "assets/models/previews/fauna-cliff-hog_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-elite-flying-crab-hatcher",
+      "name": "Fauna Elite Flying Crab Hatcher",
+      "category": "creatures",
+      "variants": {
+        "b": "assets/models/creatures/fauna-elite-flying-crab-hatcher/fauna-elite-flying-crab-hatcher_variant_b.glb",
+        "c": "assets/models/creatures/fauna-elite-flying-crab-hatcher/fauna-elite-flying-crab-hatcher_variant_c.glb",
+        "d": "assets/models/creatures/fauna-elite-flying-crab-hatcher/fauna-elite-flying-crab-hatcher_variant_d.glb",
+        "a": "assets/models/creatures/fauna-elite-flying-crab-hatcher/fauna-elite-flying-crab-hatcher_variant_a.glb"
+      },
+      "preview": "assets/models/previews/fauna-elite-flying-crab-hatcher_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-elite-gas-stinger",
+      "name": "Fauna Elite Gas Stinger",
+      "category": "creatures",
+      "variants": {
+        "c": "assets/models/creatures/fauna-elite-gas-stinger/fauna-elite-gas-stinger_variant_c.glb",
+        "d": "assets/models/creatures/fauna-elite-gas-stinger/fauna-elite-gas-stinger_variant_d.glb",
+        "a": "assets/models/creatures/fauna-elite-gas-stinger/fauna-elite-gas-stinger_variant_a.glb",
+        "b": "assets/models/creatures/fauna-elite-gas-stinger/fauna-elite-gas-stinger_variant_b.glb"
+      },
+      "preview": "assets/models/previews/fauna-elite-gas-stinger_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-fluffy-tailed-hog",
+      "name": "Fauna Fluffy Tailed Hog",
+      "category": "creatures",
+      "variants": {
+        "a": "assets/models/creatures/fauna-fluffy-tailed-hog/fauna-fluffy-tailed-hog_variant_a.glb",
+        "b": "assets/models/creatures/fauna-fluffy-tailed-hog/fauna-fluffy-tailed-hog_variant_b.glb",
+        "d": "assets/models/creatures/fauna-fluffy-tailed-hog/fauna-fluffy-tailed-hog_variant_d.glb",
+        "c": "assets/models/creatures/fauna-fluffy-tailed-hog/fauna-fluffy-tailed-hog_variant_c.glb"
+      },
+      "preview": "assets/models/previews/fauna-fluffy-tailed-hog_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-flying-bird",
+      "name": "Fauna Flying Bird",
+      "category": "creatures",
+      "variants": {
+        "b": "assets/models/creatures/fauna-flying-bird/fauna-flying-bird_variant_b.glb",
+        "d": "assets/models/creatures/fauna-flying-bird/fauna-flying-bird_variant_d.glb",
+        "c": "assets/models/creatures/fauna-flying-bird/fauna-flying-bird_variant_c.glb",
+        "a": "assets/models/creatures/fauna-flying-bird/fauna-flying-bird_variant_a.glb"
+      },
+      "preview": "assets/models/previews/fauna-flying-bird_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-flying-crab",
+      "name": "Fauna Flying Crab",
+      "category": "creatures",
+      "variants": {
+        "b": "assets/models/creatures/fauna-flying-crab/fauna-flying-crab_variant_b.glb",
+        "d": "assets/models/creatures/fauna-flying-crab/fauna-flying-crab_variant_d.glb",
+        "a": "assets/models/creatures/fauna-flying-crab/fauna-flying-crab_variant_a.glb",
+        "c": "assets/models/creatures/fauna-flying-crab/fauna-flying-crab_variant_c.glb"
+      },
+      "preview": "assets/models/previews/fauna-flying-crab_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-flying-crab-hatcher",
+      "name": "Fauna Flying Crab Hatcher",
+      "category": "creatures",
+      "variants": {
+        "a": "assets/models/creatures/fauna-flying-crab-hatcher/fauna-flying-crab-hatcher_variant_a.glb",
+        "c": "assets/models/creatures/fauna-flying-crab-hatcher/fauna-flying-crab-hatcher_variant_c.glb",
+        "b": "assets/models/creatures/fauna-flying-crab-hatcher/fauna-flying-crab-hatcher_variant_b.glb",
+        "d": "assets/models/creatures/fauna-flying-crab-hatcher/fauna-flying-crab-hatcher_variant_d.glb"
+      },
+      "preview": "assets/models/previews/fauna-flying-crab-hatcher_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-giant-flying-manta",
+      "name": "Fauna Giant Flying Manta",
+      "category": "creatures",
+      "variants": {
+        "a": "assets/models/creatures/fauna-giant-flying-manta/fauna-giant-flying-manta_variant_a.glb",
+        "c": "assets/models/creatures/fauna-giant-flying-manta/fauna-giant-flying-manta_variant_c.glb",
+        "b": "assets/models/creatures/fauna-giant-flying-manta/fauna-giant-flying-manta_variant_b.glb",
+        "d": "assets/models/creatures/fauna-giant-flying-manta/fauna-giant-flying-manta_variant_d.glb"
+      },
+      "preview": "assets/models/previews/fauna-giant-flying-manta_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-grass-sprite",
+      "name": "Fauna Grass Sprite",
+      "category": "creatures",
+      "variants": {
+        "d": "assets/models/creatures/fauna-grass-sprite/fauna-grass-sprite_variant_d.glb",
+        "a": "assets/models/creatures/fauna-grass-sprite/fauna-grass-sprite_variant_a.glb",
+        "b": "assets/models/creatures/fauna-grass-sprite/fauna-grass-sprite_variant_b.glb",
+        "c": "assets/models/creatures/fauna-grass-sprite/fauna-grass-sprite_variant_c.glb"
+      },
+      "preview": "assets/models/previews/fauna-grass-sprite_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-leaf-bug",
+      "name": "Fauna Leaf Bug",
+      "category": "creatures",
+      "variants": {
+        "a": "assets/models/creatures/fauna-leaf-bug/fauna-leaf-bug_variant_a.glb",
+        "b": "assets/models/creatures/fauna-leaf-bug/fauna-leaf-bug_variant_b.glb",
+        "d": "assets/models/creatures/fauna-leaf-bug/fauna-leaf-bug_variant_d.glb",
+        "c": "assets/models/creatures/fauna-leaf-bug/fauna-leaf-bug_variant_c.glb"
+      },
+      "preview": "assets/models/previews/fauna-leaf-bug_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-lizard-doggo",
+      "name": "Fauna Lizard Doggo",
+      "category": "creatures",
+      "variants": {
+        "a": "assets/models/creatures/fauna-lizard-doggo/fauna-lizard-doggo_variant_a.glb",
+        "c": "assets/models/creatures/fauna-lizard-doggo/fauna-lizard-doggo_variant_c.glb",
+        "d": "assets/models/creatures/fauna-lizard-doggo/fauna-lizard-doggo_variant_d.glb",
+        "b": "assets/models/creatures/fauna-lizard-doggo/fauna-lizard-doggo_variant_b.glb"
+      },
+      "preview": "assets/models/previews/fauna-lizard-doggo_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-non-flying-bird",
+      "name": "Fauna Non Flying Bird",
+      "category": "creatures",
+      "variants": {
+        "c": "assets/models/creatures/fauna-non-flying-bird/fauna-non-flying-bird_variant_c.glb",
+        "d": "assets/models/creatures/fauna-non-flying-bird/fauna-non-flying-bird_variant_d.glb",
+        "a": "assets/models/creatures/fauna-non-flying-bird/fauna-non-flying-bird_variant_a.glb",
+        "b": "assets/models/creatures/fauna-non-flying-bird/fauna-non-flying-bird_variant_b.glb"
+      },
+      "preview": "assets/models/previews/fauna-non-flying-bird_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-nuclear-hog",
+      "name": "Fauna Nuclear Hog",
+      "category": "creatures",
+      "variants": {
+        "d": "assets/models/creatures/fauna-nuclear-hog/fauna-nuclear-hog_variant_d.glb",
+        "c": "assets/models/creatures/fauna-nuclear-hog/fauna-nuclear-hog_variant_c.glb",
+        "b": "assets/models/creatures/fauna-nuclear-hog/fauna-nuclear-hog_variant_b.glb",
+        "a": "assets/models/creatures/fauna-nuclear-hog/fauna-nuclear-hog_variant_a.glb"
+      },
+      "preview": "assets/models/previews/fauna-nuclear-hog_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-power-slug-blue",
+      "name": "Fauna Power Slug Blue",
+      "category": "creatures",
+      "variants": {
+        "b": "assets/models/creatures/fauna-power-slug-blue/fauna-power-slug-blue_variant_b.glb",
+        "a": "assets/models/creatures/fauna-power-slug-blue/fauna-power-slug-blue_variant_a.glb",
+        "c": "assets/models/creatures/fauna-power-slug-blue/fauna-power-slug-blue_variant_c.glb",
+        "d": "assets/models/creatures/fauna-power-slug-blue/fauna-power-slug-blue_variant_d.glb"
+      },
+      "preview": "assets/models/previews/fauna-power-slug-blue_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-power-slug-purple",
+      "name": "Fauna Power Slug Purple",
+      "category": "creatures",
+      "variants": {
+        "d": "assets/models/creatures/fauna-power-slug-purple/fauna-power-slug-purple_variant_d.glb",
+        "a": "assets/models/creatures/fauna-power-slug-purple/fauna-power-slug-purple_variant_a.glb",
+        "c": "assets/models/creatures/fauna-power-slug-purple/fauna-power-slug-purple_variant_c.glb",
+        "b": "assets/models/creatures/fauna-power-slug-purple/fauna-power-slug-purple_variant_b.glb"
+      },
+      "preview": "assets/models/previews/fauna-power-slug-purple_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-power-slug-yellow",
+      "name": "Fauna Power Slug Yellow",
+      "category": "creatures",
+      "variants": {
+        "c": "assets/models/creatures/fauna-power-slug-yellow/fauna-power-slug-yellow_variant_c.glb",
+        "a": "assets/models/creatures/fauna-power-slug-yellow/fauna-power-slug-yellow_variant_a.glb",
+        "b": "assets/models/creatures/fauna-power-slug-yellow/fauna-power-slug-yellow_variant_b.glb",
+        "d": "assets/models/creatures/fauna-power-slug-yellow/fauna-power-slug-yellow_variant_d.glb"
+      },
+      "preview": "assets/models/previews/fauna-power-slug-yellow_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-space-giraffe-tick-penguin-whale",
+      "name": "Fauna Space Giraffe Tick Penguin Whale",
+      "category": "creatures",
+      "variants": {
+        "b": "assets/models/creatures/fauna-space-giraffe-tick-penguin-whale/fauna-space-giraffe-tick-penguin-whale_variant_b.glb",
+        "d": "assets/models/creatures/fauna-space-giraffe-tick-penguin-whale/fauna-space-giraffe-tick-penguin-whale_variant_d.glb",
+        "c": "assets/models/creatures/fauna-space-giraffe-tick-penguin-whale/fauna-space-giraffe-tick-penguin-whale_variant_c.glb",
+        "a": "assets/models/creatures/fauna-space-giraffe-tick-penguin-whale/fauna-space-giraffe-tick-penguin-whale_variant_a.glb"
+      },
+      "preview": "assets/models/previews/fauna-space-giraffe-tick-penguin-whale_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-spitter-aquatic",
+      "name": "Fauna Spitter Aquatic",
+      "category": "creatures",
+      "variants": {
+        "c": "assets/models/creatures/fauna-spitter-aquatic/fauna-spitter-aquatic_variant_c.glb",
+        "d": "assets/models/creatures/fauna-spitter-aquatic/fauna-spitter-aquatic_variant_d.glb",
+        "b": "assets/models/creatures/fauna-spitter-aquatic/fauna-spitter-aquatic_variant_b.glb",
+        "a": "assets/models/creatures/fauna-spitter-aquatic/fauna-spitter-aquatic_variant_a.glb"
+      },
+      "preview": "assets/models/previews/fauna-spitter-aquatic_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-spitter-desert",
+      "name": "Fauna Spitter Desert",
+      "category": "creatures",
+      "variants": {
+        "d": "assets/models/creatures/fauna-spitter-desert/fauna-spitter-desert_variant_d.glb",
+        "b": "assets/models/creatures/fauna-spitter-desert/fauna-spitter-desert_variant_b.glb",
+        "c": "assets/models/creatures/fauna-spitter-desert/fauna-spitter-desert_variant_c.glb",
+        "a": "assets/models/creatures/fauna-spitter-desert/fauna-spitter-desert_variant_a.glb"
+      },
+      "preview": "assets/models/previews/fauna-spitter-desert_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-spitter-forest",
+      "name": "Fauna Spitter Forest",
+      "category": "creatures",
+      "variants": {
+        "a": "assets/models/creatures/fauna-spitter-forest/fauna-spitter-forest_variant_a.glb",
+        "b": "assets/models/creatures/fauna-spitter-forest/fauna-spitter-forest_variant_b.glb",
+        "d": "assets/models/creatures/fauna-spitter-forest/fauna-spitter-forest_variant_d.glb",
+        "c": "assets/models/creatures/fauna-spitter-forest/fauna-spitter-forest_variant_c.glb"
+      },
+      "preview": "assets/models/previews/fauna-spitter-forest_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-spitter-red-forest",
+      "name": "Fauna Spitter Red Forest",
+      "category": "creatures",
+      "variants": {
+        "c": "assets/models/creatures/fauna-spitter-red-forest/fauna-spitter-red-forest_variant_c.glb",
+        "d": "assets/models/creatures/fauna-spitter-red-forest/fauna-spitter-red-forest_variant_d.glb",
+        "b": "assets/models/creatures/fauna-spitter-red-forest/fauna-spitter-red-forest_variant_b.glb",
+        "a": "assets/models/creatures/fauna-spitter-red-forest/fauna-spitter-red-forest_variant_a.glb"
+      },
+      "preview": "assets/models/previews/fauna-spitter-red-forest_four_variants_preview.png"
+    },
+    {
+      "id": "fauna-spore-flower-creature",
+      "name": "Fauna Spore Flower Creature",
+      "category": "creatures",
+      "variants": {
+        "a": "assets/models/creatures/fauna-spore-flower-creature/fauna-spore-flower-creature_variant_a.glb",
+        "d": "assets/models/creatures/fauna-spore-flower-creature/fauna-spore-flower-creature_variant_d.glb",
+        "c": "assets/models/creatures/fauna-spore-flower-creature/fauna-spore-flower-creature_variant_c.glb",
+        "b": "assets/models/creatures/fauna-spore-flower-creature/fauna-spore-flower-creature_variant_b.glb"
+      },
+      "preview": "assets/models/previews/fauna-spore-flower-creature_four_variants_preview.png"
+    },
+    {
+      "id": "cup",
+      "name": "Cup",
+      "category": "cup",
+      "variants": {
+        "c": "assets/models/cup/cup_variant_c.glb",
+        "a": "assets/models/cup/cup_variant_a.glb",
+        "d": "assets/models/cup/cup_variant_d.glb",
+        "b": "assets/models/cup/cup_variant_b.glb"
+      },
+      "preview": "assets/models/previews/cup_four_variants_preview.png"
+    },
+    {
+      "id": "cyber_wagon",
+      "name": "Cyber Wagon",
+      "category": "cyber_wagon",
+      "variants": {
+        "b": "assets/models/cyber_wagon/cyber_wagon_variant_b.glb",
+        "a": "assets/models/cyber_wagon/cyber_wagon_variant_a.glb",
+        "c": "assets/models/cyber_wagon/cyber_wagon_variant_c.glb",
+        "d": "assets/models/cyber_wagon/cyber_wagon_variant_d.glb"
+      },
+      "preview": "assets/models/previews/cyber_wagon_four_variants_preview.png"
+    },
+    {
+      "id": "drone",
+      "name": "Drone",
+      "category": "drone",
+      "variants": {
+        "a": "assets/models/drone/drone_variant_a.glb",
+        "d": "assets/models/drone/drone_variant_d.glb",
+        "c": "assets/models/drone/drone_variant_c.glb",
+        "b": "assets/models/drone/drone_variant_b.glb"
+      },
+      "preview": "assets/models/previews/drone_four_variants_preview.png"
+    },
+    {
+      "id": "explorer",
+      "name": "Explorer",
+      "category": "explorer",
+      "variants": {
+        "a": "assets/models/explorer/explorer_variant_a.glb",
+        "c": "assets/models/explorer/explorer_variant_c.glb",
+        "d": "assets/models/explorer/explorer_variant_d.glb",
+        "b": "assets/models/explorer/explorer_variant_b.glb"
+      },
+      "preview": "assets/models/previews/explorer_four_variants_preview.png"
+    },
+    {
+      "id": "factory_cart",
+      "name": "Factory Cart",
+      "category": "factory_cart",
+      "variants": {
+        "c": "assets/models/factory_cart/factory_cart_variant_c.glb",
+        "b": "assets/models/factory_cart/factory_cart_variant_b.glb",
+        "d": "assets/models/factory_cart/factory_cart_variant_d.glb",
+        "a": "assets/models/factory_cart/factory_cart_variant_a.glb"
+      },
+      "preview": "assets/models/previews/factory_cart_four_variants_preview.png"
+    },
+    {
+      "id": "flora-bacon-agaric",
+      "name": "Flora Bacon Agaric",
+      "category": "flora",
+      "variants": {
+        "d": "assets/models/flora/flora-bacon-agaric/flora-bacon-agaric_variant_d.glb",
+        "c": "assets/models/flora/flora-bacon-agaric/flora-bacon-agaric_variant_c.glb",
+        "a": "assets/models/flora/flora-bacon-agaric/flora-bacon-agaric_variant_a.glb",
+        "b": "assets/models/flora/flora-bacon-agaric/flora-bacon-agaric_variant_b.glb"
+      },
+      "preview": "assets/models/previews/flora-bacon-agaric_four_variants_preview.png"
+    },
+    {
+      "id": "flora-beryl-nut",
+      "name": "Flora Beryl Nut",
+      "category": "flora",
+      "variants": {
+        "b": "assets/models/flora/flora-beryl-nut/flora-beryl-nut_variant_b.glb",
+        "c": "assets/models/flora/flora-beryl-nut/flora-beryl-nut_variant_c.glb",
+        "a": "assets/models/flora/flora-beryl-nut/flora-beryl-nut_variant_a.glb",
+        "d": "assets/models/flora/flora-beryl-nut/flora-beryl-nut_variant_d.glb"
+      },
+      "preview": "assets/models/previews/flora-beryl-nut_four_variants_preview.png"
+    },
+    {
+      "id": "flora-flower-petals",
+      "name": "Flora Flower Petals",
+      "category": "flora",
+      "variants": {
+        "b": "assets/models/flora/flora-flower-petals/flora-flower-petals_variant_b.glb",
+        "c": "assets/models/flora/flora-flower-petals/flora-flower-petals_variant_c.glb",
+        "a": "assets/models/flora/flora-flower-petals/flora-flower-petals_variant_a.glb",
+        "d": "assets/models/flora/flora-flower-petals/flora-flower-petals_variant_d.glb"
+      },
+      "preview": "assets/models/previews/flora-flower-petals_four_variants_preview.png"
+    },
+    {
+      "id": "flora-general-plant-clusters",
+      "name": "Flora General Plant Clusters",
+      "category": "flora",
+      "variants": {
+        "a": "assets/models/flora/flora-general-plant-clusters/flora-general-plant-clusters_variant_a.glb",
+        "d": "assets/models/flora/flora-general-plant-clusters/flora-general-plant-clusters_variant_d.glb",
+        "c": "assets/models/flora/flora-general-plant-clusters/flora-general-plant-clusters_variant_c.glb",
+        "b": "assets/models/flora/flora-general-plant-clusters/flora-general-plant-clusters_variant_b.glb"
+      },
+      "preview": "assets/models/previews/flora-general-plant-clusters_four_variants_preview.png"
+    },
+    {
+      "id": "flora-leaves",
+      "name": "Flora Leaves",
+      "category": "flora",
+      "variants": {
+        "c": "assets/models/flora/flora-leaves/flora-leaves_variant_c.glb",
+        "d": "assets/models/flora/flora-leaves/flora-leaves_variant_d.glb",
+        "b": "assets/models/flora/flora-leaves/flora-leaves_variant_b.glb",
+        "a": "assets/models/flora/flora-leaves/flora-leaves_variant_a.glb"
+      },
+      "preview": "assets/models/previews/flora-leaves_four_variants_preview.png"
+    },
+    {
+      "id": "flora-mycelia",
+      "name": "Flora Mycelia",
+      "category": "flora",
+      "variants": {
+        "c": "assets/models/flora/flora-mycelia/flora-mycelia_variant_c.glb",
+        "b": "assets/models/flora/flora-mycelia/flora-mycelia_variant_b.glb",
+        "a": "assets/models/flora/flora-mycelia/flora-mycelia_variant_a.glb",
+        "d": "assets/models/flora/flora-mycelia/flora-mycelia_variant_d.glb"
+      },
+      "preview": "assets/models/previews/flora-mycelia_four_variants_preview.png"
+    },
+    {
+      "id": "flora-paleberry",
+      "name": "Flora Paleberry",
+      "category": "flora",
+      "variants": {
+        "d": "assets/models/flora/flora-paleberry/flora-paleberry_variant_d.glb",
+        "c": "assets/models/flora/flora-paleberry/flora-paleberry_variant_c.glb",
+        "b": "assets/models/flora/flora-paleberry/flora-paleberry_variant_b.glb",
+        "a": "assets/models/flora/flora-paleberry/flora-paleberry_variant_a.glb"
+      },
+      "preview": "assets/models/previews/flora-paleberry_four_variants_preview.png"
+    },
+    {
+      "id": "flora-round-blue-cap-mushroom",
+      "name": "Flora Round Blue Cap Mushroom",
+      "category": "flora",
+      "variants": {
+        "d": "assets/models/flora/flora-round-blue-cap-mushroom/flora-round-blue-cap-mushroom_variant_d.glb",
+        "b": "assets/models/flora/flora-round-blue-cap-mushroom/flora-round-blue-cap-mushroom_variant_b.glb",
+        "c": "assets/models/flora/flora-round-blue-cap-mushroom/flora-round-blue-cap-mushroom_variant_c.glb",
+        "a": "assets/models/flora/flora-round-blue-cap-mushroom/flora-round-blue-cap-mushroom_variant_a.glb"
+      },
+      "preview": "assets/models/previews/flora-round-blue-cap-mushroom_four_variants_preview.png"
+    },
+    {
+      "id": "flora-spore-flower",
+      "name": "Flora Spore Flower",
+      "category": "flora",
+      "variants": {
+        "a": "assets/models/flora/flora-spore-flower/flora-spore-flower_variant_a.glb",
+        "d": "assets/models/flora/flora-spore-flower/flora-spore-flower_variant_d.glb",
+        "b": "assets/models/flora/flora-spore-flower/flora-spore-flower_variant_b.glb",
+        "c": "assets/models/flora/flora-spore-flower/flora-spore-flower_variant_c.glb"
+      },
+      "preview": "assets/models/previews/flora-spore-flower_four_variants_preview.png"
+    },
+    {
+      "id": "flora-vine-ladder",
+      "name": "Flora Vine Ladder",
+      "category": "flora",
+      "variants": {
+        "b": "assets/models/flora/flora-vine-ladder/flora-vine-ladder_variant_b.glb",
+        "c": "assets/models/flora/flora-vine-ladder/flora-vine-ladder_variant_c.glb",
+        "d": "assets/models/flora/flora-vine-ladder/flora-vine-ladder_variant_d.glb",
+        "a": "assets/models/flora/flora-vine-ladder/flora-vine-ladder_variant_a.glb"
+      },
+      "preview": "assets/models/previews/flora-vine-ladder_four_variants_preview.png"
+    },
+    {
+      "id": "flora-vines",
+      "name": "Flora Vines",
+      "category": "flora",
+      "variants": {
+        "d": "assets/models/flora/flora-vines/flora-vines_variant_d.glb",
+        "a": "assets/models/flora/flora-vines/flora-vines_variant_a.glb",
+        "b": "assets/models/flora/flora-vines/flora-vines_variant_b.glb",
+        "c": "assets/models/flora/flora-vines/flora-vines_variant_c.glb"
+      },
+      "preview": "assets/models/previews/flora-vines_four_variants_preview.png"
+    },
+    {
+      "id": "flora-wood",
+      "name": "Flora Wood",
+      "category": "flora",
+      "variants": {
+        "c": "assets/models/flora/flora-wood/flora-wood_variant_c.glb",
+        "b": "assets/models/flora/flora-wood/flora-wood_variant_b.glb",
+        "a": "assets/models/flora/flora-wood/flora-wood_variant_a.glb",
+        "d": "assets/models/flora/flora-wood/flora-wood_variant_d.glb"
+      },
+      "preview": "assets/models/previews/flora-wood_four_variants_preview.png"
+    },
+    {
+      "id": "freight_car",
+      "name": "Freight Car",
+      "category": "freight_car",
+      "variants": {
+        "b": "assets/models/freight_car/freight_car_variant_b.glb",
+        "a": "assets/models/freight_car/freight_car_variant_a.glb",
+        "c": "assets/models/freight_car/freight_car_variant_c.glb",
+        "d": "assets/models/freight_car/freight_car_variant_d.glb"
+      },
+      "preview": "assets/models/previews/freight_car_four_variants_preview.png"
+    },
+    {
+      "id": "freight_platform",
+      "name": "Freight Platform",
+      "category": "freight_platform",
+      "variants": {
+        "a": "assets/models/freight_platform/freight_platform_variant_a.glb",
+        "b": "assets/models/freight_platform/freight_platform_variant_b.glb",
+        "c": "assets/models/freight_platform/freight_platform_variant_c.glb",
+        "d": "assets/models/freight_platform/freight_platform_variant_d.glb"
+      },
+      "preview": "assets/models/previews/freight_platform_four_variants_preview.png"
+    },
+    {
+      "id": "gas_mask",
+      "name": "Gas Mask",
+      "category": "gas_mask",
+      "variants": {
+        "a": "assets/models/gas_mask/gas_mask_variant_a.glb",
+        "d": "assets/models/gas_mask/gas_mask_variant_d.glb",
+        "c": "assets/models/gas_mask/gas_mask_variant_c.glb",
+        "b": "assets/models/gas_mask/gas_mask_variant_b.glb"
+      },
+      "preview": "assets/models/previews/gas_mask_four_variants_preview.png"
+    },
+    {
+      "id": "hazmat_suit",
+      "name": "Hazmat Suit",
+      "category": "hazmat_suit",
+      "variants": {
+        "b": "assets/models/hazmat_suit/hazmat_suit_variant_b.glb",
+        "a": "assets/models/hazmat_suit/hazmat_suit_variant_a.glb",
+        "d": "assets/models/hazmat_suit/hazmat_suit_variant_d.glb",
+        "c": "assets/models/hazmat_suit/hazmat_suit_variant_c.glb"
+      },
+      "preview": "assets/models/previews/hazmat_suit_four_variants_preview.png"
+    },
+    {
+      "id": "hoverpack",
+      "name": "Hoverpack",
+      "category": "hoverpack",
+      "variants": {
+        "c": "assets/models/hoverpack/hoverpack_variant_c.glb",
+        "a": "assets/models/hoverpack/hoverpack_variant_a.glb",
+        "d": "assets/models/hoverpack/hoverpack_variant_d.glb",
+        "b": "assets/models/hoverpack/hoverpack_variant_b.glb"
+      },
+      "preview": "assets/models/previews/hoverpack_four_variants_preview.png"
+    },
+    {
+      "id": "awesome_sink",
+      "name": "Awesome Sink",
+      "category": "infrastructure",
+      "variants": {
+        "d": "assets/models/infrastructure/awesome_sink/awesome_sink_variant_d.glb",
+        "c": "assets/models/infrastructure/awesome_sink/awesome_sink_variant_c.glb",
+        "b": "assets/models/infrastructure/awesome_sink/awesome_sink_variant_b.glb",
+        "a": "assets/models/infrastructure/awesome_sink/awesome_sink_variant_a.glb"
+      },
+      "preview": "assets/models/previews/awesome_sink_four_variants_preview.png"
+    },
+    {
+      "id": "conveyor_belt",
+      "name": "Conveyor Belt",
+      "category": "infrastructure",
+      "variants": {
+        "d": "assets/models/infrastructure/conveyor_belt/conveyor_belt_variant_d.glb",
+        "b": "assets/models/infrastructure/conveyor_belt/conveyor_belt_variant_b.glb",
+        "a": "assets/models/infrastructure/conveyor_belt/conveyor_belt_variant_a.glb",
+        "c": "assets/models/infrastructure/conveyor_belt/conveyor_belt_variant_c.glb"
+      },
+      "preview": "assets/models/previews/conveyor_belt_four_variants_preview.png"
+    },
+    {
+      "id": "conveyor_lift",
+      "name": "Conveyor Lift",
+      "category": "infrastructure",
+      "variants": {
+        "c": "assets/models/infrastructure/conveyor_lift/conveyor_lift_variant_c.glb",
+        "a": "assets/models/infrastructure/conveyor_lift/conveyor_lift_variant_a.glb",
+        "b": "assets/models/infrastructure/conveyor_lift/conveyor_lift_variant_b.glb",
+        "d": "assets/models/infrastructure/conveyor_lift/conveyor_lift_variant_d.glb"
+      },
+      "preview": "assets/models/previews/conveyor_lift_four_variants_preview.png"
+    },
+    {
+      "id": "conveyor_merger",
+      "name": "Conveyor Merger",
+      "category": "infrastructure",
+      "variants": {
+        "c": "assets/models/infrastructure/conveyor_merger/conveyor_merger_variant_c.glb",
+        "b": "assets/models/infrastructure/conveyor_merger/conveyor_merger_variant_b.glb",
+        "d": "assets/models/infrastructure/conveyor_merger/conveyor_merger_variant_d.glb",
+        "a": "assets/models/infrastructure/conveyor_merger/conveyor_merger_variant_a.glb"
+      },
+      "preview": "assets/models/previews/conveyor_merger_four_variants_preview.png"
+    },
+    {
+      "id": "conveyor_pole",
+      "name": "Conveyor Pole",
+      "category": "infrastructure",
+      "variants": {
+        "b": "assets/models/infrastructure/conveyor_pole/conveyor_pole_variant_b.glb",
+        "c": "assets/models/infrastructure/conveyor_pole/conveyor_pole_variant_c.glb",
+        "d": "assets/models/infrastructure/conveyor_pole/conveyor_pole_variant_d.glb",
+        "a": "assets/models/infrastructure/conveyor_pole/conveyor_pole_variant_a.glb"
+      },
+      "preview": "assets/models/previews/conveyor_pole_four_variants_preview.png"
+    },
+    {
+      "id": "conveyor_splitter",
+      "name": "Conveyor Splitter",
+      "category": "infrastructure",
+      "variants": {
+        "c": "assets/models/infrastructure/conveyor_splitter/conveyor_splitter_variant_c.glb",
+        "d": "assets/models/infrastructure/conveyor_splitter/conveyor_splitter_variant_d.glb",
+        "a": "assets/models/infrastructure/conveyor_splitter/conveyor_splitter_variant_a.glb",
+        "b": "assets/models/infrastructure/conveyor_splitter/conveyor_splitter_variant_b.glb"
+      },
+      "preview": "assets/models/previews/conveyor_splitter_four_variants_preview.png"
+    },
+    {
+      "id": "fluid_buffer",
+      "name": "Fluid Buffer",
+      "category": "infrastructure",
+      "variants": {
+        "c": "assets/models/infrastructure/fluid_buffer/fluid_buffer_variant_c.glb",
+        "d": "assets/models/infrastructure/fluid_buffer/fluid_buffer_variant_d.glb",
+        "b": "assets/models/infrastructure/fluid_buffer/fluid_buffer_variant_b.glb",
+        "a": "assets/models/infrastructure/fluid_buffer/fluid_buffer_variant_a.glb"
+      },
+      "preview": "assets/models/previews/fluid_buffer_four_variants_preview.png"
+    },
+    {
+      "id": "hypertube",
+      "name": "Hypertube",
+      "category": "infrastructure",
+      "variants": {
+        "c": "assets/models/infrastructure/hypertube/hypertube_variant_c.glb",
+        "a": "assets/models/infrastructure/hypertube/hypertube_variant_a.glb",
+        "d": "assets/models/infrastructure/hypertube/hypertube_variant_d.glb",
+        "b": "assets/models/infrastructure/hypertube/hypertube_variant_b.glb"
+      },
+      "preview": "assets/models/previews/hypertube_four_variants_preview.png"
+    },
+    {
+      "id": "hypertube_entrance",
+      "name": "Hypertube Entrance",
+      "category": "infrastructure",
+      "variants": {
+        "d": "assets/models/infrastructure/hypertube_entrance/hypertube_entrance_variant_d.glb",
+        "a": "assets/models/infrastructure/hypertube_entrance/hypertube_entrance_variant_a.glb",
+        "c": "assets/models/infrastructure/hypertube_entrance/hypertube_entrance_variant_c.glb",
+        "b": "assets/models/infrastructure/hypertube_entrance/hypertube_entrance_variant_b.glb"
+      },
+      "preview": "assets/models/previews/hypertube_entrance_four_variants_preview.png"
+    },
+    {
+      "id": "hypertube_junction",
+      "name": "Hypertube Junction",
+      "category": "infrastructure",
+      "variants": {
+        "b": "assets/models/infrastructure/hypertube_junction/hypertube_junction_variant_b.glb",
+        "a": "assets/models/infrastructure/hypertube_junction/hypertube_junction_variant_a.glb",
+        "c": "assets/models/infrastructure/hypertube_junction/hypertube_junction_variant_c.glb",
+        "d": "assets/models/infrastructure/hypertube_junction/hypertube_junction_variant_d.glb"
+      },
+      "preview": "assets/models/previews/hypertube_junction_four_variants_preview.png"
+    },
+    {
+      "id": "pipeline",
+      "name": "Pipeline",
+      "category": "infrastructure",
+      "variants": {
+        "b": "assets/models/infrastructure/pipeline/pipeline_variant_b.glb",
+        "c": "assets/models/infrastructure/pipeline/pipeline_variant_c.glb",
+        "d": "assets/models/infrastructure/pipeline/pipeline_variant_d.glb",
+        "a": "assets/models/infrastructure/pipeline/pipeline_variant_a.glb"
+      },
+      "preview": "assets/models/previews/pipeline_four_variants_preview.png"
+    },
+    {
+      "id": "pipeline_junction",
+      "name": "Pipeline Junction",
+      "category": "infrastructure",
+      "variants": {
+        "b": "assets/models/infrastructure/pipeline_junction/pipeline_junction_variant_b.glb",
+        "d": "assets/models/infrastructure/pipeline_junction/pipeline_junction_variant_d.glb",
+        "c": "assets/models/infrastructure/pipeline_junction/pipeline_junction_variant_c.glb",
+        "a": "assets/models/infrastructure/pipeline_junction/pipeline_junction_variant_a.glb"
+      },
+      "preview": "assets/models/previews/pipeline_junction_four_variants_preview.png"
+    },
+    {
+      "id": "pipeline_pump",
+      "name": "Pipeline Pump",
+      "category": "infrastructure",
+      "variants": {
+        "c": "assets/models/infrastructure/pipeline_pump/pipeline_pump_variant_c.glb",
+        "a": "assets/models/infrastructure/pipeline_pump/pipeline_pump_variant_a.glb",
+        "b": "assets/models/infrastructure/pipeline_pump/pipeline_pump_variant_b.glb",
+        "d": "assets/models/infrastructure/pipeline_pump/pipeline_pump_variant_d.glb"
+      },
+      "preview": "assets/models/previews/pipeline_pump_four_variants_preview.png"
+    },
+    {
+      "id": "power_pole",
+      "name": "Power Pole",
+      "category": "infrastructure",
+      "variants": {
+        "c": "assets/models/infrastructure/power_pole/power_pole_variant_c.glb",
+        "d": "assets/models/infrastructure/power_pole/power_pole_variant_d.glb",
+        "b": "assets/models/infrastructure/power_pole/power_pole_variant_b.glb",
+        "a": "assets/models/infrastructure/power_pole/power_pole_variant_a.glb"
+      },
+      "preview": "assets/models/previews/power_pole_four_variants_preview.png"
+    },
+    {
+      "id": "power_storage",
+      "name": "Power Storage",
+      "category": "infrastructure",
+      "variants": {
+        "c": "assets/models/infrastructure/power_storage/power_storage_variant_c.glb",
+        "a": "assets/models/infrastructure/power_storage/power_storage_variant_a.glb",
+        "d": "assets/models/infrastructure/power_storage/power_storage_variant_d.glb",
+        "b": "assets/models/infrastructure/power_storage/power_storage_variant_b.glb"
+      },
+      "preview": "assets/models/previews/power_storage_four_variants_preview.png"
+    },
+    {
+      "id": "power_switch",
+      "name": "Power Switch",
+      "category": "infrastructure",
+      "variants": {
+        "c": "assets/models/infrastructure/power_switch/power_switch_variant_c.glb",
+        "d": "assets/models/infrastructure/power_switch/power_switch_variant_d.glb",
+        "a": "assets/models/infrastructure/power_switch/power_switch_variant_a.glb",
+        "b": "assets/models/infrastructure/power_switch/power_switch_variant_b.glb"
+      },
+      "preview": "assets/models/previews/power_switch_four_variants_preview.png"
+    },
+    {
+      "id": "power_tower",
+      "name": "Power Tower",
+      "category": "infrastructure",
+      "variants": {
+        "d": "assets/models/infrastructure/power_tower/power_tower_variant_d.glb",
+        "a": "assets/models/infrastructure/power_tower/power_tower_variant_a.glb",
+        "c": "assets/models/infrastructure/power_tower/power_tower_variant_c.glb",
+        "b": "assets/models/infrastructure/power_tower/power_tower_variant_b.glb"
+      },
+      "preview": "assets/models/previews/power_tower_four_variants_preview.png"
+    },
+    {
+      "id": "storage_container",
+      "name": "Storage Container",
+      "category": "infrastructure",
+      "variants": {
+        "b": "assets/models/infrastructure/storage_container/storage_container_variant_b.glb",
+        "c": "assets/models/infrastructure/storage_container/storage_container_variant_c.glb",
+        "a": "assets/models/infrastructure/storage_container/storage_container_variant_a.glb",
+        "d": "assets/models/infrastructure/storage_container/storage_container_variant_d.glb"
+      },
+      "preview": "assets/models/previews/storage_container_four_variants_preview.png"
+    },
+    {
+      "id": "consumable-bacon-agaric",
+      "name": "Consumable Bacon Agaric",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/consumable-bacon-agaric/consumable-bacon-agaric_variant_b.glb",
+        "a": "assets/models/items/consumable-bacon-agaric/consumable-bacon-agaric_variant_a.glb",
+        "c": "assets/models/items/consumable-bacon-agaric/consumable-bacon-agaric_variant_c.glb",
+        "d": "assets/models/items/consumable-bacon-agaric/consumable-bacon-agaric_variant_d.glb"
+      },
+      "preview": "assets/models/previews/consumable-bacon-agaric_four_variants_preview.png"
+    },
+    {
+      "id": "consumable-beryl-nut",
+      "name": "Consumable Beryl Nut",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/consumable-beryl-nut/consumable-beryl-nut_variant_a.glb",
+        "d": "assets/models/items/consumable-beryl-nut/consumable-beryl-nut_variant_d.glb",
+        "b": "assets/models/items/consumable-beryl-nut/consumable-beryl-nut_variant_b.glb",
+        "c": "assets/models/items/consumable-beryl-nut/consumable-beryl-nut_variant_c.glb"
+      },
+      "preview": "assets/models/previews/consumable-beryl-nut_four_variants_preview.png"
+    },
+    {
+      "id": "consumable-medicinal-inhaler",
+      "name": "Consumable Medicinal Inhaler",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/consumable-medicinal-inhaler/consumable-medicinal-inhaler_variant_a.glb",
+        "c": "assets/models/items/consumable-medicinal-inhaler/consumable-medicinal-inhaler_variant_c.glb",
+        "b": "assets/models/items/consumable-medicinal-inhaler/consumable-medicinal-inhaler_variant_b.glb",
+        "d": "assets/models/items/consumable-medicinal-inhaler/consumable-medicinal-inhaler_variant_d.glb"
+      },
+      "preview": "assets/models/previews/consumable-medicinal-inhaler_four_variants_preview.png"
+    },
+    {
+      "id": "consumable-paleberry",
+      "name": "Consumable Paleberry",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/consumable-paleberry/consumable-paleberry_variant_b.glb",
+        "d": "assets/models/items/consumable-paleberry/consumable-paleberry_variant_d.glb",
+        "c": "assets/models/items/consumable-paleberry/consumable-paleberry_variant_c.glb",
+        "a": "assets/models/items/consumable-paleberry/consumable-paleberry_variant_a.glb"
+      },
+      "preview": "assets/models/previews/consumable-paleberry_four_variants_preview.png"
+    },
+    {
+      "id": "item-adaptive-control-unit",
+      "name": "Item Adaptive Control Unit",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-adaptive-control-unit/item-adaptive-control-unit_variant_b.glb",
+        "a": "assets/models/items/item-adaptive-control-unit/item-adaptive-control-unit_variant_a.glb",
+        "d": "assets/models/items/item-adaptive-control-unit/item-adaptive-control-unit_variant_d.glb",
+        "c": "assets/models/items/item-adaptive-control-unit/item-adaptive-control-unit_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-adaptive-control-unit_four_variants_preview.png"
+    },
+    {
+      "id": "item-ai-expansion-server",
+      "name": "Item Ai Expansion Server",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-ai-expansion-server/item-ai-expansion-server_variant_a.glb",
+        "c": "assets/models/items/item-ai-expansion-server/item-ai-expansion-server_variant_c.glb",
+        "b": "assets/models/items/item-ai-expansion-server/item-ai-expansion-server_variant_b.glb",
+        "d": "assets/models/items/item-ai-expansion-server/item-ai-expansion-server_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-ai-expansion-server_four_variants_preview.png"
+    },
+    {
+      "id": "item-ai-limiter",
+      "name": "Item Ai Limiter",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-ai-limiter/item-ai-limiter_variant_c.glb",
+        "a": "assets/models/items/item-ai-limiter/item-ai-limiter_variant_a.glb",
+        "d": "assets/models/items/item-ai-limiter/item-ai-limiter_variant_d.glb",
+        "b": "assets/models/items/item-ai-limiter/item-ai-limiter_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-ai-limiter_four_variants_preview.png"
+    },
+    {
+      "id": "item-alclad-aluminum-sheet",
+      "name": "Item Alclad Aluminum Sheet",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-alclad-aluminum-sheet/item-alclad-aluminum-sheet_variant_b.glb",
+        "c": "assets/models/items/item-alclad-aluminum-sheet/item-alclad-aluminum-sheet_variant_c.glb",
+        "d": "assets/models/items/item-alclad-aluminum-sheet/item-alclad-aluminum-sheet_variant_d.glb",
+        "a": "assets/models/items/item-alclad-aluminum-sheet/item-alclad-aluminum-sheet_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-alclad-aluminum-sheet_four_variants_preview.png"
+    },
+    {
+      "id": "item-alien-dna-capsule",
+      "name": "Item Alien Dna Capsule",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-alien-dna-capsule/item-alien-dna-capsule_variant_b.glb",
+        "d": "assets/models/items/item-alien-dna-capsule/item-alien-dna-capsule_variant_d.glb",
+        "a": "assets/models/items/item-alien-dna-capsule/item-alien-dna-capsule_variant_a.glb",
+        "c": "assets/models/items/item-alien-dna-capsule/item-alien-dna-capsule_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-alien-dna-capsule_four_variants_preview.png"
+    },
+    {
+      "id": "item-alien-power-matrix",
+      "name": "Item Alien Power Matrix",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-alien-power-matrix/item-alien-power-matrix_variant_d.glb",
+        "c": "assets/models/items/item-alien-power-matrix/item-alien-power-matrix_variant_c.glb",
+        "a": "assets/models/items/item-alien-power-matrix/item-alien-power-matrix_variant_a.glb",
+        "b": "assets/models/items/item-alien-power-matrix/item-alien-power-matrix_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-alien-power-matrix_four_variants_preview.png"
+    },
+    {
+      "id": "item-alien-protein",
+      "name": "Item Alien Protein",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-alien-protein/item-alien-protein_variant_b.glb",
+        "c": "assets/models/items/item-alien-protein/item-alien-protein_variant_c.glb",
+        "d": "assets/models/items/item-alien-protein/item-alien-protein_variant_d.glb",
+        "a": "assets/models/items/item-alien-protein/item-alien-protein_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-alien-protein_four_variants_preview.png"
+    },
+    {
+      "id": "item-alien-remains",
+      "name": "Item Alien Remains",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-alien-remains/item-alien-remains_variant_d.glb",
+        "c": "assets/models/items/item-alien-remains/item-alien-remains_variant_c.glb",
+        "b": "assets/models/items/item-alien-remains/item-alien-remains_variant_b.glb",
+        "a": "assets/models/items/item-alien-remains/item-alien-remains_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-alien-remains_four_variants_preview.png"
+    },
+    {
+      "id": "item-aluminum-casing",
+      "name": "Item Aluminum Casing",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-aluminum-casing/item-aluminum-casing_variant_d.glb",
+        "c": "assets/models/items/item-aluminum-casing/item-aluminum-casing_variant_c.glb",
+        "a": "assets/models/items/item-aluminum-casing/item-aluminum-casing_variant_a.glb",
+        "b": "assets/models/items/item-aluminum-casing/item-aluminum-casing_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-aluminum-casing_four_variants_preview.png"
+    },
+    {
+      "id": "item-aluminum-ingot",
+      "name": "Item Aluminum Ingot",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-aluminum-ingot/item-aluminum-ingot_variant_c.glb",
+        "a": "assets/models/items/item-aluminum-ingot/item-aluminum-ingot_variant_a.glb",
+        "b": "assets/models/items/item-aluminum-ingot/item-aluminum-ingot_variant_b.glb",
+        "d": "assets/models/items/item-aluminum-ingot/item-aluminum-ingot_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-aluminum-ingot_four_variants_preview.png"
+    },
+    {
+      "id": "item-aluminum-scrap",
+      "name": "Item Aluminum Scrap",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-aluminum-scrap/item-aluminum-scrap_variant_b.glb",
+        "c": "assets/models/items/item-aluminum-scrap/item-aluminum-scrap_variant_c.glb",
+        "a": "assets/models/items/item-aluminum-scrap/item-aluminum-scrap_variant_a.glb",
+        "d": "assets/models/items/item-aluminum-scrap/item-aluminum-scrap_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-aluminum-scrap_four_variants_preview.png"
+    },
+    {
+      "id": "item-assembly-director-system",
+      "name": "Item Assembly Director System",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-assembly-director-system/item-assembly-director-system_variant_b.glb",
+        "d": "assets/models/items/item-assembly-director-system/item-assembly-director-system_variant_d.glb",
+        "c": "assets/models/items/item-assembly-director-system/item-assembly-director-system_variant_c.glb",
+        "a": "assets/models/items/item-assembly-director-system/item-assembly-director-system_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-assembly-director-system_four_variants_preview.png"
+    },
+    {
+      "id": "item-automated-wiring",
+      "name": "Item Automated Wiring",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-automated-wiring/item-automated-wiring_variant_c.glb",
+        "b": "assets/models/items/item-automated-wiring/item-automated-wiring_variant_b.glb",
+        "d": "assets/models/items/item-automated-wiring/item-automated-wiring_variant_d.glb",
+        "a": "assets/models/items/item-automated-wiring/item-automated-wiring_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-automated-wiring_four_variants_preview.png"
+    },
+    {
+      "id": "item-battery",
+      "name": "Item Battery",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-battery/item-battery_variant_d.glb",
+        "a": "assets/models/items/item-battery/item-battery_variant_a.glb",
+        "c": "assets/models/items/item-battery/item-battery_variant_c.glb",
+        "b": "assets/models/items/item-battery/item-battery_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-battery_four_variants_preview.png"
+    },
+    {
+      "id": "item-bauxite",
+      "name": "Item Bauxite",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-bauxite/item-bauxite_variant_c.glb",
+        "b": "assets/models/items/item-bauxite/item-bauxite_variant_b.glb",
+        "d": "assets/models/items/item-bauxite/item-bauxite_variant_d.glb",
+        "a": "assets/models/items/item-bauxite/item-bauxite_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-bauxite_four_variants_preview.png"
+    },
+    {
+      "id": "item-biochemical-sculptor",
+      "name": "Item Biochemical Sculptor",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-biochemical-sculptor/item-biochemical-sculptor_variant_a.glb",
+        "c": "assets/models/items/item-biochemical-sculptor/item-biochemical-sculptor_variant_c.glb",
+        "d": "assets/models/items/item-biochemical-sculptor/item-biochemical-sculptor_variant_d.glb",
+        "b": "assets/models/items/item-biochemical-sculptor/item-biochemical-sculptor_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-biochemical-sculptor_four_variants_preview.png"
+    },
+    {
+      "id": "item-biomass",
+      "name": "Item Biomass",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-biomass/item-biomass_variant_a.glb",
+        "b": "assets/models/items/item-biomass/item-biomass_variant_b.glb",
+        "c": "assets/models/items/item-biomass/item-biomass_variant_c.glb",
+        "d": "assets/models/items/item-biomass/item-biomass_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-biomass_four_variants_preview.png"
+    },
+    {
+      "id": "item-cable",
+      "name": "Item Cable",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-cable/item-cable_variant_a.glb",
+        "b": "assets/models/items/item-cable/item-cable_variant_b.glb",
+        "d": "assets/models/items/item-cable/item-cable_variant_d.glb",
+        "c": "assets/models/items/item-cable/item-cable_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-cable_four_variants_preview.png"
+    },
+    {
+      "id": "item-caterium-ingot",
+      "name": "Item Caterium Ingot",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-caterium-ingot/item-caterium-ingot_variant_a.glb",
+        "c": "assets/models/items/item-caterium-ingot/item-caterium-ingot_variant_c.glb",
+        "b": "assets/models/items/item-caterium-ingot/item-caterium-ingot_variant_b.glb",
+        "d": "assets/models/items/item-caterium-ingot/item-caterium-ingot_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-caterium-ingot_four_variants_preview.png"
+    },
+    {
+      "id": "item-caterium-ore",
+      "name": "Item Caterium Ore",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-caterium-ore/item-caterium-ore_variant_b.glb",
+        "a": "assets/models/items/item-caterium-ore/item-caterium-ore_variant_a.glb",
+        "d": "assets/models/items/item-caterium-ore/item-caterium-ore_variant_d.glb",
+        "c": "assets/models/items/item-caterium-ore/item-caterium-ore_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-caterium-ore_four_variants_preview.png"
+    },
+    {
+      "id": "item-circuit-board",
+      "name": "Item Circuit Board",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-circuit-board/item-circuit-board_variant_a.glb",
+        "d": "assets/models/items/item-circuit-board/item-circuit-board_variant_d.glb",
+        "b": "assets/models/items/item-circuit-board/item-circuit-board_variant_b.glb",
+        "c": "assets/models/items/item-circuit-board/item-circuit-board_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-circuit-board_four_variants_preview.png"
+    },
+    {
+      "id": "item-coal",
+      "name": "Item Coal",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-coal/item-coal_variant_b.glb",
+        "d": "assets/models/items/item-coal/item-coal_variant_d.glb",
+        "a": "assets/models/items/item-coal/item-coal_variant_a.glb",
+        "c": "assets/models/items/item-coal/item-coal_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-coal_four_variants_preview.png"
+    },
+    {
+      "id": "item-color-cartridge",
+      "name": "Item Color Cartridge",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-color-cartridge/item-color-cartridge_variant_d.glb",
+        "b": "assets/models/items/item-color-cartridge/item-color-cartridge_variant_b.glb",
+        "a": "assets/models/items/item-color-cartridge/item-color-cartridge_variant_a.glb",
+        "c": "assets/models/items/item-color-cartridge/item-color-cartridge_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-color-cartridge_four_variants_preview.png"
+    },
+    {
+      "id": "item-compacted-coal",
+      "name": "Item Compacted Coal",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-compacted-coal/item-compacted-coal_variant_b.glb",
+        "c": "assets/models/items/item-compacted-coal/item-compacted-coal_variant_c.glb",
+        "d": "assets/models/items/item-compacted-coal/item-compacted-coal_variant_d.glb",
+        "a": "assets/models/items/item-compacted-coal/item-compacted-coal_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-compacted-coal_four_variants_preview.png"
+    },
+    {
+      "id": "item-computer",
+      "name": "Item Computer",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-computer/item-computer_variant_d.glb",
+        "b": "assets/models/items/item-computer/item-computer_variant_b.glb",
+        "a": "assets/models/items/item-computer/item-computer_variant_a.glb",
+        "c": "assets/models/items/item-computer/item-computer_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-computer_four_variants_preview.png"
+    },
+    {
+      "id": "item-concrete",
+      "name": "Item Concrete",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-concrete/item-concrete_variant_d.glb",
+        "a": "assets/models/items/item-concrete/item-concrete_variant_a.glb",
+        "c": "assets/models/items/item-concrete/item-concrete_variant_c.glb",
+        "b": "assets/models/items/item-concrete/item-concrete_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-concrete_four_variants_preview.png"
+    },
+    {
+      "id": "item-cooling-system",
+      "name": "Item Cooling System",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-cooling-system/item-cooling-system_variant_b.glb",
+        "c": "assets/models/items/item-cooling-system/item-cooling-system_variant_c.glb",
+        "d": "assets/models/items/item-cooling-system/item-cooling-system_variant_d.glb",
+        "a": "assets/models/items/item-cooling-system/item-cooling-system_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-cooling-system_four_variants_preview.png"
+    },
+    {
+      "id": "item-copper-ingot",
+      "name": "Item Copper Ingot",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-copper-ingot/item-copper-ingot_variant_d.glb",
+        "c": "assets/models/items/item-copper-ingot/item-copper-ingot_variant_c.glb",
+        "a": "assets/models/items/item-copper-ingot/item-copper-ingot_variant_a.glb",
+        "b": "assets/models/items/item-copper-ingot/item-copper-ingot_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-copper-ingot_four_variants_preview.png"
+    },
+    {
+      "id": "item-copper-ore",
+      "name": "Item Copper Ore",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-copper-ore/item-copper-ore_variant_b.glb",
+        "c": "assets/models/items/item-copper-ore/item-copper-ore_variant_c.glb",
+        "a": "assets/models/items/item-copper-ore/item-copper-ore_variant_a.glb",
+        "d": "assets/models/items/item-copper-ore/item-copper-ore_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-copper-ore_four_variants_preview.png"
+    },
+    {
+      "id": "item-copper-powder",
+      "name": "Item Copper Powder",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-copper-powder/item-copper-powder_variant_b.glb",
+        "a": "assets/models/items/item-copper-powder/item-copper-powder_variant_a.glb",
+        "d": "assets/models/items/item-copper-powder/item-copper-powder_variant_d.glb",
+        "c": "assets/models/items/item-copper-powder/item-copper-powder_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-copper-powder_four_variants_preview.png"
+    },
+    {
+      "id": "item-copper-sheet",
+      "name": "Item Copper Sheet",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-copper-sheet/item-copper-sheet_variant_c.glb",
+        "a": "assets/models/items/item-copper-sheet/item-copper-sheet_variant_a.glb",
+        "d": "assets/models/items/item-copper-sheet/item-copper-sheet_variant_d.glb",
+        "b": "assets/models/items/item-copper-sheet/item-copper-sheet_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-copper-sheet_four_variants_preview.png"
+    },
+    {
+      "id": "item-crystal-oscillator",
+      "name": "Item Crystal Oscillator",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-crystal-oscillator/item-crystal-oscillator_variant_a.glb",
+        "b": "assets/models/items/item-crystal-oscillator/item-crystal-oscillator_variant_b.glb",
+        "c": "assets/models/items/item-crystal-oscillator/item-crystal-oscillator_variant_c.glb",
+        "d": "assets/models/items/item-crystal-oscillator/item-crystal-oscillator_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-crystal-oscillator_four_variants_preview.png"
+    },
+    {
+      "id": "item-dark-matter-crystal",
+      "name": "Item Dark Matter Crystal",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-dark-matter-crystal/item-dark-matter-crystal_variant_d.glb",
+        "b": "assets/models/items/item-dark-matter-crystal/item-dark-matter-crystal_variant_b.glb",
+        "c": "assets/models/items/item-dark-matter-crystal/item-dark-matter-crystal_variant_c.glb",
+        "a": "assets/models/items/item-dark-matter-crystal/item-dark-matter-crystal_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-dark-matter-crystal_four_variants_preview.png"
+    },
+    {
+      "id": "item-diamonds",
+      "name": "Item Diamonds",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-diamonds/item-diamonds_variant_c.glb",
+        "d": "assets/models/items/item-diamonds/item-diamonds_variant_d.glb",
+        "a": "assets/models/items/item-diamonds/item-diamonds_variant_a.glb",
+        "b": "assets/models/items/item-diamonds/item-diamonds_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-diamonds_four_variants_preview.png"
+    },
+    {
+      "id": "item-electromagnetic-control-rod",
+      "name": "Item Electromagnetic Control Rod",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-electromagnetic-control-rod/item-electromagnetic-control-rod_variant_b.glb",
+        "c": "assets/models/items/item-electromagnetic-control-rod/item-electromagnetic-control-rod_variant_c.glb",
+        "a": "assets/models/items/item-electromagnetic-control-rod/item-electromagnetic-control-rod_variant_a.glb",
+        "d": "assets/models/items/item-electromagnetic-control-rod/item-electromagnetic-control-rod_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-electromagnetic-control-rod_four_variants_preview.png"
+    },
+    {
+      "id": "item-empty-canister",
+      "name": "Item Empty Canister",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-empty-canister/item-empty-canister_variant_a.glb",
+        "c": "assets/models/items/item-empty-canister/item-empty-canister_variant_c.glb",
+        "d": "assets/models/items/item-empty-canister/item-empty-canister_variant_d.glb",
+        "b": "assets/models/items/item-empty-canister/item-empty-canister_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-empty-canister_four_variants_preview.png"
+    },
+    {
+      "id": "item-empty-fluid-tank",
+      "name": "Item Empty Fluid Tank",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-empty-fluid-tank/item-empty-fluid-tank_variant_d.glb",
+        "c": "assets/models/items/item-empty-fluid-tank/item-empty-fluid-tank_variant_c.glb",
+        "a": "assets/models/items/item-empty-fluid-tank/item-empty-fluid-tank_variant_a.glb",
+        "b": "assets/models/items/item-empty-fluid-tank/item-empty-fluid-tank_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-empty-fluid-tank_four_variants_preview.png"
+    },
+    {
+      "id": "item-encased-industrial-beam",
+      "name": "Item Encased Industrial Beam",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-encased-industrial-beam/item-encased-industrial-beam_variant_a.glb",
+        "b": "assets/models/items/item-encased-industrial-beam/item-encased-industrial-beam_variant_b.glb",
+        "d": "assets/models/items/item-encased-industrial-beam/item-encased-industrial-beam_variant_d.glb",
+        "c": "assets/models/items/item-encased-industrial-beam/item-encased-industrial-beam_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-encased-industrial-beam_four_variants_preview.png"
+    },
+    {
+      "id": "item-encased-plutonium-cell",
+      "name": "Item Encased Plutonium Cell",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-encased-plutonium-cell/item-encased-plutonium-cell_variant_c.glb",
+        "d": "assets/models/items/item-encased-plutonium-cell/item-encased-plutonium-cell_variant_d.glb",
+        "a": "assets/models/items/item-encased-plutonium-cell/item-encased-plutonium-cell_variant_a.glb",
+        "b": "assets/models/items/item-encased-plutonium-cell/item-encased-plutonium-cell_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-encased-plutonium-cell_four_variants_preview.png"
+    },
+    {
+      "id": "item-encased-uranium-cell",
+      "name": "Item Encased Uranium Cell",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-encased-uranium-cell/item-encased-uranium-cell_variant_c.glb",
+        "a": "assets/models/items/item-encased-uranium-cell/item-encased-uranium-cell_variant_a.glb",
+        "d": "assets/models/items/item-encased-uranium-cell/item-encased-uranium-cell_variant_d.glb",
+        "b": "assets/models/items/item-encased-uranium-cell/item-encased-uranium-cell_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-encased-uranium-cell_four_variants_preview.png"
+    },
+    {
+      "id": "item-fabric",
+      "name": "Item Fabric",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-fabric/item-fabric_variant_d.glb",
+        "a": "assets/models/items/item-fabric/item-fabric_variant_a.glb",
+        "c": "assets/models/items/item-fabric/item-fabric_variant_c.glb",
+        "b": "assets/models/items/item-fabric/item-fabric_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-fabric_four_variants_preview.png"
+    },
+    {
+      "id": "item-ficsit-coupon",
+      "name": "Item Ficsit Coupon",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-ficsit-coupon/item-ficsit-coupon_variant_c.glb",
+        "d": "assets/models/items/item-ficsit-coupon/item-ficsit-coupon_variant_d.glb",
+        "a": "assets/models/items/item-ficsit-coupon/item-ficsit-coupon_variant_a.glb",
+        "b": "assets/models/items/item-ficsit-coupon/item-ficsit-coupon_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-ficsit-coupon_four_variants_preview.png"
+    },
+    {
+      "id": "item-ficsite-ingot",
+      "name": "Item Ficsite Ingot",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-ficsite-ingot/item-ficsite-ingot_variant_a.glb",
+        "d": "assets/models/items/item-ficsite-ingot/item-ficsite-ingot_variant_d.glb",
+        "c": "assets/models/items/item-ficsite-ingot/item-ficsite-ingot_variant_c.glb",
+        "b": "assets/models/items/item-ficsite-ingot/item-ficsite-ingot_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-ficsite-ingot_four_variants_preview.png"
+    },
+    {
+      "id": "item-ficsite-trigon",
+      "name": "Item Ficsite Trigon",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-ficsite-trigon/item-ficsite-trigon_variant_c.glb",
+        "d": "assets/models/items/item-ficsite-trigon/item-ficsite-trigon_variant_d.glb",
+        "a": "assets/models/items/item-ficsite-trigon/item-ficsite-trigon_variant_a.glb",
+        "b": "assets/models/items/item-ficsite-trigon/item-ficsite-trigon_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-ficsite-trigon_four_variants_preview.png"
+    },
+    {
+      "id": "item-ficsonium",
+      "name": "Item Ficsonium",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-ficsonium/item-ficsonium_variant_c.glb",
+        "d": "assets/models/items/item-ficsonium/item-ficsonium_variant_d.glb",
+        "b": "assets/models/items/item-ficsonium/item-ficsonium_variant_b.glb",
+        "a": "assets/models/items/item-ficsonium/item-ficsonium_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-ficsonium_four_variants_preview.png"
+    },
+    {
+      "id": "item-ficsonium-fuel-rod",
+      "name": "Item Ficsonium Fuel Rod",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-ficsonium-fuel-rod/item-ficsonium-fuel-rod_variant_c.glb",
+        "a": "assets/models/items/item-ficsonium-fuel-rod/item-ficsonium-fuel-rod_variant_a.glb",
+        "b": "assets/models/items/item-ficsonium-fuel-rod/item-ficsonium-fuel-rod_variant_b.glb",
+        "d": "assets/models/items/item-ficsonium-fuel-rod/item-ficsonium-fuel-rod_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-ficsonium-fuel-rod_four_variants_preview.png"
+    },
+    {
+      "id": "item-flower-petals",
+      "name": "Item Flower Petals",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-flower-petals/item-flower-petals_variant_c.glb",
+        "d": "assets/models/items/item-flower-petals/item-flower-petals_variant_d.glb",
+        "a": "assets/models/items/item-flower-petals/item-flower-petals_variant_a.glb",
+        "b": "assets/models/items/item-flower-petals/item-flower-petals_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-flower-petals_four_variants_preview.png"
+    },
+    {
+      "id": "item-fused-modular-frame",
+      "name": "Item Fused Modular Frame",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-fused-modular-frame/item-fused-modular-frame_variant_a.glb",
+        "d": "assets/models/items/item-fused-modular-frame/item-fused-modular-frame_variant_d.glb",
+        "c": "assets/models/items/item-fused-modular-frame/item-fused-modular-frame_variant_c.glb",
+        "b": "assets/models/items/item-fused-modular-frame/item-fused-modular-frame_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-fused-modular-frame_four_variants_preview.png"
+    },
+    {
+      "id": "item-hard-drive",
+      "name": "Item Hard Drive",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-hard-drive/item-hard-drive_variant_b.glb",
+        "c": "assets/models/items/item-hard-drive/item-hard-drive_variant_c.glb",
+        "d": "assets/models/items/item-hard-drive/item-hard-drive_variant_d.glb",
+        "a": "assets/models/items/item-hard-drive/item-hard-drive_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-hard-drive_four_variants_preview.png"
+    },
+    {
+      "id": "item-heat-sink",
+      "name": "Item Heat Sink",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-heat-sink/item-heat-sink_variant_d.glb",
+        "c": "assets/models/items/item-heat-sink/item-heat-sink_variant_c.glb",
+        "b": "assets/models/items/item-heat-sink/item-heat-sink_variant_b.glb",
+        "a": "assets/models/items/item-heat-sink/item-heat-sink_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-heat-sink_four_variants_preview.png"
+    },
+    {
+      "id": "item-heavy-modular-frame",
+      "name": "Item Heavy Modular Frame",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-heavy-modular-frame/item-heavy-modular-frame_variant_d.glb",
+        "a": "assets/models/items/item-heavy-modular-frame/item-heavy-modular-frame_variant_a.glb",
+        "c": "assets/models/items/item-heavy-modular-frame/item-heavy-modular-frame_variant_c.glb",
+        "b": "assets/models/items/item-heavy-modular-frame/item-heavy-modular-frame_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-heavy-modular-frame_four_variants_preview.png"
+    },
+    {
+      "id": "item-high-speed-connector",
+      "name": "Item High Speed Connector",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-high-speed-connector/item-high-speed-connector_variant_d.glb",
+        "b": "assets/models/items/item-high-speed-connector/item-high-speed-connector_variant_b.glb",
+        "a": "assets/models/items/item-high-speed-connector/item-high-speed-connector_variant_a.glb",
+        "c": "assets/models/items/item-high-speed-connector/item-high-speed-connector_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-high-speed-connector_four_variants_preview.png"
+    },
+    {
+      "id": "item-hub-parts",
+      "name": "Item Hub Parts",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-hub-parts/item-hub-parts_variant_a.glb",
+        "b": "assets/models/items/item-hub-parts/item-hub-parts_variant_b.glb",
+        "c": "assets/models/items/item-hub-parts/item-hub-parts_variant_c.glb",
+        "d": "assets/models/items/item-hub-parts/item-hub-parts_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-hub-parts_four_variants_preview.png"
+    },
+    {
+      "id": "item-iron-ingot",
+      "name": "Item Iron Ingot",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-iron-ingot/item-iron-ingot_variant_d.glb",
+        "c": "assets/models/items/item-iron-ingot/item-iron-ingot_variant_c.glb",
+        "b": "assets/models/items/item-iron-ingot/item-iron-ingot_variant_b.glb",
+        "a": "assets/models/items/item-iron-ingot/item-iron-ingot_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-iron-ingot_four_variants_preview.png"
+    },
+    {
+      "id": "item-iron-ore",
+      "name": "Item Iron Ore",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-iron-ore/item-iron-ore_variant_a.glb",
+        "c": "assets/models/items/item-iron-ore/item-iron-ore_variant_c.glb",
+        "d": "assets/models/items/item-iron-ore/item-iron-ore_variant_d.glb",
+        "b": "assets/models/items/item-iron-ore/item-iron-ore_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-iron-ore_four_variants_preview.png"
+    },
+    {
+      "id": "item-iron-plate",
+      "name": "Item Iron Plate",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-iron-plate/item-iron-plate_variant_b.glb",
+        "d": "assets/models/items/item-iron-plate/item-iron-plate_variant_d.glb",
+        "c": "assets/models/items/item-iron-plate/item-iron-plate_variant_c.glb",
+        "a": "assets/models/items/item-iron-plate/item-iron-plate_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-iron-plate_four_variants_preview.png"
+    },
+    {
+      "id": "item-iron-rod",
+      "name": "Item Iron Rod",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-iron-rod/item-iron-rod_variant_d.glb",
+        "a": "assets/models/items/item-iron-rod/item-iron-rod_variant_a.glb",
+        "c": "assets/models/items/item-iron-rod/item-iron-rod_variant_c.glb",
+        "b": "assets/models/items/item-iron-rod/item-iron-rod_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-iron-rod_four_variants_preview.png"
+    },
+    {
+      "id": "item-limestone",
+      "name": "Item Limestone",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-limestone/item-limestone_variant_a.glb",
+        "b": "assets/models/items/item-limestone/item-limestone_variant_b.glb",
+        "c": "assets/models/items/item-limestone/item-limestone_variant_c.glb",
+        "d": "assets/models/items/item-limestone/item-limestone_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-limestone_four_variants_preview.png"
+    },
+    {
+      "id": "item-magnetic-field-generator",
+      "name": "Item Magnetic Field Generator",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-magnetic-field-generator/item-magnetic-field-generator_variant_c.glb",
+        "a": "assets/models/items/item-magnetic-field-generator/item-magnetic-field-generator_variant_a.glb",
+        "b": "assets/models/items/item-magnetic-field-generator/item-magnetic-field-generator_variant_b.glb",
+        "d": "assets/models/items/item-magnetic-field-generator/item-magnetic-field-generator_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-magnetic-field-generator_four_variants_preview.png"
+    },
+    {
+      "id": "item-mercer-sphere",
+      "name": "Item Mercer Sphere",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-mercer-sphere/item-mercer-sphere_variant_d.glb",
+        "a": "assets/models/items/item-mercer-sphere/item-mercer-sphere_variant_a.glb",
+        "b": "assets/models/items/item-mercer-sphere/item-mercer-sphere_variant_b.glb",
+        "c": "assets/models/items/item-mercer-sphere/item-mercer-sphere_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-mercer-sphere_four_variants_preview.png"
+    },
+    {
+      "id": "item-modular-engine",
+      "name": "Item Modular Engine",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-modular-engine/item-modular-engine_variant_b.glb",
+        "a": "assets/models/items/item-modular-engine/item-modular-engine_variant_a.glb",
+        "c": "assets/models/items/item-modular-engine/item-modular-engine_variant_c.glb",
+        "d": "assets/models/items/item-modular-engine/item-modular-engine_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-modular-engine_four_variants_preview.png"
+    },
+    {
+      "id": "item-modular-frame",
+      "name": "Item Modular Frame",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-modular-frame/item-modular-frame_variant_d.glb",
+        "b": "assets/models/items/item-modular-frame/item-modular-frame_variant_b.glb",
+        "c": "assets/models/items/item-modular-frame/item-modular-frame_variant_c.glb",
+        "a": "assets/models/items/item-modular-frame/item-modular-frame_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-modular-frame_four_variants_preview.png"
+    },
+    {
+      "id": "item-motor",
+      "name": "Item Motor",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-motor/item-motor_variant_a.glb",
+        "c": "assets/models/items/item-motor/item-motor_variant_c.glb",
+        "d": "assets/models/items/item-motor/item-motor_variant_d.glb",
+        "b": "assets/models/items/item-motor/item-motor_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-motor_four_variants_preview.png"
+    },
+    {
+      "id": "item-neural-quantum-processor",
+      "name": "Item Neural Quantum Processor",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-neural-quantum-processor/item-neural-quantum-processor_variant_b.glb",
+        "a": "assets/models/items/item-neural-quantum-processor/item-neural-quantum-processor_variant_a.glb",
+        "d": "assets/models/items/item-neural-quantum-processor/item-neural-quantum-processor_variant_d.glb",
+        "c": "assets/models/items/item-neural-quantum-processor/item-neural-quantum-processor_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-neural-quantum-processor_four_variants_preview.png"
+    },
+    {
+      "id": "item-non-fissile-uranium",
+      "name": "Item Non Fissile Uranium",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-non-fissile-uranium/item-non-fissile-uranium_variant_b.glb",
+        "a": "assets/models/items/item-non-fissile-uranium/item-non-fissile-uranium_variant_a.glb",
+        "d": "assets/models/items/item-non-fissile-uranium/item-non-fissile-uranium_variant_d.glb",
+        "c": "assets/models/items/item-non-fissile-uranium/item-non-fissile-uranium_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-non-fissile-uranium_four_variants_preview.png"
+    },
+    {
+      "id": "item-nuclear-pasta",
+      "name": "Item Nuclear Pasta",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-nuclear-pasta/item-nuclear-pasta_variant_d.glb",
+        "a": "assets/models/items/item-nuclear-pasta/item-nuclear-pasta_variant_a.glb",
+        "b": "assets/models/items/item-nuclear-pasta/item-nuclear-pasta_variant_b.glb",
+        "c": "assets/models/items/item-nuclear-pasta/item-nuclear-pasta_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-nuclear-pasta_four_variants_preview.png"
+    },
+    {
+      "id": "item-packaged-alumina-solution",
+      "name": "Item Packaged Alumina Solution",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-packaged-alumina-solution/item-packaged-alumina-solution_variant_a.glb",
+        "c": "assets/models/items/item-packaged-alumina-solution/item-packaged-alumina-solution_variant_c.glb",
+        "d": "assets/models/items/item-packaged-alumina-solution/item-packaged-alumina-solution_variant_d.glb",
+        "b": "assets/models/items/item-packaged-alumina-solution/item-packaged-alumina-solution_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-packaged-alumina-solution_four_variants_preview.png"
+    },
+    {
+      "id": "item-packaged-fuel",
+      "name": "Item Packaged Fuel",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-packaged-fuel/item-packaged-fuel_variant_c.glb",
+        "a": "assets/models/items/item-packaged-fuel/item-packaged-fuel_variant_a.glb",
+        "d": "assets/models/items/item-packaged-fuel/item-packaged-fuel_variant_d.glb",
+        "b": "assets/models/items/item-packaged-fuel/item-packaged-fuel_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-packaged-fuel_four_variants_preview.png"
+    },
+    {
+      "id": "item-packaged-heavy-oil-residue",
+      "name": "Item Packaged Heavy Oil Residue",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-packaged-heavy-oil-residue/item-packaged-heavy-oil-residue_variant_c.glb",
+        "d": "assets/models/items/item-packaged-heavy-oil-residue/item-packaged-heavy-oil-residue_variant_d.glb",
+        "a": "assets/models/items/item-packaged-heavy-oil-residue/item-packaged-heavy-oil-residue_variant_a.glb",
+        "b": "assets/models/items/item-packaged-heavy-oil-residue/item-packaged-heavy-oil-residue_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-packaged-heavy-oil-residue_four_variants_preview.png"
+    },
+    {
+      "id": "item-packaged-ionized-fuel",
+      "name": "Item Packaged Ionized Fuel",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-packaged-ionized-fuel/item-packaged-ionized-fuel_variant_c.glb",
+        "d": "assets/models/items/item-packaged-ionized-fuel/item-packaged-ionized-fuel_variant_d.glb",
+        "a": "assets/models/items/item-packaged-ionized-fuel/item-packaged-ionized-fuel_variant_a.glb",
+        "b": "assets/models/items/item-packaged-ionized-fuel/item-packaged-ionized-fuel_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-packaged-ionized-fuel_four_variants_preview.png"
+    },
+    {
+      "id": "item-packaged-liquid-biofuel",
+      "name": "Item Packaged Liquid Biofuel",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-packaged-liquid-biofuel/item-packaged-liquid-biofuel_variant_c.glb",
+        "a": "assets/models/items/item-packaged-liquid-biofuel/item-packaged-liquid-biofuel_variant_a.glb",
+        "b": "assets/models/items/item-packaged-liquid-biofuel/item-packaged-liquid-biofuel_variant_b.glb",
+        "d": "assets/models/items/item-packaged-liquid-biofuel/item-packaged-liquid-biofuel_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-packaged-liquid-biofuel_four_variants_preview.png"
+    },
+    {
+      "id": "item-packaged-nitric-acid",
+      "name": "Item Packaged Nitric Acid",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-packaged-nitric-acid/item-packaged-nitric-acid_variant_b.glb",
+        "a": "assets/models/items/item-packaged-nitric-acid/item-packaged-nitric-acid_variant_a.glb",
+        "c": "assets/models/items/item-packaged-nitric-acid/item-packaged-nitric-acid_variant_c.glb",
+        "d": "assets/models/items/item-packaged-nitric-acid/item-packaged-nitric-acid_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-packaged-nitric-acid_four_variants_preview.png"
+    },
+    {
+      "id": "item-packaged-nitrogen-gas",
+      "name": "Item Packaged Nitrogen Gas",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-packaged-nitrogen-gas/item-packaged-nitrogen-gas_variant_d.glb",
+        "b": "assets/models/items/item-packaged-nitrogen-gas/item-packaged-nitrogen-gas_variant_b.glb",
+        "c": "assets/models/items/item-packaged-nitrogen-gas/item-packaged-nitrogen-gas_variant_c.glb",
+        "a": "assets/models/items/item-packaged-nitrogen-gas/item-packaged-nitrogen-gas_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-packaged-nitrogen-gas_four_variants_preview.png"
+    },
+    {
+      "id": "item-packaged-oil",
+      "name": "Item Packaged Oil",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-packaged-oil/item-packaged-oil_variant_a.glb",
+        "b": "assets/models/items/item-packaged-oil/item-packaged-oil_variant_b.glb",
+        "c": "assets/models/items/item-packaged-oil/item-packaged-oil_variant_c.glb",
+        "d": "assets/models/items/item-packaged-oil/item-packaged-oil_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-packaged-oil_four_variants_preview.png"
+    },
+    {
+      "id": "item-packaged-rocket-fuel",
+      "name": "Item Packaged Rocket Fuel",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-packaged-rocket-fuel/item-packaged-rocket-fuel_variant_d.glb",
+        "b": "assets/models/items/item-packaged-rocket-fuel/item-packaged-rocket-fuel_variant_b.glb",
+        "c": "assets/models/items/item-packaged-rocket-fuel/item-packaged-rocket-fuel_variant_c.glb",
+        "a": "assets/models/items/item-packaged-rocket-fuel/item-packaged-rocket-fuel_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-packaged-rocket-fuel_four_variants_preview.png"
+    },
+    {
+      "id": "item-packaged-sulfuric-acid",
+      "name": "Item Packaged Sulfuric Acid",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-packaged-sulfuric-acid/item-packaged-sulfuric-acid_variant_c.glb",
+        "a": "assets/models/items/item-packaged-sulfuric-acid/item-packaged-sulfuric-acid_variant_a.glb",
+        "b": "assets/models/items/item-packaged-sulfuric-acid/item-packaged-sulfuric-acid_variant_b.glb",
+        "d": "assets/models/items/item-packaged-sulfuric-acid/item-packaged-sulfuric-acid_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-packaged-sulfuric-acid_four_variants_preview.png"
+    },
+    {
+      "id": "item-packaged-turbofuel",
+      "name": "Item Packaged Turbofuel",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-packaged-turbofuel/item-packaged-turbofuel_variant_a.glb",
+        "d": "assets/models/items/item-packaged-turbofuel/item-packaged-turbofuel_variant_d.glb",
+        "c": "assets/models/items/item-packaged-turbofuel/item-packaged-turbofuel_variant_c.glb",
+        "b": "assets/models/items/item-packaged-turbofuel/item-packaged-turbofuel_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-packaged-turbofuel_four_variants_preview.png"
+    },
+    {
+      "id": "item-packaged-water",
+      "name": "Item Packaged Water",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-packaged-water/item-packaged-water_variant_d.glb",
+        "c": "assets/models/items/item-packaged-water/item-packaged-water_variant_c.glb",
+        "a": "assets/models/items/item-packaged-water/item-packaged-water_variant_a.glb",
+        "b": "assets/models/items/item-packaged-water/item-packaged-water_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-packaged-water_four_variants_preview.png"
+    },
+    {
+      "id": "item-petroleum-coke",
+      "name": "Item Petroleum Coke",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-petroleum-coke/item-petroleum-coke_variant_c.glb",
+        "d": "assets/models/items/item-petroleum-coke/item-petroleum-coke_variant_d.glb",
+        "b": "assets/models/items/item-petroleum-coke/item-petroleum-coke_variant_b.glb",
+        "a": "assets/models/items/item-petroleum-coke/item-petroleum-coke_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-petroleum-coke_four_variants_preview.png"
+    },
+    {
+      "id": "item-plastic",
+      "name": "Item Plastic",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-plastic/item-plastic_variant_b.glb",
+        "d": "assets/models/items/item-plastic/item-plastic_variant_d.glb",
+        "a": "assets/models/items/item-plastic/item-plastic_variant_a.glb",
+        "c": "assets/models/items/item-plastic/item-plastic_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-plastic_four_variants_preview.png"
+    },
+    {
+      "id": "item-plutonium-fuel-rod",
+      "name": "Item Plutonium Fuel Rod",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-plutonium-fuel-rod/item-plutonium-fuel-rod_variant_d.glb",
+        "c": "assets/models/items/item-plutonium-fuel-rod/item-plutonium-fuel-rod_variant_c.glb",
+        "b": "assets/models/items/item-plutonium-fuel-rod/item-plutonium-fuel-rod_variant_b.glb",
+        "a": "assets/models/items/item-plutonium-fuel-rod/item-plutonium-fuel-rod_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-plutonium-fuel-rod_four_variants_preview.png"
+    },
+    {
+      "id": "item-plutonium-pellet",
+      "name": "Item Plutonium Pellet",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-plutonium-pellet/item-plutonium-pellet_variant_c.glb",
+        "a": "assets/models/items/item-plutonium-pellet/item-plutonium-pellet_variant_a.glb",
+        "d": "assets/models/items/item-plutonium-pellet/item-plutonium-pellet_variant_d.glb",
+        "b": "assets/models/items/item-plutonium-pellet/item-plutonium-pellet_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-plutonium-pellet_four_variants_preview.png"
+    },
+    {
+      "id": "item-plutonium-waste",
+      "name": "Item Plutonium Waste",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-plutonium-waste/item-plutonium-waste_variant_d.glb",
+        "c": "assets/models/items/item-plutonium-waste/item-plutonium-waste_variant_c.glb",
+        "a": "assets/models/items/item-plutonium-waste/item-plutonium-waste_variant_a.glb",
+        "b": "assets/models/items/item-plutonium-waste/item-plutonium-waste_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-plutonium-waste_four_variants_preview.png"
+    },
+    {
+      "id": "item-polymer-resin",
+      "name": "Item Polymer Resin",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-polymer-resin/item-polymer-resin_variant_b.glb",
+        "c": "assets/models/items/item-polymer-resin/item-polymer-resin_variant_c.glb",
+        "d": "assets/models/items/item-polymer-resin/item-polymer-resin_variant_d.glb",
+        "a": "assets/models/items/item-polymer-resin/item-polymer-resin_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-polymer-resin_four_variants_preview.png"
+    },
+    {
+      "id": "item-power-shard",
+      "name": "Item Power Shard",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-power-shard/item-power-shard_variant_a.glb",
+        "b": "assets/models/items/item-power-shard/item-power-shard_variant_b.glb",
+        "d": "assets/models/items/item-power-shard/item-power-shard_variant_d.glb",
+        "c": "assets/models/items/item-power-shard/item-power-shard_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-power-shard_four_variants_preview.png"
+    },
+    {
+      "id": "item-power-slug",
+      "name": "Item Power Slug",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-power-slug/item-power-slug_variant_a.glb",
+        "d": "assets/models/items/item-power-slug/item-power-slug_variant_d.glb",
+        "b": "assets/models/items/item-power-slug/item-power-slug_variant_b.glb",
+        "c": "assets/models/items/item-power-slug/item-power-slug_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-power-slug_four_variants_preview.png"
+    },
+    {
+      "id": "item-pressure-conversion-cube",
+      "name": "Item Pressure Conversion Cube",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-pressure-conversion-cube/item-pressure-conversion-cube_variant_d.glb",
+        "b": "assets/models/items/item-pressure-conversion-cube/item-pressure-conversion-cube_variant_b.glb",
+        "c": "assets/models/items/item-pressure-conversion-cube/item-pressure-conversion-cube_variant_c.glb",
+        "a": "assets/models/items/item-pressure-conversion-cube/item-pressure-conversion-cube_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-pressure-conversion-cube_four_variants_preview.png"
+    },
+    {
+      "id": "item-quartz-crystal",
+      "name": "Item Quartz Crystal",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-quartz-crystal/item-quartz-crystal_variant_a.glb",
+        "c": "assets/models/items/item-quartz-crystal/item-quartz-crystal_variant_c.glb",
+        "b": "assets/models/items/item-quartz-crystal/item-quartz-crystal_variant_b.glb",
+        "d": "assets/models/items/item-quartz-crystal/item-quartz-crystal_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-quartz-crystal_four_variants_preview.png"
+    },
+    {
+      "id": "item-quickwire",
+      "name": "Item Quickwire",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-quickwire/item-quickwire_variant_c.glb",
+        "a": "assets/models/items/item-quickwire/item-quickwire_variant_a.glb",
+        "b": "assets/models/items/item-quickwire/item-quickwire_variant_b.glb",
+        "d": "assets/models/items/item-quickwire/item-quickwire_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-quickwire_four_variants_preview.png"
+    },
+    {
+      "id": "item-radio-control-unit",
+      "name": "Item Radio Control Unit",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-radio-control-unit/item-radio-control-unit_variant_b.glb",
+        "a": "assets/models/items/item-radio-control-unit/item-radio-control-unit_variant_a.glb",
+        "c": "assets/models/items/item-radio-control-unit/item-radio-control-unit_variant_c.glb",
+        "d": "assets/models/items/item-radio-control-unit/item-radio-control-unit_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-radio-control-unit_four_variants_preview.png"
+    },
+    {
+      "id": "item-raw-quartz",
+      "name": "Item Raw Quartz",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-raw-quartz/item-raw-quartz_variant_c.glb",
+        "a": "assets/models/items/item-raw-quartz/item-raw-quartz_variant_a.glb",
+        "d": "assets/models/items/item-raw-quartz/item-raw-quartz_variant_d.glb",
+        "b": "assets/models/items/item-raw-quartz/item-raw-quartz_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-raw-quartz_four_variants_preview.png"
+    },
+    {
+      "id": "item-reinforced-iron-plate",
+      "name": "Item Reinforced Iron Plate",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-reinforced-iron-plate/item-reinforced-iron-plate_variant_a.glb",
+        "d": "assets/models/items/item-reinforced-iron-plate/item-reinforced-iron-plate_variant_d.glb",
+        "c": "assets/models/items/item-reinforced-iron-plate/item-reinforced-iron-plate_variant_c.glb",
+        "b": "assets/models/items/item-reinforced-iron-plate/item-reinforced-iron-plate_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-reinforced-iron-plate_four_variants_preview.png"
+    },
+    {
+      "id": "item-rotor",
+      "name": "Item Rotor",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-rotor/item-rotor_variant_b.glb",
+        "d": "assets/models/items/item-rotor/item-rotor_variant_d.glb",
+        "c": "assets/models/items/item-rotor/item-rotor_variant_c.glb",
+        "a": "assets/models/items/item-rotor/item-rotor_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-rotor_four_variants_preview.png"
+    },
+    {
+      "id": "item-rubber",
+      "name": "Item Rubber",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-rubber/item-rubber_variant_a.glb",
+        "d": "assets/models/items/item-rubber/item-rubber_variant_d.glb",
+        "c": "assets/models/items/item-rubber/item-rubber_variant_c.glb",
+        "b": "assets/models/items/item-rubber/item-rubber_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-rubber_four_variants_preview.png"
+    },
+    {
+      "id": "item-sam",
+      "name": "Item Sam",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-sam/item-sam_variant_a.glb",
+        "b": "assets/models/items/item-sam/item-sam_variant_b.glb",
+        "c": "assets/models/items/item-sam/item-sam_variant_c.glb",
+        "d": "assets/models/items/item-sam/item-sam_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-sam_four_variants_preview.png"
+    },
+    {
+      "id": "item-sam-fluctuator",
+      "name": "Item Sam Fluctuator",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-sam-fluctuator/item-sam-fluctuator_variant_d.glb",
+        "c": "assets/models/items/item-sam-fluctuator/item-sam-fluctuator_variant_c.glb",
+        "a": "assets/models/items/item-sam-fluctuator/item-sam-fluctuator_variant_a.glb",
+        "b": "assets/models/items/item-sam-fluctuator/item-sam-fluctuator_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-sam-fluctuator_four_variants_preview.png"
+    },
+    {
+      "id": "item-screws",
+      "name": "Item Screws",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-screws/item-screws_variant_d.glb",
+        "a": "assets/models/items/item-screws/item-screws_variant_a.glb",
+        "c": "assets/models/items/item-screws/item-screws_variant_c.glb",
+        "b": "assets/models/items/item-screws/item-screws_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-screws_four_variants_preview.png"
+    },
+    {
+      "id": "item-silica",
+      "name": "Item Silica",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-silica/item-silica_variant_b.glb",
+        "c": "assets/models/items/item-silica/item-silica_variant_c.glb",
+        "d": "assets/models/items/item-silica/item-silica_variant_d.glb",
+        "a": "assets/models/items/item-silica/item-silica_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-silica_four_variants_preview.png"
+    },
+    {
+      "id": "item-singularity-cell",
+      "name": "Item Singularity Cell",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-singularity-cell/item-singularity-cell_variant_b.glb",
+        "c": "assets/models/items/item-singularity-cell/item-singularity-cell_variant_c.glb",
+        "a": "assets/models/items/item-singularity-cell/item-singularity-cell_variant_a.glb",
+        "d": "assets/models/items/item-singularity-cell/item-singularity-cell_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-singularity-cell_four_variants_preview.png"
+    },
+    {
+      "id": "item-smart-plating",
+      "name": "Item Smart Plating",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-smart-plating/item-smart-plating_variant_c.glb",
+        "a": "assets/models/items/item-smart-plating/item-smart-plating_variant_a.glb",
+        "b": "assets/models/items/item-smart-plating/item-smart-plating_variant_b.glb",
+        "d": "assets/models/items/item-smart-plating/item-smart-plating_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-smart-plating_four_variants_preview.png"
+    },
+    {
+      "id": "item-solid-biofuel",
+      "name": "Item Solid Biofuel",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-solid-biofuel/item-solid-biofuel_variant_a.glb",
+        "d": "assets/models/items/item-solid-biofuel/item-solid-biofuel_variant_d.glb",
+        "b": "assets/models/items/item-solid-biofuel/item-solid-biofuel_variant_b.glb",
+        "c": "assets/models/items/item-solid-biofuel/item-solid-biofuel_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-solid-biofuel_four_variants_preview.png"
+    },
+    {
+      "id": "item-somersloop",
+      "name": "Item Somersloop",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-somersloop/item-somersloop_variant_b.glb",
+        "c": "assets/models/items/item-somersloop/item-somersloop_variant_c.glb",
+        "a": "assets/models/items/item-somersloop/item-somersloop_variant_a.glb",
+        "d": "assets/models/items/item-somersloop/item-somersloop_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-somersloop_four_variants_preview.png"
+    },
+    {
+      "id": "item-stator",
+      "name": "Item Stator",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-stator/item-stator_variant_a.glb",
+        "c": "assets/models/items/item-stator/item-stator_variant_c.glb",
+        "b": "assets/models/items/item-stator/item-stator_variant_b.glb",
+        "d": "assets/models/items/item-stator/item-stator_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-stator_four_variants_preview.png"
+    },
+    {
+      "id": "item-statues",
+      "name": "Item Statues",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-statues/item-statues_variant_c.glb",
+        "d": "assets/models/items/item-statues/item-statues_variant_d.glb",
+        "a": "assets/models/items/item-statues/item-statues_variant_a.glb",
+        "b": "assets/models/items/item-statues/item-statues_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-statues_four_variants_preview.png"
+    },
+    {
+      "id": "item-steel-beam",
+      "name": "Item Steel Beam",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-steel-beam/item-steel-beam_variant_b.glb",
+        "d": "assets/models/items/item-steel-beam/item-steel-beam_variant_d.glb",
+        "a": "assets/models/items/item-steel-beam/item-steel-beam_variant_a.glb",
+        "c": "assets/models/items/item-steel-beam/item-steel-beam_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-steel-beam_four_variants_preview.png"
+    },
+    {
+      "id": "item-steel-ingot",
+      "name": "Item Steel Ingot",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-steel-ingot/item-steel-ingot_variant_d.glb",
+        "c": "assets/models/items/item-steel-ingot/item-steel-ingot_variant_c.glb",
+        "a": "assets/models/items/item-steel-ingot/item-steel-ingot_variant_a.glb",
+        "b": "assets/models/items/item-steel-ingot/item-steel-ingot_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-steel-ingot_four_variants_preview.png"
+    },
+    {
+      "id": "item-steel-pipe",
+      "name": "Item Steel Pipe",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-steel-pipe/item-steel-pipe_variant_c.glb",
+        "b": "assets/models/items/item-steel-pipe/item-steel-pipe_variant_b.glb",
+        "a": "assets/models/items/item-steel-pipe/item-steel-pipe_variant_a.glb",
+        "d": "assets/models/items/item-steel-pipe/item-steel-pipe_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-steel-pipe_four_variants_preview.png"
+    },
+    {
+      "id": "item-supercomputer",
+      "name": "Item Supercomputer",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-supercomputer/item-supercomputer_variant_b.glb",
+        "c": "assets/models/items/item-supercomputer/item-supercomputer_variant_c.glb",
+        "a": "assets/models/items/item-supercomputer/item-supercomputer_variant_a.glb",
+        "d": "assets/models/items/item-supercomputer/item-supercomputer_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-supercomputer_four_variants_preview.png"
+    },
+    {
+      "id": "item-superposition-oscillator",
+      "name": "Item Superposition Oscillator",
+      "category": "items",
+      "variants": {
+        "a": "assets/models/items/item-superposition-oscillator/item-superposition-oscillator_variant_a.glb",
+        "d": "assets/models/items/item-superposition-oscillator/item-superposition-oscillator_variant_d.glb",
+        "c": "assets/models/items/item-superposition-oscillator/item-superposition-oscillator_variant_c.glb",
+        "b": "assets/models/items/item-superposition-oscillator/item-superposition-oscillator_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-superposition-oscillator_four_variants_preview.png"
+    },
+    {
+      "id": "item-thermal-propulsion-rocket",
+      "name": "Item Thermal Propulsion Rocket",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-thermal-propulsion-rocket/item-thermal-propulsion-rocket_variant_c.glb",
+        "d": "assets/models/items/item-thermal-propulsion-rocket/item-thermal-propulsion-rocket_variant_d.glb",
+        "b": "assets/models/items/item-thermal-propulsion-rocket/item-thermal-propulsion-rocket_variant_b.glb",
+        "a": "assets/models/items/item-thermal-propulsion-rocket/item-thermal-propulsion-rocket_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-thermal-propulsion-rocket_four_variants_preview.png"
+    },
+    {
+      "id": "item-time-crystal",
+      "name": "Item Time Crystal",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-time-crystal/item-time-crystal_variant_b.glb",
+        "a": "assets/models/items/item-time-crystal/item-time-crystal_variant_a.glb",
+        "c": "assets/models/items/item-time-crystal/item-time-crystal_variant_c.glb",
+        "d": "assets/models/items/item-time-crystal/item-time-crystal_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-time-crystal_four_variants_preview.png"
+    },
+    {
+      "id": "item-turbo-motor",
+      "name": "Item Turbo Motor",
+      "category": "items",
+      "variants": {
+        "c": "assets/models/items/item-turbo-motor/item-turbo-motor_variant_c.glb",
+        "d": "assets/models/items/item-turbo-motor/item-turbo-motor_variant_d.glb",
+        "a": "assets/models/items/item-turbo-motor/item-turbo-motor_variant_a.glb",
+        "b": "assets/models/items/item-turbo-motor/item-turbo-motor_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-turbo-motor_four_variants_preview.png"
+    },
+    {
+      "id": "item-uranium",
+      "name": "Item Uranium",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-uranium/item-uranium_variant_b.glb",
+        "a": "assets/models/items/item-uranium/item-uranium_variant_a.glb",
+        "c": "assets/models/items/item-uranium/item-uranium_variant_c.glb",
+        "d": "assets/models/items/item-uranium/item-uranium_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-uranium_four_variants_preview.png"
+    },
+    {
+      "id": "item-uranium-fuel-rod",
+      "name": "Item Uranium Fuel Rod",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-uranium-fuel-rod/item-uranium-fuel-rod_variant_d.glb",
+        "a": "assets/models/items/item-uranium-fuel-rod/item-uranium-fuel-rod_variant_a.glb",
+        "c": "assets/models/items/item-uranium-fuel-rod/item-uranium-fuel-rod_variant_c.glb",
+        "b": "assets/models/items/item-uranium-fuel-rod/item-uranium-fuel-rod_variant_b.glb"
+      },
+      "preview": "assets/models/previews/item-uranium-fuel-rod_four_variants_preview.png"
+    },
+    {
+      "id": "item-uranium-waste",
+      "name": "Item Uranium Waste",
+      "category": "items",
+      "variants": {
+        "d": "assets/models/items/item-uranium-waste/item-uranium-waste_variant_d.glb",
+        "b": "assets/models/items/item-uranium-waste/item-uranium-waste_variant_b.glb",
+        "c": "assets/models/items/item-uranium-waste/item-uranium-waste_variant_c.glb",
+        "a": "assets/models/items/item-uranium-waste/item-uranium-waste_variant_a.glb"
+      },
+      "preview": "assets/models/previews/item-uranium-waste_four_variants_preview.png"
+    },
+    {
+      "id": "item-versatile-framework",
+      "name": "Item Versatile Framework",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-versatile-framework/item-versatile-framework_variant_b.glb",
+        "a": "assets/models/items/item-versatile-framework/item-versatile-framework_variant_a.glb",
+        "d": "assets/models/items/item-versatile-framework/item-versatile-framework_variant_d.glb",
+        "c": "assets/models/items/item-versatile-framework/item-versatile-framework_variant_c.glb"
+      },
+      "preview": "assets/models/previews/item-versatile-framework_four_variants_preview.png"
+    },
+    {
+      "id": "item-wire",
+      "name": "Item Wire",
+      "category": "items",
+      "variants": {
+        "b": "assets/models/items/item-wire/item-wire_variant_b.glb",
+        "c": "assets/models/items/item-wire/item-wire_variant_c.glb",
+        "a": "assets/models/items/item-wire/item-wire_variant_a.glb",
+        "d": "assets/models/items/item-wire/item-wire_variant_d.glb"
+      },
+      "preview": "assets/models/previews/item-wire_four_variants_preview.png"
+    },
+    {
+      "id": "jetpack",
+      "name": "Jetpack",
+      "category": "jetpack",
+      "variants": {
+        "c": "assets/models/jetpack/jetpack_variant_c.glb",
+        "a": "assets/models/jetpack/jetpack_variant_a.glb",
+        "d": "assets/models/jetpack/jetpack_variant_d.glb",
+        "b": "assets/models/jetpack/jetpack_variant_b.glb"
+      },
+      "preview": "assets/models/previews/jetpack_four_variants_preview.png"
+    },
+    {
+      "id": "locomotive",
+      "name": "Locomotive",
+      "category": "locomotive",
+      "variants": {
+        "b": "assets/models/locomotive/locomotive_variant_b.glb",
+        "d": "assets/models/locomotive/locomotive_variant_d.glb",
+        "a": "assets/models/locomotive/locomotive_variant_a.glb",
+        "c": "assets/models/locomotive/locomotive_variant_c.glb"
+      },
+      "preview": "assets/models/previews/locomotive_four_variants_preview.png"
+    },
+    {
+      "id": "object_scanner",
+      "name": "Object Scanner",
+      "category": "object_scanner",
+      "variants": {
+        "a": "assets/models/object_scanner/object_scanner_variant_a.glb",
+        "c": "assets/models/object_scanner/object_scanner_variant_c.glb",
+        "b": "assets/models/object_scanner/object_scanner_variant_b.glb",
+        "d": "assets/models/object_scanner/object_scanner_variant_d.glb"
+      },
+      "preview": "assets/models/previews/object_scanner_four_variants_preview.png"
+    },
+    {
+      "id": "parachute",
+      "name": "Parachute",
+      "category": "parachute",
+      "variants": {
+        "b": "assets/models/parachute/parachute_variant_b.glb",
+        "a": "assets/models/parachute/parachute_variant_a.glb",
+        "d": "assets/models/parachute/parachute_variant_d.glb",
+        "c": "assets/models/parachute/parachute_variant_c.glb"
+      },
+      "preview": "assets/models/previews/parachute_four_variants_preview.png"
+    },
+    {
+      "id": "portable_miner",
+      "name": "Portable Miner",
+      "category": "portable_miner",
+      "variants": {
+        "d": "assets/models/portable_miner/portable_miner_variant_d.glb",
+        "a": "assets/models/portable_miner/portable_miner_variant_a.glb",
+        "c": "assets/models/portable_miner/portable_miner_variant_c.glb",
+        "b": "assets/models/portable_miner/portable_miner_variant_b.glb"
+      },
+      "preview": "assets/models/previews/portable_miner_four_variants_preview.png"
+    },
+    {
+      "id": "railway",
+      "name": "Railway",
+      "category": "railway",
+      "variants": {
+        "d": "assets/models/railway/railway_variant_d.glb",
+        "b": "assets/models/railway/railway_variant_b.glb",
+        "a": "assets/models/railway/railway_variant_a.glb",
+        "c": "assets/models/railway/railway_variant_c.glb"
+      },
+      "preview": "assets/models/previews/railway_four_variants_preview.png"
+    },
+    {
+      "id": "bauxite_node",
+      "name": "Bauxite Node",
+      "category": "resources",
+      "variants": {
+        "d": "assets/models/resources/bauxite_node/bauxite_node_variant_d.glb",
+        "b": "assets/models/resources/bauxite_node/bauxite_node_variant_b.glb",
+        "c": "assets/models/resources/bauxite_node/bauxite_node_variant_c.glb",
+        "a": "assets/models/resources/bauxite_node/bauxite_node_variant_a.glb"
+      },
+      "preview": "assets/models/previews/bauxite_node_four_variants_preview.png"
+    },
+    {
+      "id": "caterium_ore_node",
+      "name": "Caterium Ore Node",
+      "category": "resources",
+      "variants": {
+        "c": "assets/models/resources/caterium_ore_node/caterium_ore_node_variant_c.glb",
+        "a": "assets/models/resources/caterium_ore_node/caterium_ore_node_variant_a.glb",
+        "d": "assets/models/resources/caterium_ore_node/caterium_ore_node_variant_d.glb",
+        "b": "assets/models/resources/caterium_ore_node/caterium_ore_node_variant_b.glb"
+      },
+      "preview": "assets/models/previews/caterium_ore_node_four_variants_preview.png"
+    },
+    {
+      "id": "coal_node",
+      "name": "Coal Node",
+      "category": "resources",
+      "variants": {
+        "b": "assets/models/resources/coal_node/coal_node_variant_b.glb",
+        "c": "assets/models/resources/coal_node/coal_node_variant_c.glb",
+        "a": "assets/models/resources/coal_node/coal_node_variant_a.glb",
+        "d": "assets/models/resources/coal_node/coal_node_variant_d.glb"
+      },
+      "preview": "assets/models/previews/coal_node_four_variants_preview.png"
+    },
+    {
+      "id": "copper_ore_node",
+      "name": "Copper Ore Node",
+      "category": "resources",
+      "variants": {
+        "a": "assets/models/resources/copper_ore_node/copper_ore_node_variant_a.glb",
+        "b": "assets/models/resources/copper_ore_node/copper_ore_node_variant_b.glb",
+        "c": "assets/models/resources/copper_ore_node/copper_ore_node_variant_c.glb",
+        "d": "assets/models/resources/copper_ore_node/copper_ore_node_variant_d.glb"
+      },
+      "preview": "assets/models/previews/copper_ore_node_four_variants_preview.png"
+    },
+    {
+      "id": "cracked_resource_boulder",
+      "name": "Cracked Resource Boulder",
+      "category": "resources",
+      "variants": {
+        "d": "assets/models/resources/cracked_resource_boulder/cracked_resource_boulder_variant_d.glb",
+        "a": "assets/models/resources/cracked_resource_boulder/cracked_resource_boulder_variant_a.glb",
+        "c": "assets/models/resources/cracked_resource_boulder/cracked_resource_boulder_variant_c.glb",
+        "b": "assets/models/resources/cracked_resource_boulder/cracked_resource_boulder_variant_b.glb"
+      },
+      "preview": "assets/models/previews/cracked_resource_boulder_four_variants_preview.png"
+    },
+    {
+      "id": "crude_oil_node",
+      "name": "Crude Oil Node",
+      "category": "resources",
+      "variants": {
+        "a": "assets/models/resources/crude_oil_node/crude_oil_node_variant_a.glb",
+        "b": "assets/models/resources/crude_oil_node/crude_oil_node_variant_b.glb",
+        "d": "assets/models/resources/crude_oil_node/crude_oil_node_variant_d.glb",
+        "c": "assets/models/resources/crude_oil_node/crude_oil_node_variant_c.glb"
+      },
+      "preview": "assets/models/previews/crude_oil_node_four_variants_preview.png"
+    },
+    {
+      "id": "geyser",
+      "name": "Geyser",
+      "category": "resources",
+      "variants": {
+        "a": "assets/models/resources/geyser/geyser_variant_a.glb",
+        "d": "assets/models/resources/geyser/geyser_variant_d.glb",
+        "b": "assets/models/resources/geyser/geyser_variant_b.glb",
+        "c": "assets/models/resources/geyser/geyser_variant_c.glb"
+      },
+      "preview": "assets/models/previews/geyser_four_variants_preview.png"
+    },
+    {
+      "id": "iron_ore_node",
+      "name": "Iron Ore Node",
+      "category": "resources",
+      "variants": {
+        "a": "assets/models/resources/iron_ore_node/iron_ore_node_variant_a.glb",
+        "d": "assets/models/resources/iron_ore_node/iron_ore_node_variant_d.glb",
+        "b": "assets/models/resources/iron_ore_node/iron_ore_node_variant_b.glb",
+        "c": "assets/models/resources/iron_ore_node/iron_ore_node_variant_c.glb"
+      },
+      "preview": "assets/models/previews/iron_ore_node_four_variants_preview.png"
+    },
+    {
+      "id": "limestone_node",
+      "name": "Limestone Node",
+      "category": "resources",
+      "variants": {
+        "d": "assets/models/resources/limestone_node/limestone_node_variant_d.glb",
+        "a": "assets/models/resources/limestone_node/limestone_node_variant_a.glb",
+        "b": "assets/models/resources/limestone_node/limestone_node_variant_b.glb",
+        "c": "assets/models/resources/limestone_node/limestone_node_variant_c.glb"
+      },
+      "preview": "assets/models/previews/limestone_node_four_variants_preview.png"
+    },
+    {
+      "id": "raw_quartz_node",
+      "name": "Raw Quartz Node",
+      "category": "resources",
+      "variants": {
+        "b": "assets/models/resources/raw_quartz_node/raw_quartz_node_variant_b.glb",
+        "d": "assets/models/resources/raw_quartz_node/raw_quartz_node_variant_d.glb",
+        "a": "assets/models/resources/raw_quartz_node/raw_quartz_node_variant_a.glb",
+        "c": "assets/models/resources/raw_quartz_node/raw_quartz_node_variant_c.glb"
+      },
+      "preview": "assets/models/previews/raw_quartz_node_four_variants_preview.png"
+    },
+    {
+      "id": "resource_well_main",
+      "name": "Resource Well Main",
+      "category": "resources",
+      "variants": {
+        "a": "assets/models/resources/resource_well_main/resource_well_main_variant_a.glb",
+        "d": "assets/models/resources/resource_well_main/resource_well_main_variant_d.glb",
+        "c": "assets/models/resources/resource_well_main/resource_well_main_variant_c.glb",
+        "b": "assets/models/resources/resource_well_main/resource_well_main_variant_b.glb"
+      },
+      "preview": "assets/models/previews/resource_well_main_four_variants_preview.png"
+    },
+    {
+      "id": "resource_well_satellite",
+      "name": "Resource Well Satellite",
+      "category": "resources",
+      "variants": {
+        "d": "assets/models/resources/resource_well_satellite/resource_well_satellite_variant_d.glb",
+        "a": "assets/models/resources/resource_well_satellite/resource_well_satellite_variant_a.glb",
+        "c": "assets/models/resources/resource_well_satellite/resource_well_satellite_variant_c.glb",
+        "b": "assets/models/resources/resource_well_satellite/resource_well_satellite_variant_b.glb"
+      },
+      "preview": "assets/models/previews/resource_well_satellite_four_variants_preview.png"
+    },
+    {
+      "id": "sam_node",
+      "name": "Sam Node",
+      "category": "resources",
+      "variants": {
+        "b": "assets/models/resources/sam_node/sam_node_variant_b.glb",
+        "c": "assets/models/resources/sam_node/sam_node_variant_c.glb",
+        "a": "assets/models/resources/sam_node/sam_node_variant_a.glb",
+        "d": "assets/models/resources/sam_node/sam_node_variant_d.glb"
+      },
+      "preview": "assets/models/previews/sam_node_four_variants_preview.png"
+    },
+    {
+      "id": "sulfur_node",
+      "name": "Sulfur Node",
+      "category": "resources",
+      "variants": {
+        "c": "assets/models/resources/sulfur_node/sulfur_node_variant_c.glb",
+        "d": "assets/models/resources/sulfur_node/sulfur_node_variant_d.glb",
+        "a": "assets/models/resources/sulfur_node/sulfur_node_variant_a.glb",
+        "b": "assets/models/resources/sulfur_node/sulfur_node_variant_b.glb"
+      },
+      "preview": "assets/models/previews/sulfur_node_four_variants_preview.png"
+    },
+    {
+      "id": "tractor",
+      "name": "Tractor",
+      "category": "tractor",
+      "variants": {
+        "d": "assets/models/tractor/tractor_variant_d.glb",
+        "a": "assets/models/tractor/tractor_variant_a.glb",
+        "c": "assets/models/tractor/tractor_variant_c.glb",
+        "b": "assets/models/tractor/tractor_variant_b.glb"
+      },
+      "preview": "assets/models/previews/tractor_four_variants_preview.png"
+    },
+    {
+      "id": "train_station",
+      "name": "Train Station",
+      "category": "train_station",
+      "variants": {
+        "a": "assets/models/train_station/train_station_variant_a.glb",
+        "b": "assets/models/train_station/train_station_variant_b.glb",
+        "c": "assets/models/train_station/train_station_variant_c.glb",
+        "d": "assets/models/train_station/train_station_variant_d.glb"
+      },
+      "preview": "assets/models/previews/train_station_four_variants_preview.png"
+    },
+    {
+      "id": "truck",
+      "name": "Truck",
+      "category": "truck",
+      "variants": {
+        "d": "assets/models/truck/truck_variant_d.glb",
+        "a": "assets/models/truck/truck_variant_a.glb",
+        "b": "assets/models/truck/truck_variant_b.glb",
+        "c": "assets/models/truck/truck_variant_c.glb"
+      },
+      "preview": "assets/models/previews/truck_four_variants_preview.png"
+    }
+  ]
+}
