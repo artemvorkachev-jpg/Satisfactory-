@@ -41,7 +41,10 @@ try {
   assert.ok(result.assets.catalogFamilies >= 290, "Full model catalogue was not loaded");
   assert.ok(result.assets.selectedFamilies >= 175, "Reviewed model families were not integrated");
   assert.ok(result.assets.selectedFamilies < result.assets.catalogFamilies, "Unreviewed families were incorrectly treated as selected");
-  assert.ok(result.assets.placedModels >= 175, "World placement manifest is incomplete");
+  assert.ok(result.assets.placedModels >= 70, "Natural planet placement manifest is incomplete");
+  assert.ok(result.assets.naturalFamilies >= 55, "Natural flora, resource and fauna families are missing");
+  assert.ok(result.assets.industrialFamiliesAvailable >= 50, "Industrial construction catalogue is missing");
+  assert.ok(result.assets.placedModels < result.assets.selectedFamilies, "Industrial construction pieces were incorrectly scattered as a showroom");
   assert.ok(result.assets.loadedModels >= 2, "Nearby GLB models did not stream into the world");
   assert.ok(result.probes.ground !== null, "Ground ray missed the world ground");
   assert.ok(result.probes.landingPad !== null, "Ray missed the landing pad collider");
