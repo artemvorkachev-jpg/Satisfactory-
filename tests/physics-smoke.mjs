@@ -16,6 +16,14 @@ try {
   try {
     await page.waitForSelector("#game canvas", { timeout: 30000 });
   } catch (error) {
+    const moduleDiagnostics = await page.evaluate(async () => {
+      const results = [];
+      for (const path of ["./physics.js", "./production.js", "./model-world.js"]) {
+        try { await import(path + "?diagnostic=" + Date.now()); results.push({ path, ok: true }); }
+        catch (error) { results.push({ path, ok: false, name: error.name, message: error.message, stack: error.stack }); }
+      }
+      return results;
+    }).catch(error => [{ path: "diagnostic-evaluate", ok: false, message: error.message, stack: error.stack }]);
     const dom = await page.evaluate(() => ({
       readyState: document.readyState,
       title: document.title,
@@ -27,6 +35,7 @@ try {
     })).catch(() => null);
     throw new Error("Game canvas did not initialize. HTTP=" + response?.status() +
       " DOM=" + JSON.stringify(dom) +
+      " MODULE_DIAGNOSTICS=" + JSON.stringify(moduleDiagnostics) +
       " PAGE_ERRORS=" + JSON.stringify(pageErrors) +
       " CONSOLE_ERRORS=" + JSON.stringify(consoleErrors) +
       " FAILED_REQUESTS=" + JSON.stringify(failedRequests) +
