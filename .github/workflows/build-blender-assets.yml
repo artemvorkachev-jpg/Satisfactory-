@@ -143,6 +143,9 @@ jobs:
           test "$(find assets/models -type f -name "*.glb" | wc -l)" -ge 1203
           test "$(find assets/models/previews -type f -name "*_preview.png" | wc -l)" -ge 300
 
+      - name: Build searchable browser viewer catalogue
+        run: python3 tools/blender/build_viewer_catalog.py
+
       - name: Commit Blender sources, GLB exports and preview sheets
         run: |
           git config user.name "github-actions[bot]"
