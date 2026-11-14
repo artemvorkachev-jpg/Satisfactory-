@@ -232,6 +232,7 @@ export async function createAssetWorld(parent, options = {}) {
     for (const [id, entry] of loaded) {
       const distance = Math.hypot(entry.placement.x - playerPosition.x, entry.placement.z - playerPosition.z);
       if (distance > UNLOAD_DISTANCE || !wanted.has(id)) {
+        if (entry.wrapper.userData.node) savedResourceAmounts.set(id, entry.wrapper.userData.node.amount);
         if (entry.body) removeStaticCollider(entry.wrapper);
         parent.remove(entry.wrapper);
         disposeObject(entry.wrapper);
