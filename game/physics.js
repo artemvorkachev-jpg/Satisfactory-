@@ -1,3 +1,4 @@
+import * as THREE from "three";
 // Lightweight Rapier physics for the browser build.
 // Visual GLB meshes and collision proxies are kept separate.
 let RAPIER = null;
@@ -29,17 +30,13 @@ export function addStaticCollider(object) {
     return;
   }
   object.updateWorldMatrix(true, true);
-  const box = new (object.constructor === Object ? Object : globalThis.THREE?.Box3 || Object)();
-  // Box3 is supplied by the caller as a simple world-space bounds object if THREE is not global.
-  if (!object.userData?.physicsBounds) return;
-  const b = object.userData.physicsBounds;
-  const sx = Math.max(0.08, (b.max.x - b.min.x) * 0.5);
-  const sy = Math.max(0.08, (b.max.y - b.min.y) * 0.5);
-  const sz = Math.max(0.08, (b.max.z - b.min.z) * 0.5);
-  const cx = (b.max.x + b.min.x) * 0.5;
-  const cy = (b.max.y + b.min.y) * 0.5;
-  const cz = (b.max.z + b.min.z) * 0.5;
-  const body = world.createRigidBody(RAPIER.RigidBodyDesc.fixed().setTranslation(cx, cy, cz));
+  const bounds = new THREE.Box3().setFromObject(object);
+  const size = bounds.getSize(new THREE.Vector3());
+  const center = bounds.getCenter(new THREE.Vector3());
+  const sx = Math.max(0.08, size.x * 0.5);
+  const sy = Math.max(0.08, size.y * 0.5);
+  const sz = Math.max(0.08, size.z * 0.5);
+  const body = world.createRigidBody(RAPIER.RigidBodyDesc.fixed().setTranslation(center.x, center.y, center.z));
   world.createCollider(RAPIER.ColliderDesc.cuboid(sx, sy, sz).setFriction(0.85), body);
   staticBodies.set(object, body);
 }
