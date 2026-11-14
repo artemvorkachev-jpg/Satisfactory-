@@ -119,6 +119,13 @@ export function stepPlayer(body, vx, vz, jump, dt) {
   return { x: p.x, y: p.y - 0.86, z: p.z, grounded: !!afterHit && v.y <= 0.5 };
 }
 
+export function probeDown(x, y, z, maxDistance = 30) {
+  if (!world || !RAPIER) return null;
+  const ray = new RAPIER.Ray({ x, y, z }, { x: 0, y: -1, z: 0 });
+  const hit = world.castRay(ray, maxDistance, true);
+  return hit ? hit.timeOfImpact : null;
+}
+
 export function physicsAvailable() {
   return !!world;
 }
