@@ -13,6 +13,31 @@ try {
     return state?.available === true && state?.assets?.loadedModels >= 2 && state?.meshColliders > 0;
   }, { timeout: 90000 });
   await page.waitForFunction(() => window.__SATISFACTORY_PHYSICS__?.().player?.grounded === true, { timeout: 20000 });
+  await page.waitForFunction(() => {
+    const state = window.__SATISFACTORY_PHYSICS__?.();
+    return state?.worldSurface?.colorMap &&
+      state?.worldSurface?.roughnessMap &&
+      state?.worldSurface?.bumpMap &&
+      state?.worldSurface?.foliageInstances >= 2000 &&
+      state?.resources?.some(node => node.amount > 0);
+  }, { timeout: 90000 });
+
+  const depletionCheck = await page.evaluate(() => {
+    const state = window.__SATISFACTORY_PHYSICS__();
+    const node = state.resources.find(item => item.amount > 0);
+    if (!node) return { ok: false, reason: "No loaded resource node available" };
+    const before = node.amount;
+    const changed = window.__SATISFACTORY_SET_RESOURCE_AMOUNT__(node.id, 0);
+    const depleted = window.__SATISFACTORY_PHYSICS__().resources.find(item => item.id === node.id);
+    const visualChanged = changed && depleted?.amount === 0 &&
+      depleted.modelVisible === false && depleted.remainsVisible === true &&
+      depleted.collider === false;
+    const restored = window.__SATISFACTORY_SET_RESOURCE_AMOUNT__(node.id, before);
+    return { ok: visualChanged && restored, before, depleted, restored };
+  });
+  assert.equal(depletionCheck.ok, true,
+    "Exhausted resource did not switch to visible rubble: " + JSON.stringify(depletionCheck));
+
   const result = await page.evaluate(() => {
     const api = window.__SATISFACTORY_PHYSICS__();
     return {
@@ -24,6 +49,8 @@ try {
       pendingStatic: api.pendingStatic,
       player: api.player,
       assets: api.assets,
+      worldSurface: api.worldSurface,
+      resources: api.resources,
       probes: {
         ground: api.probeDown(90, 5, 90, 20),
         landingPad: api.probeDown(2, 5, 4.5, 20),
@@ -45,12 +72,17 @@ try {
   assert.ok(result.assets.naturalFamilies >= 55, "Natural flora, resource and fauna families are missing");
   assert.ok(result.assets.industrialFamiliesAvailable >= 50, "Industrial construction catalogue is missing");
   assert.ok(result.assets.placedModels < result.assets.selectedFamilies, "Industrial construction pieces were incorrectly scattered as a showroom");
+  assert.equal(result.worldSurface.colorMap, true, "Terrain colour map is missing");
+  assert.equal(result.worldSurface.roughnessMap, true, "Terrain roughness map is missing");
+  assert.equal(result.worldSurface.bumpMap, true, "Terrain height detail map is missing");
+  assert.ok(result.worldSurface.foliageInstances >= 2000, "Detailed Grass Fields ground vegetation is missing");
+  assert.ok(result.resources.some(node => node.amount > 0), "No interactive resource nodes streamed into the world");
   assert.ok(result.assets.loadedModels >= 2, "Nearby GLB models did not stream into the world");
   assert.ok(result.probes.ground !== null, "Ground ray missed the world ground");
   assert.ok(result.probes.landingPad !== null, "Ray missed the landing pad collider");
   assert.ok(result.probes.hub !== null, "Ray missed the HUB collider");
   assert.deepEqual(pageErrors, [], "Browser runtime errors: " + pageErrors.join("; "));
-  console.log("Model-streaming and Rapier geometry-collision smoke test passed:", JSON.stringify(result));
+  console.log("World materials, resource depletion and Rapier geometry-collision smoke test passed:", JSON.stringify({ ...result, depletionCheck }));
 } finally {
   await browser.close();
 }
