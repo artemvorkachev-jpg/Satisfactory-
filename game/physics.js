@@ -193,16 +193,17 @@ export function stepPlayer(body, vx, vz, jump, dt) {
   world.timestep = t;
   const current = body.linvel();
   const pos = body.translation();
-  const ray = new RAPIER.Ray({ x: pos.x, y: pos.y, z: pos.z }, { x: 0, y: -1, z: 0 });
-  const floorHit = world.castRay(ray, 1.02, true, undefined, undefined, undefined, body);
-  const grounded = !!floorHit && current.y <= 0.5;
-  body.setLinvel({ x: vx, y: jump && grounded ? 8.0 : current.y, z: vz }, true);
+  const ray = new RAPIER.Ray({ x: pos.x, y: pos.y + 0.08, z: pos.z }, { x: 0, y: -1, z: 0 });
+  const floorHit = world.castRay(ray, 1.12, true, undefined, undefined, undefined, body);
+  const grounded = !!floorHit && current.y <= 1.5;
+  const jumped = !!jump && grounded;
+  body.setLinvel({ x: vx, y: jumped ? 8.0 : current.y, z: vz }, true);
   world.step();
   const p = body.translation();
   const v = body.linvel();
-  const probe = new RAPIER.Ray({ x: p.x, y: p.y, z: p.z }, { x: 0, y: -1, z: 0 });
-  const afterHit = world.castRay(probe, 1.02, true, undefined, undefined, undefined, body);
-  return { x: p.x, y: p.y - 0.86, z: p.z, grounded: !!afterHit && v.y <= 0.5 };
+  const probe = new RAPIER.Ray({ x: p.x, y: p.y + 0.08, z: p.z }, { x: 0, y: -1, z: 0 });
+  const afterHit = world.castRay(probe, 1.12, true, undefined, undefined, undefined, body);
+  return { x: p.x, y: p.y - 0.86, z: p.z, grounded: !!afterHit && v.y <= 0.5, jumped };
 }
 
 export function probeDown(x, y, z, maxDistance = 30) {
