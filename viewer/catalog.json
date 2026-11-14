@@ -768,7 +768,7 @@
       },
       "preview": "assets/models/previews/refinery_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "resource-well-extractor",
@@ -782,7 +782,7 @@
       },
       "preview": "assets/models/previews/resource-well-extractor_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "resource-well-pressurizer",
@@ -796,7 +796,7 @@
       },
       "preview": "assets/models/previews/resource-well-pressurizer_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "signs",
@@ -809,8 +809,8 @@
         "d": "assets/models/buildings/signs/signs_variant_d.glb"
       },
       "preview": "assets/models/previews/signs_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "smart-splitter",
@@ -824,7 +824,7 @@
       },
       "preview": "assets/models/previews/smart-splitter_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "smelter",
@@ -852,7 +852,7 @@
       },
       "preview": "assets/models/previews/space-elevator_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "stackable-conveyor-pole",
@@ -866,7 +866,7 @@
       },
       "preview": "assets/models/previews/stackable-conveyor-pole_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "stairs",
@@ -880,7 +880,7 @@
       },
       "preview": "assets/models/previews/stairs_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "train-signals",
@@ -894,7 +894,7 @@
       },
       "preview": "assets/models/previews/train-signals_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "truck-station",
@@ -908,7 +908,7 @@
       },
       "preview": "assets/models/previews/truck-station_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "u-jelly-landing-pad",
@@ -922,7 +922,7 @@
       },
       "preview": "assets/models/previews/u-jelly-landing-pad_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "valve",
@@ -936,7 +936,7 @@
       },
       "preview": "assets/models/previews/valve_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "vehicle-paths",
@@ -950,7 +950,7 @@
       },
       "preview": "assets/models/previews/vehicle-paths_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "walkways",
@@ -964,7 +964,7 @@
       },
       "preview": "assets/models/previews/walkways_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "wall-conveyor-perpendicular",
@@ -978,7 +978,7 @@
       },
       "preview": "assets/models/previews/wall-conveyor-perpendicular_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "wall-conveyor-x1",
@@ -992,7 +992,7 @@
       },
       "preview": "assets/models/previews/wall-conveyor-x1_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "wall-conveyor-x2",
@@ -1006,7 +1006,7 @@
       },
       "preview": "assets/models/previews/wall-conveyor-x2_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "wall-conveyor-x3",
@@ -1020,7 +1020,7 @@
       },
       "preview": "assets/models/previews/wall-conveyor-x3_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "wall-doors",
@@ -1034,7 +1034,7 @@
       },
       "preview": "assets/models/previews/wall-doors_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "wall-outlet",
@@ -1048,7 +1048,7 @@
       },
       "preview": "assets/models/previews/wall-outlet_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "walls",
@@ -1062,7 +1062,7 @@
       },
       "preview": "assets/models/previews/walls_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "water_extractor",
@@ -1090,7 +1090,7 @@
       },
       "preview": "assets/models/previews/windows_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-alpha-hog",
