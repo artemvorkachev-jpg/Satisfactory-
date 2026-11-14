@@ -12,10 +12,20 @@ const textureLoader = new THREE.TextureLoader();
 const pbrTextures = Object.fromEntries(["metal","organic","polymer","rubber","glass"].map(kind => {
   const base = "../assets/textures/procedural/" + kind + "_";
   const load = (suffix, colorSpace) => {
-    const texture = textureLoader.load(base + suffix + ".png");
+    const texture = textureLoader.load(base + suffix + "_v2.png", undefined, undefined, () => {
+      // Keep older deployed pages usable while the v2 texture bundle is rolling out.
+      textureLoader.load(base + suffix + ".png", fallback => {
+        texture.image = fallback.image;
+        texture.needsUpdate = true;
+      });
+    });
+    texture.name = "Satisfactory PBR v2 " + kind + " " + suffix;
     texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
     texture.colorSpace = colorSpace || THREE.NoColorSpace;
-    texture.anisotropy = 4;
+    texture.anisotropy = 8;
+    texture.generateMipmaps = true;
+    texture.minFilter = THREE.LinearMipmapLinearFilter;
+    texture.magFilter = THREE.LinearFilter;
     return texture;
   };
   return [kind, {
@@ -27,6 +37,34 @@ const pbrTextures = Object.fromEntries(["metal","organic","polymer","rubber","gl
 
 const sharedPbrTextures = new Set(Object.values(pbrTextures).flatMap(maps => [maps.map,maps.roughnessMap,maps.heightMap]));
 
+function applyPbrAlbedoDetail(material, detailTexture, strength = 0.2) {
+  if (material.userData.pbrAlbedoDetailV2) return;
+  const previousCompile = material.onBeforeCompile;
+  const previousKey = material.customProgramCacheKey?.bind(material);
+  material.onBeforeCompile = function(shader, renderer) {
+    previousCompile?.call(this, shader, renderer);
+    shader.uniforms.pbrAlbedoDetailV2 = { value: detailTexture };
+    shader.uniforms.pbrAlbedoDetailStrengthV2 = { value: strength };
+    const pars = "#include <map_pars_fragment>";
+    const map = "#include <map_fragment>";
+    if (shader.fragmentShader.includes(pars)) {
+      shader.fragmentShader = shader.fragmentShader.replace(
+        pars,
+        pars + "\nuniform sampler2D pbrAlbedoDetailV2;\nuniform float pbrAlbedoDetailStrengthV2;"
+      );
+    }
+    if (shader.fragmentShader.includes(map)) {
+      shader.fragmentShader = shader.fragmentShader.replace(
+        map,
+        map + "\n#ifdef USE_MAP\n  diffuseColor.rgb *= mix(vec3(1.0), texture2D(pbrAlbedoDetailV2, vMapUv).rgb, pbrAlbedoDetailStrengthV2);\n#endif"
+      );
+    }
+  };
+  material.customProgramCacheKey = () => (previousKey?.() || "") + "|satisfactory-pbr-detail-v2";
+  material.userData.pbrAlbedoDetailV2 = true;
+  material.needsUpdate = true;
+}
+
 export function applyPbrTextures(root, category = "buildings") {
   root.traverse(object => {
     if (!object.isMesh || !object.material) return;
@@ -34,18 +72,21 @@ export function applyPbrTextures(root, category = "buildings") {
     const updated = list.map(source => {
       if (!source) return source;
       const name = String(source.name || "").toLowerCase();
-      const family = /glass|window/.test(name) ? "glass" :
+      const family = /glass|window|crystal/.test(name) ? "glass" :
         /rubber|tire|tyre/.test(name) ? "rubber" :
-        /polymer|plastic|paint/.test(name) ? "polymer" :
+        /polymer|plastic|paint|fabric/.test(name) ? "polymer" :
         ["flora","creatures","resources"].includes(category) ? "organic" : "metal";
       const maps = pbrTextures[family];
       const material = source.clone();
+      const hadOriginalAlbedo = !!source.map;
       if (!material.map) material.map = maps.map;
-      if (!material.roughnessMap) material.roughnessMap = maps.roughnessMap;
-      if (!material.bumpMap) {
-        material.bumpMap = maps.heightMap;
-        material.bumpScale = category === "buildings" ? 0.018 : 0.035;
-      }
+      // Preserve the original coloured GLB albedo and add fine procedural detail over it.
+      if (hadOriginalAlbedo) applyPbrAlbedoDetail(material, maps.map, family === "glass" ? 0.09 : 0.22);
+      // These maps deliberately replace the generic fallback maps in older GLBs.
+      material.roughnessMap = maps.roughnessMap;
+      material.bumpMap = maps.heightMap;
+      material.bumpScale = category === "buildings" ? 0.022 : 0.032;
+      if ("envMapIntensity" in material) material.envMapIntensity = family === "metal" ? 0.78 : 0.48;
       material.needsUpdate = true;
       return material;
     });
