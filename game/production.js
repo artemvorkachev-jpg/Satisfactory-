@@ -10,7 +10,15 @@ export const RECIPES = {
     "Iron Rod": { inputs: { "Iron Ingot": 1 }, output: { "Iron Rod": 1 }, seconds: 4 },
     "Wire": { inputs: { "Copper Ingot": 1 }, output: { Wire: 2 }, seconds: 0.5 },
     "Cable": { inputs: { Wire: 2 }, output: { Cable: 1 }, seconds: 2 },
-    "Concrete": { inputs: { Limestone: 3 }, output: { Concrete: 1 }, seconds: 4 }
+    "Concrete": { inputs: { Limestone: 3 }, output: { Concrete: 1 }, seconds: 4 },
+    "Screw": { inputs: { "Iron Rod": 1 }, output: { Screw: 4 }, seconds: 4 }
+  },
+  Assembler: {
+    "Reinforced Iron Plate": {
+      inputs: { "Iron Plate": 6, Screw: 12 },
+      output: { ReinforcedIronPlate: 1 },
+      seconds: 12
+    }
   }
 };
 
@@ -80,7 +88,7 @@ export function setMachineRecipe(machine, recipeName) {
 
 // Early-game power model. Values follow the Satisfactory production rates:
 // Biomass Burner 30 MW; Miner Mk.1 5 MW; Smelter 4 MW; Constructor 4 MW.
-export const POWER_DEMAND_MW = { Miner: 5, Smelter: 4, Constructor: 4 };
+export const POWER_DEMAND_MW = { Miner: 5, Smelter: 4, Constructor: 4, Assembler: 15 };
 export function machinePowerDemand(machine) {
   if (!POWER_DEMAND_MW[machine.type]) return 0;
   if (!machine.active) return 0.1;
