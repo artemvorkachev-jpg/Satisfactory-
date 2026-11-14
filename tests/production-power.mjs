@@ -80,3 +80,23 @@ assert.equal(transferBelt(beltProcess, beltSource, beltTarget, 0.9), 1);
 assert.equal(beltSource.output["Iron Ingot"], 0);
 assert.equal(beltTarget.input["Iron Ingot"], 2);
 console.log("Machine production, miner depletion and conveyor tests passed.");
+
+const assemblerProcess = createMachineState("Assembler", "assembler-process");
+assert.equal(setMachineRecipe(assemblerProcess, "Reinforced Iron Plate"), true);
+assemblerProcess.input["Iron Plate"] = 6;
+assemblerProcess.input.Screw = 12;
+tickMachine(assemblerProcess, 12);
+assert.equal(assemblerProcess.input["Iron Plate"], 0);
+assert.equal(assemblerProcess.input.Screw, 0);
+assert.equal(assemblerProcess.output.ReinforcedIronPlate, 1);
+
+// The 15 MW Assembler is supported by a connected 30 MW Biomass Burner.
+const assemblerGenerator = { userData: { machine: { id: "gen-assembler", type: "Biomass Burner", fuel: { Biomass: 1 } } } };
+const assemblerPole = { userData: { powerPoleId: "pole-assembler" } };
+const assemblerConsumer = { userData: { machine: { id: "assembler-1", type: "Assembler", recipe: "Reinforced Iron Plate", active: true, input: { "Iron Plate": 6, Screw: 12 }, output: {}, powered: false } } };
+state = simulatePowerGrid([assemblerGenerator, assemblerConsumer], [assemblerPole], [
+  { a: "gen-assembler", b: "pole-assembler" }, { a: "pole-assembler", b: "assembler-1" }
+], 1);
+assert.equal(state.consumption, 15);
+assert.equal(assemblerConsumer.userData.machine.powered, true);
+console.log("Assembler reinforced plate production tests passed.");
