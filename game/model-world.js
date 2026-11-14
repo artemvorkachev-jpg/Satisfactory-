@@ -8,6 +8,51 @@ const UNLOAD_DISTANCE = 185;
 const MAX_LOADED = 34;
 const MAX_CONCURRENT = 4;
 
+const textureLoader = new THREE.TextureLoader();
+const pbrTextures = Object.fromEntries(["metal","organic","polymer","rubber","glass"].map(kind => {
+  const base = "../assets/textures/procedural/" + kind + "_";
+  const load = (suffix, colorSpace) => {
+    const texture = textureLoader.load(base + suffix + ".png");
+    texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+    texture.colorSpace = colorSpace || THREE.NoColorSpace;
+    texture.anisotropy = 4;
+    return texture;
+  };
+  return [kind, {
+    map: load("albedo", THREE.SRGBColorSpace),
+    roughnessMap: load("roughness"),
+    heightMap: load("height")
+  }];
+}));
+
+function applyPbrTextures(root, category) {
+  root.traverse(object => {
+    if (!object.isMesh || !object.material) return;
+    const list = Array.isArray(object.material) ? object.material : [object.material];
+    const updated = list.map(source => {
+      if (!source) return source;
+      const name = String(source.name || "").toLowerCase();
+      const family = /glass|window/.test(name) ? "glass" :
+        /rubber|tire|tyre/.test(name) ? "rubber" :
+        /polymer|plastic|paint/.test(name) ? "polymer" :
+        ["flora","creatures","resources"].includes(category) ? "organic" : "metal";
+      const maps = pbrTextures[family];
+      const material = source.clone();
+      if (!material.map) material.map = maps.map;
+      if (!material.roughnessMap) material.roughnessMap = maps.roughnessMap;
+      if (!material.bumpMap) {
+        material.bumpMap = maps.heightMap;
+        material.bumpScale = category === "buildings" ? 0.018 : 0.035;
+      }
+      material.needsUpdate = true;
+      return material;
+    });
+    object.material = Array.isArray(object.material) ? updated : updated[0];
+    object.castShadow = true;
+    object.receiveShadow = true;
+  });
+}
+
 function seededRandom(seed) {
   let value = seed >>> 0;
   return () => {
@@ -176,15 +221,12 @@ export async function createAssetWorld(parent, options = {}) {
       const scale = target / maxDimension * placement.scale;
       model.scale.setScalar(scale);
       model.position.set(-center.x * scale, -bounds.min.y * scale, -center.z * scale);
+      applyPbrTextures(model, placement.asset.category);
       model.traverse(object => {
         if (!object.isMesh) return;
-        object.castShadow = true;
-        object.receiveShadow = true;
         const mats = Array.isArray(object.material) ? object.material : [object.material];
         for (const material of mats) {
-          if (!material) continue;
-          if ("envMapIntensity" in material) material.envMapIntensity = 1.0;
-          material.needsUpdate = true;
+          if (material && "envMapIntensity" in material) material.envMapIntensity = 1.0;
         }
       });
       wrapper.add(model);
@@ -255,6 +297,50 @@ export async function createAssetWorld(parent, options = {}) {
     asset.category === "buildings" || asset.category === "infrastructure" ||
     asset.category === "portable_miner" || asset.category === "railway"
   );
+  const constructionById = new Map(constructionCatalog.map(asset => [asset.id, asset]));
+  const placedConstruction = [];
+
+  function placeConstruction(assetId, position, rotationY = 0) {
+    const asset = constructionById.get(assetId);
+    if (!asset) return Promise.reject(new Error("Модель не найдена или не прошла первичный отбор: " + assetId));
+    const wrapper = new THREE.Group();
+    wrapper.name = "Built " + asset.name;
+    wrapper.position.copy(position);
+    wrapper.rotation.y = rotationY;
+    wrapper.userData.asset = {
+      id: asset.id, name: asset.name, category: asset.category,
+      variant: asset.selectedVariant, kind: "construction"
+    };
+    wrapper.userData.builtAssetId = asset.id;
+    parent.add(wrapper);
+    const record = { id: asset.id, x: position.x, y: position.y, z: position.z, rotationY };
+    placedConstruction.push(record);
+
+    return new Promise((resolve, reject) => {
+      loader.load("../" + asset.modelPath, gltf => {
+        const model = gltf.scene;
+        const bounds = new THREE.Box3().setFromObject(model);
+        const size = bounds.getSize(new THREE.Vector3());
+        const center = bounds.getCenter(new THREE.Vector3());
+        const width = Math.max(size.x, size.z, 0.001);
+        const targetWidth = asset.category === "buildings" ? 5.2 :
+          asset.category === "railway" ? 4.5 :
+          asset.category === "portable_miner" ? 1.8 : 2.8;
+        const scale = targetWidth / width;
+        model.scale.setScalar(scale);
+        model.position.set(-center.x * scale, -bounds.min.y * scale, -center.z * scale);
+        applyPbrTextures(model, asset.category);
+        wrapper.add(model);
+        addStaticModelCollider(wrapper, { friction: 0.86 });
+        resolve(wrapper);
+      }, undefined, error => {
+        parent.remove(wrapper);
+        const index = placedConstruction.indexOf(record);
+        if (index >= 0) placedConstruction.splice(index, 1);
+        reject(error);
+      });
+    });
+  }
 
   return {
     update,
@@ -263,6 +349,8 @@ export async function createAssetWorld(parent, options = {}) {
     setResourceState: state => { savedResourceAmounts.clear(); for (const [id, amount] of Object.entries(state || {})) if (Number.isFinite(amount) && amount >= 0) savedResourceAmounts.set(id, amount); },
     getStats,
     placements,
-    constructionCatalog
+    constructionCatalog,
+    placeConstruction,
+    getPlacedConstruction: () => placedConstruction.map(record => ({ ...record }))
   };
 }
