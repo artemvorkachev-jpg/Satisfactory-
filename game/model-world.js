@@ -25,6 +25,8 @@ const pbrTextures = Object.fromEntries(["metal","organic","polymer","rubber","gl
   }];
 }));
 
+const sharedPbrTextures = new Set(Object.values(pbrTextures).flatMap(maps => [maps.map,maps.roughnessMap,maps.heightMap]));
+
 export function applyPbrTextures(root, category = "buildings") {
   root.traverse(object => {
     if (!object.isMesh || !object.material) return;
@@ -135,7 +137,7 @@ function disposeObject(root) {
     for (const material of materials) {
       if (!material) continue;
       for (const key of ["map", "normalMap", "roughnessMap", "metalnessMap", "aoMap", "emissiveMap", "alphaMap"]) {
-        material[key]?.dispose();
+        if (material[key] && !sharedPbrTextures.has(material[key])) material[key].dispose();
       }
       material.dispose();
     }
