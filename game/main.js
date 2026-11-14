@@ -31,7 +31,7 @@ const recipes={
 let yaw=0,pitch=0,moveX=0,moveY=0,velocityY=0,onGround=true,menuMode="",selectedNode=null,selectedMachine=null,buildType=null,buildGhost=null,lastSave=0;
 const player={position:new THREE.Vector3(0,1.7,8),speed:8};
 let playerBody=null,jumpQueued=false;
-initPhysics().then(()=>{playerBody=createPlayerBody(player.position.x,player.position.y-.86,player.position.z);}).catch(e=>console.warn("Physics initialization failed",e));
+initPhysics().then(()=>{playerBody=createPlayerBody(player.position.x,0,player.position.z);}).catch(e=>console.warn("Physics initialization failed",e));
 const keys={};const raycaster=new THREE.Raycaster();const center=new THREE.Vector2(0,0);
 function box(parent,x,y,z,sx,sy,sz,color){const m=new THREE.Mesh(new THREE.BoxGeometry(sx,sy,sz),mat(color));m.position.set(x,y,z);m.castShadow=true;m.receiveShadow=true;parent.add(m);return m}
 function makeTree(x,z,scale=1){const g=new THREE.Group();g.position.set(x,0,z);world.add(g);const trunk=new THREE.Mesh(new THREE.CylinderGeometry(.16*scale,.23*scale,2.1*scale,7),mat(0x59412d));trunk.position.y=1.05*scale;trunk.castShadow=true;g.add(trunk);for(let i=0;i<3;i++){const crown=new THREE.Mesh(new THREE.ConeGeometry((1.1-i*.18)*scale,2.1*scale,7),mat([0x315b3a,0x3e7045,0x4a7947][i]));crown.position.y=(2.2+i*.68)*scale;crown.castShadow=true;g.add(crown)}}
