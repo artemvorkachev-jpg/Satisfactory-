@@ -9,7 +9,8 @@ const staticBodies = new WeakMap();
 export async function initPhysics() {
   if (world) return world;
   try {
-    RAPIER = await import("@dimforge/rapier3d-compat");
+    const rapierModule = await import("@dimforge/rapier3d-compat");
+    RAPIER = rapierModule.default || rapierModule;
     await RAPIER.init();
     world = new RAPIER.World({ x: 0, y: -9.81, z: 0 });
     world.timestep = 1 / 60;
