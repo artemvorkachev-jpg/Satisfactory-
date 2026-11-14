@@ -2428,8 +2428,8 @@
         "c": "assets/models/items/consumable-bacon-agaric/consumable-bacon-agaric_variant_c.glb",
         "d": "assets/models/items/consumable-bacon-agaric/consumable-bacon-agaric_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2444,8 +2444,8 @@
         "b": "assets/models/items/consumable-beryl-nut/consumable-beryl-nut_variant_b.glb",
         "c": "assets/models/items/consumable-beryl-nut/consumable-beryl-nut_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2460,8 +2460,8 @@
         "b": "assets/models/items/consumable-medicinal-inhaler/consumable-medicinal-inhaler_variant_b.glb",
         "d": "assets/models/items/consumable-medicinal-inhaler/consumable-medicinal-inhaler_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2476,8 +2476,8 @@
         "c": "assets/models/items/consumable-paleberry/consumable-paleberry_variant_c.glb",
         "a": "assets/models/items/consumable-paleberry/consumable-paleberry_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2492,8 +2492,8 @@
         "d": "assets/models/items/item-adaptive-control-unit/item-adaptive-control-unit_variant_d.glb",
         "c": "assets/models/items/item-adaptive-control-unit/item-adaptive-control-unit_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2508,8 +2508,8 @@
         "b": "assets/models/items/item-ai-expansion-server/item-ai-expansion-server_variant_b.glb",
         "d": "assets/models/items/item-ai-expansion-server/item-ai-expansion-server_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2524,8 +2524,8 @@
         "d": "assets/models/items/item-ai-limiter/item-ai-limiter_variant_d.glb",
         "b": "assets/models/items/item-ai-limiter/item-ai-limiter_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2540,8 +2540,8 @@
         "d": "assets/models/items/item-alclad-aluminum-sheet/item-alclad-aluminum-sheet_variant_d.glb",
         "a": "assets/models/items/item-alclad-aluminum-sheet/item-alclad-aluminum-sheet_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2556,8 +2556,8 @@
         "a": "assets/models/items/item-alien-dna-capsule/item-alien-dna-capsule_variant_a.glb",
         "c": "assets/models/items/item-alien-dna-capsule/item-alien-dna-capsule_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2572,8 +2572,8 @@
         "a": "assets/models/items/item-alien-power-matrix/item-alien-power-matrix_variant_a.glb",
         "b": "assets/models/items/item-alien-power-matrix/item-alien-power-matrix_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2588,8 +2588,8 @@
         "d": "assets/models/items/item-alien-protein/item-alien-protein_variant_d.glb",
         "a": "assets/models/items/item-alien-protein/item-alien-protein_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2604,8 +2604,8 @@
         "b": "assets/models/items/item-alien-remains/item-alien-remains_variant_b.glb",
         "a": "assets/models/items/item-alien-remains/item-alien-remains_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2620,8 +2620,8 @@
         "a": "assets/models/items/item-aluminum-casing/item-aluminum-casing_variant_a.glb",
         "b": "assets/models/items/item-aluminum-casing/item-aluminum-casing_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2636,8 +2636,8 @@
         "b": "assets/models/items/item-aluminum-ingot/item-aluminum-ingot_variant_b.glb",
         "d": "assets/models/items/item-aluminum-ingot/item-aluminum-ingot_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2652,8 +2652,8 @@
         "a": "assets/models/items/item-aluminum-scrap/item-aluminum-scrap_variant_a.glb",
         "d": "assets/models/items/item-aluminum-scrap/item-aluminum-scrap_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2668,8 +2668,8 @@
         "c": "assets/models/items/item-assembly-director-system/item-assembly-director-system_variant_c.glb",
         "a": "assets/models/items/item-assembly-director-system/item-assembly-director-system_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2684,8 +2684,8 @@
         "d": "assets/models/items/item-automated-wiring/item-automated-wiring_variant_d.glb",
         "a": "assets/models/items/item-automated-wiring/item-automated-wiring_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2700,8 +2700,8 @@
         "c": "assets/models/items/item-battery/item-battery_variant_c.glb",
         "b": "assets/models/items/item-battery/item-battery_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2716,8 +2716,8 @@
         "d": "assets/models/items/item-bauxite/item-bauxite_variant_d.glb",
         "a": "assets/models/items/item-bauxite/item-bauxite_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2732,8 +2732,8 @@
         "d": "assets/models/items/item-biochemical-sculptor/item-biochemical-sculptor_variant_d.glb",
         "b": "assets/models/items/item-biochemical-sculptor/item-biochemical-sculptor_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2748,8 +2748,8 @@
         "c": "assets/models/items/item-biomass/item-biomass_variant_c.glb",
         "d": "assets/models/items/item-biomass/item-biomass_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2764,8 +2764,8 @@
         "d": "assets/models/items/item-cable/item-cable_variant_d.glb",
         "c": "assets/models/items/item-cable/item-cable_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2780,8 +2780,8 @@
         "b": "assets/models/items/item-caterium-ingot/item-caterium-ingot_variant_b.glb",
         "d": "assets/models/items/item-caterium-ingot/item-caterium-ingot_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2796,8 +2796,8 @@
         "d": "assets/models/items/item-caterium-ore/item-caterium-ore_variant_d.glb",
         "c": "assets/models/items/item-caterium-ore/item-caterium-ore_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2812,8 +2812,8 @@
         "b": "assets/models/items/item-circuit-board/item-circuit-board_variant_b.glb",
         "c": "assets/models/items/item-circuit-board/item-circuit-board_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2828,8 +2828,8 @@
         "a": "assets/models/items/item-coal/item-coal_variant_a.glb",
         "c": "assets/models/items/item-coal/item-coal_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2844,8 +2844,8 @@
         "a": "assets/models/items/item-color-cartridge/item-color-cartridge_variant_a.glb",
         "c": "assets/models/items/item-color-cartridge/item-color-cartridge_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2860,8 +2860,8 @@
         "d": "assets/models/items/item-compacted-coal/item-compacted-coal_variant_d.glb",
         "a": "assets/models/items/item-compacted-coal/item-compacted-coal_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2876,8 +2876,8 @@
         "a": "assets/models/items/item-computer/item-computer_variant_a.glb",
         "c": "assets/models/items/item-computer/item-computer_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2892,8 +2892,8 @@
         "c": "assets/models/items/item-concrete/item-concrete_variant_c.glb",
         "b": "assets/models/items/item-concrete/item-concrete_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2908,8 +2908,8 @@
         "d": "assets/models/items/item-cooling-system/item-cooling-system_variant_d.glb",
         "a": "assets/models/items/item-cooling-system/item-cooling-system_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2924,8 +2924,8 @@
         "a": "assets/models/items/item-copper-ingot/item-copper-ingot_variant_a.glb",
         "b": "assets/models/items/item-copper-ingot/item-copper-ingot_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2940,8 +2940,8 @@
         "a": "assets/models/items/item-copper-ore/item-copper-ore_variant_a.glb",
         "d": "assets/models/items/item-copper-ore/item-copper-ore_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2956,8 +2956,8 @@
         "d": "assets/models/items/item-copper-powder/item-copper-powder_variant_d.glb",
         "c": "assets/models/items/item-copper-powder/item-copper-powder_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2972,8 +2972,8 @@
         "d": "assets/models/items/item-copper-sheet/item-copper-sheet_variant_d.glb",
         "b": "assets/models/items/item-copper-sheet/item-copper-sheet_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2988,8 +2988,8 @@
         "c": "assets/models/items/item-crystal-oscillator/item-crystal-oscillator_variant_c.glb",
         "d": "assets/models/items/item-crystal-oscillator/item-crystal-oscillator_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3004,8 +3004,8 @@
         "c": "assets/models/items/item-dark-matter-crystal/item-dark-matter-crystal_variant_c.glb",
         "a": "assets/models/items/item-dark-matter-crystal/item-dark-matter-crystal_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3020,8 +3020,8 @@
         "a": "assets/models/items/item-diamonds/item-diamonds_variant_a.glb",
         "b": "assets/models/items/item-diamonds/item-diamonds_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3036,8 +3036,8 @@
         "a": "assets/models/items/item-electromagnetic-control-rod/item-electromagnetic-control-rod_variant_a.glb",
         "d": "assets/models/items/item-electromagnetic-control-rod/item-electromagnetic-control-rod_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3052,8 +3052,8 @@
         "d": "assets/models/items/item-empty-canister/item-empty-canister_variant_d.glb",
         "b": "assets/models/items/item-empty-canister/item-empty-canister_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3068,8 +3068,8 @@
         "a": "assets/models/items/item-empty-fluid-tank/item-empty-fluid-tank_variant_a.glb",
         "b": "assets/models/items/item-empty-fluid-tank/item-empty-fluid-tank_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3084,8 +3084,8 @@
         "d": "assets/models/items/item-encased-industrial-beam/item-encased-industrial-beam_variant_d.glb",
         "c": "assets/models/items/item-encased-industrial-beam/item-encased-industrial-beam_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3100,8 +3100,8 @@
         "a": "assets/models/items/item-encased-plutonium-cell/item-encased-plutonium-cell_variant_a.glb",
         "b": "assets/models/items/item-encased-plutonium-cell/item-encased-plutonium-cell_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3116,8 +3116,8 @@
         "d": "assets/models/items/item-encased-uranium-cell/item-encased-uranium-cell_variant_d.glb",
         "b": "assets/models/items/item-encased-uranium-cell/item-encased-uranium-cell_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3132,8 +3132,8 @@
         "c": "assets/models/items/item-fabric/item-fabric_variant_c.glb",
         "b": "assets/models/items/item-fabric/item-fabric_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3148,8 +3148,8 @@
         "a": "assets/models/items/item-ficsit-coupon/item-ficsit-coupon_variant_a.glb",
         "b": "assets/models/items/item-ficsit-coupon/item-ficsit-coupon_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3164,8 +3164,8 @@
         "c": "assets/models/items/item-ficsite-ingot/item-ficsite-ingot_variant_c.glb",
         "b": "assets/models/items/item-ficsite-ingot/item-ficsite-ingot_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3180,8 +3180,8 @@
         "a": "assets/models/items/item-ficsite-trigon/item-ficsite-trigon_variant_a.glb",
         "b": "assets/models/items/item-ficsite-trigon/item-ficsite-trigon_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3196,8 +3196,8 @@
         "b": "assets/models/items/item-ficsonium/item-ficsonium_variant_b.glb",
         "a": "assets/models/items/item-ficsonium/item-ficsonium_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3212,8 +3212,8 @@
         "b": "assets/models/items/item-ficsonium-fuel-rod/item-ficsonium-fuel-rod_variant_b.glb",
         "d": "assets/models/items/item-ficsonium-fuel-rod/item-ficsonium-fuel-rod_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3228,8 +3228,8 @@
         "a": "assets/models/items/item-flower-petals/item-flower-petals_variant_a.glb",
         "b": "assets/models/items/item-flower-petals/item-flower-petals_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3244,8 +3244,8 @@
         "c": "assets/models/items/item-fused-modular-frame/item-fused-modular-frame_variant_c.glb",
         "b": "assets/models/items/item-fused-modular-frame/item-fused-modular-frame_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3260,8 +3260,8 @@
         "d": "assets/models/items/item-hard-drive/item-hard-drive_variant_d.glb",
         "a": "assets/models/items/item-hard-drive/item-hard-drive_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3276,8 +3276,8 @@
         "b": "assets/models/items/item-heat-sink/item-heat-sink_variant_b.glb",
         "a": "assets/models/items/item-heat-sink/item-heat-sink_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3292,8 +3292,8 @@
         "c": "assets/models/items/item-heavy-modular-frame/item-heavy-modular-frame_variant_c.glb",
         "b": "assets/models/items/item-heavy-modular-frame/item-heavy-modular-frame_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3308,8 +3308,8 @@
         "a": "assets/models/items/item-high-speed-connector/item-high-speed-connector_variant_a.glb",
         "c": "assets/models/items/item-high-speed-connector/item-high-speed-connector_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3324,8 +3324,8 @@
         "c": "assets/models/items/item-hub-parts/item-hub-parts_variant_c.glb",
         "d": "assets/models/items/item-hub-parts/item-hub-parts_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3356,8 +3356,8 @@
         "d": "assets/models/items/item-iron-ore/item-iron-ore_variant_d.glb",
         "b": "assets/models/items/item-iron-ore/item-iron-ore_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3373,7 +3373,7 @@
         "a": "assets/models/items/item-iron-plate/item-iron-plate_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3389,7 +3389,7 @@
         "b": "assets/models/items/item-iron-rod/item-iron-rod_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3405,7 +3405,7 @@
         "d": "assets/models/items/item-limestone/item-limestone_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3420,8 +3420,8 @@
         "b": "assets/models/items/item-magnetic-field-generator/item-magnetic-field-generator_variant_b.glb",
         "d": "assets/models/items/item-magnetic-field-generator/item-magnetic-field-generator_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3436,8 +3436,8 @@
         "b": "assets/models/items/item-mercer-sphere/item-mercer-sphere_variant_b.glb",
         "c": "assets/models/items/item-mercer-sphere/item-mercer-sphere_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3452,8 +3452,8 @@
         "c": "assets/models/items/item-modular-engine/item-modular-engine_variant_c.glb",
         "d": "assets/models/items/item-modular-engine/item-modular-engine_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3468,8 +3468,8 @@
         "c": "assets/models/items/item-modular-frame/item-modular-frame_variant_c.glb",
         "a": "assets/models/items/item-modular-frame/item-modular-frame_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3484,8 +3484,8 @@
         "d": "assets/models/items/item-motor/item-motor_variant_d.glb",
         "b": "assets/models/items/item-motor/item-motor_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3500,8 +3500,8 @@
         "d": "assets/models/items/item-neural-quantum-processor/item-neural-quantum-processor_variant_d.glb",
         "c": "assets/models/items/item-neural-quantum-processor/item-neural-quantum-processor_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3516,8 +3516,8 @@
         "d": "assets/models/items/item-non-fissile-uranium/item-non-fissile-uranium_variant_d.glb",
         "c": "assets/models/items/item-non-fissile-uranium/item-non-fissile-uranium_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3532,8 +3532,8 @@
         "b": "assets/models/items/item-nuclear-pasta/item-nuclear-pasta_variant_b.glb",
         "c": "assets/models/items/item-nuclear-pasta/item-nuclear-pasta_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3548,8 +3548,8 @@
         "d": "assets/models/items/item-packaged-alumina-solution/item-packaged-alumina-solution_variant_d.glb",
         "b": "assets/models/items/item-packaged-alumina-solution/item-packaged-alumina-solution_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3564,8 +3564,8 @@
         "d": "assets/models/items/item-packaged-fuel/item-packaged-fuel_variant_d.glb",
         "b": "assets/models/items/item-packaged-fuel/item-packaged-fuel_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3580,8 +3580,8 @@
         "a": "assets/models/items/item-packaged-heavy-oil-residue/item-packaged-heavy-oil-residue_variant_a.glb",
         "b": "assets/models/items/item-packaged-heavy-oil-residue/item-packaged-heavy-oil-residue_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3596,8 +3596,8 @@
         "a": "assets/models/items/item-packaged-ionized-fuel/item-packaged-ionized-fuel_variant_a.glb",
         "b": "assets/models/items/item-packaged-ionized-fuel/item-packaged-ionized-fuel_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3612,8 +3612,8 @@
         "b": "assets/models/items/item-packaged-liquid-biofuel/item-packaged-liquid-biofuel_variant_b.glb",
         "d": "assets/models/items/item-packaged-liquid-biofuel/item-packaged-liquid-biofuel_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3628,8 +3628,8 @@
         "c": "assets/models/items/item-packaged-nitric-acid/item-packaged-nitric-acid_variant_c.glb",
         "d": "assets/models/items/item-packaged-nitric-acid/item-packaged-nitric-acid_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3644,8 +3644,8 @@
         "c": "assets/models/items/item-packaged-nitrogen-gas/item-packaged-nitrogen-gas_variant_c.glb",
         "a": "assets/models/items/item-packaged-nitrogen-gas/item-packaged-nitrogen-gas_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3660,8 +3660,8 @@
         "c": "assets/models/items/item-packaged-oil/item-packaged-oil_variant_c.glb",
         "d": "assets/models/items/item-packaged-oil/item-packaged-oil_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3676,8 +3676,8 @@
         "c": "assets/models/items/item-packaged-rocket-fuel/item-packaged-rocket-fuel_variant_c.glb",
         "a": "assets/models/items/item-packaged-rocket-fuel/item-packaged-rocket-fuel_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3692,8 +3692,8 @@
         "b": "assets/models/items/item-packaged-sulfuric-acid/item-packaged-sulfuric-acid_variant_b.glb",
         "d": "assets/models/items/item-packaged-sulfuric-acid/item-packaged-sulfuric-acid_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3708,8 +3708,8 @@
         "c": "assets/models/items/item-packaged-turbofuel/item-packaged-turbofuel_variant_c.glb",
         "b": "assets/models/items/item-packaged-turbofuel/item-packaged-turbofuel_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3724,8 +3724,8 @@
         "a": "assets/models/items/item-packaged-water/item-packaged-water_variant_a.glb",
         "b": "assets/models/items/item-packaged-water/item-packaged-water_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3740,8 +3740,8 @@
         "b": "assets/models/items/item-petroleum-coke/item-petroleum-coke_variant_b.glb",
         "a": "assets/models/items/item-petroleum-coke/item-petroleum-coke_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3756,8 +3756,8 @@
         "a": "assets/models/items/item-plastic/item-plastic_variant_a.glb",
         "c": "assets/models/items/item-plastic/item-plastic_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3772,8 +3772,8 @@
         "b": "assets/models/items/item-plutonium-fuel-rod/item-plutonium-fuel-rod_variant_b.glb",
         "a": "assets/models/items/item-plutonium-fuel-rod/item-plutonium-fuel-rod_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3788,8 +3788,8 @@
         "d": "assets/models/items/item-plutonium-pellet/item-plutonium-pellet_variant_d.glb",
         "b": "assets/models/items/item-plutonium-pellet/item-plutonium-pellet_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3804,8 +3804,8 @@
         "a": "assets/models/items/item-plutonium-waste/item-plutonium-waste_variant_a.glb",
         "b": "assets/models/items/item-plutonium-waste/item-plutonium-waste_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3820,8 +3820,8 @@
         "d": "assets/models/items/item-polymer-resin/item-polymer-resin_variant_d.glb",
         "a": "assets/models/items/item-polymer-resin/item-polymer-resin_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3836,8 +3836,8 @@
         "d": "assets/models/items/item-power-shard/item-power-shard_variant_d.glb",
         "c": "assets/models/items/item-power-shard/item-power-shard_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3852,8 +3852,8 @@
         "b": "assets/models/items/item-power-slug/item-power-slug_variant_b.glb",
         "c": "assets/models/items/item-power-slug/item-power-slug_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3868,8 +3868,8 @@
         "c": "assets/models/items/item-pressure-conversion-cube/item-pressure-conversion-cube_variant_c.glb",
         "a": "assets/models/items/item-pressure-conversion-cube/item-pressure-conversion-cube_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3884,8 +3884,8 @@
         "b": "assets/models/items/item-quartz-crystal/item-quartz-crystal_variant_b.glb",
         "d": "assets/models/items/item-quartz-crystal/item-quartz-crystal_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3900,8 +3900,8 @@
         "b": "assets/models/items/item-quickwire/item-quickwire_variant_b.glb",
         "d": "assets/models/items/item-quickwire/item-quickwire_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3916,8 +3916,8 @@
         "c": "assets/models/items/item-radio-control-unit/item-radio-control-unit_variant_c.glb",
         "d": "assets/models/items/item-radio-control-unit/item-radio-control-unit_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3932,8 +3932,8 @@
         "d": "assets/models/items/item-raw-quartz/item-raw-quartz_variant_d.glb",
         "b": "assets/models/items/item-raw-quartz/item-raw-quartz_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3948,8 +3948,8 @@
         "c": "assets/models/items/item-reinforced-iron-plate/item-reinforced-iron-plate_variant_c.glb",
         "b": "assets/models/items/item-reinforced-iron-plate/item-reinforced-iron-plate_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3964,8 +3964,8 @@
         "c": "assets/models/items/item-rotor/item-rotor_variant_c.glb",
         "a": "assets/models/items/item-rotor/item-rotor_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3980,8 +3980,8 @@
         "c": "assets/models/items/item-rubber/item-rubber_variant_c.glb",
         "b": "assets/models/items/item-rubber/item-rubber_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -3996,8 +3996,8 @@
         "c": "assets/models/items/item-sam/item-sam_variant_c.glb",
         "d": "assets/models/items/item-sam/item-sam_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4012,8 +4012,8 @@
         "a": "assets/models/items/item-sam-fluctuator/item-sam-fluctuator_variant_a.glb",
         "b": "assets/models/items/item-sam-fluctuator/item-sam-fluctuator_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4028,8 +4028,8 @@
         "c": "assets/models/items/item-screws/item-screws_variant_c.glb",
         "b": "assets/models/items/item-screws/item-screws_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4044,8 +4044,8 @@
         "d": "assets/models/items/item-silica/item-silica_variant_d.glb",
         "a": "assets/models/items/item-silica/item-silica_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4060,8 +4060,8 @@
         "a": "assets/models/items/item-singularity-cell/item-singularity-cell_variant_a.glb",
         "d": "assets/models/items/item-singularity-cell/item-singularity-cell_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4076,8 +4076,8 @@
         "b": "assets/models/items/item-smart-plating/item-smart-plating_variant_b.glb",
         "d": "assets/models/items/item-smart-plating/item-smart-plating_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4092,8 +4092,8 @@
         "b": "assets/models/items/item-solid-biofuel/item-solid-biofuel_variant_b.glb",
         "c": "assets/models/items/item-solid-biofuel/item-solid-biofuel_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4108,8 +4108,8 @@
         "a": "assets/models/items/item-somersloop/item-somersloop_variant_a.glb",
         "d": "assets/models/items/item-somersloop/item-somersloop_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4124,8 +4124,8 @@
         "b": "assets/models/items/item-stator/item-stator_variant_b.glb",
         "d": "assets/models/items/item-stator/item-stator_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4140,8 +4140,8 @@
         "a": "assets/models/items/item-statues/item-statues_variant_a.glb",
         "b": "assets/models/items/item-statues/item-statues_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4156,8 +4156,8 @@
         "a": "assets/models/items/item-steel-beam/item-steel-beam_variant_a.glb",
         "c": "assets/models/items/item-steel-beam/item-steel-beam_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4172,8 +4172,8 @@
         "a": "assets/models/items/item-steel-ingot/item-steel-ingot_variant_a.glb",
         "b": "assets/models/items/item-steel-ingot/item-steel-ingot_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4188,8 +4188,8 @@
         "a": "assets/models/items/item-steel-pipe/item-steel-pipe_variant_a.glb",
         "d": "assets/models/items/item-steel-pipe/item-steel-pipe_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4204,8 +4204,8 @@
         "a": "assets/models/items/item-supercomputer/item-supercomputer_variant_a.glb",
         "d": "assets/models/items/item-supercomputer/item-supercomputer_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4220,8 +4220,8 @@
         "c": "assets/models/items/item-superposition-oscillator/item-superposition-oscillator_variant_c.glb",
         "b": "assets/models/items/item-superposition-oscillator/item-superposition-oscillator_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4236,8 +4236,8 @@
         "b": "assets/models/items/item-thermal-propulsion-rocket/item-thermal-propulsion-rocket_variant_b.glb",
         "a": "assets/models/items/item-thermal-propulsion-rocket/item-thermal-propulsion-rocket_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4252,8 +4252,8 @@
         "c": "assets/models/items/item-time-crystal/item-time-crystal_variant_c.glb",
         "d": "assets/models/items/item-time-crystal/item-time-crystal_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4268,8 +4268,8 @@
         "a": "assets/models/items/item-turbo-motor/item-turbo-motor_variant_a.glb",
         "b": "assets/models/items/item-turbo-motor/item-turbo-motor_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4284,8 +4284,8 @@
         "c": "assets/models/items/item-uranium/item-uranium_variant_c.glb",
         "d": "assets/models/items/item-uranium/item-uranium_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4300,8 +4300,8 @@
         "c": "assets/models/items/item-uranium-fuel-rod/item-uranium-fuel-rod_variant_c.glb",
         "b": "assets/models/items/item-uranium-fuel-rod/item-uranium-fuel-rod_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4316,8 +4316,8 @@
         "c": "assets/models/items/item-uranium-waste/item-uranium-waste_variant_c.glb",
         "a": "assets/models/items/item-uranium-waste/item-uranium-waste_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4332,8 +4332,8 @@
         "d": "assets/models/items/item-versatile-framework/item-versatile-framework_variant_d.glb",
         "c": "assets/models/items/item-versatile-framework/item-versatile-framework_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": null,
+      "selectionStatus": "pending-noncombat-review",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
