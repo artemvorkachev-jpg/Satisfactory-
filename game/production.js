@@ -147,10 +147,10 @@ export function simulatePowerGrid(machines, poles, connections, dt) {
 
     // A component is powered only when its connected generators can cover its full load.
     const hasEnough = demand <= available + 1e-6;
-    for (const consumer of consumers) consumer.state.powered = hasEnough;
-    if (hasEnough) result.poweredMachines += consumers.length;
+    for (const consumer of consumers) consumer.state.powered = false;
     if (!hasEnough || demand <= 0 || dt <= 0) continue;
 
+    // Fuel can run out partway through a frame; another connected burner may cover the remainder.
     let remainingLoad = demand;
     for (const generator of generators) {
       if (remainingLoad <= 1e-8) break;
@@ -160,13 +160,11 @@ export function simulatePowerGrid(machines, poles, connections, dt) {
       const load = Math.min(30, remainingLoad);
       const used = consumeFuelEnergy(fuel, load * dt);
       result.fuelUsed += used.consumed;
-      if (used.remainingMJ > 1e-6) {
-        // Fuel ran out during this simulation step: do not report the full component load as powered.
-        for (const consumer of consumers) consumer.state.powered = false;
-        result.poweredMachines = Math.max(0, result.poweredMachines - consumers.length);
-        break;
-      }
-      remainingLoad -= load;
+      remainingLoad -= Math.min(load, used.suppliedMJ / dt);
+    }
+    if (remainingLoad <= 1e-6) {
+      for (const consumer of consumers) consumer.state.powered = true;
+      result.poweredMachines += consumers.length;
     }
   }
   return result;
