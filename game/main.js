@@ -92,10 +92,16 @@ function showMenu(mode){
   for(const [name,description] of buildItems)addButton(name,description,()=>startBuild(name));
   const reserved=new Set(["smelter","constructor","storage_container","biomass-burner","power_pole","power-line","conveyor_belt","portable_miner","miner","hub"]);
   const catalog=assetWorld?.constructionCatalog||[];
+  const categoryNames={buildings:"Здания",infrastructure:"Логистика",railway:"Железная дорога",portable_miner:"Добыча",items:"Предметы",tractor:"Тракторы",truck:"Грузовики",explorer:"Вездеходы",cyber_wagon:"Cyber Wagon",factory_cart:"Тележки",locomotive:"Локомотивы",train_station:"Ж/д станции",freight_car:"Грузовые вагоны",freight_platform:"Грузовые платформы",drone:"Дроны",blade_runners:"Экипировка",hoverpack:"Экипировка",jetpack:"Экипировка",parachute:"Экипировка",gas_mask:"Экипировка",hazmat_suit:"Экипировка",object_scanner:"Инструменты",cup:"Предметы"};
+  const availableCategories=[...new Set(catalog.map(asset=>asset.category))].sort();
+  const existingCategories=new Set(Array.from(category.options,option=>option.value));
+  for(const value of availableCategories)if(!existingCategories.has(value)){
+   const option=document.createElement("option");option.value=value;option.textContent=categoryNames[value]||value.replace(/[_-]+/g," ").replace(/\\b\\w/g,ch=>ch.toUpperCase());category.append(option);
+  }
   const query=search.value.trim().toLowerCase(),kind=category.value;
   const extras=catalog.filter(asset=>!reserved.has(asset.id)&&(!kind||asset.category===kind)&&(!query||(asset.name+" "+asset.id+" "+asset.category).toLowerCase().includes(query)));
   for(const asset of extras){
-   const categoryName=asset.category==="buildings"?"Здание":asset.category==="railway"?"Железная дорога":asset.category==="portable_miner"?"Добыча":"Инфраструктура";
+   const categoryName=({buildings:"Здание",railway:"Железная дорога",portable_miner:"Добыча",infrastructure:"Инфраструктура",items:"Предмет",tractor:"Транспорт",truck:"Транспорт",explorer:"Транспорт",cyber_wagon:"Транспорт",factory_cart:"Транспорт",locomotive:"Железная дорога",train_station:"Железная дорога",freight_car:"Железная дорога",freight_platform:"Железная дорога",drone:"Дрон"})[asset.category]||"Экипировка и оборудование";
    addButton(asset.name,categoryName+" · модель "+String(asset.selectedVariant||"b").toUpperCase(),()=>startBuildAsset(asset.id,asset.name));
   }
   $("#menuInfo").textContent=catalog.length
