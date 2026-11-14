@@ -249,26 +249,26 @@ manifest = {
     {"id":"pipeline_flow","file":"pipeline_flow_loop.wav","loop":True,"min_distance_m":2,"max_distance_m":20,"gain":0.3,"pitch_jitter":0.01,"source":"pipe_segment"},
     {"id":"alien_wind","file":"alien_planet_wind_loop.wav","loop":True,"min_distance_m":0,"max_distance_m":180,"gain":0.3,"pitch_jitter":0.0,"source":"biome_ambience"},
     {"id":"ui_confirm","file":"soft_ui_confirmation.wav","loop":False,"min_distance_m":0,"max_distance_m":0,"gain":0.35,"pitch_jitter":0.0,"source":"ui"}
-    ,{"id":"footsteps_surface","file":"footsteps_surface_loop.wav","loop":true,"min_distance_m":0,"max_distance_m":5,"gain":0.45,"pitch_jitter":0.02,"source":"player"}
-    ,{"id":"item_pickup","file":"item_pickup.wav","loop":false,"min_distance_m":0,"max_distance_m":0,"gain":0.4,"pitch_jitter":0.0,"source":"ui"}
-    ,{"id":"building_placed","file":"building_placed.wav","loop":false,"min_distance_m":0,"max_distance_m":0,"gain":0.5,"pitch_jitter":0.0,"source":"building"}
-    ,{"id":"building_dismantled","file":"building_dismantled.wav","loop":false,"min_distance_m":0,"max_distance_m":0,"gain":0.4,"pitch_jitter":0.0,"source":"building"}
-    ,{"id":"ui_cancel","file":"ui_cancel.wav","loop":false,"min_distance_m":0,"max_distance_m":0,"gain":0.35,"pitch_jitter":0.0,"source":"ui"}
-    ,{"id":"ui_error","file":"ui_error.wav","loop":false,"min_distance_m":0,"max_distance_m":0,"gain":0.35,"pitch_jitter":0.0,"source":"ui"}
-    ,{"id":"ui_open","file":"ui_open.wav","loop":false,"min_distance_m":0,"max_distance_m":0,"gain":0.35,"pitch_jitter":0.0,"source":"ui"}
-    ,{"id":"power_switch","file":"power_switch.wav","loop":false,"min_distance_m":0,"max_distance_m":0,"gain":0.45,"pitch_jitter":0.0,"source":"power_switch"}
-    ,{"id":"resource_scanner_ping","file":"resource_scanner_ping.wav","loop":false,"min_distance_m":0,"max_distance_m":0,"gain":0.5,"pitch_jitter":0.0,"source":"scanner"}
-    ,{"id":"player_jump","file":"player_jump.wav","loop":false,"min_distance_m":0,"max_distance_m":0,"gain":0.45,"pitch_jitter":0.0,"source":"player"}
-    ,{"id":"player_landing","file":"player_landing.wav","loop":false,"min_distance_m":0,"max_distance_m":0,"gain":0.5,"pitch_jitter":0.0,"source":"player"}
-    ,{"id":"waterfall_ambience","file":"waterfall_ambience_loop.wav","loop":true,"min_distance_m":4,"max_distance_m":100,"gain":0.35,"pitch_jitter":0.0,"source":"waterfall"}
-    ,{"id":"cave_ambience","file":"cave_ambience_loop.wav","loop":true,"min_distance_m":0,"max_distance_m":80,"gain":0.3,"pitch_jitter":0.0,"source":"biome_ambience"}
-    ,{"id":"rain_ambience","file":"rain_ambience_loop.wav","loop":true,"min_distance_m":0,"max_distance_m":140,"gain":0.3,"pitch_jitter":0.0,"source":"weather"}
-    ,{"id":"alien_creature_chirp","file":"alien_creature_chirp.wav","loop":false,"min_distance_m":5,"max_distance_m":45,"gain":0.3,"pitch_jitter":0.03,"source":"creature"}
-    ,{"id":"portable_miner","file":"portable_miner_loop.wav","loop":true,"min_distance_m":2,"max_distance_m":24,"gain":0.48,"pitch_jitter":0.02,"source":"portable_miner"}
-    ,{"id":"smelter","file":"smelter_loop.wav","loop":true,"min_distance_m":3,"max_distance_m":38,"gain":0.48,"pitch_jitter":0.02,"source":"smelter"}
-    ,{"id":"refinery","file":"refinery_loop.wav","loop":true,"min_distance_m":4,"max_distance_m":48,"gain":0.5,"pitch_jitter":0.02,"source":"refinery"}
-    ,{"id":"power_generator","file":"power_generator_loop.wav","loop":true,"min_distance_m":3,"max_distance_m":45,"gain":0.5,"pitch_jitter":0.015,"source":"generator"}
-    ,{"id":"nuclear_reactor","file":"nuclear_reactor_loop.wav","loop":true,"min_distance_m":5,"max_distance_m":65,"gain":0.4,"pitch_jitter":0.01,"source":"reactor"}
+    ,{"id":"footsteps_surface","file":"footsteps_surface_loop.wav","loop":True,"min_distance_m":0,"max_distance_m":5,"gain":0.45,"pitch_jitter":0.02,"source":"player"}
+    ,{"id":"item_pickup","file":"item_pickup.wav","loop":False,"min_distance_m":0,"max_distance_m":0,"gain":0.4,"pitch_jitter":0.0,"source":"ui"}
+    ,{"id":"building_placed","file":"building_placed.wav","loop":False,"min_distance_m":0,"max_distance_m":0,"gain":0.5,"pitch_jitter":0.0,"source":"building"}
+    ,{"id":"building_dismantled","file":"building_dismantled.wav","loop":False,"min_distance_m":0,"max_distance_m":0,"gain":0.4,"pitch_jitter":0.0,"source":"building"}
+    ,{"id":"ui_cancel","file":"ui_cancel.wav","loop":False,"min_distance_m":0,"max_distance_m":0,"gain":0.35,"pitch_jitter":0.0,"source":"ui"}
+    ,{"id":"ui_error","file":"ui_error.wav","loop":False,"min_distance_m":0,"max_distance_m":0,"gain":0.35,"pitch_jitter":0.0,"source":"ui"}
+    ,{"id":"ui_open","file":"ui_open.wav","loop":False,"min_distance_m":0,"max_distance_m":0,"gain":0.35,"pitch_jitter":0.0,"source":"ui"}
+    ,{"id":"power_switch","file":"power_switch.wav","loop":False,"min_distance_m":0,"max_distance_m":0,"gain":0.45,"pitch_jitter":0.0,"source":"power_switch"}
+    ,{"id":"resource_scanner_ping","file":"resource_scanner_ping.wav","loop":False,"min_distance_m":0,"max_distance_m":0,"gain":0.5,"pitch_jitter":0.0,"source":"scanner"}
+    ,{"id":"player_jump","file":"player_jump.wav","loop":False,"min_distance_m":0,"max_distance_m":0,"gain":0.45,"pitch_jitter":0.0,"source":"player"}
+    ,{"id":"player_landing","file":"player_landing.wav","loop":False,"min_distance_m":0,"max_distance_m":0,"gain":0.5,"pitch_jitter":0.0,"source":"player"}
+    ,{"id":"waterfall_ambience","file":"waterfall_ambience_loop.wav","loop":True,"min_distance_m":4,"max_distance_m":100,"gain":0.35,"pitch_jitter":0.0,"source":"waterfall"}
+    ,{"id":"cave_ambience","file":"cave_ambience_loop.wav","loop":True,"min_distance_m":0,"max_distance_m":80,"gain":0.3,"pitch_jitter":0.0,"source":"biome_ambience"}
+    ,{"id":"rain_ambience","file":"rain_ambience_loop.wav","loop":True,"min_distance_m":0,"max_distance_m":140,"gain":0.3,"pitch_jitter":0.0,"source":"weather"}
+    ,{"id":"alien_creature_chirp","file":"alien_creature_chirp.wav","loop":False,"min_distance_m":5,"max_distance_m":45,"gain":0.3,"pitch_jitter":0.03,"source":"creature"}
+    ,{"id":"portable_miner","file":"portable_miner_loop.wav","loop":True,"min_distance_m":2,"max_distance_m":24,"gain":0.48,"pitch_jitter":0.02,"source":"portable_miner"}
+    ,{"id":"smelter","file":"smelter_loop.wav","loop":True,"min_distance_m":3,"max_distance_m":38,"gain":0.48,"pitch_jitter":0.02,"source":"smelter"}
+    ,{"id":"refinery","file":"refinery_loop.wav","loop":True,"min_distance_m":4,"max_distance_m":48,"gain":0.5,"pitch_jitter":0.02,"source":"refinery"}
+    ,{"id":"power_generator","file":"power_generator_loop.wav","loop":True,"min_distance_m":3,"max_distance_m":45,"gain":0.5,"pitch_jitter":0.015,"source":"generator"}
+    ,{"id":"nuclear_reactor","file":"nuclear_reactor_loop.wav","loop":True,"min_distance_m":5,"max_distance_m":65,"gain":0.4,"pitch_jitter":0.01,"source":"reactor"}
   ]
 }
 with open(os.path.join(OUT,"audio_manifest.json"),"w",encoding="utf-8") as f:
