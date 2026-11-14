@@ -19,9 +19,9 @@ const pbrTextures = Object.fromEntries(["metal","organic","polymer","rubber","gl
     return texture;
   };
   return [kind, {
-    map: load("albedo", THREE.SRGBColorSpace),
-    roughnessMap: load("roughness"),
-    heightMap: load("height")
+    map: load("albedo_v2", THREE.SRGBColorSpace),
+    roughnessMap: load("roughness_v2"),
+    heightMap: load("height_v2")
   }];
 }));
 
@@ -171,6 +171,59 @@ export async function createAssetWorld(parent, options = {}) {
   let failed = 0;
   const savedResourceAmounts = new Map();
 
+  function createDepletedVisual(wrapper) {
+    const remains = new THREE.Group();
+    remains.name = "Depleted resource remains";
+    remains.visible = false;
+    const dust = new THREE.Mesh(
+      new THREE.CircleGeometry(1.35, 28),
+      new THREE.MeshStandardMaterial({ color: 0x756c58, roughness: 1, transparent: true, opacity: 0.28, depthWrite: false })
+    );
+    dust.rotation.x = -Math.PI / 2;
+    dust.position.y = 0.035;
+    remains.add(dust);
+    const debrisMaterial = new THREE.MeshStandardMaterial({ color: 0x65675c, roughness: 0.98 });
+    let seed = hashId(wrapper.userData.asset?.placementId || wrapper.name || "depleted");
+    const random = () => { seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0; return seed / 4294967296; };
+    for (let i = 0; i < 5; i++) {
+      const chunk = new THREE.Mesh(new THREE.DodecahedronGeometry(0.3 + random() * 0.48, 0), debrisMaterial);
+      const angle = random() * Math.PI * 2;
+      const radius = 0.25 + random() * 0.82;
+      chunk.position.set(Math.cos(angle) * radius, 0.12 + random() * 0.16, Math.sin(angle) * radius);
+      chunk.rotation.set(random() * 0.5, random() * Math.PI * 2, random() * 0.5);
+      chunk.scale.set(0.75 + random() * 0.75, 0.5 + random() * 0.6, 0.7 + random() * 0.8);
+      chunk.castShadow = true;
+      chunk.receiveShadow = true;
+      remains.add(chunk);
+    }
+    wrapper.add(remains);
+    return remains;
+  }
+
+  function updateResourceVisual(entry) {
+    const node = entry.wrapper.userData.node;
+    if (!node) return;
+    const depleted = node.amount <= 0;
+    entry.model.visible = !depleted;
+    entry.depletedVisual.visible = depleted;
+    if (depleted && entry.body) {
+      removeStaticCollider(entry.wrapper);
+      entry.body = null;
+    } else if (!depleted && !entry.body) {
+      entry.body = addStaticModelCollider(entry.wrapper, {
+        friction: entry.placement.kind === "flora" ? 0.64 : 0.9
+      });
+    }
+    if (!depleted) {
+      const ratio = Math.max(0, Math.min(1, node.amount / node.maxAmount));
+      const fade = 1 - ratio;
+      for (const material of entry.resourceMaterials) {
+        if (!material.color || !material.userData.originalResourceColor) continue;
+        material.color.copy(material.userData.originalResourceColor).lerp(new THREE.Color(0x92917f), fade * 0.22);
+      }
+    }
+  }
+
   function loadPlacement(placement) {
     if (loaded.has(placement.id) || loading.has(placement.id)) return;
     loading.add(placement.id);
@@ -197,14 +250,14 @@ export async function createAssetWorld(parent, options = {}) {
       };
       if (placement.kind === "resource") {
         const resourceType = resourceTypes[placement.asset.id];
-        if (resourceType) wrapper.userData.node = { id: placement.id, type: resourceType, amount: savedResourceAmounts.get(placement.id) ?? 600 };
+        if (resourceType) { const amount = savedResourceAmounts.get(placement.id) ?? 600; wrapper.userData.node = { id: placement.id, type: resourceType, amount, maxAmount: 600 }; }
       } else if (placement.kind === "flora") {
         const floraId = placement.asset.id;
         const harvestType = floraId.includes("wood") || floraId.includes("bacon") ? "Wood" :
           floraId.includes("beryl") ? "Beryl Nut" :
           floraId.includes("paleberry") ? "Paleberry" :
           floraId.includes("agaric") ? "Bacon Agaric" : "Leaves";
-        wrapper.userData.node = { id: placement.id, type: harvestType, amount: savedResourceAmounts.get(placement.id) ?? 80 };
+        const amount = savedResourceAmounts.get(placement.id) ?? 80; wrapper.userData.node = { id: placement.id, type: harvestType, amount, maxAmount: 80 };
       }
       const model = gltf.scene;
       const bounds = new THREE.Box3().setFromObject(model);
@@ -236,7 +289,21 @@ export async function createAssetWorld(parent, options = {}) {
       const body = addStaticModelCollider(wrapper, {
         friction: placement.kind === "flora" ? 0.64 : placement.kind === "creature" ? 0.72 : 0.9
       });
-      loaded.set(placement.id, { wrapper, body, placement });
+      const resourceMaterials = [];
+      if (wrapper.userData.node) model.traverse(object => {
+        if (!object.isMesh) return;
+        const list = Array.isArray(object.material) ? object.material : [object.material];
+        for (const material of list) if (material?.color) {
+          material.userData.originalResourceColor = material.color.clone();
+          resourceMaterials.push(material);
+        }
+      });
+      const entry = { wrapper, body, placement, model, resourceMaterials, depletedVisual: null };
+      if (wrapper.userData.node) {
+        entry.depletedVisual = createDepletedVisual(wrapper);
+        updateResourceVisual(entry);
+      }
+      loaded.set(placement.id, entry);
       onProgress(getStats());
     }, undefined, error => {
       loading.delete(placement.id);
@@ -351,7 +418,24 @@ export async function createAssetWorld(parent, options = {}) {
     update,
     getObjects: () => [...loaded.values()].map(entry => entry.wrapper),
     getResourceState: () => Object.fromEntries([...savedResourceAmounts.entries(), ...[...loaded.values()].filter(entry => entry.wrapper.userData.node).map(entry => [entry.placement.id, entry.wrapper.userData.node.amount])]),
-    setResourceState: state => { savedResourceAmounts.clear(); for (const [id, amount] of Object.entries(state || {})) if (Number.isFinite(amount) && amount >= 0) savedResourceAmounts.set(id, amount); },
+    setResourceState: state => {
+      savedResourceAmounts.clear();
+      for (const [id, amount] of Object.entries(state || {})) if (Number.isFinite(amount) && amount >= 0) savedResourceAmounts.set(id, amount);
+      for (const entry of loaded.values()) if (entry.wrapper.userData.node && savedResourceAmounts.has(entry.placement.id)) {
+        entry.wrapper.userData.node.amount = savedResourceAmounts.get(entry.placement.id);
+        updateResourceVisual(entry);
+      }
+    },
+    setNodeAmount: (wrapper, amount) => {
+      const id = wrapper?.userData?.asset?.placementId;
+      const entry = id ? loaded.get(id) : null;
+      if (!entry?.wrapper.userData.node || !Number.isFinite(amount)) return false;
+      const next = Math.max(0, amount);
+      entry.wrapper.userData.node.amount = next;
+      savedResourceAmounts.set(id, next);
+      updateResourceVisual(entry);
+      return true;
+    },
     getStats,
     placements,
     constructionCatalog,
