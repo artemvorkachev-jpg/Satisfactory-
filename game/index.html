@@ -41,6 +41,8 @@ button:disabled{opacity:.4}
 .menuCard{width:min(960px,96vw);height:min(88dvh,760px);display:flex;flex-direction:column;background:#182630;border:1px solid #56656e;border-radius:13px;padding:12px;box-shadow:0 12px 40px #0009}
 .menuCard h2{margin:0 0 5px;font-size:17px}
 #menuInfo{flex:none}
+#menuFilters{display:grid;grid-template-columns:minmax(0,1fr) minmax(120px,220px);gap:7px;margin-top:8px;flex:none}
+#menuFilters input,#menuFilters select{width:100%;min-width:0;border:1px solid var(--line);border-radius:8px;background:#101820;color:var(--text);padding:8px;font:inherit}
 .menuGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;overflow:auto;overscroll-behavior:contain;padding:8px 2px;min-height:0;flex:1}
 .menuGrid button{text-align:left;min-height:52px;white-space:normal;overflow-wrap:anywhere;line-height:1.25}
 .small{color:var(--muted);font-size:11px}
@@ -112,6 +114,7 @@ button:disabled{opacity:.4}
  <div class="menuCard">
   <h2 id="menuTitle">Строительство</h2>
   <div class="small" id="menuInfo">Выберите объект.</div>
+  <div id="menuFilters"><input id="menuSearch" type="search" placeholder="Поиск модели…" autocomplete="off"><select id="menuCategory"><option value="">Все модели</option><option value="buildings">Здания</option><option value="infrastructure">Логистика и инфраструктура</option><option value="railway">Железная дорога</option><option value="portable_miner">Добыча</option></select></div>
   <div class="menuGrid" id="menuGrid"></div>
   <div class="row"><span class="small" id="menuStatus"></span><button id="closeMenu">ЗАКРЫТЬ</button></div>
  </div>
