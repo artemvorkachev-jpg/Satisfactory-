@@ -47,3 +47,11 @@
 `blockout` → `variant-reviewed` → `detail-pass` → `materials` → `collider-ready` → `LOD-ready` → `mobile-tested` → `approved`.
 
 Ни один объект не помечается как полностью готовый до проверки в реальной игровой сцене на мобильном устройстве.
+
+## Runtime implementation status — 2026-11-14
+
+- Rapier 3D compatibility runtime is connected to the browser game.
+- The player uses a dynamic capsule body with gravity, ground contact and jump velocity.
+- The HUB, production-machine GLBs and the three starter resource-node GLBs receive static AABB colliders from their world-space model bounds.
+- This is a first collision pass, not final per-part physics. Vehicle suspension, moving machine parts, compound colliders, exact interaction volumes and all remaining assets are still pending.
+- The visual meshes remain independent of collision shapes. This keeps the mobile rendering path lighter and lets collision proxies be refined without rebuilding visual geometry.
