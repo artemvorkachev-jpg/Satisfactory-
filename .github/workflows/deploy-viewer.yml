@@ -81,6 +81,19 @@ jobs:
           test -f _site/viewer/catalog.json
           echo "Viewer catalogue entries: $(python3 -c 'import json; print(json.load(open("_site/viewer/catalog.json"))["count"])')"
 
+      - name: Install browser smoke-test dependencies
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+
+      - name: Run browser physics smoke test
+        shell: bash
+        run: |
+          python3 -m http.server 4173 --directory _site >/tmp/satisfactory-viewer-server.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          node tests/physics-smoke.mjs
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
