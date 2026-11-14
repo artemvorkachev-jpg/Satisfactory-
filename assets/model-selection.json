@@ -2141,7 +2141,7 @@
         "a": "assets/models/infrastructure/awesome_sink/awesome_sink_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2157,7 +2157,7 @@
         "c": "assets/models/infrastructure/conveyor_belt/conveyor_belt_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2173,7 +2173,7 @@
         "d": "assets/models/infrastructure/conveyor_lift/conveyor_lift_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2189,7 +2189,7 @@
         "a": "assets/models/infrastructure/conveyor_merger/conveyor_merger_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2205,7 +2205,7 @@
         "a": "assets/models/infrastructure/conveyor_pole/conveyor_pole_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2221,7 +2221,7 @@
         "b": "assets/models/infrastructure/conveyor_splitter/conveyor_splitter_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2237,7 +2237,7 @@
         "a": "assets/models/infrastructure/fluid_buffer/fluid_buffer_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2253,7 +2253,7 @@
         "b": "assets/models/infrastructure/hypertube/hypertube_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2269,7 +2269,7 @@
         "b": "assets/models/infrastructure/hypertube_entrance/hypertube_entrance_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2285,7 +2285,7 @@
         "d": "assets/models/infrastructure/hypertube_junction/hypertube_junction_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2301,7 +2301,7 @@
         "a": "assets/models/infrastructure/pipeline/pipeline_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2317,7 +2317,7 @@
         "a": "assets/models/infrastructure/pipeline_junction/pipeline_junction_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2333,7 +2333,7 @@
         "d": "assets/models/infrastructure/pipeline_pump/pipeline_pump_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2349,7 +2349,7 @@
         "a": "assets/models/infrastructure/power_pole/power_pole_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2365,7 +2365,7 @@
         "b": "assets/models/infrastructure/power_storage/power_storage_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2381,7 +2381,7 @@
         "b": "assets/models/infrastructure/power_switch/power_switch_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2397,7 +2397,7 @@
         "b": "assets/models/infrastructure/power_tower/power_tower_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2413,7 +2413,7 @@
         "d": "assets/models/infrastructure/storage_container/storage_container_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
