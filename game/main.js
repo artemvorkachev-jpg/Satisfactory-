@@ -9,24 +9,136 @@ const itemModelPaths={"Iron Ore":"../assets/models/items/item-iron-ore/item-iron
 function attachModel(parent,path,targetWidth=3){if(!path)return;gltfLoader.load(path,g=>{const obj=g.scene;const b=new THREE.Box3().setFromObject(obj);const size=b.getSize(new THREE.Vector3());const center=b.getCenter(new THREE.Vector3());const scale=targetWidth/Math.max(size.x,size.z,0.01);obj.scale.setScalar(scale);obj.position.set(-center.x*scale,-b.min.y*scale,-center.z*scale);obj.traverse(o=>{if(o.isMesh){o.castShadow=true;o.receiveShadow=true}});applyPbrTextures(obj,parent.userData.node?"resources":"buildings");parent.add(obj);if(parent.userData.physicsStatic||parent.userData.machine||parent.userData.node||parent.userData.powerPoleId)addStaticModelCollider(parent);},undefined,e=>{console.warn("Model load failed:",path,e);if(parent.userData.physicsStatic||parent.userData.machine||parent.userData.node||parent.userData.powerPoleId)addStaticCollider(parent,{shape:"compound-building"})});}
 
 const $=s=>document.querySelector(s);
-const scene=new THREE.Scene();scene.background=new THREE.Color(0x9eb9c0);scene.fog=new THREE.FogExp2(0x9eb9c0,0.00145);
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x78b9e8);scene.fog=new THREE.FogExp2(0xa8cbd8,0.00088);
 const camera=new THREE.PerspectiveCamera(72,innerWidth/innerHeight,.1,1200);camera.position.set(0,2,8);
 const renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:"high-performance"});renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.6));renderer.setSize(innerWidth,innerHeight); renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.18;renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;$("#game").append(renderer.domElement);
 scene.add(new THREE.HemisphereLight(0xd8edff,0x43513b,2));
-const sun=new THREE.DirectionalLight(0xffefcf,2.5);sun.position.set(-35,55,25);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);sun.shadow.camera.left=-180;sun.shadow.camera.right=180;sun.shadow.camera.top=180;sun.shadow.camera.bottom=-180;sun.shadow.bias=-0.00018;sun.shadow.normalBias=0.025;scene.add(sun);
+const sun=new THREE.DirectionalLight(0xfff2d8,2.9);sun.position.set(-35,55,25);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);sun.shadow.camera.left=-180;sun.shadow.camera.right=180;sun.shadow.camera.top=180;sun.shadow.camera.bottom=-180;sun.shadow.bias=-0.00018;sun.shadow.normalBias=0.025;scene.add(sun);
 const mat=(color,roughness=.85,metalness=0)=>new THREE.MeshStandardMaterial({color,roughness,metalness});
-function createGroundMap(){
- const canvas=document.createElement("canvas");canvas.width=512;canvas.height=512;
- const ctx=canvas.getContext("2d");ctx.fillStyle="#62724b";ctx.fillRect(0,0,512,512);
- let seed=82431;const rnd=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296};
- for(let i=0;i<18000;i++){const x=rnd()*512,y=rnd()*512,r=1+rnd()*5;const g=78+Math.floor(rnd()*48);ctx.fillStyle="rgba("+g+","+ (g+10)+","+ (g-25)+","+ (0.08+rnd()*0.18)+")";ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill()}
- for(let i=0;i<50;i++){const x=rnd()*512,y=rnd()*512,r=5+rnd()*28;ctx.fillStyle="rgba(92,78,59,"+(0.04+rnd()*0.1)+")";ctx.beginPath();ctx.ellipse(x,y,r,r*.65,rnd()*Math.PI,0,Math.PI*2);ctx.fill()}
- const texture=new THREE.CanvasTexture(canvas);texture.colorSpace=THREE.SRGBColorSpace;texture.wrapS=texture.wrapT=THREE.RepeatWrapping;texture.repeat.set(90,90);texture.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());return texture;
+function createGroundMaps(){
+ const size=1024;
+ let seed=82431;
+ const rnd=()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296};
+ const colorCanvas=document.createElement("canvas");colorCanvas.width=colorCanvas.height=size;
+ const ctx=colorCanvas.getContext("2d",{alpha:false});
+ ctx.fillStyle="#7f9f52";ctx.fillRect(0,0,size,size);
+
+ // Broad, softly blended Grass Fields colour variation: fresh grass, moss and sun-dried ground.
+ const patches=[
+  "#6f9148","#86a852","#789a4a","#93aa5d","#638648","#9bac62","#b19c6b","#a5a16a"
+ ];
+ for(let i=0;i<1400;i++){
+  const x=rnd()*size,y=rnd()*size,rx=8+rnd()*100,ry=7+rnd()*75;
+  ctx.globalAlpha=.035+rnd()*.105;
+  ctx.fillStyle=patches[Math.floor(rnd()*patches.length)];
+  ctx.beginPath();ctx.ellipse(x,y,rx,ry,rnd()*Math.PI,0,Math.PI*2);ctx.fill();
+ }
+ ctx.globalAlpha=1;
+
+ // Fine grass blades, leaf litter and small ochre soil grains.
+ for(let i=0;i<52000;i++){
+  const x=rnd()*size,y=rnd()*size,len=1+rnd()*6;
+  const palette=["#426b35","#527d3d","#9bb765","#b0b76a","#688a43","#789b4c"];
+  ctx.strokeStyle=palette[Math.floor(rnd()*palette.length)];
+  ctx.globalAlpha=.08+rnd()*.25;ctx.lineWidth=.35+rnd()*.8;
+  const angle=-.55+rnd()*1.1;
+  ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x+Math.cos(angle)*len,y+Math.sin(angle)*len);ctx.stroke();
+ }
+ ctx.globalAlpha=1;
+ for(let i=0;i<1700;i++){
+  const x=rnd()*size,y=rnd()*size,r=.5+rnd()*1.8;
+  ctx.fillStyle=rnd()>.82?"#c0aa70":rnd()>.5?"#536f3c":"#9ead62";
+  ctx.globalAlpha=.18+rnd()*.35;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();
+ }
+ // Small yellow field flowers, characteristic of the bright open Grass Fields palette.
+ for(let i=0;i<180;i++){
+  const x=rnd()*size,y=rnd()*size;
+  ctx.globalAlpha=.5+rnd()*.4;ctx.fillStyle=rnd()>.35?"#e5d36e":"#d8c45b";
+  for(let p=0;p<5;p++){
+   const a=p*Math.PI*2/5,px=x+Math.cos(a)*2,py=y+Math.sin(a)*2;
+   ctx.beginPath();ctx.arc(px,py,.8,0,Math.PI*2);ctx.fill();
+  }
+  ctx.fillStyle="#a87a36";ctx.beginPath();ctx.arc(x,y,.75,0,Math.PI*2);ctx.fill();
+ }
+ ctx.globalAlpha=1;
+
+ const detailCanvas=document.createElement("canvas");detailCanvas.width=detailCanvas.height=size;
+ const dctx=detailCanvas.getContext("2d",{alpha:false});
+ dctx.fillStyle="#858585";dctx.fillRect(0,0,size,size);
+ for(let i=0;i<38000;i++){
+  const x=rnd()*size,y=rnd()*size,r=.5+rnd()*4;
+  const v=Math.floor(92+rnd()*94);
+  dctx.fillStyle="rgb("+v+","+v+","+v+")";dctx.globalAlpha=.12+rnd()*.3;
+  dctx.beginPath();dctx.ellipse(x,y,r,r*(.35+rnd()*.75),rnd()*Math.PI,0,Math.PI*2);dctx.fill();
+ }
+ dctx.globalAlpha=1;
+ for(let i=0;i<1200;i++){
+  const x=rnd()*size,y=rnd()*size,len=3+rnd()*16,v=Math.floor(105+rnd()*80);
+  dctx.strokeStyle="rgb("+v+","+v+","+v+")";dctx.lineWidth=.6+rnd()*1.5;
+  dctx.beginPath();dctx.moveTo(x,y);dctx.lineTo(x+len*(rnd()-.5),y+len*(rnd()-.5));dctx.stroke();
+ }
+ const makeTexture=(canvas,colorSpace=THREE.NoColorSpace)=>{
+  const texture=new THREE.CanvasTexture(canvas);
+  texture.colorSpace=colorSpace;texture.wrapS=texture.wrapT=THREE.RepeatWrapping;
+  texture.repeat.set(12,12);texture.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());
+  texture.generateMipmaps=true;texture.minFilter=THREE.LinearMipmapLinearFilter;texture.magFilter=THREE.LinearFilter;
+  return texture;
+ };
+ return {map:makeTexture(colorCanvas,THREE.SRGBColorSpace),bumpMap:makeTexture(detailCanvas),roughnessMap:makeTexture(detailCanvas)};
 }
-const groundMaterial=mat(0xffffff,.98,0);groundMaterial.map=createGroundMap();
-const ground=new THREE.Mesh(new THREE.PlaneGeometry(700,700),groundMaterial);ground.rotation.x=-Math.PI/2;ground.receiveShadow=true;scene.add(ground);
-// No showroom roads or artificial display districts: the planet remains an unexplored natural landscape.
-const world=new THREE.Group();scene.add(world);
+const groundMaps=createGroundMaps();
+const groundMaterial=mat(0xffffff,.96,0);
+groundMaterial.map=groundMaps.map;groundMaterial.roughnessMap=groundMaps.roughnessMap;
+groundMaterial.bumpMap=groundMaps.bumpMap;groundMaterial.bumpScale=.045;
+const ground=new THREE.Mesh(new THREE.PlaneGeometry(700,700,1,1),groundMaterial);
+ground.rotation.x=-Math.PI/2;ground.receiveShadow=true;scene.add(ground);
+
+const world=new THREE.Group();scene.add(world);createGroundFoliage(world);
+function createGroundFoliage(parent){
+ const vertices=[];
+ for(let blade=0;blade<3;blade++){
+  const angle=blade*Math.PI*2/3,dx=Math.cos(angle),dz=Math.sin(angle),px=-dz*.045,pz=dx*.045;
+  const bx=dx*.018,bz=dz*.018,h=.23+blade*.025;
+  vertices.push(px,0,pz,-px,0,-pz,bx,h,bz);
+ }
+ const geometry=new THREE.BufferGeometry();
+ geometry.setAttribute("position",new THREE.Float32BufferAttribute(vertices,3));geometry.computeVertexNormals();
+ const material=new THREE.MeshStandardMaterial({color:0xffffff,roughness:1,side:THREE.DoubleSide});
+ const count=2450,grass=new THREE.InstancedMesh(geometry,material,count),dummy=new THREE.Object3D();
+ for(let i=0;i<count;i++){
+  const a=rnd()*Math.PI*2,r=14+Math.sqrt(rnd())*112,h=.65+rnd()*1.25;
+  dummy.position.set(Math.cos(a)*r,.015,Math.sin(a)*r);dummy.rotation.set(0,rnd()*Math.PI*2,0);
+  dummy.scale.set(.65+rnd()*.6,h,.65+rnd()*.6);dummy.updateMatrix();grass.setMatrixAt(i,dummy.matrix);
+  const col=new THREE.Color().setHSL(.235+rnd()*.075,.28+rnd()*.22,.25+rnd()*.2);grass.setColorAt(i,col);
+ }
+ grass.instanceMatrix.needsUpdate=true;if(grass.instanceColor)grass.instanceColor.needsUpdate=true;
+ grass.castShadow=false;grass.receiveShadow=true;parent.add(grass);
+
+ const flowerGeometry=new THREE.DodecahedronGeometry(.045,0);
+ const flowerMaterial=new THREE.MeshStandardMaterial({color:0xe5cf64,roughness:.9});
+ const flowerCount=260,flowers=new THREE.InstancedMesh(flowerGeometry,flowerMaterial,flowerCount);
+ for(let i=0;i<flowerCount;i++){
+  const a=rnd()*Math.PI*2,r=12+Math.sqrt(rnd())*112;
+  dummy.position.set(Math.cos(a)*r,.07,Math.sin(a)*r);dummy.rotation.set(rnd(),rnd()*Math.PI*2,rnd());
+  const s=.65+rnd()*.85;dummy.scale.set(s,s,s);dummy.updateMatrix();flowers.setMatrixAt(i,dummy.matrix);
+  flowers.setColorAt(i,new THREE.Color().setHSL(.12+rnd()*.035,.48+rnd()*.32,.48+rnd()*.2));
+ }
+ flowers.instanceMatrix.needsUpdate=true;if(flowers.instanceColor)flowers.instanceColor.needsUpdate=true;
+ parent.add(flowers);
+
+ const rockGeometry=new THREE.DodecahedronGeometry(.55,0);
+ const rockMaterial=new THREE.MeshStandardMaterial({color:0xffffff,roughness:.96});
+ const rockCount=190,rocks=new THREE.InstancedMesh(rockGeometry,rockMaterial,rockCount);
+ for(let i=0;i<rockCount;i++){
+  const a=rnd()*Math.PI*2,r=16+Math.sqrt(rnd())*112;
+  dummy.position.set(Math.cos(a)*r,.1,Math.sin(a)*r);dummy.rotation.set(rnd()*.3,rnd()*Math.PI*2,rnd()*.3);
+  const s=.25+rnd()*.95;dummy.scale.set(s,.3+rnd()*.55,s*(.65+rnd()*.8));dummy.updateMatrix();rocks.setMatrixAt(i,dummy.matrix);
+  rocks.setColorAt(i,new THREE.Color().setHSL(.53+rnd()*.06,.08+rnd()*.11,.34+rnd()*.2));
+ }
+ rocks.instanceMatrix.needsUpdate=true;if(rocks.instanceColor)rocks.instanceColor.needsUpdate=true;
+ rocks.castShadow=true;rocks.receiveShadow=true;parent.add(rocks);
+}
+
 const resourceNodes=[];const machines=[];const belts=[];const powerPoles=[];const powerConnections=[];let powerStart=null;let powerStats={capacity:0,consumption:0,poweredMachines:0,connectedMachines:0};let beltStart=null;const inventory={Leaves:0,Wood:0,Biomass:0,"Solid Biofuel":0,"Iron Ore":0,"Copper Ore":0,Limestone:0,"Iron Ingot":0,"Copper Ingot":0,"Iron Plate":0,"Iron Rod":0,Wire:0,Cable:0,Concrete:0,ReinforcedIronPlate:0};
 const progression={stage:0,gathered:{},crafted:{},built:{}};
 const milestones=[{name:"Первые ресурсы",goal:"Соберите по 20 железной руды, медной руды и известняка.",test:()=>["Iron Ore","Copper Ore","Limestone"].every(k=>(progression.gathered[k]||0)>=20)},{name:"Ручное производство",goal:"Изготовьте 10 железных слитков, 10 медных слитков и 10 бетона.",test:()=>["Iron Ingot","Copper Ingot","Concrete"].every(k=>(progression.crafted[k]||0)>=10)},{name:"Основные детали",goal:"Изготовьте 10 железных пластин, 10 стержней и 10 проволоки.",test:()=>["Iron Plate","Iron Rod","Wire"].every(k=>(progression.crafted[k]||0)>=10)},{name:"Первая фабрика",goal:"Постройте плавильню, конструктор и биомассовый генератор.",test:()=>["Smelter","Constructor","Biomass Burner"].every(k=>(progression.built[k]||0)>=1)},{name:"Автоматизация",goal:"Постройте добытчик и соедините машины конвейером.",test:()=>((progression.built.Miner||0)>=1&&(progression.built["Conveyor Belt"]||0)>=1)}];
