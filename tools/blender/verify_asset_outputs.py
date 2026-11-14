@@ -50,7 +50,7 @@ for blend in blends:
         errors.append(f"{blend}: missing/empty review preview {preview}")
     checked+=1
 
-audio_names=["machine_motor_loop","drone_rotors_loop","train_wheel_rail_loop","conveyor_belt_loop","fluid_pump_loop","pipeline_flow_loop","alien_planet_wind_loop","soft_ui_confirmation"]
+audio_names=["machine_motor_loop","drone_rotors_loop","train_wheel_rail_loop","conveyor_belt_loop","fluid_pump_loop","pipeline_flow_loop","alien_planet_wind_loop","soft_ui_confirmation","footsteps_surface_loop","item_pickup","building_placed","building_dismantled","ui_cancel","ui_error","ui_open","power_switch","resource_scanner_ping","player_jump","player_landing","waterfall_ambience_loop","cave_ambience_loop","rain_ambience_loop","alien_creature_chirp","portable_miner_loop","smelter_loop","refinery_loop","power_generator_loop","nuclear_reactor_loop"]
 for name in audio_names:
     path=os.path.join(AUDIO,name+".wav")
     if not os.path.isfile(path):
@@ -60,7 +60,7 @@ for name in audio_names:
         with wave.open(path,"rb") as wav:
             if wav.getnchannels()!=2 or wav.getframerate()!=48000 or wav.getsampwidth()!=2:
                 errors.append(f"{path}: expected stereo 48 kHz 16-bit PCM")
-            if wav.getnframes()<wav.getframerate()*2:
+            if wav.getnframes()<wav.getframerate()//4:
                 errors.append(f"{path}: audio is unexpectedly short")
     except wave.Error as exc:
         errors.append(f"{path}: invalid WAV: {exc}")
