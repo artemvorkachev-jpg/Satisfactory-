@@ -4460,8 +4460,8 @@
         "c": "assets/models/resources/bauxite_node/bauxite_node_variant_c.glb",
         "a": "assets/models/resources/bauxite_node/bauxite_node_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4476,8 +4476,8 @@
         "d": "assets/models/resources/caterium_ore_node/caterium_ore_node_variant_d.glb",
         "b": "assets/models/resources/caterium_ore_node/caterium_ore_node_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4492,8 +4492,8 @@
         "a": "assets/models/resources/coal_node/coal_node_variant_a.glb",
         "d": "assets/models/resources/coal_node/coal_node_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4524,8 +4524,8 @@
         "c": "assets/models/resources/cracked_resource_boulder/cracked_resource_boulder_variant_c.glb",
         "b": "assets/models/resources/cracked_resource_boulder/cracked_resource_boulder_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4540,8 +4540,8 @@
         "d": "assets/models/resources/crude_oil_node/crude_oil_node_variant_d.glb",
         "c": "assets/models/resources/crude_oil_node/crude_oil_node_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4556,8 +4556,8 @@
         "b": "assets/models/resources/geyser/geyser_variant_b.glb",
         "c": "assets/models/resources/geyser/geyser_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4604,8 +4604,8 @@
         "a": "assets/models/resources/raw_quartz_node/raw_quartz_node_variant_a.glb",
         "c": "assets/models/resources/raw_quartz_node/raw_quartz_node_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4620,8 +4620,8 @@
         "c": "assets/models/resources/resource_well_main/resource_well_main_variant_c.glb",
         "b": "assets/models/resources/resource_well_main/resource_well_main_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4637,7 +4637,7 @@
         "b": "assets/models/resources/resource_well_satellite/resource_well_satellite_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4652,8 +4652,8 @@
         "a": "assets/models/resources/sam_node/sam_node_variant_a.glb",
         "d": "assets/models/resources/sam_node/sam_node_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4668,8 +4668,8 @@
         "a": "assets/models/resources/sulfur_node/sulfur_node_variant_a.glb",
         "b": "assets/models/resources/sulfur_node/sulfur_node_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
