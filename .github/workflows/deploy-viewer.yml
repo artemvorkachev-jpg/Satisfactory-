@@ -40,7 +40,7 @@ jobs:
           ref: main
 
       - name: Validate browser JavaScript syntax
-        run: node --check game/physics.js && node --check game/model-world.js && node --check game/main.js
+        run: node --check game/physics.js && node --check game/production.js && node --check game/model-world.js && node --check game/main.js && node tests/production-power.mjs
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
