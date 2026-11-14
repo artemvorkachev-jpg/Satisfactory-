@@ -258,7 +258,7 @@ export async function createAssetWorld(parent, options = {}) {
   return {
     update,
     getObjects: () => [...loaded.values()].map(entry => entry.wrapper),
-    getResourceState: () => Object.fromEntries([...loaded.values()].filter(entry => entry.wrapper.userData.node).map(entry => [entry.placement.id, entry.wrapper.userData.node.amount]).concat([...savedResourceAmounts.entries()])),
+    getResourceState: () => Object.fromEntries([...savedResourceAmounts.entries(), ...[...loaded.values()].filter(entry => entry.wrapper.userData.node).map(entry => [entry.placement.id, entry.wrapper.userData.node.amount])]),
     setResourceState: state => { savedResourceAmounts.clear(); for (const [id, amount] of Object.entries(state || {})) if (Number.isFinite(amount) && amount >= 0) savedResourceAmounts.set(id, amount); },
     getStats,
     placements,
