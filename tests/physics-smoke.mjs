@@ -8,7 +8,7 @@ try {
   const consoleErrors = [];
   const failedRequests = [];
   const badResponses = [];
-  page.on("pageerror", error => pageErrors.push(error.message));
+  page.on("pageerror", error => pageErrors.push({ message: error.message, stack: error.stack }));
   page.on("console", message => { if (message.type() === "error") consoleErrors.push(message.text()); });
   page.on("requestfailed", request => failedRequests.push({ url: request.url(), error: request.failure()?.errorText || "request failed" }));
   page.on("response", response => { if (response.status() >= 400) badResponses.push({ url: response.url(), status: response.status() }); });
