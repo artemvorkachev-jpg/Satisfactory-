@@ -354,6 +354,30 @@ export async function createAssetWorld(parent, options = {}) {
     });
   }
 
+  function getPbrDiagnostics() {
+    const textureList = Object.values(pbrTextures).flatMap(maps => [maps.map, maps.roughnessMap, maps.heightMap]);
+    let detailMaterials = 0;
+    let materialCount = 0;
+    for (const entry of loaded.values()) {
+      entry.model.traverse(object => {
+        if (!object.isMesh || !object.material) return;
+        const list = Array.isArray(object.material) ? object.material : [object.material];
+        for (const material of list) {
+          if (!material) continue;
+          materialCount++;
+          if (material.userData.pbrAlbedoDetailV2 || material.bumpMap?.name?.includes("v2")) detailMaterials++;
+        }
+      });
+    }
+    return {
+      version: 2,
+      textureMapsExpected: textureList.length,
+      textureMapsLoaded: textureList.filter(texture => texture.image && (texture.image.width || texture.image.naturalWidth) > 0).length,
+      detailMaterials,
+      materialCount
+    };
+  }
+
   function getStats() {
     return {
       catalogFamilies: allAssets.length,
@@ -363,6 +387,7 @@ export async function createAssetWorld(parent, options = {}) {
       loadedModels: loaded.size,
       loadingModels: loading.size,
       failedModels: failed,
+      pbr: getPbrDiagnostics(),
       industrialFamiliesAvailable: assets.filter(asset => asset.category === "buildings" || asset.category === "infrastructure").length
     };
   }
@@ -475,13 +500,29 @@ export async function createAssetWorld(parent, options = {}) {
         updateResourceVisual(entry);
       }
     },
+    getNodeAmountById: id => {
+      const entry = loaded.get(id);
+      if (entry?.wrapper.userData.node) return entry.wrapper.userData.node.amount;
+      return savedResourceAmounts.has(id) ? savedResourceAmounts.get(id) : null;
+    },
+    setNodeAmountById: (id, amount) => {
+      if (typeof id !== "string" || !Number.isFinite(amount)) return false;
+      const next = Math.max(0, amount);
+      savedResourceAmounts.set(id, next);
+      const entry = loaded.get(id);
+      if (entry?.wrapper.userData.node) {
+        entry.wrapper.userData.node.amount = next;
+        updateResourceVisual(entry);
+      }
+      return true;
+    },
     setNodeAmount: (wrapper, amount) => {
       const id = wrapper?.userData?.asset?.placementId;
       const entry = id ? loaded.get(id) : null;
       if (!entry?.wrapper.userData.node || !Number.isFinite(amount)) return false;
       const next = Math.max(0, amount);
-      entry.wrapper.userData.node.amount = next;
       savedResourceAmounts.set(id, next);
+      entry.wrapper.userData.node.amount = next;
       updateResourceVisual(entry);
       return true;
     },
