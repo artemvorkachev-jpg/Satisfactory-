@@ -3716,5 +3716,34 @@
       "implementationStatus": "planned",
       "validationStatus": "not-tested"
     }
-  ]
+  ],
+  "runtimeSupport": {
+    "implementation": "rapier-low-poly-proxy-v1",
+    "implementedNow": {
+      "staticColliderShapes": [
+        "box",
+        "capsule",
+        "compound-building"
+      ],
+      "browserRuntimeObjects": [
+        "HUB",
+        "player-built production machines",
+        "iron/copper/limestone resource nodes",
+        "procedural trees",
+        "procedural environment rocks"
+      ],
+      "dynamicBodies": [
+        "player capsule"
+      ],
+      "collisionPolicy": "Fixed bodies use low-poly proxy colliders; render GLB meshes remain visual-only. Conveyor products remain simulated by logistics code and do not create rigid bodies."
+    },
+    "notYetImplemented": [
+      "full collision profiles for all 294 catalog families",
+      "vehicle dynamics",
+      "creature navigation colliders",
+      "interactive flora harvesting triggers",
+      "per-machine port and snap-point collision metadata"
+    ],
+    "verification": "Code-level implementation only; browser gameplay collision tests still required."
+  }
 }
