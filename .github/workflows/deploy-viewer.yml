@@ -1,5 +1,9 @@
 name: Deploy Satisfactory 3D viewer
 
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
 on:
   push:
     branches: [main]
