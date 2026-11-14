@@ -221,7 +221,7 @@
         "a": "assets/models/buildings/constructor/constructor_variant_a.glb",
         "b": "assets/models/buildings/constructor/constructor_variant_b.glb"
       },
-      "selectionStatus": "preview-reviewed-initial",
+      "selectionStatus": "pending-visual-review",
       "detailStatus": "blockout",
       "physicsStatus": "rapier-static-aabb-v1"
     },
