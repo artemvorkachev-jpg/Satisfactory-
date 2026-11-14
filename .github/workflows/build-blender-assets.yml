@@ -10,8 +10,8 @@ on:
       - ".github/workflows/build-blender-assets.yml"
 
 concurrency:
-  group: blender-assets-main
-  cancel-in-progress: true
+  group: blender-generation-main
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -160,5 +160,17 @@ jobs:
             exit 0
           fi
           git commit -m "Generate Blender blockouts, exports and review previews"
-          git pull --rebase origin main
-          git push
+          # Another workflow or a gameplay edit may move main during the long Blender build.
+          # Rebase and retry instead of failing after successfully generating every asset.
+          for attempt in 1 2 3 4 5 6 7 8; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              echo "Generated assets pushed successfully on attempt $attempt."
+              exit 0
+            fi
+            echo "main moved during push; retrying after rebase (attempt $attempt/8)."
+            sleep $((attempt * 3))
+          done
+          echo "Could not publish generated assets after 8 rebased attempts."
+          exit 1
