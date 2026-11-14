@@ -227,7 +227,7 @@ export async function createAssetWorld(parent, options = {}) {
   function loadPlacement(placement) {
     if (loaded.has(placement.id) || loading.has(placement.id)) return;
     loading.add(placement.id);
-    loader.load("../" + placement.asset.modelPath, gltf => {
+    loader.load("../" + placement.asset.modelPath + "?v=20261114-pbr2", gltf => {
       loading.delete(placement.id);
       const wrapper = new THREE.Group();
       wrapper.name = placement.asset.name;
@@ -385,7 +385,7 @@ export async function createAssetWorld(parent, options = {}) {
     placedConstruction.push(record);
 
     return new Promise((resolve, reject) => {
-      loader.load("../" + asset.modelPath, gltf => {
+      loader.load("../" + asset.modelPath + "?v=20261114-pbr2", gltf => {
         const model = gltf.scene;
         const bounds = new THREE.Box3().setFromObject(model);
         const size = bounds.getSize(new THREE.Vector3());
