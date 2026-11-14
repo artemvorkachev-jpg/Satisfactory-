@@ -96,7 +96,7 @@ function showMenu(mode){
   const availableCategories=[...new Set(catalog.map(asset=>asset.category))].sort();
   const existingCategories=new Set(Array.from(category.options,option=>option.value));
   for(const value of availableCategories)if(!existingCategories.has(value)){
-   const option=document.createElement("option");option.value=value;option.textContent=categoryNames[value]||value.replace(/[_-]+/g," ").replace(/\\b\\w/g,ch=>ch.toUpperCase());category.append(option);
+   const option=document.createElement("option");option.value=value;option.textContent=categoryNames[value]||value.replace(/[_-]+/g," ").replace(/\b\w/g,ch=>ch.toUpperCase());category.append(option);
   }
   const query=search.value.trim().toLowerCase(),kind=category.value;
   const extras=catalog.filter(asset=>!reserved.has(asset.id)&&(!kind||asset.category===kind)&&(!query||(asset.name+" "+asset.id+" "+asset.category).toLowerCase().includes(query)));
