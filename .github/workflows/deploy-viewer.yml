@@ -40,19 +40,35 @@ jobs:
         shell: bash
         run: |
           rm -rf _site
-          mkdir -p _site/assets/models/previews _site/assets/textures
+          mkdir -p _site
           cp index.html _site/index.html
           cp -R viewer _site/viewer
-          cp -R assets/models/previews/. _site/assets/models/previews/
-          if [ -d assets/textures ]; then cp -R assets/textures/. _site/assets/textures/; fi
-          while IFS= read -r -d '' file; do
-            rel="${file#assets/models/}"
-            mkdir -p "_site/assets/models/$(dirname "$rel")"
-            cp "$file" "_site/assets/models/$rel"
-          done < <(find assets/models -type f -name "*.glb" -print0)
+          python3 - <<'PY'
+          import json, os, shutil
+          root = os.getcwd()
+          site = os.path.join(root, "_site")
+          catalog = json.load(open(os.path.join(root, "viewer", "catalog.json"), encoding="utf-8"))
+          copied = set()
+          for asset in catalog.get("assets", []):
+              for rel in asset.get("variants", {}).values():
+                  if rel not in copied:
+                      dst = os.path.join(site, rel)
+                      os.makedirs(os.path.dirname(dst), exist_ok=True)
+                      shutil.copy2(os.path.join(root, rel), dst)
+                      copied.add(rel)
+              preview = asset.get("preview")
+              if preview and preview not in copied:
+                  dst = os.path.join(site, preview)
+                  os.makedirs(os.path.dirname(dst), exist_ok=True)
+                  shutil.copy2(os.path.join(root, preview), dst)
+                  copied.add(preview)
+          texture_root = os.path.join(root, "assets", "textures")
+          if os.path.isdir(texture_root):
+              shutil.copytree(texture_root, os.path.join(site, "assets", "textures"), dirs_exist_ok=True)
+          print("Viewer assets copied:", len(copied))
+          PY
           test -f _site/viewer/catalog.json
-          echo "GLB files: $(find _site/assets/models -type f -name '*.glb' | wc -l)"
-          echo "Preview sheets: $(find _site/assets/models/previews -type f -name '*.png' | wc -l)"
+          echo "Viewer catalogue entries: $(python3 -c 'import json; print(json.load(open("_site/viewer/catalog.json"))["count"])')"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
