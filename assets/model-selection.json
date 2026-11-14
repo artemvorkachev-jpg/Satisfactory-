@@ -365,7 +365,7 @@
         "a": "assets/models/buildings/equipment-workshop/equipment-workshop_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -381,7 +381,7 @@
         "d": "assets/models/buildings/foundations/foundations_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -397,7 +397,7 @@
         "b": "assets/models/buildings/foundry/foundry_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1245,7 +1245,7 @@
         "a": "assets/models/buildings/water_extractor/water_extractor_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1788,8 +1788,8 @@
         "d": "assets/models/cup/cup_variant_d.glb",
         "b": "assets/models/cup/cup_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2092,8 +2092,8 @@
         "c": "assets/models/gas_mask/gas_mask_variant_c.glb",
         "b": "assets/models/gas_mask/gas_mask_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2109,7 +2109,7 @@
         "c": "assets/models/hazmat_suit/hazmat_suit_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2124,8 +2124,8 @@
         "d": "assets/models/hoverpack/hoverpack_variant_d.glb",
         "b": "assets/models/hoverpack/hoverpack_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4365,7 +4365,7 @@
         "b": "assets/models/jetpack/jetpack_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4396,8 +4396,8 @@
         "b": "assets/models/object_scanner/object_scanner_variant_b.glb",
         "d": "assets/models/object_scanner/object_scanner_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -4413,7 +4413,7 @@
         "c": "assets/models/parachute/parachute_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
