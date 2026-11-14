@@ -19,6 +19,9 @@ try {
       state?.worldSurface?.roughnessMap &&
       state?.worldSurface?.bumpMap &&
       state?.worldSurface?.foliageInstances >= 2000 &&
+      state?.assets?.pbr?.textureMapsExpected === 15 &&
+      state?.assets?.pbr?.textureMapsLoaded === 15 &&
+      state?.assets?.pbr?.detailMaterials > 0 &&
       state?.resources?.some(node => node.amount > 0);
   }, { timeout: 90000 });
 
@@ -76,6 +79,10 @@ try {
   assert.equal(result.worldSurface.roughnessMap, true, "Terrain roughness map is missing");
   assert.equal(result.worldSurface.bumpMap, true, "Terrain height detail map is missing");
   assert.ok(result.worldSurface.foliageInstances >= 2000, "Detailed Grass Fields ground vegetation is missing");
+  assert.equal(result.assets.pbr.textureMapsExpected, 15, "Expected five v2 PBR families with three maps each");
+  assert.equal(result.assets.pbr.textureMapsLoaded, 15, "Not all v2 PBR maps loaded in the game scene");
+  assert.ok(result.assets.pbr.detailMaterials > 0, "No streamed materials received the PBR albedo detail overlay");
+  assert.ok(result.assets.pbr.detailMaterials <= result.assets.pbr.materialCount, "PBR material diagnostics are inconsistent");
   assert.ok(result.resources.some(node => node.amount > 0), "No interactive resource nodes streamed into the world");
   assert.ok(result.assets.loadedModels >= 2, "Nearby GLB models did not stream into the world");
   assert.ok(result.probes.ground !== null, "Ground ray missed the world ground");
