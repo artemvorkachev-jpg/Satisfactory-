@@ -228,7 +228,7 @@ function showMenu(mode){
  };
  if(mode==="build"){
   for(const [name,description] of buildItems)addButton(name,description,()=>startBuild(name));
-  const reserved=new Set(["smelter","constructor","storage_container","biomass-burner","power_pole","power-line","conveyor_belt","portable_miner","miner","hub"]);
+  const reserved=new Set(["smelter","constructor","assembler","storage_container","biomass-burner","power_pole","power-line","conveyor_belt","portable_miner","miner","hub"]);
   const catalog=assetWorld?.constructionCatalog||[];
   const categoryNames={buildings:"Здания",infrastructure:"Логистика",railway:"Железная дорога",portable_miner:"Добыча",items:"Предметы",tractor:"Тракторы",truck:"Грузовики",explorer:"Вездеходы",cyber_wagon:"Cyber Wagon",factory_cart:"Тележки",locomotive:"Локомотивы",train_station:"Ж/д станции",freight_car:"Грузовые вагоны",freight_platform:"Грузовые платформы",drone:"Дроны",blade_runners:"Экипировка",hoverpack:"Экипировка",jetpack:"Экипировка",parachute:"Экипировка",gas_mask:"Экипировка",hazmat_suit:"Экипировка",object_scanner:"Инструменты",cup:"Предметы"};
   const availableCategories=[...new Set(catalog.map(asset=>asset.category))].sort();
