@@ -12,8 +12,8 @@
         "d": "assets/models/blade_runners/blade_runners_variant_d.glb"
       },
       "preview": "assets/models/previews/blade_runners_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "alien-power-augmenter",
@@ -26,8 +26,8 @@
         "a": "assets/models/buildings/alien-power-augmenter/alien-power-augmenter_variant_a.glb"
       },
       "preview": "assets/models/previews/alien-power-augmenter_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "angled-frame-window",
@@ -40,8 +40,8 @@
         "a": "assets/models/buildings/angled-frame-window/angled-frame-window_variant_a.glb"
       },
       "preview": "assets/models/previews/angled-frame-window_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "assembler",
@@ -54,8 +54,8 @@
         "c": "assets/models/buildings/assembler/assembler_variant_c.glb"
       },
       "preview": "assets/models/previews/assembler_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "awesome-shop",
@@ -68,8 +68,8 @@
         "c": "assets/models/buildings/awesome-shop/awesome-shop_variant_c.glb"
       },
       "preview": "assets/models/previews/awesome-shop_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "basic-shelf-unit",
@@ -82,8 +82,8 @@
         "a": "assets/models/buildings/basic-shelf-unit/basic-shelf-unit_variant_a.glb"
       },
       "preview": "assets/models/previews/basic-shelf-unit_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "beams",
@@ -96,8 +96,8 @@
         "c": "assets/models/buildings/beams/beams_variant_c.glb"
       },
       "preview": "assets/models/previews/beams_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "biomass-burner",
@@ -110,8 +110,8 @@
         "a": "assets/models/buildings/biomass-burner/biomass-burner_variant_a.glb"
       },
       "preview": "assets/models/previews/biomass-burner_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "blender",
@@ -124,8 +124,8 @@
         "d": "assets/models/buildings/blender/blender_variant_d.glb"
       },
       "preview": "assets/models/previews/blender_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "blueprint-designer",
@@ -138,8 +138,8 @@
         "c": "assets/models/buildings/blueprint-designer/blueprint-designer_variant_c.glb"
       },
       "preview": "assets/models/previews/blueprint-designer_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "buffer-stop",
@@ -152,8 +152,8 @@
         "c": "assets/models/buildings/buffer-stop/buffer-stop_variant_c.glb"
       },
       "preview": "assets/models/previews/buffer-stop_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "coal-generator",
@@ -166,8 +166,8 @@
         "a": "assets/models/buildings/coal-generator/coal-generator_variant_a.glb"
       },
       "preview": "assets/models/previews/coal-generator_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "constructor",
@@ -180,7 +180,6 @@
         "b": "assets/models/buildings/constructor/constructor_variant_b.glb"
       },
       "preview": "assets/models/previews/constructor_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-visual-review"
     },
     {
@@ -194,8 +193,8 @@
         "c": "assets/models/buildings/converter/converter_variant_c.glb"
       },
       "preview": "assets/models/previews/converter_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "conveyor-floor-hole",
@@ -208,8 +207,8 @@
         "a": "assets/models/buildings/conveyor-floor-hole/conveyor-floor-hole_variant_a.glb"
       },
       "preview": "assets/models/previews/conveyor-floor-hole_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "conveyor-throughput-monitor",
@@ -222,8 +221,8 @@
         "d": "assets/models/buildings/conveyor-throughput-monitor/conveyor-throughput-monitor_variant_d.glb"
       },
       "preview": "assets/models/previews/conveyor-throughput-monitor_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "conveyor-wall-hole",
@@ -236,8 +235,8 @@
         "a": "assets/models/buildings/conveyor-wall-hole/conveyor-wall-hole_variant_a.glb"
       },
       "preview": "assets/models/previews/conveyor-wall-hole_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "conveyor-wall-mount",
@@ -250,8 +249,8 @@
         "b": "assets/models/buildings/conveyor-wall-mount/conveyor-wall-mount_variant_b.glb"
       },
       "preview": "assets/models/previews/conveyor-wall-mount_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "crafting-bench",
@@ -264,8 +263,8 @@
         "b": "assets/models/buildings/crafting-bench/crafting-bench_variant_b.glb"
       },
       "preview": "assets/models/previews/crafting-bench_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "dimensional-depot-uploader",
@@ -278,8 +277,8 @@
         "d": "assets/models/buildings/dimensional-depot-uploader/dimensional-depot-uploader_variant_d.glb"
       },
       "preview": "assets/models/previews/dimensional-depot-uploader_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "drone-port",
@@ -292,8 +291,8 @@
         "b": "assets/models/buildings/drone-port/drone-port_variant_b.glb"
       },
       "preview": "assets/models/previews/drone-port_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "equipment-workshop",
@@ -306,8 +305,8 @@
         "a": "assets/models/buildings/equipment-workshop/equipment-workshop_variant_a.glb"
       },
       "preview": "assets/models/previews/equipment-workshop_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "foundations",
@@ -320,8 +319,8 @@
         "a": "assets/models/buildings/foundations/foundations_variant_a.glb"
       },
       "preview": "assets/models/previews/foundations_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "foundry",
@@ -334,8 +333,8 @@
         "b": "assets/models/buildings/foundry/foundry_variant_b.glb"
       },
       "preview": "assets/models/previews/foundry_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "fuel-generator",
@@ -348,8 +347,8 @@
         "a": "assets/models/buildings/fuel-generator/fuel-generator_variant_a.glb"
       },
       "preview": "assets/models/previews/fuel-generator_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "geothermal-generator",
@@ -362,8 +361,8 @@
         "a": "assets/models/buildings/geothermal-generator/geothermal-generator_variant_a.glb"
       },
       "preview": "assets/models/previews/geothermal-generator_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "hub",
@@ -376,8 +375,8 @@
         "b": "assets/models/buildings/hub/hub_variant_b.glb"
       },
       "preview": "assets/models/previews/hub_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "hypertube-supports",
@@ -390,8 +389,8 @@
         "a": "assets/models/buildings/hypertube-supports/hypertube-supports_variant_a.glb"
       },
       "preview": "assets/models/previews/hypertube-supports_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "indicator-light",
@@ -404,8 +403,8 @@
         "a": "assets/models/buildings/indicator-light/indicator-light_variant_a.glb"
       },
       "preview": "assets/models/previews/indicator-light_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "industrial-fluid-buffer",
@@ -418,8 +417,8 @@
         "d": "assets/models/buildings/industrial-fluid-buffer/industrial-fluid-buffer_variant_d.glb"
       },
       "preview": "assets/models/previews/industrial-fluid-buffer_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "jump-pad",
@@ -432,8 +431,8 @@
         "b": "assets/models/buildings/jump-pad/jump-pad_variant_b.glb"
       },
       "preview": "assets/models/previews/jump-pad_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "ladder",
@@ -446,8 +445,8 @@
         "a": "assets/models/buildings/ladder/ladder_variant_a.glb"
       },
       "preview": "assets/models/previews/ladder_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "large-fan",
@@ -460,8 +459,8 @@
         "c": "assets/models/buildings/large-fan/large-fan_variant_c.glb"
       },
       "preview": "assets/models/previews/large-fan_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "lights",
@@ -474,8 +473,8 @@
         "d": "assets/models/buildings/lights/lights_variant_d.glb"
       },
       "preview": "assets/models/previews/lights_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "lookout-tower",
@@ -488,8 +487,8 @@
         "b": "assets/models/buildings/lookout-tower/lookout-tower_variant_b.glb"
       },
       "preview": "assets/models/previews/lookout-tower_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "mam",
@@ -502,8 +501,8 @@
         "a": "assets/models/buildings/mam/mam_variant_a.glb"
       },
       "preview": "assets/models/previews/mam_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "manufacturer",
@@ -516,8 +515,8 @@
         "d": "assets/models/buildings/manufacturer/manufacturer_variant_d.glb"
       },
       "preview": "assets/models/previews/manufacturer_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "miner",
@@ -530,8 +529,8 @@
         "c": "assets/models/buildings/miner/miner_variant_c.glb"
       },
       "preview": "assets/models/previews/miner_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "nuclear-power-plant",
@@ -544,8 +543,8 @@
         "d": "assets/models/buildings/nuclear-power-plant/nuclear-power-plant_variant_d.glb"
       },
       "preview": "assets/models/previews/nuclear-power-plant_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "oil_extractor",
@@ -558,8 +557,8 @@
         "a": "assets/models/buildings/oil_extractor/oil_extractor_variant_a.glb"
       },
       "preview": "assets/models/previews/oil_extractor_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "packager",
@@ -572,8 +571,8 @@
         "d": "assets/models/buildings/packager/packager_variant_d.glb"
       },
       "preview": "assets/models/previews/packager_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "particle_accelerator",
@@ -586,8 +585,8 @@
         "a": "assets/models/buildings/particle_accelerator/particle_accelerator_variant_a.glb"
       },
       "preview": "assets/models/previews/particle_accelerator_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "personal-storage-box",
@@ -600,8 +599,8 @@
         "b": "assets/models/buildings/personal-storage-box/personal-storage-box_variant_b.glb"
       },
       "preview": "assets/models/previews/personal-storage-box_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "personnel-elevator",
@@ -614,8 +613,8 @@
         "a": "assets/models/buildings/personnel-elevator/personnel-elevator_variant_a.glb"
       },
       "preview": "assets/models/previews/personnel-elevator_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "pillars",
@@ -628,8 +627,8 @@
         "b": "assets/models/buildings/pillars/pillars_variant_b.glb"
       },
       "preview": "assets/models/previews/pillars_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "pipeline-support",
@@ -642,8 +641,8 @@
         "c": "assets/models/buildings/pipeline-support/pipeline-support_variant_c.glb"
       },
       "preview": "assets/models/previews/pipeline-support_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "portal",
@@ -656,8 +655,8 @@
         "b": "assets/models/buildings/portal/portal_variant_b.glb"
       },
       "preview": "assets/models/previews/portal_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "power-line",
@@ -670,8 +669,8 @@
         "c": "assets/models/buildings/power-line/power-line_variant_c.glb"
       },
       "preview": "assets/models/previews/power-line_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "priority-merger",
@@ -684,8 +683,8 @@
         "d": "assets/models/buildings/priority-merger/priority-merger_variant_d.glb"
       },
       "preview": "assets/models/previews/priority-merger_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "priority-power-switch",
@@ -698,8 +697,8 @@
         "c": "assets/models/buildings/priority-power-switch/priority-power-switch_variant_c.glb"
       },
       "preview": "assets/models/previews/priority-power-switch_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "programmable-splitter",
@@ -712,8 +711,8 @@
         "c": "assets/models/buildings/programmable-splitter/programmable-splitter_variant_c.glb"
       },
       "preview": "assets/models/previews/programmable-splitter_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "quantum_encoder",
@@ -726,8 +725,8 @@
         "d": "assets/models/buildings/quantum_encoder/quantum_encoder_variant_d.glb"
       },
       "preview": "assets/models/previews/quantum_encoder_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "radar-tower",
@@ -740,8 +739,8 @@
         "a": "assets/models/buildings/radar-tower/radar-tower_variant_a.glb"
       },
       "preview": "assets/models/previews/radar-tower_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "ramps",
@@ -754,8 +753,8 @@
         "b": "assets/models/buildings/ramps/ramps_variant_b.glb"
       },
       "preview": "assets/models/previews/ramps_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "refinery",
@@ -768,8 +767,8 @@
         "c": "assets/models/buildings/refinery/refinery_variant_c.glb"
       },
       "preview": "assets/models/previews/refinery_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "resource-well-extractor",
@@ -782,8 +781,8 @@
         "a": "assets/models/buildings/resource-well-extractor/resource-well-extractor_variant_a.glb"
       },
       "preview": "assets/models/previews/resource-well-extractor_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "resource-well-pressurizer",
@@ -796,8 +795,8 @@
         "a": "assets/models/buildings/resource-well-pressurizer/resource-well-pressurizer_variant_a.glb"
       },
       "preview": "assets/models/previews/resource-well-pressurizer_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "signs",
@@ -810,8 +809,8 @@
         "a": "assets/models/buildings/signs/signs_variant_a.glb"
       },
       "preview": "assets/models/previews/signs_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "smart-splitter",
@@ -824,8 +823,8 @@
         "d": "assets/models/buildings/smart-splitter/smart-splitter_variant_d.glb"
       },
       "preview": "assets/models/previews/smart-splitter_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "smelter",
@@ -838,8 +837,8 @@
         "c": "assets/models/buildings/smelter/smelter_variant_c.glb"
       },
       "preview": "assets/models/previews/smelter_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "space-elevator",
@@ -852,8 +851,8 @@
         "c": "assets/models/buildings/space-elevator/space-elevator_variant_c.glb"
       },
       "preview": "assets/models/previews/space-elevator_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "stackable-conveyor-pole",
@@ -866,8 +865,8 @@
         "c": "assets/models/buildings/stackable-conveyor-pole/stackable-conveyor-pole_variant_c.glb"
       },
       "preview": "assets/models/previews/stackable-conveyor-pole_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "stairs",
@@ -880,8 +879,8 @@
         "d": "assets/models/buildings/stairs/stairs_variant_d.glb"
       },
       "preview": "assets/models/previews/stairs_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "train-signals",
@@ -894,8 +893,8 @@
         "b": "assets/models/buildings/train-signals/train-signals_variant_b.glb"
       },
       "preview": "assets/models/previews/train-signals_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "truck-station",
@@ -908,8 +907,8 @@
         "b": "assets/models/buildings/truck-station/truck-station_variant_b.glb"
       },
       "preview": "assets/models/previews/truck-station_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "u-jelly-landing-pad",
@@ -922,8 +921,8 @@
         "d": "assets/models/buildings/u-jelly-landing-pad/u-jelly-landing-pad_variant_d.glb"
       },
       "preview": "assets/models/previews/u-jelly-landing-pad_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "valve",
@@ -936,8 +935,8 @@
         "d": "assets/models/buildings/valve/valve_variant_d.glb"
       },
       "preview": "assets/models/previews/valve_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "vehicle-paths",
@@ -950,8 +949,8 @@
         "a": "assets/models/buildings/vehicle-paths/vehicle-paths_variant_a.glb"
       },
       "preview": "assets/models/previews/vehicle-paths_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "walkways",
@@ -964,8 +963,8 @@
         "a": "assets/models/buildings/walkways/walkways_variant_a.glb"
       },
       "preview": "assets/models/previews/walkways_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "wall-conveyor-perpendicular",
@@ -978,8 +977,8 @@
         "c": "assets/models/buildings/wall-conveyor-perpendicular/wall-conveyor-perpendicular_variant_c.glb"
       },
       "preview": "assets/models/previews/wall-conveyor-perpendicular_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "wall-conveyor-x1",
@@ -992,8 +991,8 @@
         "a": "assets/models/buildings/wall-conveyor-x1/wall-conveyor-x1_variant_a.glb"
       },
       "preview": "assets/models/previews/wall-conveyor-x1_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "wall-conveyor-x2",
@@ -1006,8 +1005,8 @@
         "b": "assets/models/buildings/wall-conveyor-x2/wall-conveyor-x2_variant_b.glb"
       },
       "preview": "assets/models/previews/wall-conveyor-x2_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "wall-conveyor-x3",
@@ -1020,8 +1019,8 @@
         "c": "assets/models/buildings/wall-conveyor-x3/wall-conveyor-x3_variant_c.glb"
       },
       "preview": "assets/models/previews/wall-conveyor-x3_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "wall-doors",
@@ -1034,8 +1033,8 @@
         "c": "assets/models/buildings/wall-doors/wall-doors_variant_c.glb"
       },
       "preview": "assets/models/previews/wall-doors_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "wall-outlet",
@@ -1048,8 +1047,8 @@
         "a": "assets/models/buildings/wall-outlet/wall-outlet_variant_a.glb"
       },
       "preview": "assets/models/previews/wall-outlet_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "walls",
@@ -1062,8 +1061,8 @@
         "a": "assets/models/buildings/walls/walls_variant_a.glb"
       },
       "preview": "assets/models/previews/walls_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "water_extractor",
@@ -1076,8 +1075,8 @@
         "a": "assets/models/buildings/water_extractor/water_extractor_variant_a.glb"
       },
       "preview": "assets/models/previews/water_extractor_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "windows",
@@ -1090,8 +1089,8 @@
         "b": "assets/models/buildings/windows/windows_variant_b.glb"
       },
       "preview": "assets/models/previews/windows_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "fauna-alpha-hog",
@@ -1104,8 +1103,8 @@
         "b": "assets/models/creatures/fauna-alpha-hog/fauna-alpha-hog_variant_b.glb"
       },
       "preview": "assets/models/previews/fauna-alpha-hog_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "fauna-alpha-spitter-aquatic",
@@ -1118,8 +1117,8 @@
         "d": "assets/models/creatures/fauna-alpha-spitter-aquatic/fauna-alpha-spitter-aquatic_variant_d.glb"
       },
       "preview": "assets/models/previews/fauna-alpha-spitter-aquatic_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "fauna-alpha-spitter-desert",
@@ -1132,8 +1131,8 @@
         "a": "assets/models/creatures/fauna-alpha-spitter-desert/fauna-alpha-spitter-desert_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-alpha-spitter-desert_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "fauna-alpha-spitter-forest",
@@ -1146,8 +1145,8 @@
         "b": "assets/models/creatures/fauna-alpha-spitter-forest/fauna-alpha-spitter-forest_variant_b.glb"
       },
       "preview": "assets/models/previews/fauna-alpha-spitter-forest_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "fauna-alpha-spitter-red-forest",
@@ -1160,8 +1159,8 @@
         "a": "assets/models/creatures/fauna-alpha-spitter-red-forest/fauna-alpha-spitter-red-forest_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-alpha-spitter-red-forest_four_variants_preview.png",
-      "selectedVariant": "d",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "d"
     },
     {
       "id": "fauna-alpha-stinger",
@@ -1174,8 +1173,8 @@
         "b": "assets/models/creatures/fauna-alpha-stinger/fauna-alpha-stinger_variant_b.glb"
       },
       "preview": "assets/models/previews/fauna-alpha-stinger_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "fauna-baby-stinger-cave",
@@ -1188,8 +1187,8 @@
         "d": "assets/models/creatures/fauna-baby-stinger-cave/fauna-baby-stinger-cave_variant_d.glb"
       },
       "preview": "assets/models/previews/fauna-baby-stinger-cave_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "fauna-baby-stinger-normal",
@@ -1202,8 +1201,8 @@
         "c": "assets/models/creatures/fauna-baby-stinger-normal/fauna-baby-stinger-normal_variant_c.glb"
       },
       "preview": "assets/models/previews/fauna-baby-stinger-normal_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "fauna-beetle",
@@ -1216,8 +1215,8 @@
         "a": "assets/models/creatures/fauna-beetle/fauna-beetle_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-beetle_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "fauna-cave-bat",
@@ -1230,8 +1229,8 @@
         "c": "assets/models/creatures/fauna-cave-bat/fauna-cave-bat_variant_c.glb"
       },
       "preview": "assets/models/previews/fauna-cave-bat_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "fauna-cliff-hog",
@@ -1244,8 +1243,8 @@
         "a": "assets/models/creatures/fauna-cliff-hog/fauna-cliff-hog_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-cliff-hog_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "fauna-elite-flying-crab-hatcher",
@@ -1258,8 +1257,8 @@
         "d": "assets/models/creatures/fauna-elite-flying-crab-hatcher/fauna-elite-flying-crab-hatcher_variant_d.glb"
       },
       "preview": "assets/models/previews/fauna-elite-flying-crab-hatcher_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "fauna-elite-gas-stinger",
@@ -1272,8 +1271,8 @@
         "a": "assets/models/creatures/fauna-elite-gas-stinger/fauna-elite-gas-stinger_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-elite-gas-stinger_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "fauna-fluffy-tailed-hog",
@@ -1286,8 +1285,8 @@
         "d": "assets/models/creatures/fauna-fluffy-tailed-hog/fauna-fluffy-tailed-hog_variant_d.glb"
       },
       "preview": "assets/models/previews/fauna-fluffy-tailed-hog_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "fauna-flying-bird",
@@ -1300,8 +1299,8 @@
         "d": "assets/models/creatures/fauna-flying-bird/fauna-flying-bird_variant_d.glb"
       },
       "preview": "assets/models/previews/fauna-flying-bird_four_variants_preview.png",
-      "selectedVariant": "d",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "d"
     },
     {
       "id": "fauna-flying-crab",
@@ -1314,8 +1313,8 @@
         "d": "assets/models/creatures/fauna-flying-crab/fauna-flying-crab_variant_d.glb"
       },
       "preview": "assets/models/previews/fauna-flying-crab_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "fauna-flying-crab-hatcher",
@@ -1328,8 +1327,8 @@
         "c": "assets/models/creatures/fauna-flying-crab-hatcher/fauna-flying-crab-hatcher_variant_c.glb"
       },
       "preview": "assets/models/previews/fauna-flying-crab-hatcher_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "fauna-giant-flying-manta",
@@ -1342,8 +1341,8 @@
         "a": "assets/models/creatures/fauna-giant-flying-manta/fauna-giant-flying-manta_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-giant-flying-manta_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "fauna-grass-sprite",
@@ -1356,8 +1355,8 @@
         "d": "assets/models/creatures/fauna-grass-sprite/fauna-grass-sprite_variant_d.glb"
       },
       "preview": "assets/models/previews/fauna-grass-sprite_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "fauna-leaf-bug",
@@ -1370,8 +1369,8 @@
         "a": "assets/models/creatures/fauna-leaf-bug/fauna-leaf-bug_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-leaf-bug_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "fauna-lizard-doggo",
@@ -1384,8 +1383,8 @@
         "a": "assets/models/creatures/fauna-lizard-doggo/fauna-lizard-doggo_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-lizard-doggo_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "fauna-non-flying-bird",
@@ -1398,8 +1397,8 @@
         "b": "assets/models/creatures/fauna-non-flying-bird/fauna-non-flying-bird_variant_b.glb"
       },
       "preview": "assets/models/previews/fauna-non-flying-bird_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "fauna-nuclear-hog",
@@ -1412,8 +1411,8 @@
         "b": "assets/models/creatures/fauna-nuclear-hog/fauna-nuclear-hog_variant_b.glb"
       },
       "preview": "assets/models/previews/fauna-nuclear-hog_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "fauna-power-slug-blue",
@@ -1426,8 +1425,8 @@
         "b": "assets/models/creatures/fauna-power-slug-blue/fauna-power-slug-blue_variant_b.glb"
       },
       "preview": "assets/models/previews/fauna-power-slug-blue_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "fauna-power-slug-purple",
@@ -1440,8 +1439,8 @@
         "d": "assets/models/creatures/fauna-power-slug-purple/fauna-power-slug-purple_variant_d.glb"
       },
       "preview": "assets/models/previews/fauna-power-slug-purple_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "fauna-power-slug-yellow",
@@ -1454,8 +1453,8 @@
         "b": "assets/models/creatures/fauna-power-slug-yellow/fauna-power-slug-yellow_variant_b.glb"
       },
       "preview": "assets/models/previews/fauna-power-slug-yellow_four_variants_preview.png",
-      "selectedVariant": "d",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "d"
     },
     {
       "id": "fauna-space-giraffe-tick-penguin-whale",
@@ -1468,8 +1467,8 @@
         "d": "assets/models/creatures/fauna-space-giraffe-tick-penguin-whale/fauna-space-giraffe-tick-penguin-whale_variant_d.glb"
       },
       "preview": "assets/models/previews/fauna-space-giraffe-tick-penguin-whale_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "fauna-spitter-aquatic",
@@ -1482,8 +1481,8 @@
         "c": "assets/models/creatures/fauna-spitter-aquatic/fauna-spitter-aquatic_variant_c.glb"
       },
       "preview": "assets/models/previews/fauna-spitter-aquatic_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "fauna-spitter-desert",
@@ -1496,8 +1495,8 @@
         "a": "assets/models/creatures/fauna-spitter-desert/fauna-spitter-desert_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-spitter-desert_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "fauna-spitter-forest",
@@ -1510,8 +1509,8 @@
         "b": "assets/models/creatures/fauna-spitter-forest/fauna-spitter-forest_variant_b.glb"
       },
       "preview": "assets/models/previews/fauna-spitter-forest_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "fauna-spitter-red-forest",
@@ -1524,8 +1523,8 @@
         "b": "assets/models/creatures/fauna-spitter-red-forest/fauna-spitter-red-forest_variant_b.glb"
       },
       "preview": "assets/models/previews/fauna-spitter-red-forest_four_variants_preview.png",
-      "selectedVariant": "d",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "d"
     },
     {
       "id": "fauna-spore-flower-creature",
@@ -1538,8 +1537,8 @@
         "a": "assets/models/creatures/fauna-spore-flower-creature/fauna-spore-flower-creature_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-spore-flower-creature_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "cup",
@@ -1552,8 +1551,8 @@
         "c": "assets/models/cup/cup_variant_c.glb"
       },
       "preview": "assets/models/previews/cup_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "cyber_wagon",
@@ -1566,8 +1565,8 @@
         "c": "assets/models/cyber_wagon/cyber_wagon_variant_c.glb"
       },
       "preview": "assets/models/previews/cyber_wagon_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "drone",
@@ -1580,8 +1579,8 @@
         "c": "assets/models/drone/drone_variant_c.glb"
       },
       "preview": "assets/models/previews/drone_four_variants_preview.png",
-      "selectedVariant": "d",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "d"
     },
     {
       "id": "explorer",
@@ -1594,8 +1593,8 @@
         "b": "assets/models/explorer/explorer_variant_b.glb"
       },
       "preview": "assets/models/previews/explorer_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "factory_cart",
@@ -1608,8 +1607,8 @@
         "b": "assets/models/factory_cart/factory_cart_variant_b.glb"
       },
       "preview": "assets/models/previews/factory_cart_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "flora-bacon-agaric",
@@ -1622,8 +1621,8 @@
         "b": "assets/models/flora/flora-bacon-agaric/flora-bacon-agaric_variant_b.glb"
       },
       "preview": "assets/models/previews/flora-bacon-agaric_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "flora-beryl-nut",
@@ -1636,8 +1635,8 @@
         "c": "assets/models/flora/flora-beryl-nut/flora-beryl-nut_variant_c.glb"
       },
       "preview": "assets/models/previews/flora-beryl-nut_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "flora-flower-petals",
@@ -1650,8 +1649,8 @@
         "a": "assets/models/flora/flora-flower-petals/flora-flower-petals_variant_a.glb"
       },
       "preview": "assets/models/previews/flora-flower-petals_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "flora-general-plant-clusters",
@@ -1664,8 +1663,8 @@
         "c": "assets/models/flora/flora-general-plant-clusters/flora-general-plant-clusters_variant_c.glb"
       },
       "preview": "assets/models/previews/flora-general-plant-clusters_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "flora-leaves",
@@ -1678,8 +1677,8 @@
         "b": "assets/models/flora/flora-leaves/flora-leaves_variant_b.glb"
       },
       "preview": "assets/models/previews/flora-leaves_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "flora-mycelia",
@@ -1692,8 +1691,8 @@
         "b": "assets/models/flora/flora-mycelia/flora-mycelia_variant_b.glb"
       },
       "preview": "assets/models/previews/flora-mycelia_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "flora-paleberry",
@@ -1706,8 +1705,8 @@
         "b": "assets/models/flora/flora-paleberry/flora-paleberry_variant_b.glb"
       },
       "preview": "assets/models/previews/flora-paleberry_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "flora-round-blue-cap-mushroom",
@@ -1720,8 +1719,8 @@
         "a": "assets/models/flora/flora-round-blue-cap-mushroom/flora-round-blue-cap-mushroom_variant_a.glb"
       },
       "preview": "assets/models/previews/flora-round-blue-cap-mushroom_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "flora-spore-flower",
@@ -1734,8 +1733,8 @@
         "b": "assets/models/flora/flora-spore-flower/flora-spore-flower_variant_b.glb"
       },
       "preview": "assets/models/previews/flora-spore-flower_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "flora-vine-ladder",
@@ -1748,8 +1747,8 @@
         "a": "assets/models/flora/flora-vine-ladder/flora-vine-ladder_variant_a.glb"
       },
       "preview": "assets/models/previews/flora-vine-ladder_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "flora-vines",
@@ -1762,8 +1761,8 @@
         "d": "assets/models/flora/flora-vines/flora-vines_variant_d.glb"
       },
       "preview": "assets/models/previews/flora-vines_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "flora-wood",
@@ -1776,8 +1775,8 @@
         "c": "assets/models/flora/flora-wood/flora-wood_variant_c.glb"
       },
       "preview": "assets/models/previews/flora-wood_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "freight_car",
@@ -1790,8 +1789,8 @@
         "c": "assets/models/freight_car/freight_car_variant_c.glb"
       },
       "preview": "assets/models/previews/freight_car_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "freight_platform",
@@ -1804,8 +1803,8 @@
         "b": "assets/models/freight_platform/freight_platform_variant_b.glb"
       },
       "preview": "assets/models/previews/freight_platform_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "gas_mask",
@@ -1818,8 +1817,8 @@
         "c": "assets/models/gas_mask/gas_mask_variant_c.glb"
       },
       "preview": "assets/models/previews/gas_mask_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "hazmat_suit",
@@ -1832,8 +1831,8 @@
         "b": "assets/models/hazmat_suit/hazmat_suit_variant_b.glb"
       },
       "preview": "assets/models/previews/hazmat_suit_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "hoverpack",
@@ -1846,8 +1845,8 @@
         "c": "assets/models/hoverpack/hoverpack_variant_c.glb"
       },
       "preview": "assets/models/previews/hoverpack_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "awesome_sink",
@@ -1860,8 +1859,8 @@
         "d": "assets/models/infrastructure/awesome_sink/awesome_sink_variant_d.glb"
       },
       "preview": "assets/models/previews/awesome_sink_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "conveyor_belt",
@@ -1874,8 +1873,8 @@
         "a": "assets/models/infrastructure/conveyor_belt/conveyor_belt_variant_a.glb"
       },
       "preview": "assets/models/previews/conveyor_belt_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "conveyor_lift",
@@ -1888,8 +1887,8 @@
         "d": "assets/models/infrastructure/conveyor_lift/conveyor_lift_variant_d.glb"
       },
       "preview": "assets/models/previews/conveyor_lift_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "conveyor_merger",
@@ -1902,8 +1901,8 @@
         "a": "assets/models/infrastructure/conveyor_merger/conveyor_merger_variant_a.glb"
       },
       "preview": "assets/models/previews/conveyor_merger_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "conveyor_pole",
@@ -1916,8 +1915,8 @@
         "b": "assets/models/infrastructure/conveyor_pole/conveyor_pole_variant_b.glb"
       },
       "preview": "assets/models/previews/conveyor_pole_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "conveyor_splitter",
@@ -1930,8 +1929,8 @@
         "b": "assets/models/infrastructure/conveyor_splitter/conveyor_splitter_variant_b.glb"
       },
       "preview": "assets/models/previews/conveyor_splitter_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "fluid_buffer",
@@ -1944,8 +1943,8 @@
         "b": "assets/models/infrastructure/fluid_buffer/fluid_buffer_variant_b.glb"
       },
       "preview": "assets/models/previews/fluid_buffer_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "hypertube",
@@ -1958,8 +1957,8 @@
         "b": "assets/models/infrastructure/hypertube/hypertube_variant_b.glb"
       },
       "preview": "assets/models/previews/hypertube_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "hypertube_entrance",
@@ -1972,8 +1971,8 @@
         "b": "assets/models/infrastructure/hypertube_entrance/hypertube_entrance_variant_b.glb"
       },
       "preview": "assets/models/previews/hypertube_entrance_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "hypertube_junction",
@@ -1986,8 +1985,8 @@
         "b": "assets/models/infrastructure/hypertube_junction/hypertube_junction_variant_b.glb"
       },
       "preview": "assets/models/previews/hypertube_junction_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "pipeline",
@@ -2000,8 +1999,8 @@
         "a": "assets/models/infrastructure/pipeline/pipeline_variant_a.glb"
       },
       "preview": "assets/models/previews/pipeline_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "pipeline_junction",
@@ -2014,8 +2013,8 @@
         "d": "assets/models/infrastructure/pipeline_junction/pipeline_junction_variant_d.glb"
       },
       "preview": "assets/models/previews/pipeline_junction_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "pipeline_pump",
@@ -2028,8 +2027,8 @@
         "c": "assets/models/infrastructure/pipeline_pump/pipeline_pump_variant_c.glb"
       },
       "preview": "assets/models/previews/pipeline_pump_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "power_pole",
@@ -2042,8 +2041,8 @@
         "c": "assets/models/infrastructure/power_pole/power_pole_variant_c.glb"
       },
       "preview": "assets/models/previews/power_pole_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "power_storage",
@@ -2056,8 +2055,8 @@
         "c": "assets/models/infrastructure/power_storage/power_storage_variant_c.glb"
       },
       "preview": "assets/models/previews/power_storage_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "power_switch",
@@ -2070,8 +2069,8 @@
         "b": "assets/models/infrastructure/power_switch/power_switch_variant_b.glb"
       },
       "preview": "assets/models/previews/power_switch_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "power_tower",
@@ -2084,8 +2083,8 @@
         "d": "assets/models/infrastructure/power_tower/power_tower_variant_d.glb"
       },
       "preview": "assets/models/previews/power_tower_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "storage_container",
@@ -2098,8 +2097,8 @@
         "b": "assets/models/infrastructure/storage_container/storage_container_variant_b.glb"
       },
       "preview": "assets/models/previews/storage_container_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "consumable-bacon-agaric",
@@ -2112,7 +2111,6 @@
         "b": "assets/models/items/consumable-bacon-agaric/consumable-bacon-agaric_variant_b.glb"
       },
       "preview": "assets/models/previews/consumable-bacon-agaric_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2126,7 +2124,6 @@
         "d": "assets/models/items/consumable-beryl-nut/consumable-beryl-nut_variant_d.glb"
       },
       "preview": "assets/models/previews/consumable-beryl-nut_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2140,7 +2137,6 @@
         "a": "assets/models/items/consumable-medicinal-inhaler/consumable-medicinal-inhaler_variant_a.glb"
       },
       "preview": "assets/models/previews/consumable-medicinal-inhaler_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2154,7 +2150,6 @@
         "c": "assets/models/items/consumable-paleberry/consumable-paleberry_variant_c.glb"
       },
       "preview": "assets/models/previews/consumable-paleberry_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2168,7 +2163,6 @@
         "d": "assets/models/items/item-adaptive-control-unit/item-adaptive-control-unit_variant_d.glb"
       },
       "preview": "assets/models/previews/item-adaptive-control-unit_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2182,7 +2176,6 @@
         "b": "assets/models/items/item-ai-expansion-server/item-ai-expansion-server_variant_b.glb"
       },
       "preview": "assets/models/previews/item-ai-expansion-server_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2196,7 +2189,6 @@
         "c": "assets/models/items/item-ai-limiter/item-ai-limiter_variant_c.glb"
       },
       "preview": "assets/models/previews/item-ai-limiter_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2210,7 +2202,6 @@
         "b": "assets/models/items/item-alclad-aluminum-sheet/item-alclad-aluminum-sheet_variant_b.glb"
       },
       "preview": "assets/models/previews/item-alclad-aluminum-sheet_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2224,7 +2215,6 @@
         "c": "assets/models/items/item-alien-dna-capsule/item-alien-dna-capsule_variant_c.glb"
       },
       "preview": "assets/models/previews/item-alien-dna-capsule_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2238,7 +2228,6 @@
         "c": "assets/models/items/item-alien-power-matrix/item-alien-power-matrix_variant_c.glb"
       },
       "preview": "assets/models/previews/item-alien-power-matrix_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2252,7 +2241,6 @@
         "b": "assets/models/items/item-alien-protein/item-alien-protein_variant_b.glb"
       },
       "preview": "assets/models/previews/item-alien-protein_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2266,7 +2254,6 @@
         "d": "assets/models/items/item-alien-remains/item-alien-remains_variant_d.glb"
       },
       "preview": "assets/models/previews/item-alien-remains_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2280,7 +2267,6 @@
         "c": "assets/models/items/item-aluminum-casing/item-aluminum-casing_variant_c.glb"
       },
       "preview": "assets/models/previews/item-aluminum-casing_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2294,7 +2280,6 @@
         "b": "assets/models/items/item-aluminum-ingot/item-aluminum-ingot_variant_b.glb"
       },
       "preview": "assets/models/previews/item-aluminum-ingot_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2308,7 +2293,6 @@
         "b": "assets/models/items/item-aluminum-scrap/item-aluminum-scrap_variant_b.glb"
       },
       "preview": "assets/models/previews/item-aluminum-scrap_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2322,7 +2306,6 @@
         "c": "assets/models/items/item-assembly-director-system/item-assembly-director-system_variant_c.glb"
       },
       "preview": "assets/models/previews/item-assembly-director-system_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2336,7 +2319,6 @@
         "a": "assets/models/items/item-automated-wiring/item-automated-wiring_variant_a.glb"
       },
       "preview": "assets/models/previews/item-automated-wiring_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2350,7 +2332,6 @@
         "b": "assets/models/items/item-battery/item-battery_variant_b.glb"
       },
       "preview": "assets/models/previews/item-battery_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2364,7 +2345,6 @@
         "b": "assets/models/items/item-bauxite/item-bauxite_variant_b.glb"
       },
       "preview": "assets/models/previews/item-bauxite_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2378,7 +2358,6 @@
         "a": "assets/models/items/item-biochemical-sculptor/item-biochemical-sculptor_variant_a.glb"
       },
       "preview": "assets/models/previews/item-biochemical-sculptor_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2392,7 +2371,6 @@
         "a": "assets/models/items/item-biomass/item-biomass_variant_a.glb"
       },
       "preview": "assets/models/previews/item-biomass_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2406,8 +2384,8 @@
         "c": "assets/models/items/item-cable/item-cable_variant_c.glb"
       },
       "preview": "assets/models/previews/item-cable_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "item-caterium-ingot",
@@ -2420,7 +2398,6 @@
         "d": "assets/models/items/item-caterium-ingot/item-caterium-ingot_variant_d.glb"
       },
       "preview": "assets/models/previews/item-caterium-ingot_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2434,7 +2411,6 @@
         "a": "assets/models/items/item-caterium-ore/item-caterium-ore_variant_a.glb"
       },
       "preview": "assets/models/previews/item-caterium-ore_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2448,7 +2424,6 @@
         "d": "assets/models/items/item-circuit-board/item-circuit-board_variant_d.glb"
       },
       "preview": "assets/models/previews/item-circuit-board_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2462,7 +2437,6 @@
         "b": "assets/models/items/item-coal/item-coal_variant_b.glb"
       },
       "preview": "assets/models/previews/item-coal_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2476,7 +2450,6 @@
         "c": "assets/models/items/item-color-cartridge/item-color-cartridge_variant_c.glb"
       },
       "preview": "assets/models/previews/item-color-cartridge_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2490,7 +2463,6 @@
         "a": "assets/models/items/item-compacted-coal/item-compacted-coal_variant_a.glb"
       },
       "preview": "assets/models/previews/item-compacted-coal_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2504,7 +2476,6 @@
         "c": "assets/models/items/item-computer/item-computer_variant_c.glb"
       },
       "preview": "assets/models/previews/item-computer_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2518,7 +2489,6 @@
         "d": "assets/models/items/item-concrete/item-concrete_variant_d.glb"
       },
       "preview": "assets/models/previews/item-concrete_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2532,7 +2502,6 @@
         "a": "assets/models/items/item-cooling-system/item-cooling-system_variant_a.glb"
       },
       "preview": "assets/models/previews/item-cooling-system_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2546,8 +2515,8 @@
         "c": "assets/models/items/item-copper-ingot/item-copper-ingot_variant_c.glb"
       },
       "preview": "assets/models/previews/item-copper-ingot_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "item-copper-ore",
@@ -2560,8 +2529,8 @@
         "d": "assets/models/items/item-copper-ore/item-copper-ore_variant_d.glb"
       },
       "preview": "assets/models/previews/item-copper-ore_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "item-copper-powder",
@@ -2574,7 +2543,6 @@
         "a": "assets/models/items/item-copper-powder/item-copper-powder_variant_a.glb"
       },
       "preview": "assets/models/previews/item-copper-powder_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2588,7 +2556,6 @@
         "c": "assets/models/items/item-copper-sheet/item-copper-sheet_variant_c.glb"
       },
       "preview": "assets/models/previews/item-copper-sheet_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2602,7 +2569,6 @@
         "c": "assets/models/items/item-crystal-oscillator/item-crystal-oscillator_variant_c.glb"
       },
       "preview": "assets/models/previews/item-crystal-oscillator_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2616,7 +2582,6 @@
         "b": "assets/models/items/item-dark-matter-crystal/item-dark-matter-crystal_variant_b.glb"
       },
       "preview": "assets/models/previews/item-dark-matter-crystal_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2630,7 +2595,6 @@
         "d": "assets/models/items/item-diamonds/item-diamonds_variant_d.glb"
       },
       "preview": "assets/models/previews/item-diamonds_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2644,7 +2608,6 @@
         "b": "assets/models/items/item-electromagnetic-control-rod/item-electromagnetic-control-rod_variant_b.glb"
       },
       "preview": "assets/models/previews/item-electromagnetic-control-rod_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2658,7 +2621,6 @@
         "b": "assets/models/items/item-empty-canister/item-empty-canister_variant_b.glb"
       },
       "preview": "assets/models/previews/item-empty-canister_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2672,7 +2634,6 @@
         "c": "assets/models/items/item-empty-fluid-tank/item-empty-fluid-tank_variant_c.glb"
       },
       "preview": "assets/models/previews/item-empty-fluid-tank_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2686,7 +2647,6 @@
         "d": "assets/models/items/item-encased-industrial-beam/item-encased-industrial-beam_variant_d.glb"
       },
       "preview": "assets/models/previews/item-encased-industrial-beam_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2700,7 +2660,6 @@
         "b": "assets/models/items/item-encased-plutonium-cell/item-encased-plutonium-cell_variant_b.glb"
       },
       "preview": "assets/models/previews/item-encased-plutonium-cell_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2714,7 +2673,6 @@
         "d": "assets/models/items/item-encased-uranium-cell/item-encased-uranium-cell_variant_d.glb"
       },
       "preview": "assets/models/previews/item-encased-uranium-cell_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2728,7 +2686,6 @@
         "d": "assets/models/items/item-fabric/item-fabric_variant_d.glb"
       },
       "preview": "assets/models/previews/item-fabric_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2742,7 +2699,6 @@
         "d": "assets/models/items/item-ficsit-coupon/item-ficsit-coupon_variant_d.glb"
       },
       "preview": "assets/models/previews/item-ficsit-coupon_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2756,7 +2712,6 @@
         "c": "assets/models/items/item-ficsite-ingot/item-ficsite-ingot_variant_c.glb"
       },
       "preview": "assets/models/previews/item-ficsite-ingot_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2770,7 +2725,6 @@
         "d": "assets/models/items/item-ficsite-trigon/item-ficsite-trigon_variant_d.glb"
       },
       "preview": "assets/models/previews/item-ficsite-trigon_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2784,7 +2738,6 @@
         "a": "assets/models/items/item-ficsonium/item-ficsonium_variant_a.glb"
       },
       "preview": "assets/models/previews/item-ficsonium_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2798,7 +2751,6 @@
         "d": "assets/models/items/item-ficsonium-fuel-rod/item-ficsonium-fuel-rod_variant_d.glb"
       },
       "preview": "assets/models/previews/item-ficsonium-fuel-rod_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2812,7 +2764,6 @@
         "c": "assets/models/items/item-flower-petals/item-flower-petals_variant_c.glb"
       },
       "preview": "assets/models/previews/item-flower-petals_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2826,7 +2777,6 @@
         "d": "assets/models/items/item-fused-modular-frame/item-fused-modular-frame_variant_d.glb"
       },
       "preview": "assets/models/previews/item-fused-modular-frame_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2840,7 +2790,6 @@
         "d": "assets/models/items/item-hard-drive/item-hard-drive_variant_d.glb"
       },
       "preview": "assets/models/previews/item-hard-drive_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2854,7 +2803,6 @@
         "c": "assets/models/items/item-heat-sink/item-heat-sink_variant_c.glb"
       },
       "preview": "assets/models/previews/item-heat-sink_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2868,7 +2816,6 @@
         "c": "assets/models/items/item-heavy-modular-frame/item-heavy-modular-frame_variant_c.glb"
       },
       "preview": "assets/models/previews/item-heavy-modular-frame_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2882,7 +2829,6 @@
         "a": "assets/models/items/item-high-speed-connector/item-high-speed-connector_variant_a.glb"
       },
       "preview": "assets/models/previews/item-high-speed-connector_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2896,7 +2842,6 @@
         "a": "assets/models/items/item-hub-parts/item-hub-parts_variant_a.glb"
       },
       "preview": "assets/models/previews/item-hub-parts_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2910,8 +2855,8 @@
         "a": "assets/models/items/item-iron-ingot/item-iron-ingot_variant_a.glb"
       },
       "preview": "assets/models/previews/item-iron-ingot_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "item-iron-ore",
@@ -2924,8 +2869,8 @@
         "a": "assets/models/items/item-iron-ore/item-iron-ore_variant_a.glb"
       },
       "preview": "assets/models/previews/item-iron-ore_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "item-iron-plate",
@@ -2938,8 +2883,8 @@
         "b": "assets/models/items/item-iron-plate/item-iron-plate_variant_b.glb"
       },
       "preview": "assets/models/previews/item-iron-plate_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "item-iron-rod",
@@ -2952,8 +2897,8 @@
         "b": "assets/models/items/item-iron-rod/item-iron-rod_variant_b.glb"
       },
       "preview": "assets/models/previews/item-iron-rod_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "item-limestone",
@@ -2966,8 +2911,8 @@
         "a": "assets/models/items/item-limestone/item-limestone_variant_a.glb"
       },
       "preview": "assets/models/previews/item-limestone_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "item-magnetic-field-generator",
@@ -2980,7 +2925,6 @@
         "b": "assets/models/items/item-magnetic-field-generator/item-magnetic-field-generator_variant_b.glb"
       },
       "preview": "assets/models/previews/item-magnetic-field-generator_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -2994,7 +2938,6 @@
         "b": "assets/models/items/item-mercer-sphere/item-mercer-sphere_variant_b.glb"
       },
       "preview": "assets/models/previews/item-mercer-sphere_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3008,7 +2951,6 @@
         "a": "assets/models/items/item-modular-engine/item-modular-engine_variant_a.glb"
       },
       "preview": "assets/models/previews/item-modular-engine_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3022,7 +2964,6 @@
         "d": "assets/models/items/item-modular-frame/item-modular-frame_variant_d.glb"
       },
       "preview": "assets/models/previews/item-modular-frame_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3036,7 +2977,6 @@
         "c": "assets/models/items/item-motor/item-motor_variant_c.glb"
       },
       "preview": "assets/models/previews/item-motor_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3050,7 +2990,6 @@
         "d": "assets/models/items/item-neural-quantum-processor/item-neural-quantum-processor_variant_d.glb"
       },
       "preview": "assets/models/previews/item-neural-quantum-processor_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3064,7 +3003,6 @@
         "a": "assets/models/items/item-non-fissile-uranium/item-non-fissile-uranium_variant_a.glb"
       },
       "preview": "assets/models/previews/item-non-fissile-uranium_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3078,7 +3016,6 @@
         "b": "assets/models/items/item-nuclear-pasta/item-nuclear-pasta_variant_b.glb"
       },
       "preview": "assets/models/previews/item-nuclear-pasta_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3092,7 +3029,6 @@
         "b": "assets/models/items/item-packaged-alumina-solution/item-packaged-alumina-solution_variant_b.glb"
       },
       "preview": "assets/models/previews/item-packaged-alumina-solution_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3106,7 +3042,6 @@
         "b": "assets/models/items/item-packaged-fuel/item-packaged-fuel_variant_b.glb"
       },
       "preview": "assets/models/previews/item-packaged-fuel_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3120,7 +3055,6 @@
         "b": "assets/models/items/item-packaged-heavy-oil-residue/item-packaged-heavy-oil-residue_variant_b.glb"
       },
       "preview": "assets/models/previews/item-packaged-heavy-oil-residue_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3134,7 +3068,6 @@
         "d": "assets/models/items/item-packaged-ionized-fuel/item-packaged-ionized-fuel_variant_d.glb"
       },
       "preview": "assets/models/previews/item-packaged-ionized-fuel_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3148,7 +3081,6 @@
         "a": "assets/models/items/item-packaged-liquid-biofuel/item-packaged-liquid-biofuel_variant_a.glb"
       },
       "preview": "assets/models/previews/item-packaged-liquid-biofuel_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3162,7 +3094,6 @@
         "c": "assets/models/items/item-packaged-nitric-acid/item-packaged-nitric-acid_variant_c.glb"
       },
       "preview": "assets/models/previews/item-packaged-nitric-acid_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3176,7 +3107,6 @@
         "d": "assets/models/items/item-packaged-nitrogen-gas/item-packaged-nitrogen-gas_variant_d.glb"
       },
       "preview": "assets/models/previews/item-packaged-nitrogen-gas_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3190,7 +3120,6 @@
         "d": "assets/models/items/item-packaged-oil/item-packaged-oil_variant_d.glb"
       },
       "preview": "assets/models/previews/item-packaged-oil_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3204,7 +3133,6 @@
         "c": "assets/models/items/item-packaged-rocket-fuel/item-packaged-rocket-fuel_variant_c.glb"
       },
       "preview": "assets/models/previews/item-packaged-rocket-fuel_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3218,7 +3146,6 @@
         "c": "assets/models/items/item-packaged-sulfuric-acid/item-packaged-sulfuric-acid_variant_c.glb"
       },
       "preview": "assets/models/previews/item-packaged-sulfuric-acid_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3232,7 +3159,6 @@
         "c": "assets/models/items/item-packaged-turbofuel/item-packaged-turbofuel_variant_c.glb"
       },
       "preview": "assets/models/previews/item-packaged-turbofuel_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3246,7 +3172,6 @@
         "a": "assets/models/items/item-packaged-water/item-packaged-water_variant_a.glb"
       },
       "preview": "assets/models/previews/item-packaged-water_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3260,7 +3185,6 @@
         "a": "assets/models/items/item-petroleum-coke/item-petroleum-coke_variant_a.glb"
       },
       "preview": "assets/models/previews/item-petroleum-coke_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3274,7 +3198,6 @@
         "a": "assets/models/items/item-plastic/item-plastic_variant_a.glb"
       },
       "preview": "assets/models/previews/item-plastic_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3288,7 +3211,6 @@
         "d": "assets/models/items/item-plutonium-fuel-rod/item-plutonium-fuel-rod_variant_d.glb"
       },
       "preview": "assets/models/previews/item-plutonium-fuel-rod_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3302,7 +3224,6 @@
         "d": "assets/models/items/item-plutonium-pellet/item-plutonium-pellet_variant_d.glb"
       },
       "preview": "assets/models/previews/item-plutonium-pellet_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3316,7 +3237,6 @@
         "d": "assets/models/items/item-plutonium-waste/item-plutonium-waste_variant_d.glb"
       },
       "preview": "assets/models/previews/item-plutonium-waste_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3330,7 +3250,6 @@
         "d": "assets/models/items/item-polymer-resin/item-polymer-resin_variant_d.glb"
       },
       "preview": "assets/models/previews/item-polymer-resin_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3344,7 +3263,6 @@
         "b": "assets/models/items/item-power-shard/item-power-shard_variant_b.glb"
       },
       "preview": "assets/models/previews/item-power-shard_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3358,7 +3276,6 @@
         "a": "assets/models/items/item-power-slug/item-power-slug_variant_a.glb"
       },
       "preview": "assets/models/previews/item-power-slug_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3372,7 +3289,6 @@
         "c": "assets/models/items/item-pressure-conversion-cube/item-pressure-conversion-cube_variant_c.glb"
       },
       "preview": "assets/models/previews/item-pressure-conversion-cube_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3386,7 +3302,6 @@
         "d": "assets/models/items/item-quartz-crystal/item-quartz-crystal_variant_d.glb"
       },
       "preview": "assets/models/previews/item-quartz-crystal_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3400,7 +3315,6 @@
         "d": "assets/models/items/item-quickwire/item-quickwire_variant_d.glb"
       },
       "preview": "assets/models/previews/item-quickwire_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3414,7 +3328,6 @@
         "b": "assets/models/items/item-radio-control-unit/item-radio-control-unit_variant_b.glb"
       },
       "preview": "assets/models/previews/item-radio-control-unit_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3428,7 +3341,6 @@
         "c": "assets/models/items/item-raw-quartz/item-raw-quartz_variant_c.glb"
       },
       "preview": "assets/models/previews/item-raw-quartz_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3442,7 +3354,6 @@
         "b": "assets/models/items/item-reinforced-iron-plate/item-reinforced-iron-plate_variant_b.glb"
       },
       "preview": "assets/models/previews/item-reinforced-iron-plate_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3456,7 +3367,6 @@
         "b": "assets/models/items/item-rotor/item-rotor_variant_b.glb"
       },
       "preview": "assets/models/previews/item-rotor_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3470,7 +3380,6 @@
         "b": "assets/models/items/item-rubber/item-rubber_variant_b.glb"
       },
       "preview": "assets/models/previews/item-rubber_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3484,7 +3393,6 @@
         "a": "assets/models/items/item-sam/item-sam_variant_a.glb"
       },
       "preview": "assets/models/previews/item-sam_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3498,7 +3406,6 @@
         "b": "assets/models/items/item-sam-fluctuator/item-sam-fluctuator_variant_b.glb"
       },
       "preview": "assets/models/previews/item-sam-fluctuator_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3512,7 +3419,6 @@
         "d": "assets/models/items/item-screws/item-screws_variant_d.glb"
       },
       "preview": "assets/models/previews/item-screws_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3526,7 +3432,6 @@
         "b": "assets/models/items/item-silica/item-silica_variant_b.glb"
       },
       "preview": "assets/models/previews/item-silica_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3540,7 +3445,6 @@
         "b": "assets/models/items/item-singularity-cell/item-singularity-cell_variant_b.glb"
       },
       "preview": "assets/models/previews/item-singularity-cell_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3554,7 +3458,6 @@
         "b": "assets/models/items/item-smart-plating/item-smart-plating_variant_b.glb"
       },
       "preview": "assets/models/previews/item-smart-plating_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3568,7 +3471,6 @@
         "c": "assets/models/items/item-solid-biofuel/item-solid-biofuel_variant_c.glb"
       },
       "preview": "assets/models/previews/item-solid-biofuel_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3582,7 +3484,6 @@
         "d": "assets/models/items/item-somersloop/item-somersloop_variant_d.glb"
       },
       "preview": "assets/models/previews/item-somersloop_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3596,7 +3497,6 @@
         "d": "assets/models/items/item-stator/item-stator_variant_d.glb"
       },
       "preview": "assets/models/previews/item-stator_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3610,7 +3510,6 @@
         "b": "assets/models/items/item-statues/item-statues_variant_b.glb"
       },
       "preview": "assets/models/previews/item-statues_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3624,7 +3523,6 @@
         "d": "assets/models/items/item-steel-beam/item-steel-beam_variant_d.glb"
       },
       "preview": "assets/models/previews/item-steel-beam_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3638,7 +3536,6 @@
         "a": "assets/models/items/item-steel-ingot/item-steel-ingot_variant_a.glb"
       },
       "preview": "assets/models/previews/item-steel-ingot_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3652,7 +3549,6 @@
         "d": "assets/models/items/item-steel-pipe/item-steel-pipe_variant_d.glb"
       },
       "preview": "assets/models/previews/item-steel-pipe_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3666,7 +3562,6 @@
         "a": "assets/models/items/item-supercomputer/item-supercomputer_variant_a.glb"
       },
       "preview": "assets/models/previews/item-supercomputer_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3680,7 +3575,6 @@
         "d": "assets/models/items/item-superposition-oscillator/item-superposition-oscillator_variant_d.glb"
       },
       "preview": "assets/models/previews/item-superposition-oscillator_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3694,7 +3588,6 @@
         "a": "assets/models/items/item-thermal-propulsion-rocket/item-thermal-propulsion-rocket_variant_a.glb"
       },
       "preview": "assets/models/previews/item-thermal-propulsion-rocket_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3708,7 +3601,6 @@
         "a": "assets/models/items/item-time-crystal/item-time-crystal_variant_a.glb"
       },
       "preview": "assets/models/previews/item-time-crystal_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3722,7 +3614,6 @@
         "c": "assets/models/items/item-turbo-motor/item-turbo-motor_variant_c.glb"
       },
       "preview": "assets/models/previews/item-turbo-motor_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3736,7 +3627,6 @@
         "b": "assets/models/items/item-uranium/item-uranium_variant_b.glb"
       },
       "preview": "assets/models/previews/item-uranium_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3750,7 +3640,6 @@
         "b": "assets/models/items/item-uranium-fuel-rod/item-uranium-fuel-rod_variant_b.glb"
       },
       "preview": "assets/models/previews/item-uranium-fuel-rod_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3764,7 +3653,6 @@
         "a": "assets/models/items/item-uranium-waste/item-uranium-waste_variant_a.glb"
       },
       "preview": "assets/models/previews/item-uranium-waste_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3778,7 +3666,6 @@
         "b": "assets/models/items/item-versatile-framework/item-versatile-framework_variant_b.glb"
       },
       "preview": "assets/models/previews/item-versatile-framework_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "pending-noncombat-review"
     },
     {
@@ -3792,8 +3679,8 @@
         "a": "assets/models/items/item-wire/item-wire_variant_a.glb"
       },
       "preview": "assets/models/previews/item-wire_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "jetpack",
@@ -3806,8 +3693,8 @@
         "d": "assets/models/jetpack/jetpack_variant_d.glb"
       },
       "preview": "assets/models/previews/jetpack_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "locomotive",
@@ -3820,8 +3707,8 @@
         "d": "assets/models/locomotive/locomotive_variant_d.glb"
       },
       "preview": "assets/models/previews/locomotive_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "object_scanner",
@@ -3834,8 +3721,8 @@
         "d": "assets/models/object_scanner/object_scanner_variant_d.glb"
       },
       "preview": "assets/models/previews/object_scanner_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "parachute",
@@ -3848,8 +3735,8 @@
         "a": "assets/models/parachute/parachute_variant_a.glb"
       },
       "preview": "assets/models/previews/parachute_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "portable_miner",
@@ -3862,8 +3749,8 @@
         "c": "assets/models/portable_miner/portable_miner_variant_c.glb"
       },
       "preview": "assets/models/previews/portable_miner_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "railway",
@@ -3876,8 +3763,8 @@
         "d": "assets/models/railway/railway_variant_d.glb"
       },
       "preview": "assets/models/previews/railway_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "bauxite_node",
@@ -3890,8 +3777,8 @@
         "b": "assets/models/resources/bauxite_node/bauxite_node_variant_b.glb"
       },
       "preview": "assets/models/previews/bauxite_node_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "caterium_ore_node",
@@ -3904,8 +3791,8 @@
         "b": "assets/models/resources/caterium_ore_node/caterium_ore_node_variant_b.glb"
       },
       "preview": "assets/models/previews/caterium_ore_node_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "coal_node",
@@ -3918,8 +3805,8 @@
         "c": "assets/models/resources/coal_node/coal_node_variant_c.glb"
       },
       "preview": "assets/models/previews/coal_node_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "copper_ore_node",
@@ -3932,8 +3819,8 @@
         "a": "assets/models/resources/copper_ore_node/copper_ore_node_variant_a.glb"
       },
       "preview": "assets/models/previews/copper_ore_node_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "cracked_resource_boulder",
@@ -3946,8 +3833,8 @@
         "d": "assets/models/resources/cracked_resource_boulder/cracked_resource_boulder_variant_d.glb"
       },
       "preview": "assets/models/previews/cracked_resource_boulder_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "crude_oil_node",
@@ -3960,8 +3847,8 @@
         "b": "assets/models/resources/crude_oil_node/crude_oil_node_variant_b.glb"
       },
       "preview": "assets/models/previews/crude_oil_node_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "geyser",
@@ -3974,8 +3861,8 @@
         "b": "assets/models/resources/geyser/geyser_variant_b.glb"
       },
       "preview": "assets/models/previews/geyser_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "iron_ore_node",
@@ -3988,8 +3875,8 @@
         "a": "assets/models/resources/iron_ore_node/iron_ore_node_variant_a.glb"
       },
       "preview": "assets/models/previews/iron_ore_node_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "limestone_node",
@@ -4002,8 +3889,8 @@
         "a": "assets/models/resources/limestone_node/limestone_node_variant_a.glb"
       },
       "preview": "assets/models/previews/limestone_node_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "raw_quartz_node",
@@ -4016,8 +3903,8 @@
         "d": "assets/models/resources/raw_quartz_node/raw_quartz_node_variant_d.glb"
       },
       "preview": "assets/models/previews/raw_quartz_node_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "resource_well_main",
@@ -4030,8 +3917,8 @@
         "c": "assets/models/resources/resource_well_main/resource_well_main_variant_c.glb"
       },
       "preview": "assets/models/previews/resource_well_main_four_variants_preview.png",
-      "selectedVariant": "a",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "a"
     },
     {
       "id": "resource_well_satellite",
@@ -4044,8 +3931,8 @@
         "c": "assets/models/resources/resource_well_satellite/resource_well_satellite_variant_c.glb"
       },
       "preview": "assets/models/previews/resource_well_satellite_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "b"
     },
     {
       "id": "sam_node",
@@ -4058,8 +3945,8 @@
         "d": "assets/models/resources/sam_node/sam_node_variant_d.glb"
       },
       "preview": "assets/models/previews/sam_node_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "sulfur_node",
@@ -4072,8 +3959,8 @@
         "b": "assets/models/resources/sulfur_node/sulfur_node_variant_b.glb"
       },
       "preview": "assets/models/previews/sulfur_node_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "tractor",
@@ -4086,8 +3973,8 @@
         "b": "assets/models/tractor/tractor_variant_b.glb"
       },
       "preview": "assets/models/previews/tractor_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     },
     {
       "id": "train_station",
@@ -4100,8 +3987,8 @@
         "d": "assets/models/train_station/train_station_variant_d.glb"
       },
       "preview": "assets/models/previews/train_station_four_variants_preview.png",
-      "selectedVariant": "d",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "d"
     },
     {
       "id": "truck",
@@ -4114,8 +4001,8 @@
         "b": "assets/models/truck/truck_variant_b.glb"
       },
       "preview": "assets/models/previews/truck_four_variants_preview.png",
-      "selectedVariant": "c",
-      "selectionStatus": "preview-reviewed-initial"
+      "selectionStatus": "preview-reviewed-initial",
+      "selectedVariant": "c"
     }
   ]
 }
