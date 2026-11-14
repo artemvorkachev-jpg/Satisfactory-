@@ -147,6 +147,9 @@ jobs:
       - name: Validate all model variants and selected defaults
         run: python3 tools/blender/validate_model_selection.py
 
+      - name: Validate physics profile coverage for all model families
+        run: python3 tools/blender/validate_physics_profiles.py
+
       - name: Commit Blender sources, GLB exports and preview sheets
         run: |
           git config user.name "github-actions[bot]"
