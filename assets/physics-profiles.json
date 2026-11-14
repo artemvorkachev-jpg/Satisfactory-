@@ -281,8 +281,9 @@
       "shape": "compound-boxes",
       "worldCollider": true,
       "interaction": "named-ports-and-snap-points",
-      "implementationStatus": "planned",
-      "validationStatus": "not-tested"
+      "implementationStatus": "rapier-static-proxy-v2",
+      "validationStatus": "runtime-self-check-enabled",
+      "physicsStatus": "rapier-static-proxy-v2"
     },
     {
       "id": "blender",
@@ -341,8 +342,9 @@
       "shape": "compound-boxes",
       "worldCollider": true,
       "interaction": "named-ports-and-snap-points",
-      "implementationStatus": "planned",
-      "validationStatus": "not-tested"
+      "implementationStatus": "rapier-static-proxy-v2",
+      "validationStatus": "runtime-self-check-enabled",
+      "physicsStatus": "rapier-static-proxy-v2"
     },
     {
       "id": "converter",
@@ -509,8 +511,9 @@
       "shape": "compound-boxes",
       "worldCollider": true,
       "interaction": "named-ports-and-snap-points",
-      "implementationStatus": "planned",
-      "validationStatus": "not-tested"
+      "implementationStatus": "rapier-static-proxy-v2",
+      "validationStatus": "runtime-self-check-enabled",
+      "physicsStatus": "rapier-static-proxy-v2"
     },
     {
       "id": "hypertube-supports",
@@ -641,8 +644,9 @@
       "shape": "compound-boxes",
       "worldCollider": true,
       "interaction": "named-ports-and-snap-points",
-      "implementationStatus": "planned",
-      "validationStatus": "not-tested"
+      "implementationStatus": "rapier-static-proxy-v2",
+      "validationStatus": "runtime-self-check-enabled",
+      "physicsStatus": "rapier-static-proxy-v2"
     },
     {
       "id": "nuclear-power-plant",
@@ -905,8 +909,9 @@
       "shape": "compound-boxes",
       "worldCollider": true,
       "interaction": "named-ports-and-snap-points",
-      "implementationStatus": "planned",
-      "validationStatus": "not-tested"
+      "implementationStatus": "rapier-static-proxy-v2",
+      "validationStatus": "runtime-self-check-enabled",
+      "physicsStatus": "rapier-static-proxy-v2"
     },
     {
       "id": "space-elevator",
@@ -3497,8 +3502,9 @@
       "shape": "compound-boxes",
       "worldCollider": true,
       "interaction": "resource-node-snap-and-interaction",
-      "implementationStatus": "planned",
-      "validationStatus": "not-tested"
+      "implementationStatus": "rapier-static-proxy-v2",
+      "validationStatus": "runtime-self-check-enabled",
+      "physicsStatus": "rapier-static-proxy-v2"
     },
     {
       "id": "railway",
@@ -3557,8 +3563,9 @@
       "shape": "capsule-or-compound",
       "worldCollider": true,
       "interaction": "harvest-trigger",
-      "implementationStatus": "planned",
-      "validationStatus": "not-tested"
+      "implementationStatus": "rapier-static-proxy-v2",
+      "validationStatus": "runtime-self-check-enabled",
+      "physicsStatus": "rapier-static-proxy-v2"
     },
     {
       "id": "cracked_resource_boulder",
@@ -3605,8 +3612,9 @@
       "shape": "capsule-or-compound",
       "worldCollider": true,
       "interaction": "harvest-trigger",
-      "implementationStatus": "planned",
-      "validationStatus": "not-tested"
+      "implementationStatus": "rapier-static-proxy-v2",
+      "validationStatus": "runtime-self-check-enabled",
+      "physicsStatus": "rapier-static-proxy-v2"
     },
     {
       "id": "limestone_node",
@@ -3617,8 +3625,9 @@
       "shape": "capsule-or-compound",
       "worldCollider": true,
       "interaction": "harvest-trigger",
-      "implementationStatus": "planned",
-      "validationStatus": "not-tested"
+      "implementationStatus": "rapier-static-proxy-v2",
+      "validationStatus": "runtime-self-check-enabled",
+      "physicsStatus": "rapier-static-proxy-v2"
     },
     {
       "id": "raw_quartz_node",
@@ -3718,32 +3727,36 @@
     }
   ],
   "runtimeSupport": {
-    "implementation": "rapier-low-poly-proxy-v1",
+    "implementation": "rapier-low-poly-proxy-v2",
     "implementedNow": {
       "staticColliderShapes": [
         "box",
         "capsule",
-        "compound-building"
+        "compound-building",
+        "cylinder"
       ],
       "browserRuntimeObjects": [
-        "HUB",
-        "player-built production machines",
-        "iron/copper/limestone resource nodes",
-        "procedural trees",
-        "procedural environment rocks"
+        "HUB compound proxy",
+        "player-built Miner, Portable Miner, Smelter, Constructor, Storage and Biomass Burner groups (compound proxies)",
+        "iron/copper/limestone resource nodes (capsule proxies)",
+        "procedural tree trunks (capsule proxies)",
+        "procedural environment rocks (box proxies)",
+        "landing terminal (box proxy)",
+        "landing pad (cylinder proxy)"
       ],
       "dynamicBodies": [
         "player capsule"
       ],
-      "collisionPolicy": "Fixed bodies use low-poly proxy colliders; render GLB meshes remain visual-only. Conveyor products remain simulated by logistics code and do not create rigid bodies."
+      "collisionPolicy": "Fixed bodies use low-poly proxy colliders built from parent gameplay groups, so fallback geometry remains collidable when a GLB fails to load. GLB render meshes remain visual-only. Conveyor products remain simulated by logistics code. Player grounding uses a downward Rapier ray excluding the player body, so elevated platforms can ground the player."
     },
     "notYetImplemented": [
-      "full collision profiles for all 294 catalog families",
-      "vehicle dynamics",
+      "full collision profiles for every one of the 294 catalog families",
+      "vehicle dynamics and wheel suspension",
       "creature navigation colliders",
       "interactive flora harvesting triggers",
-      "per-machine port and snap-point collision metadata"
+      "per-machine port and snap-point collision metadata",
+      "oriented collision segments for conveyor belts and lifts"
     ],
-    "verification": "Code-level implementation only; browser gameplay collision tests still required."
+    "verification": "Runtime diagnostics are exposed at window.__SATISFACTORY_PHYSICS__ and the HUD reports Rapier availability and collider counts. Automated syntax/build checks can verify code integrity; physical collision response still needs real browser gameplay confirmation on a device."
   }
 }
