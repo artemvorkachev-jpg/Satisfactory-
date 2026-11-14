@@ -117,6 +117,9 @@ def unwrap_object(obj):
     bpy.ops.object.mode_set(mode="OBJECT")
 
 blend = bpy.data.filepath
+if "/equipment/" in blend.replace("\\", "/"):
+    print("Skipping excluded category:", blend, flush=True)
+    raise SystemExit(0)
 if not blend.endswith("_four_variants.blend"):
     raise RuntimeError("Expected a *_four_variants.blend source file")
 for obj in bpy.data.objects:
