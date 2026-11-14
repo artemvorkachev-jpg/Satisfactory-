@@ -50,6 +50,7 @@ jobs:
         run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_fauna_flora_batch.py
 
       - name: Generate item catalog models
+        if: false # Deferred until non-combat item families are separated from combat content.
         run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_item_catalog_batch.py
 
       - name: Generate resource node models
