@@ -34,7 +34,7 @@ def main():
     print(f"Checked {len(source)} model families and {len(profiles)} physics profiles.")
     print(f"Implemented: {sum(p.get('implementationStatus') == 'implemented' for p in profiles.values())}; planned: {sum(p.get('implementationStatus') == 'planned' for p in profiles.values())}.")
     if errors:
-        print("\\n".join(errors))
+        print(*errors, sep=chr(10))
         return 1
     print("Physics profile coverage is complete; this validates metadata only, not in-game collision behavior.")
     return 0
