@@ -122,6 +122,7 @@ export async function createAssetWorld(parent, options = {}) {
   const onProgress = typeof options.onProgress === "function" ? options.onProgress : () => {};
   let lastUpdate = 0;
   let failed = 0;
+  const savedResourceAmounts = new Map();
 
   function loadPlacement(placement) {
     if (loaded.has(placement.id) || loading.has(placement.id)) return;
@@ -133,6 +134,7 @@ export async function createAssetWorld(parent, options = {}) {
       wrapper.position.set(placement.x, 0, placement.z);
       wrapper.rotation.y = placement.yaw;
       wrapper.userData.asset = {
+        placementId: placement.id,
         id: placement.asset.id,
         name: placement.asset.name,
         category: placement.asset.category,
@@ -148,14 +150,14 @@ export async function createAssetWorld(parent, options = {}) {
       };
       if (placement.kind === "resource") {
         const resourceType = resourceTypes[placement.asset.id];
-        if (resourceType) wrapper.userData.node = { type: resourceType, amount: 600 };
+        if (resourceType) wrapper.userData.node = { id: placement.id, type: resourceType, amount: savedResourceAmounts.get(placement.id) ?? 600 };
       } else if (placement.kind === "flora") {
         const floraId = placement.asset.id;
         const harvestType = floraId.includes("wood") || floraId.includes("bacon") ? "Wood" :
           floraId.includes("beryl") ? "Beryl Nut" :
           floraId.includes("paleberry") ? "Paleberry" :
           floraId.includes("agaric") ? "Bacon Agaric" : "Leaves";
-        wrapper.userData.node = { type: harvestType, amount: 80 };
+        wrapper.userData.node = { id: placement.id, type: harvestType, amount: savedResourceAmounts.get(placement.id) ?? 80 };
       }
       const model = gltf.scene;
       const bounds = new THREE.Box3().setFromObject(model);
@@ -256,6 +258,8 @@ export async function createAssetWorld(parent, options = {}) {
   return {
     update,
     getObjects: () => [...loaded.values()].map(entry => entry.wrapper),
+    getResourceState: () => Object.fromEntries([...loaded.values()].filter(entry => entry.wrapper.userData.node).map(entry => [entry.placement.id, entry.wrapper.userData.node.amount]).concat([...savedResourceAmounts.entries()])),
+    setResourceState: state => { savedResourceAmounts.clear(); for (const [id, amount] of Object.entries(state || {})) if (Number.isFinite(amount) && amount >= 0) savedResourceAmounts.set(id, amount); },
     getStats,
     placements,
     constructionCatalog
