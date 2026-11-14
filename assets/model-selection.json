@@ -144,7 +144,7 @@
       "selectedVariant": "b",
       "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
-      "physicsStatus": "not-started"
+      "physicsStatus": "rapier-static-aabb-v1"
     },
     {
       "id": "blender",
@@ -223,7 +223,7 @@
       },
       "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
-      "physicsStatus": "not-started"
+      "physicsStatus": "rapier-static-aabb-v1"
     },
     {
       "id": "converter",
@@ -447,7 +447,7 @@
       "selectedVariant": "b",
       "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
-      "physicsStatus": "not-started"
+      "physicsStatus": "rapier-static-aabb-v1"
     },
     {
       "id": "hypertube-supports",
@@ -623,7 +623,7 @@
       "selectedVariant": "b",
       "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
-      "physicsStatus": "not-started"
+      "physicsStatus": "rapier-static-aabb-v1"
     },
     {
       "id": "nuclear-power-plant",
@@ -975,7 +975,7 @@
       "selectedVariant": "b",
       "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
-      "physicsStatus": "not-started"
+      "physicsStatus": "rapier-static-aabb-v1"
     },
     {
       "id": "space-elevator",
@@ -4431,7 +4431,7 @@
       "selectedVariant": "b",
       "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
-      "physicsStatus": "not-started"
+      "physicsStatus": "rapier-static-aabb-v1"
     },
     {
       "id": "railway",
@@ -4511,7 +4511,7 @@
       "selectedVariant": "c",
       "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
-      "physicsStatus": "not-started"
+      "physicsStatus": "rapier-static-aabb-v1"
     },
     {
       "id": "cracked_resource_boulder",
@@ -4575,7 +4575,7 @@
       "selectedVariant": "c",
       "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
-      "physicsStatus": "not-started"
+      "physicsStatus": "rapier-static-aabb-v1"
     },
     {
       "id": "limestone_node",
@@ -4591,7 +4591,7 @@
       "selectedVariant": "c",
       "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
-      "physicsStatus": "not-started"
+      "physicsStatus": "rapier-static-aabb-v1"
     },
     {
       "id": "raw_quartz_node",
