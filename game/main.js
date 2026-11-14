@@ -95,6 +95,7 @@ ground.rotation.x=-Math.PI/2;ground.receiveShadow=true;scene.add(ground);
 
 const world=new THREE.Group();scene.add(world);createGroundFoliage(world);
 function createGroundFoliage(parent){
+ let foliageSeed=0x51a7f1;const rnd=()=>{foliageSeed=(foliageSeed*1664525+1013904223)>>>0;return foliageSeed/4294967296};
  const vertices=[];
  for(let blade=0;blade<3;blade++){
   const angle=blade*Math.PI*2/3,dx=Math.cos(angle),dz=Math.sin(angle),px=-dz*.045,pz=dx*.045;
