@@ -1103,8 +1103,8 @@
         "c": "assets/models/creatures/fauna-alpha-hog/fauna-alpha-hog_variant_c.glb"
       },
       "preview": "assets/models/previews/fauna-alpha-hog_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-alpha-spitter-aquatic",
@@ -1117,8 +1117,8 @@
         "a": "assets/models/creatures/fauna-alpha-spitter-aquatic/fauna-alpha-spitter-aquatic_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-alpha-spitter-aquatic_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-alpha-spitter-desert",
@@ -1131,8 +1131,8 @@
         "d": "assets/models/creatures/fauna-alpha-spitter-desert/fauna-alpha-spitter-desert_variant_d.glb"
       },
       "preview": "assets/models/previews/fauna-alpha-spitter-desert_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-alpha-spitter-forest",
@@ -1145,8 +1145,8 @@
         "b": "assets/models/creatures/fauna-alpha-spitter-forest/fauna-alpha-spitter-forest_variant_b.glb"
       },
       "preview": "assets/models/previews/fauna-alpha-spitter-forest_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-alpha-spitter-red-forest",
@@ -1159,8 +1159,8 @@
         "a": "assets/models/creatures/fauna-alpha-spitter-red-forest/fauna-alpha-spitter-red-forest_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-alpha-spitter-red-forest_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "d",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-alpha-stinger",
@@ -1174,7 +1174,7 @@
       },
       "preview": "assets/models/previews/fauna-alpha-stinger_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-baby-stinger-cave",
@@ -1188,7 +1188,7 @@
       },
       "preview": "assets/models/previews/fauna-baby-stinger-cave_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-baby-stinger-normal",
@@ -1201,8 +1201,8 @@
         "b": "assets/models/creatures/fauna-baby-stinger-normal/fauna-baby-stinger-normal_variant_b.glb"
       },
       "preview": "assets/models/previews/fauna-baby-stinger-normal_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-beetle",
@@ -1215,8 +1215,8 @@
         "b": "assets/models/creatures/fauna-beetle/fauna-beetle_variant_b.glb"
       },
       "preview": "assets/models/previews/fauna-beetle_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-cave-bat",
@@ -1229,8 +1229,8 @@
         "d": "assets/models/creatures/fauna-cave-bat/fauna-cave-bat_variant_d.glb"
       },
       "preview": "assets/models/previews/fauna-cave-bat_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-cliff-hog",
@@ -1243,8 +1243,8 @@
         "a": "assets/models/creatures/fauna-cliff-hog/fauna-cliff-hog_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-cliff-hog_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-elite-flying-crab-hatcher",
@@ -1257,8 +1257,8 @@
         "a": "assets/models/creatures/fauna-elite-flying-crab-hatcher/fauna-elite-flying-crab-hatcher_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-elite-flying-crab-hatcher_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-elite-gas-stinger",
@@ -1272,7 +1272,7 @@
       },
       "preview": "assets/models/previews/fauna-elite-gas-stinger_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-fluffy-tailed-hog",
@@ -1285,8 +1285,8 @@
         "c": "assets/models/creatures/fauna-fluffy-tailed-hog/fauna-fluffy-tailed-hog_variant_c.glb"
       },
       "preview": "assets/models/previews/fauna-fluffy-tailed-hog_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-flying-bird",
@@ -1299,8 +1299,8 @@
         "a": "assets/models/creatures/fauna-flying-bird/fauna-flying-bird_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-flying-bird_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "d",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-flying-crab",
@@ -1313,8 +1313,8 @@
         "c": "assets/models/creatures/fauna-flying-crab/fauna-flying-crab_variant_c.glb"
       },
       "preview": "assets/models/previews/fauna-flying-crab_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-flying-crab-hatcher",
@@ -1327,8 +1327,8 @@
         "d": "assets/models/creatures/fauna-flying-crab-hatcher/fauna-flying-crab-hatcher_variant_d.glb"
       },
       "preview": "assets/models/previews/fauna-flying-crab-hatcher_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-giant-flying-manta",
@@ -1341,8 +1341,8 @@
         "d": "assets/models/creatures/fauna-giant-flying-manta/fauna-giant-flying-manta_variant_d.glb"
       },
       "preview": "assets/models/previews/fauna-giant-flying-manta_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-grass-sprite",
@@ -1635,8 +1635,8 @@
         "d": "assets/models/flora/flora-beryl-nut/flora-beryl-nut_variant_d.glb"
       },
       "preview": "assets/models/previews/flora-beryl-nut_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "flora-flower-petals",
@@ -1650,7 +1650,7 @@
       },
       "preview": "assets/models/previews/flora-flower-petals_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "flora-general-plant-clusters",
@@ -1663,8 +1663,8 @@
         "b": "assets/models/flora/flora-general-plant-clusters/flora-general-plant-clusters_variant_b.glb"
       },
       "preview": "assets/models/previews/flora-general-plant-clusters_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "flora-leaves",
@@ -1677,8 +1677,8 @@
         "a": "assets/models/flora/flora-leaves/flora-leaves_variant_a.glb"
       },
       "preview": "assets/models/previews/flora-leaves_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "flora-mycelia",
@@ -1691,8 +1691,8 @@
         "d": "assets/models/flora/flora-mycelia/flora-mycelia_variant_d.glb"
       },
       "preview": "assets/models/previews/flora-mycelia_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "flora-paleberry",
@@ -1705,8 +1705,8 @@
         "a": "assets/models/flora/flora-paleberry/flora-paleberry_variant_a.glb"
       },
       "preview": "assets/models/previews/flora-paleberry_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "flora-round-blue-cap-mushroom",
@@ -1720,7 +1720,7 @@
       },
       "preview": "assets/models/previews/flora-round-blue-cap-mushroom_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "flora-spore-flower",
@@ -1733,8 +1733,8 @@
         "c": "assets/models/flora/flora-spore-flower/flora-spore-flower_variant_c.glb"
       },
       "preview": "assets/models/previews/flora-spore-flower_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "flora-vine-ladder",
@@ -1747,8 +1747,8 @@
         "a": "assets/models/flora/flora-vine-ladder/flora-vine-ladder_variant_a.glb"
       },
       "preview": "assets/models/previews/flora-vine-ladder_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "flora-vines",
@@ -1761,8 +1761,8 @@
         "c": "assets/models/flora/flora-vines/flora-vines_variant_c.glb"
       },
       "preview": "assets/models/previews/flora-vines_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "flora-wood",
@@ -1775,8 +1775,8 @@
         "d": "assets/models/flora/flora-wood/flora-wood_variant_d.glb"
       },
       "preview": "assets/models/previews/flora-wood_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "freight_car",
