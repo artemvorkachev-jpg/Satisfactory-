@@ -39,7 +39,8 @@ try {
   assert.equal(result.pendingStatic, 0, "Some static colliders remained queued");
   assert.ok(result.player.grounded, "Player did not settle onto the ground collider");
   assert.ok(result.assets.catalogFamilies >= 290, "Full model catalogue was not loaded");
-  assert.ok(result.assets.selectedFamilies >= 175, "Selected model families were not integrated");
+  assert.ok(result.assets.selectedFamilies >= 175, "Reviewed model families were not integrated");
+  assert.ok(result.assets.selectedFamilies < result.assets.catalogFamilies, "Unreviewed families were incorrectly treated as selected");
   assert.ok(result.assets.placedModels >= 175, "World placement manifest is incomplete");
   assert.ok(result.assets.loadedModels >= 2, "Nearby GLB models did not stream into the world");
   assert.ok(result.probes.ground !== null, "Ground ray missed the world ground");
