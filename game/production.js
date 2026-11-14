@@ -87,7 +87,24 @@ export function machinePowerDemand(machine) {
   if (machine.type === "Miner") return machine.nodeType && machine.nodeRemaining > 0 && (machine.output[machine.nodeType] || 0) < 100 ? 5 : 0.1;
   return canRunRecipe(machine) ? POWER_DEMAND_MW[machine.type] : 0.1;
 }
-export const BIOMASS_FUEL_MJ = { Leaves: 15, Wood: 100, Biomass: 180, "Solid Biofuel": 450 };
+export const BIOMASS_FUEL_MJ = { Biomass: 180, "Solid Biofuel": 450 };
+
+function consumeFuelEnergy(fuel, energyMJ) {
+  let remaining = energyMJ;
+  let consumed = 0;
+  // Prefer the higher-density processed fuel, then use biomass.
+  for (const kind of ["Solid Biofuel", "Biomass"]) {
+    const energyPerItem = BIOMASS_FUEL_MJ[kind];
+    const count = Math.max(0, fuel[kind] || 0);
+    if (!count || remaining <= 1e-8) continue;
+    const used = Math.min(count, remaining / energyPerItem);
+    fuel[kind] = Math.max(0, count - used);
+    const supplied = used * energyPerItem;
+    remaining -= supplied;
+    consumed += used;
+  }
+  return { consumed, suppliedMJ: energyMJ - Math.max(0, remaining), remainingMJ: Math.max(0, remaining) };
+}
 
 export function simulatePowerGrid(machines, poles, connections, dt) {
   const nodes = new Map();
@@ -112,56 +129,44 @@ export function simulatePowerGrid(machines, poles, connections, dt) {
     while (queue.length) {
       const current = queue.shift();
       component.push(nodes.get(current));
-      for (const next of adjacency.get(current)) if (!visited.has(next)) { visited.add(next); queue.push(next); }
+      for (const next of adjacency.get(current)) if (!visited.has(next)) {
+        visited.add(next);
+        queue.push(next);
+      }
     }
     const consumers = component.filter(n => n.state && POWER_DEMAND_MW[n.state.type]);
     const generators = component.filter(n => n.state?.type === "Biomass Burner");
     const demand = consumers.reduce((sum, n) => sum + machinePowerDemand(n.state), 0);
     const available = generators.reduce((sum, n) => {
       const fuel = n.state.fuel || {};
-      return sum + (Object.entries(fuel).some(([kind, count]) => count > 0 && BIOMASS_FUEL_MJ[kind]) ? 30 : 0);
+      return sum + (["Biomass", "Solid Biofuel"].some(kind => (fuel[kind] || 0) > 0) ? 30 : 0);
     }, 0);
-    const supplied = Math.min(demand, available);
     result.capacity += available;
     result.consumption += demand;
     result.connectedMachines += consumers.length;
+
+    // A component is powered only when its connected generators can cover its full load.
     const hasEnough = demand <= available + 1e-6;
-    for (const consumer of consumers) {
-      consumer.state.powered = hasEnough;
-      if (hasEnough) result.poweredMachines++;
-    }
-    if (!hasEnough || demand <= 0) continue;
+    for (const consumer of consumers) consumer.state.powered = hasEnough;
+    if (hasEnough) result.poweredMachines += consumers.length;
+    if (!hasEnough || demand <= 0 || dt <= 0) continue;
+
     let remainingLoad = demand;
     for (const generator of generators) {
-      const state = generator.state;
-      const fuel = state.fuel || (state.fuel = {});
-      const fuelKind = Object.keys(fuel).find(kind => fuel[kind] > 0 && BIOMASS_FUEL_MJ[kind]);
-      if (!fuelKind) { state.powered = false; continue; }
-      const share = Math.min(30, remainingLoad);
-      const energyPerSecond = share;
-      let energy = energyPerSecond * dt;
-      while (energy > 1e-8) {
-        const availableEnergy = fuel[fuelKind] * BIOMASS_FUEL_MJ[fuelKind];
-        if (availableEnergy <= energy + 1e-8) {
-          energy -= availableEnergy;
-          result.fuelUsed += fuel[fuelKind];
-          fuel[fuelKind] = 0;
-          const next = Object.keys(fuel).find(kind => fuel[kind] > 0 && BIOMASS_FUEL_MJ[kind]);
-          if (!next) break;
-          // Continue the same load on the next fuel type.
-          const consumed = Math.min(fuel[next], energy / BIOMASS_FUEL_MJ[next]);
-          fuel[next] -= consumed;
-          result.fuelUsed += consumed;
-          energy -= consumed * BIOMASS_FUEL_MJ[next];
-        } else {
-          const consumed = energy / BIOMASS_FUEL_MJ[fuelKind];
-          fuel[fuelKind] -= consumed;
-          result.fuelUsed += consumed;
-          energy = 0;
-        }
+      if (remainingLoad <= 1e-8) break;
+      const fuel = generator.state.fuel || (generator.state.fuel = {});
+      const hasFuel = ["Biomass", "Solid Biofuel"].some(kind => (fuel[kind] || 0) > 0);
+      if (!hasFuel) continue;
+      const load = Math.min(30, remainingLoad);
+      const used = consumeFuelEnergy(fuel, load * dt);
+      result.fuelUsed += used.consumed;
+      if (used.remainingMJ > 1e-6) {
+        // Fuel ran out during this simulation step: do not report the full component load as powered.
+        for (const consumer of consumers) consumer.state.powered = false;
+        result.poweredMachines = Math.max(0, result.poweredMachines - consumers.length);
+        break;
       }
-      remainingLoad -= share;
-      state.powered = true;
+      remainingLoad -= load;
     }
   }
   return result;
