@@ -12,8 +12,8 @@
         "c": "assets/models/blade_runners/blade_runners_variant_c.glb"
       },
       "preview": "assets/models/previews/blade_runners_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "alien-power-augmenter",
@@ -27,7 +27,7 @@
       },
       "preview": "assets/models/previews/alien-power-augmenter_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "angled-frame-window",
@@ -41,7 +41,7 @@
       },
       "preview": "assets/models/previews/angled-frame-window_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "assembler",
@@ -69,7 +69,7 @@
       },
       "preview": "assets/models/previews/awesome-shop_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "basic-shelf-unit",
@@ -83,7 +83,7 @@
       },
       "preview": "assets/models/previews/basic-shelf-unit_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "beams",
@@ -180,7 +180,6 @@
         "b": "assets/models/buildings/constructor/constructor_variant_b.glb"
       },
       "preview": "assets/models/previews/constructor_four_variants_preview.png",
-      "selectedVariant": "b",
       "selectionStatus": "preview-reviewed-initial"
     },
     {
@@ -265,7 +264,7 @@
       },
       "preview": "assets/models/previews/crafting-bench_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "dimensional-depot-uploader",
@@ -279,7 +278,7 @@
       },
       "preview": "assets/models/previews/dimensional-depot-uploader_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "drone-port",
@@ -293,7 +292,7 @@
       },
       "preview": "assets/models/previews/drone-port_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "equipment-workshop",
@@ -349,7 +348,7 @@
       },
       "preview": "assets/models/previews/fuel-generator_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "geothermal-generator",
@@ -363,7 +362,7 @@
       },
       "preview": "assets/models/previews/geothermal-generator_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "hub",
@@ -391,7 +390,7 @@
       },
       "preview": "assets/models/previews/hypertube-supports_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "indicator-light",
@@ -405,7 +404,7 @@
       },
       "preview": "assets/models/previews/indicator-light_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "industrial-fluid-buffer",
@@ -419,7 +418,7 @@
       },
       "preview": "assets/models/previews/industrial-fluid-buffer_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "jump-pad",
@@ -433,7 +432,7 @@
       },
       "preview": "assets/models/previews/jump-pad_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "ladder",
@@ -447,7 +446,7 @@
       },
       "preview": "assets/models/previews/ladder_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "large-fan",
@@ -460,8 +459,8 @@
         "b": "assets/models/buildings/large-fan/large-fan_variant_b.glb"
       },
       "preview": "assets/models/previews/large-fan_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "lights",
@@ -475,7 +474,7 @@
       },
       "preview": "assets/models/previews/lights_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "lookout-tower",
@@ -489,7 +488,7 @@
       },
       "preview": "assets/models/previews/lookout-tower_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "mam",
@@ -503,7 +502,7 @@
       },
       "preview": "assets/models/previews/mam_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "manufacturer",
@@ -517,7 +516,7 @@
       },
       "preview": "assets/models/previews/manufacturer_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "miner",
@@ -545,7 +544,7 @@
       },
       "preview": "assets/models/previews/nuclear-power-plant_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "oil_extractor",
@@ -559,7 +558,7 @@
       },
       "preview": "assets/models/previews/oil_extractor_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "packager",
@@ -573,7 +572,7 @@
       },
       "preview": "assets/models/previews/packager_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "particle_accelerator",
@@ -587,7 +586,7 @@
       },
       "preview": "assets/models/previews/particle_accelerator_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "personal-storage-box",
@@ -601,7 +600,7 @@
       },
       "preview": "assets/models/previews/personal-storage-box_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "personnel-elevator",
@@ -615,7 +614,7 @@
       },
       "preview": "assets/models/previews/personnel-elevator_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "pillars",
@@ -629,7 +628,7 @@
       },
       "preview": "assets/models/previews/pillars_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "pipeline-support",
@@ -643,7 +642,7 @@
       },
       "preview": "assets/models/previews/pipeline-support_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "portal",
@@ -657,7 +656,7 @@
       },
       "preview": "assets/models/previews/portal_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "power-line",
@@ -671,7 +670,7 @@
       },
       "preview": "assets/models/previews/power-line_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "priority-merger",
@@ -685,7 +684,7 @@
       },
       "preview": "assets/models/previews/priority-merger_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "priority-power-switch",
@@ -699,7 +698,7 @@
       },
       "preview": "assets/models/previews/priority-power-switch_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "programmable-splitter",
@@ -713,7 +712,7 @@
       },
       "preview": "assets/models/previews/programmable-splitter_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "quantum_encoder",
@@ -727,7 +726,7 @@
       },
       "preview": "assets/models/previews/quantum_encoder_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "radar-tower",
@@ -741,7 +740,7 @@
       },
       "preview": "assets/models/previews/radar-tower_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "ramps",
@@ -754,8 +753,8 @@
         "a": "assets/models/buildings/ramps/ramps_variant_a.glb"
       },
       "preview": "assets/models/previews/ramps_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "refinery",
