@@ -295,10 +295,9 @@ export async function createAssetWorld(parent, options = {}) {
     onProgress(getStats());
   }
 
-  const constructionCatalog = assets.filter(asset =>
-    asset.category === "buildings" || asset.category === "infrastructure" ||
-    asset.category === "portable_miner" || asset.category === "railway"
-  );
+  // Every selected non-natural family is available from the in-game catalogue:
+  // buildings, logistics, vehicles, equipment and individual inventory models.
+  const constructionCatalog = assets.filter(asset => !NATURAL_CATEGORIES.has(asset.category));
   const constructionById = new Map(constructionCatalog.map(asset => [asset.id, asset]));
   const placedConstruction = [];
 
@@ -325,9 +324,13 @@ export async function createAssetWorld(parent, options = {}) {
         const size = bounds.getSize(new THREE.Vector3());
         const center = bounds.getCenter(new THREE.Vector3());
         const width = Math.max(size.x, size.z, 0.001);
+        const vehicleCategories = new Set(["tractor","truck","explorer","cyber_wagon","factory_cart","locomotive","train_station","freight_car","freight_platform","drone"]);
         const targetWidth = asset.category === "buildings" ? 5.2 :
           asset.category === "railway" ? 4.5 :
-          asset.category === "portable_miner" ? 1.8 : 2.8;
+          asset.category === "portable_miner" ? 1.8 :
+          asset.category === "infrastructure" ? 2.8 :
+          asset.category === "items" ? 0.48 :
+          vehicleCategories.has(asset.category) ? (asset.category === "locomotive" ? 8.0 : 3.4) : 1.35;
         const scale = targetWidth / width;
         model.scale.setScalar(scale);
         model.position.set(-center.x * scale, -bounds.min.y * scale, -center.z * scale);
