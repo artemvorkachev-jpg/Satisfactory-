@@ -32,8 +32,8 @@ assert.equal(state.capacity, 0);
 assert.equal(smelter.userData.machine.powered, false);
 
 // A second connected burner can cover demand when the first runs out mid-step.
-const nearlyEmpty = { userData: { machine: { id: "gen-2", type: "Biomass Burner", fuel: { Biomass: 0.01 } } } };
-generator.userData.machine.fuel = { "Solid Biofuel": 1 };
+const nearlyEmpty = { userData: { machine: { id: "gen-2", type: "Biomass Burner", fuel: { Biomass: 0.04 } } } };
+generator.userData.machine.fuel = { Biomass: 0.01 };
 const secondPole = { userData: { powerPoleId: "pole-2" } };
 const secondConsumer = { userData: { machine: { id: "constructor-1", type: "Constructor", recipe: "Iron Plate", active: true, input: { "Iron Ingot": 3 }, output: {}, powered: false } } };
 state = simulatePowerGrid([generator, nearlyEmpty, smelter, secondConsumer], [pole, secondPole], [
