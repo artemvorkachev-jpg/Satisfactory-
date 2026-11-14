@@ -162,7 +162,15 @@ export async function createAssetWorld(parent, options = {}) {
       const size = bounds.getSize(new THREE.Vector3());
       const center = bounds.getCenter(new THREE.Vector3());
       const maxDimension = Math.max(size.x, size.y, size.z, 0.001);
-      const target = placement.kind === "flora" ? 2.8 : placement.kind === "resource" ? 4.2 : 2.3;
+      const creatureSize = placement.asset.id.includes("giant-flying-manta") ? 24 :
+        placement.asset.id.includes("space-giraffe") ? 11 :
+        placement.asset.id.includes("alpha-hog") || placement.asset.id.includes("hog") ? 3.4 :
+        placement.asset.id.includes("stinger") || placement.asset.id.includes("spitter") ? 3.0 :
+        placement.asset.id.includes("flying-bird") || placement.asset.id.includes("non-flying-bird") ? 1.5 : 2.2;
+      const floraSize = placement.asset.id.includes("wood") ? 7.5 :
+        placement.asset.id.includes("vines") ? 4.5 :
+        placement.asset.id.includes("plant-clusters") ? 3.8 : 2.8;
+      const target = placement.kind === "flora" ? floraSize : placement.kind === "resource" ? 4.2 : creatureSize;
       const scale = target / maxDimension * placement.scale;
       model.scale.setScalar(scale);
       model.position.set(-center.x * scale, -bounds.min.y * scale, -center.z * scale);
@@ -179,8 +187,8 @@ export async function createAssetWorld(parent, options = {}) {
       });
       wrapper.add(model);
       parent.add(wrapper);
-      const body = placement.kind === "creature" ? null : addStaticModelCollider(wrapper, {
-        friction: placement.kind === "flora" ? 0.64 : 0.9
+      const body = addStaticModelCollider(wrapper, {
+        friction: placement.kind === "flora" ? 0.64 : placement.kind === "creature" ? 0.72 : 0.9
       });
       loaded.set(placement.id, { wrapper, body, placement });
       onProgress(getStats());
