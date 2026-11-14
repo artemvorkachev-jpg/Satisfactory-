@@ -1860,7 +1860,7 @@
       },
       "preview": "assets/models/previews/awesome_sink_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "conveyor_belt",
@@ -1874,7 +1874,7 @@
       },
       "preview": "assets/models/previews/conveyor_belt_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "conveyor_lift",
@@ -1888,7 +1888,7 @@
       },
       "preview": "assets/models/previews/conveyor_lift_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "conveyor_merger",
@@ -1902,7 +1902,7 @@
       },
       "preview": "assets/models/previews/conveyor_merger_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "conveyor_pole",
@@ -1916,7 +1916,7 @@
       },
       "preview": "assets/models/previews/conveyor_pole_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "conveyor_splitter",
@@ -1930,7 +1930,7 @@
       },
       "preview": "assets/models/previews/conveyor_splitter_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fluid_buffer",
@@ -1944,7 +1944,7 @@
       },
       "preview": "assets/models/previews/fluid_buffer_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "hypertube",
@@ -1958,7 +1958,7 @@
       },
       "preview": "assets/models/previews/hypertube_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "hypertube_entrance",
@@ -1972,7 +1972,7 @@
       },
       "preview": "assets/models/previews/hypertube_entrance_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "hypertube_junction",
@@ -1986,7 +1986,7 @@
       },
       "preview": "assets/models/previews/hypertube_junction_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "pipeline",
@@ -2000,7 +2000,7 @@
       },
       "preview": "assets/models/previews/pipeline_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "pipeline_junction",
@@ -2014,7 +2014,7 @@
       },
       "preview": "assets/models/previews/pipeline_junction_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "pipeline_pump",
@@ -2028,7 +2028,7 @@
       },
       "preview": "assets/models/previews/pipeline_pump_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "power_pole",
@@ -2042,7 +2042,7 @@
       },
       "preview": "assets/models/previews/power_pole_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "power_storage",
@@ -2056,7 +2056,7 @@
       },
       "preview": "assets/models/previews/power_storage_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "power_switch",
@@ -2070,7 +2070,7 @@
       },
       "preview": "assets/models/previews/power_switch_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "power_tower",
@@ -2084,7 +2084,7 @@
       },
       "preview": "assets/models/previews/power_tower_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "storage_container",
@@ -2098,7 +2098,7 @@
       },
       "preview": "assets/models/previews/storage_container_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "consumable-bacon-agaric",
