@@ -418,6 +418,14 @@ export async function createAssetWorld(parent, options = {}) {
     update,
     getObjects: () => [...loaded.values()].map(entry => entry.wrapper),
     getResourceState: () => Object.fromEntries([...savedResourceAmounts.entries(), ...[...loaded.values()].filter(entry => entry.wrapper.userData.node).map(entry => [entry.placement.id, entry.wrapper.userData.node.amount])]),
+    getResourceDiagnostics: () => [...loaded.values()].filter(entry => entry.wrapper.userData.node).map(entry => ({
+      id: entry.placement.id,
+      type: entry.wrapper.userData.node.type,
+      amount: entry.wrapper.userData.node.amount,
+      modelVisible: entry.model.visible,
+      remainsVisible: !!entry.depletedVisual?.visible,
+      collider: !!entry.body
+    })),
     setResourceState: state => {
       savedResourceAmounts.clear();
       for (const [id, amount] of Object.entries(state || {})) if (Number.isFinite(amount) && amount >= 0) savedResourceAmounts.set(id, amount);
