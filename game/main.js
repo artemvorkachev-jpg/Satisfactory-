@@ -184,7 +184,14 @@ function node(type,x,z,amount=240){const g=new THREE.Group();g.position.set(x,0,
 const hub=new THREE.Group();hub.position.set(0,0,-1);hub.userData.physicsStatic=true;world.add(hub);attachModel(hub,modelPaths.Hub,5);
 const pad=new THREE.Mesh(new THREE.CylinderGeometry(2.7,3.1,.4,32),mat(0x737e83,.78,.24));pad.position.set(0,.2,4.5);pad.castShadow=true;pad.receiveShadow=true;world.add(pad);addStaticCollider(pad,{shape:"cylinder",friction:0.9});
 let assetWorld=null;let pendingResourceState={};let pendingPlacedAssets=[];
-function makeMachine(type,pos,visualOverride=null){const g=new THREE.Group();g.position.copy(pos);const sim=createMachineState(type,"machine-"+(machines.length+1));g.userData.machine={...sim,buffer:sim.input,progress:0,powered:false,node:null};world.add(g);attachModel(g,modelPaths[visualOverride||type],3.1);machines.push(g);return g}
+function makeMachine(type,pos,visualOverride=null){
+ const g=new THREE.Group();g.position.copy(pos);
+ const sim=createMachineState(type,"machine-"+(machines.length+1));
+ const defaultRecipe=Object.keys(RECIPES[type]||{})[0]||null;
+ if(defaultRecipe)setMachineRecipe(sim,defaultRecipe);
+ g.userData.machine={...sim,buffer:sim.input,progress:0,powered:false,node:null};
+ world.add(g);attachModel(g,modelPaths[visualOverride||type],3.1);machines.push(g);return g
+}
 const clock=new THREE.Clock();
 function ui(message){const toast=$("#toast");if(!toast)return;toast.textContent=message||"";toast.classList.toggle("show",Boolean(message));clearTimeout(toastTimer);if(message)toastTimer=setTimeout(()=>toast.classList.remove("show"),2600)}
 function updateProgression(){while(progression.stage<milestones.length&&milestones[progression.stage].test())progression.stage++;const m=milestones[Math.min(progression.stage,milestones.length-1)];$("#objective").textContent=progression.stage>=milestones.length?"Автоматизация запущена · продолжайте расширять производство":m.name+" — "+m.goal;$("#stats").innerHTML="Этап: "+Math.min(progression.stage+1,milestones.length)+" / "+milestones.length+"<br>Построено машин: "+machines.length;}
@@ -267,14 +274,131 @@ function buildAt(){
   return;
  }
  const target=targetObject();if(buildType==="Power Line"){const endpoint=target?.userData.machine?target.userData.machine.id:target?.userData.powerPoleId;if(!endpoint){ui("Подключайте кабель к машине или опоре электросети.");return}if(!powerStart){powerStart=endpoint;ui("Начало кабеля выбрано. Выберите вторую машину или опору.");return}if(powerStart===endpoint){ui("Выберите другой объект.");return}const a=powerStart,b=endpoint;const poleA=powerPoles.find(p=>p.userData.powerPoleId===a),poleB=powerPoles.find(p=>p.userData.powerPoleId===b);const degree=id=>powerConnections.filter(c=>c.a===id||c.b===id).length;if((poleA&&degree(a)>=4)||(poleB&&degree(b)>=4)||(!poleA&&degree(a)>=1)||(!poleB&&degree(b)>=1)){ui(poleA||poleB?"У опоры заняты все 4 разъёма или у машины уже есть кабель.":"У каждой машины может быть только один кабель.");return}const ga=[...machines,...powerPoles].find(g=>(g.userData.machine?.id||g.userData.powerPoleId)===a),gb=[...machines,...powerPoles].find(g=>(g.userData.machine?.id||g.userData.powerPoleId)===b);if(!ga||!gb||!(poleA||poleB)){ui("На этом этапе кабель соединяет здание только с опорой электросети.");return}const distance=ga.position.distanceTo(gb.position);if(distance>100){ui("Кабель не достаёт: максимум 100 м.");return}const cableCost=Math.max(1,Math.ceil(distance/25));if((inventory.Cable||0)<cableCost){ui("Для линии нужно кабеля: "+cableCost);return}inventory.Cable-=cableCost;invText();const curve=new THREE.LineCurve3(ga.position.clone().add(new THREE.Vector3(0,2,0)),gb.position.clone().add(new THREE.Vector3(0,2,0)));const wire=new THREE.Mesh(new THREE.TubeGeometry(curve,12,.035,6,false),mat(0x252a2b,.45,.4));world.add(wire);powerConnections.push({a,b,wire});powerStart=null;buildType=null;ui("Кабель подключён к электросети.");return}if(buildType==="Conveyor Belt"){if(!target?.userData.machine){ui("Для ленты сначала наведитесь на производственную машину и нажмите E.");return}if(!beltStart){beltStart=target;ui("Начало ленты выбрано. Теперь наведитесь на машину-получатель и нажмите E.");return}if(target===beltStart){ui("Выберите другую машину-получатель.");return}makeBelt(beltStart,target);progression.built["Conveyor Belt"]=(progression.built["Conveyor Belt"]||0)+1;updateProgression();beltStart=null;buildType=null;ui("Конвейер Mk.1 соединён: до 60 предметов в минуту.");return}const dir=new THREE.Vector3();camera.getWorldDirection(dir);let p=player.position.clone().add(dir.multiplyScalar(5));p.y=0;let linkedNode=null;if(buildType==="Portable Miner"){if(target?.userData.node){linkedNode=target;p=target.position.clone()}else{ui("Для Portable Miner наведитесь на ресурсный узел.");return}}p.x=Math.round(p.x/2)*2;p.z=Math.round(p.z/2)*2;if(Math.hypot(p.x-player.position.x,p.z-player.position.z)>12){ui("Слишком далеко для строительства.");return}const placedType=buildType;if(placedType==="Power Pole"){const pole=new THREE.Group();pole.position.copy(p);pole.userData.powerPoleId="power-pole-"+(powerPoles.length+1);world.add(pole);attachModel(pole,modelPaths.PowerPole,2.2);powerPoles.push(pole);buildType=null;ui("Опора электросети установлена. Выберите «Кабель электросети», чтобы подключить её.");return}const type=buildType==="Portable Miner"?"Miner":buildType;const m=makeMachine(type,p,buildType==="Portable Miner"?"PortableMiner":null);progression.built[placedType]=(progression.built[placedType]||0)+1;updateProgression();if(linkedNode){m.userData.machine.node=linkedNode;m.userData.machine.nodeType=linkedNode.userData.node.type;m.userData.machine.nodeRemaining=linkedNode.userData.node.amount}buildType=null;ui(type+" установлен. Подойдите и нажмите E для настройки.");}
-function makeBelt(sourceGroup,targetGroup){const a=sourceGroup.position.clone().add(new THREE.Vector3(0,1.1,0));const b=targetGroup.position.clone().add(new THREE.Vector3(0,1.1,0));const mid=a.clone().lerp(b,.5);mid.y+=Math.min(1.2,a.distanceTo(b)*.12);const curve=new THREE.CatmullRomCurve3([a,mid,b]);const mesh=new THREE.Mesh(new THREE.TubeGeometry(curve,Math.max(12,Math.ceil(a.distanceTo(b)*3)),.16,8,false),mat(0x414d50));mesh.castShadow=true;world.add(mesh);const token=new THREE.Group();const fallback=new THREE.Mesh(new THREE.BoxGeometry(.32,.22,.32),mat(0xd4a33b));token.add(fallback);world.add(token);const belt={source:sourceGroup.userData.machine,target:targetGroup.userData.machine,curve,mesh,token,item:sourceGroup.userData.machine.type==="Miner"?sourceGroup.userData.machine.nodeType:sourceGroup.userData.machine.recipe,modelItem:null,elapsed:0,itemsPerSecond:1,active:true,visualT:0};belts.push(belt);}function interact(){if(buildType){buildAt();return}const target=targetObject();if(!target){ui("Здесь нет объекта для взаимодействия.");return}
-if(target.userData.node){const n=target.userData.node;if(n.amount<=0){ui("Узел истощён. На месте остались каменные обломки.");return}const gathered=Math.min(25,n.amount);n.amount=Math.max(0,n.amount-gathered);assetWorld?.setNodeAmount?.(target,n.amount);inventory[n.type]=(inventory[n.type]||0)+gathered;progression.gathered[n.type]=(progression.gathered[n.type]||0)+gathered;invText();updateProgression();ui(n.amount===0?"Узел полностью истощён. На месте остались обломки.":"Собрано "+gathered+": "+(labels[n.type]||n.type));return}
-if(target.userData.asset){const a=target.userData.asset;ui(a.name+" · "+a.category+" · вариант "+String(a.variant).toUpperCase());return}
-if(target.userData.machine){selectedMachine=target;const m=target.userData.machine;if(m.type==="Biomass Burner"){m.fuel=m.fuel||{};let loaded=0;for(const kind of ["Biomass","Solid Biofuel"]){const amount=inventory[kind]||0;if(amount>0){m.fuel[kind]=(m.fuel[kind]||0)+amount;inventory[kind]=0;loaded+=amount}}invText();ui(loaded?"В генератор загружено топлива: "+loaded+". Подключите его кабелем к опоре.":"В генераторе топлива нет. Изготовьте биомассу из листьев или древесины.");return}const ready=Object.entries(m.output).filter(([,v])=>v>0);if(ready.length){for(const [item,count] of ready){inventory[item]=(inventory[item]||0)+count;m.output[item]=0}invText();ui("Готовая продукция забрана из "+m.type+".");return}if(m.type==="Miner"){ui(m.node?"Добытчик подключён к "+(labels[m.nodeType]||m.nodeType)+". Производство: 60 предметов/мин на обычном узле.":"Для работы доб. узла наведите на Miner при установке.");}else{const options=Object.keys(RECIPES[m.type]||{});if(options.length){const current=options.indexOf(m.recipe);const next=options[(current+1)%options.length];setMachineRecipe(m,next);ui(m.type+": выбран рецепт "+next+".");}else ui("У этой установки пока нет доступных рецептов.");}return}
-ui("HUB: ранняя производственная площадка. Ручное изготовление доступно через «Крафт».");
+function makeBelt(sourceGroup,targetGroup){const a=sourceGroup.position.clone().add(new THREE.Vector3(0,1.1,0));const b=targetGroup.position.clone().add(new THREE.Vector3(0,1.1,0));const mid=a.clone().lerp(b,.5);mid.y+=Math.min(1.2,a.distanceTo(b)*.12);const curve=new THREE.CatmullRomCurve3([a,mid,b]);const mesh=new THREE.Mesh(new THREE.TubeGeometry(curve,Math.max(12,Math.ceil(a.distanceTo(b)*3)),.16,8,false),mat(0x414d50));mesh.castShadow=true;world.add(mesh);const token=new THREE.Group();const fallback=new THREE.Mesh(new THREE.BoxGeometry(.32,.22,.32),mat(0xd4a33b));token.add(fallback);world.add(token);const belt={source:sourceGroup.userData.machine,target:targetGroup.userData.machine,curve,mesh,token,item:sourceGroup.userData.machine.type==="Miner"?sourceGroup.userData.machine.nodeType:(Object.keys(RECIPES[sourceGroup.userData.machine.type]?.[sourceGroup.userData.machine.recipe]?.output||{})[0]||sourceGroup.userData.machine.recipe),modelItem:null,elapsed:0,itemsPerSecond:1,active:true,visualT:0};belts.push(belt);}function showMachineMenu(group){
+ const machine=group?.userData?.machine;
+ if(!machine)return;
+ selectedMachine=group;menuMode="machine";
+ $("#menu").style.display="grid";$("#menuFilters").style.display="none";
+ const grid=$("#menuGrid");grid.replaceChildren();
+ $("#menuTitle").textContent=machine.type==="Miner"?"Добытчик":machine.type==="Biomass Burner"?"Биомассовый генератор":machine.type;
+ const addAction=(name,description,callback,disabled=false)=>{
+  const button=document.createElement("button");
+  const title=document.createElement("b");title.textContent=name;
+  const detail=document.createElement("span");detail.className="small";detail.textContent=description;
+  button.append(title,document.createElement("br"),detail);
+  button.disabled=disabled;button.addEventListener("click",callback);grid.append(button);return button;
+ };
+ const itemText=items=>Object.entries(items||{}).filter(([,amount])=>amount>0).map(([item,amount])=>(labels[item]||item)+" × "+amount.toFixed(2)).join(" · ")||"пусто";
+ const outputs=machine.output||{};
+ const recipe=RECIPES[machine.type]?.[machine.recipe];
+ $("#menuInfo").textContent="Состояние: "+(machine.active?"включена":"выключена")+" · "+(machine.powered?"есть питание":"нет питания")+
+  (recipe?"\nРецепт: "+machine.recipe+" · цикл "+recipe.seconds+" с":"")+
+  (machine.type==="Miner"?"\nУзел: "+(machine.nodeType?(labels[machine.nodeType]||machine.nodeType):"не подключён")+" · осталось: "+(Number.isFinite(machine.nodeRemaining)?machine.nodeRemaining:"—"):"")+
+  "\nВход: "+itemText(machine.input)+"\nВыход: "+itemText(outputs);
+ addAction("Забрать продукцию","Перенести все готовые предметы в рюкзак",()=>{
+  let count=0;
+  for(const [item,amount] of Object.entries(machine.output||{})){if(amount>0){inventory[item]=(inventory[item]||0)+amount;machine.output[item]=0;count+=amount}}
+  invText();ui(count?"Забрано продукции: "+count+".":"На выходе пока пусто.");showMachineMenu(group);
+ },!Object.values(outputs).some(v=>v>0));
+ if(machine.type==="Biomass Burner"){
+  addAction("Загрузить биотопливо","Перенести биомассу и твёрдое биотопливо из инвентаря",()=>{
+   machine.fuel=machine.fuel||{};let loaded=0;
+   for(const kind of ["Solid Biofuel","Biomass"]){const amount=inventory[kind]||0;if(amount>0){machine.fuel[kind]=(machine.fuel[kind]||0)+amount;inventory[kind]=0;loaded+=amount}}
+   invText();ui(loaded?"В генератор загружено топлива: "+loaded+".":"Подходящего топлива в инвентаре нет.");showMachineMenu(group);
+  });
+ }else if(machine.type!=="Miner"){
+  for(const [name,definition] of Object.entries(RECIPES[machine.type]||{})){
+   const description=Object.entries(definition.inputs).map(([item,count])=>(labels[item]||item)+" × "+count).join(" + ")+" → "+Object.entries(definition.output).map(([item,count])=>(labels[item]||item)+" × "+count).join(" + ")+" · "+definition.seconds+" с";
+   addAction((machine.recipe===name?"✓ ":"")+name,description,()=>{setMachineRecipe(machine,name);ui("Выбран рецепт: "+name);showMachineMenu(group)});
+  }
+  addAction("Загрузить сырьё","Внести ингредиенты выбранного рецепта из инвентаря",()=>{
+   const selected=RECIPES[machine.type]?.[machine.recipe];
+   if(!selected){ui("Сначала выберите рецепт.");return}
+   let loaded=0;
+   for(const [item] of Object.entries(selected.inputs)){
+    const capacity=Math.max(0,100-(machine.input[item]||0));
+    const amount=Math.min(capacity,inventory[item]||0);
+    if(amount>0){machine.input[item]=(machine.input[item]||0)+amount;inventory[item]-=amount;loaded+=amount}
+   }
+   invText();ui(loaded?"Загружено сырья: "+loaded+".":"Нет подходящих ингредиентов или входной буфер заполнен.");showMachineMenu(group);
+  });
+ }else{
+  addAction("Остаток месторождения","Добытчик расходует запас подключённого узла",()=>ui("Остаток узла: "+(Number.isFinite(machine.nodeRemaining)?machine.nodeRemaining:"—")+"."));
+ }
+ addAction(machine.active?"Выключить установку":"Включить установку","Пауза или возобновление производства",()=>{
+  machine.active=!machine.active;ui(machine.active?"Установка включена.":"Установка выключена.");showMachineMenu(group);
+ });
+ $("#menuStatus").textContent="Инвентарь: "+itemText(inventory);
+}
+function interact(){
+ if(buildType){buildAt();return}
+ const target=targetObject();
+ if(!target){ui("Здесь нет объекта для взаимодействия.");return}
+ if(target.userData.node){
+  const node=target.userData.node;
+  if(node.amount<=0){ui("Узел истощён. На месте остались каменные обломки.");return}
+  const gathered=Math.min(25,node.amount);
+  node.amount=Math.max(0,node.amount-gathered);
+  assetWorld?.setNodeAmount?.(target,node.amount);
+  inventory[node.type]=(inventory[node.type]||0)+gathered;
+  progression.gathered[node.type]=(progression.gathered[node.type]||0)+gathered;
+  invText();updateProgression();
+  ui(node.amount===0?"Узел полностью истощён. На месте остались обломки.":"Собрано "+gathered+": "+(labels[node.type]||node.type));
+  return;
+ }
+ if(target.userData.asset){
+  const asset=target.userData.asset;
+  ui(asset.name+" · "+asset.category+" · вариант "+String(asset.variant).toUpperCase());
+  return;
+ }
+ if(target.userData.machine){showMachineMenu(target);return}
+ ui("HUB: ранняя производственная площадка. Ручное изготовление доступно через «Крафт».");
 }
 function targetObject(){raycaster.setFromCamera(center,camera);const candidates=[...resourceNodes,...machines,...powerPoles,hub,...(assetWorld?.getObjects()||[])];const hits=raycaster.intersectObjects(candidates,true);if(!hits.length)return null;let o=hits[0].object;while(o.parent&&o.parent!==world&&!o.userData.node&&!o.userData.machine&&!o.userData.asset&&!o.userData.powerPoleId)o=o.parent;if(o.userData.node||o.userData.machine||o.userData.asset||o.userData.powerPoleId)return o;return hub}
-function updateMachines(dt){powerStats=simulatePowerGrid(machines,powerPoles,powerConnections,dt);for(const g of machines){const m=g.userData.machine;const before=m.nodeRemaining;if(m.type==="Biomass Burner"){m.powered=!!Object.values(m.fuel||{}).some(v=>v>0)}else if(m.powered)tickMachine(m,dt);if(m.pendingNodeId&&!m.node){const linked=assetWorld?.getObjects().find(o=>o.userData.node?.id===m.pendingNodeId);if(linked){m.node=linked;m.nodeType=linked.userData.node.type;m.nodeRemaining=linked.userData.node.amount;m.pendingNodeId=null}}if(m.node&&before!==m.nodeRemaining)m.node.userData.node.amount=m.nodeRemaining}for(const belt of belts){if(!belt.item){belt.item=Object.keys(belt.source.output).find(k=>(belt.source.output[k]||0)>0)}if(belt.item){if(belt.modelItem!==belt.item&&itemModelPaths[belt.item]){belt.token.clear();attachModel(belt.token,itemModelPaths[belt.item],.42);belt.modelItem=belt.item}transferBelt(belt,belt.source,belt.target,dt);belt.visualT=(belt.visualT+dt*.6)%1;belt.token.visible=(belt.source.output[belt.item]||0)>0;belt.token.position.copy(belt.curve.getPoint(belt.visualT))}}invText()}function move(dt){
+function updateMachines(dt){
+ powerStats=simulatePowerGrid(machines,powerPoles,powerConnections,dt);
+ for(const group of machines){
+  const machine=group.userData.machine;
+  if(machine.node&&!machine.node.parent)machine.pendingNodeId=machine.node.userData.node?.id||machine.pendingNodeId;
+  if(machine.pendingNodeId){
+   const linked=assetWorld?.getObjects().find(object=>object.userData.node?.id===machine.pendingNodeId);
+   if(linked){
+    machine.node=linked;machine.nodeType=linked.userData.node.type;
+    machine.nodeRemaining=Math.min(Number.isFinite(machine.nodeRemaining)?machine.nodeRemaining:linked.userData.node.amount,linked.userData.node.amount);
+    machine.pendingNodeId=null;
+   }
+  }
+  const nodeId=machine.node?.userData.node?.id||machine.pendingNodeId;
+  if(nodeId){
+   const actual=assetWorld?.getNodeAmountById?.(nodeId);
+   if(Number.isFinite(actual))machine.nodeRemaining=Math.min(Number.isFinite(machine.nodeRemaining)?machine.nodeRemaining:actual,actual);
+  }
+  if(machine.type==="Biomass Burner"){
+   machine.powered=machine.active&&!!Object.values(machine.fuel||{}).some(value=>value>0);
+  }else if(machine.powered&&machine.active){
+   tickMachine(machine,dt);
+  }
+  if(nodeId&&Number.isFinite(machine.nodeRemaining))assetWorld?.setNodeAmountById?.(nodeId,machine.nodeRemaining);
+ }
+ for(const belt of belts){
+  const source=belt.source;
+  const planned=source.type==="Miner"?source.nodeType:Object.keys(RECIPES[source.type]?.[source.recipe]?.output||{})[0];
+  if(!belt.item||(source.output[belt.item]||0)<=0){
+   const next=Object.keys(source.output||{}).find(item=>(source.output[item]||0)>0)||planned;
+   if(next&&next!==belt.item){belt.item=next;belt.token.clear();belt.modelItem=null}
+  }
+  if(belt.item){
+   if(belt.modelItem!==belt.item&&itemModelPaths[belt.item]){
+    belt.token.clear();attachModel(belt.token,itemModelPaths[belt.item],.42);belt.modelItem=belt.item;
+   }
+   transferBelt(belt,belt.source,belt.target,dt);
+   belt.visualT=(belt.visualT+dt*.6)%1;
+   belt.token.visible=(belt.source.output[belt.item]||0)>0;
+   belt.token.position.copy(belt.curve.getPoint(belt.visualT));
+  }
+ }
+ invText();
+}function move(dt){
  const forward=new THREE.Vector3(-Math.sin(yaw),0,-Math.cos(yaw));
  const right=new THREE.Vector3(Math.cos(yaw),0,-Math.sin(yaw));
  const v=new THREE.Vector3();
@@ -293,8 +417,8 @@ function updateMachines(dt){powerStats=simulatePowerGrid(machines,powerPoles,pow
  camera.position.copy(player.position);camera.rotation.order="YXZ";camera.rotation.y=yaw;camera.rotation.x=pitch;
 }
 function updatePrompt(){const t=targetObject();if(buildType){$("#prompt").textContent="Разместить "+buildType+" · E";return}if(t?.userData.node)$("#prompt").textContent="Ресурсный узел: "+(labels[t.userData.node.type]||t.userData.node.type)+" · E — собрать";else if(t?.userData.machine)$("#prompt").textContent=t.userData.machine.type+" · E — взаимодействовать";else if(t?.userData.asset)$("#prompt").textContent=t.userData.asset.name+" · E — осмотреть";else $("#prompt").textContent="HUB / площадка · исследуйте окрестности"}
-function save(silent=false){const data={version:2,inventory,progression,resources:assetWorld?.getResourceState?.()||{},player:{x:player.position.x,y:player.position.y,z:player.position.z,yaw,pitch},powerPoles:powerPoles.map(g=>({id:g.userData.powerPoleId,x:g.position.x,y:g.position.y,z:g.position.z})),powerConnections:powerConnections.map(c=>({a:c.a,b:c.b})),machines:machines.map(g=>({type:g.userData.machine.type,x:g.position.x,y:g.position.y,z:g.position.z,recipe:g.userData.machine.recipe,input:g.userData.machine.input,output:g.userData.machine.output,elapsed:g.userData.machine.elapsed,nodeType:g.userData.machine.node?.userData.node?.type,nodeId:g.userData.machine.node?.userData.node?.id,nodeRemaining:g.userData.machine.nodeRemaining,fuel:g.userData.machine.fuel||{}})),belts:belts.map(b=>({from:machines.findIndex(g=>g.userData.machine===b.source),to:machines.findIndex(g=>g.userData.machine===b.target),item:b.item})),builtAssets:assetWorld?.getPlacedConstruction?.()||[]};localStorage.setItem("satisfactory-web-save-v1",JSON.stringify(data));if(!silent)ui("Сохранение записано на этом устройстве.");lastSave=Date.now()}
-function load(){try{const d=JSON.parse(localStorage.getItem("satisfactory-web-save-v1"));if(!d)return;Object.assign(inventory,d.inventory||{});Object.assign(progression,d.progression||{});pendingResourceState=d.resources||{};pendingPlacedAssets=Array.isArray(d.builtAssets)?d.builtAssets:[];assetWorld?.setResourceState?.(pendingResourceState);Object.assign(player.position,d.player||{});yaw=d.player?.yaw||0;pitch=d.player?.pitch||0;for(const pole of d.powerPoles||[]){const g=new THREE.Group();g.position.set(pole.x,pole.y,pole.z);g.userData.powerPoleId=pole.id;world.add(g);attachModel(g,modelPaths.PowerPole,2.2);powerPoles.push(g)}for(const x of d.machines||[]){const g=makeMachine(x.type,new THREE.Vector3(x.x,x.y,x.z));g.userData.machine.recipe=x.recipe;g.userData.machine.input=x.input||x.buffer||{};g.userData.machine.buffer=g.userData.machine.input;g.userData.machine.output=x.output||{};g.userData.machine.fuel=x.fuel||{};g.userData.machine.elapsed=x.elapsed||0;g.userData.machine.nodeRemaining=x.nodeRemaining??Infinity;if(x.nodeId)g.userData.machine.pendingNodeId=x.nodeId;else if(x.nodeType)g.userData.machine.nodeType=x.nodeType;}for(const c of d.powerConnections||[]){const ga=[...machines,...powerPoles].find(g=>(g.userData.machine?.id||g.userData.powerPoleId)===c.a),gb=[...machines,...powerPoles].find(g=>(g.userData.machine?.id||g.userData.powerPoleId)===c.b);if(ga&&gb){const curve=new THREE.LineCurve3(ga.position.clone().add(new THREE.Vector3(0,2,0)),gb.position.clone().add(new THREE.Vector3(0,2,0)));const wire=new THREE.Mesh(new THREE.TubeGeometry(curve,12,.035,6,false),mat(0x252a2b,.45,.4));world.add(wire);powerConnections.push({...c,wire})}}for(const b of d.belts||[]){const from=machines[b.from],to=machines[b.to];if(from&&to){makeBelt(from,to);belts[belts.length-1].item=b.item||null}}invText();updateProgression()}catch(e){console.warn("Save load failed",e)}}
+function save(silent=false){const data={version:2,inventory,progression,resources:assetWorld?.getResourceState?.()||{},player:{x:player.position.x,y:player.position.y,z:player.position.z,yaw,pitch},powerPoles:powerPoles.map(g=>({id:g.userData.powerPoleId,x:g.position.x,y:g.position.y,z:g.position.z})),powerConnections:powerConnections.map(c=>({a:c.a,b:c.b})),machines:machines.map(g=>({type:g.userData.machine.type,x:g.position.x,y:g.position.y,z:g.position.z,recipe:g.userData.machine.recipe,input:g.userData.machine.input,output:g.userData.machine.output,elapsed:g.userData.machine.elapsed,nodeType:g.userData.machine.node?.userData.node?.type||g.userData.machine.nodeType,nodeId:g.userData.machine.node?.userData.node?.id||g.userData.machine.pendingNodeId,nodeRemaining:g.userData.machine.nodeRemaining,active:g.userData.machine.active,fuel:g.userData.machine.fuel||{}})),belts:belts.map(b=>({from:machines.findIndex(g=>g.userData.machine===b.source),to:machines.findIndex(g=>g.userData.machine===b.target),item:b.item})),builtAssets:assetWorld?.getPlacedConstruction?.()||[]};localStorage.setItem("satisfactory-web-save-v1",JSON.stringify(data));if(!silent)ui("Сохранение записано на этом устройстве.");lastSave=Date.now()}
+function load(){try{const d=JSON.parse(localStorage.getItem("satisfactory-web-save-v1"));if(!d)return;Object.assign(inventory,d.inventory||{});Object.assign(progression,d.progression||{});pendingResourceState=d.resources||{};pendingPlacedAssets=Array.isArray(d.builtAssets)?d.builtAssets:[];assetWorld?.setResourceState?.(pendingResourceState);Object.assign(player.position,d.player||{});yaw=d.player?.yaw||0;pitch=d.player?.pitch||0;for(const pole of d.powerPoles||[]){const g=new THREE.Group();g.position.set(pole.x,pole.y,pole.z);g.userData.powerPoleId=pole.id;world.add(g);attachModel(g,modelPaths.PowerPole,2.2);powerPoles.push(g)}for(const x of d.machines||[]){const g=makeMachine(x.type,new THREE.Vector3(x.x,x.y,x.z));if(x.recipe&&RECIPES[x.type]?.[x.recipe])setMachineRecipe(g.userData.machine,x.recipe);g.userData.machine.input=x.input||x.buffer||{};g.userData.machine.buffer=g.userData.machine.input;g.userData.machine.output=x.output||{};g.userData.machine.fuel=x.fuel||{};g.userData.machine.elapsed=x.elapsed||0;g.userData.machine.active=x.active??true;g.userData.machine.nodeRemaining=x.nodeRemaining??Infinity;if(x.nodeId)g.userData.machine.pendingNodeId=x.nodeId;else if(x.nodeType)g.userData.machine.nodeType=x.nodeType;}for(const c of d.powerConnections||[]){const ga=[...machines,...powerPoles].find(g=>(g.userData.machine?.id||g.userData.powerPoleId)===c.a),gb=[...machines,...powerPoles].find(g=>(g.userData.machine?.id||g.userData.powerPoleId)===c.b);if(ga&&gb){const curve=new THREE.LineCurve3(ga.position.clone().add(new THREE.Vector3(0,2,0)),gb.position.clone().add(new THREE.Vector3(0,2,0)));const wire=new THREE.Mesh(new THREE.TubeGeometry(curve,12,.035,6,false),mat(0x252a2b,.45,.4));world.add(wire);powerConnections.push({...c,wire})}}for(const b of d.belts||[]){const from=machines[b.from],to=machines[b.to];if(from&&to){makeBelt(from,to);belts[belts.length-1].item=b.item||null}}invText();updateProgression()}catch(e){console.warn("Save load failed",e)}}
 $("#menuSearch").addEventListener("input",()=>{if(menuMode==="build")showMenu("build")});
 $("#menuCategory").addEventListener("change",()=>{if(menuMode==="build")showMenu("build")});
 const orientationButton=$("#orientationButton");
