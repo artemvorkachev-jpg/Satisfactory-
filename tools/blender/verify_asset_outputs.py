@@ -11,7 +11,7 @@ blends=sorted(p for p in glob.glob(os.path.join(MODELS,"**","*_four_variants.ble
 errors=[]
 if len(blends)<294:
     errors.append(f"Expected at least 294 permitted four-variant Blender source files, found {len(blends)}")
-expected_textures=[f"{family}_{channel}.png" for family in ("metal","polymer","rubber","organic","glass") for channel in ("albedo","roughness","height")]
+expected_textures=[f"{family}_{channel}_v2.png" for family in ("metal","polymer","rubber","organic","glass") for channel in ("albedo","roughness","height")]
 for name in expected_textures:
     path=os.path.join(TEXTURES,name)
     if not os.path.isfile(path) or os.path.getsize(path)<2048:
