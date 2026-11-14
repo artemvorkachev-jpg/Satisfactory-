@@ -1566,7 +1566,7 @@
       },
       "preview": "assets/models/previews/cyber_wagon_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "drone",
@@ -1579,8 +1579,8 @@
         "b": "assets/models/drone/drone_variant_b.glb"
       },
       "preview": "assets/models/previews/drone_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "d",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "explorer",
@@ -1594,7 +1594,7 @@
       },
       "preview": "assets/models/previews/explorer_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "factory_cart",
@@ -1607,8 +1607,8 @@
         "a": "assets/models/factory_cart/factory_cart_variant_a.glb"
       },
       "preview": "assets/models/previews/factory_cart_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "flora-bacon-agaric",
@@ -1790,7 +1790,7 @@
       },
       "preview": "assets/models/previews/freight_car_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "freight_platform",
@@ -1804,7 +1804,7 @@
       },
       "preview": "assets/models/previews/freight_platform_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "gas_mask",
@@ -3820,7 +3820,7 @@
       },
       "preview": "assets/models/previews/locomotive_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "object_scanner",
@@ -3875,8 +3875,8 @@
         "c": "assets/models/railway/railway_variant_c.glb"
       },
       "preview": "assets/models/previews/railway_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "bauxite_node",
@@ -4099,8 +4099,8 @@
         "d": "assets/models/train_station/train_station_variant_d.glb"
       },
       "preview": "assets/models/previews/train_station_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "d",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "truck",
