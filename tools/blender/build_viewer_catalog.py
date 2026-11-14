@@ -13,6 +13,7 @@ for path in glob.glob(os.path.join(MODELS,"**","*_variant_*.glb"),recursive=True
     asset_id=match.group(1)
     rel=os.path.relpath(path,ROOT).replace(os.sep,"/")
     category=os.path.relpath(os.path.dirname(path),MODELS).split("/")[0]
+    if category == "equipment": continue
     entry=families.setdefault(asset_id,{"id":asset_id,"name":asset_id.replace("-"," ").replace("_"," ").title(),"category":category,"variants":{}})
     entry["variants"][match.group(2).lower()]=rel
     preview=os.path.join(MODELS,"previews",asset_id+"_four_variants_preview.png")
