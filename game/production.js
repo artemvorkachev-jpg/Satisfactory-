@@ -81,6 +81,12 @@ export function setMachineRecipe(machine, recipeName) {
 // Early-game power model. Values follow the Satisfactory production rates:
 // Biomass Burner 30 MW; Miner Mk.1 5 MW; Smelter 4 MW; Constructor 4 MW.
 export const POWER_DEMAND_MW = { Miner: 5, Smelter: 4, Constructor: 4 };
+export function machinePowerDemand(machine) {
+  if (!POWER_DEMAND_MW[machine.type]) return 0;
+  if (!machine.active) return 0.1;
+  if (machine.type === "Miner") return machine.nodeType && machine.nodeRemaining > 0 && (machine.output[machine.nodeType] || 0) < 100 ? 5 : 0.1;
+  return canRunRecipe(machine) ? POWER_DEMAND_MW[machine.type] : 0.1;
+}
 export const BIOMASS_FUEL_MJ = { Leaves: 15, Wood: 100, Biomass: 180, "Solid Biofuel": 450 };
 
 export function simulatePowerGrid(machines, poles, connections, dt) {
@@ -110,7 +116,7 @@ export function simulatePowerGrid(machines, poles, connections, dt) {
     }
     const consumers = component.filter(n => n.state && POWER_DEMAND_MW[n.state.type]);
     const generators = component.filter(n => n.state?.type === "Biomass Burner");
-    const demand = consumers.reduce((sum, n) => sum + POWER_DEMAND_MW[n.state.type], 0);
+    const demand = consumers.reduce((sum, n) => sum + machinePowerDemand(n.state), 0);
     const available = generators.reduce((sum, n) => {
       const fuel = n.state.fuel || {};
       return sum + (Object.entries(fuel).some(([kind, count]) => count > 0 && BIOMASS_FUEL_MJ[kind]) ? 30 : 0);
