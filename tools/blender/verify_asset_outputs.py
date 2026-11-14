@@ -18,7 +18,7 @@ for blend in blends:
     letters={os.path.basename(p)[-5:-4].lower() for p in exports}
     if len(exports)!=4 or letters!={"a","b","c","d"}:
         errors.append(f"{blend}: expected A/B/C/D GLB exports, found {[os.path.basename(p) for p in exports]}")
-    preview=os.path.join(PREVIEWS,stem+"_preview.png")
+    preview=os.path.join(PREVIEWS,stem+"_four_variants_preview.png")
     if not os.path.isfile(preview) or os.path.getsize(preview)<2048:
         errors.append(f"{blend}: missing/empty review preview {preview}")
     checked+=1
