@@ -1,0 +1,64 @@
+name: Deploy Satisfactory 3D viewer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "viewer/**"
+      - "index.html"
+      - ".github/workflows/deploy-viewer.yml"
+  workflow_run:
+    workflows: ["Build Blender asset blockouts"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Assemble lightweight viewer site
+        shell: bash
+        run: |
+          rm -rf _site
+          mkdir -p _site/assets/models/previews _site/assets/textures
+          cp index.html _site/index.html
+          cp -R viewer _site/viewer
+          cp -R assets/models/previews/. _site/assets/models/previews/
+          if [ -d assets/textures ]; then cp -R assets/textures/. _site/assets/textures/; fi
+          while IFS= read -r -d '' file; do
+            rel="${file#assets/models/}"
+            mkdir -p "_site/assets/models/$(dirname "$rel")"
+            cp "$file" "_site/assets/models/$rel"
+          done < <(find assets/models -type f -name "*.glb" -print0)
+          test -f _site/viewer/catalog.json
+          echo "GLB files: $(find _site/assets/models -type f -name '*.glb' | wc -l)"
+          echo "Preview sheets: $(find _site/assets/models/previews -type f -name '*.png' | wc -l)"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
