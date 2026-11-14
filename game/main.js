@@ -300,7 +300,7 @@ function makeBelt(sourceGroup,targetGroup){const a=sourceGroup.position.clone().
  addAction("Забрать продукцию","Перенести все готовые предметы в рюкзак",()=>{
   let count=0;
   for(const [item,amount] of Object.entries(machine.output||{})){if(amount>0){inventory[item]=(inventory[item]||0)+amount;progression.crafted[item]=(progression.crafted[item]||0)+amount;machine.output[item]=0;count+=amount}}
-  invText();ui(count?"Забрано продукции: "+count+".":"На выходе пока пусто.");showMachineMenu(group);
+  invText();updateProgression();ui(count?"Забрано продукции: "+count+".":"На выходе пока пусто.");showMachineMenu(group);
  },!Object.values(outputs).some(v=>v>0));
  if(machine.type==="Biomass Burner"){
   addAction("Загрузить биотопливо","Перенести биомассу и твёрдое биотопливо из инвентаря",()=>{
