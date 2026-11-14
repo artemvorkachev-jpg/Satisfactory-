@@ -9,8 +9,8 @@ on:
       - "tools/blender/generate_logistics_infrastructure_batch.py"
 
 concurrency:
-  group: blender-models-main
-  cancel-in-progress: true
+  group: blender-generation-main
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -146,5 +146,16 @@ jobs:
             exit 0
           fi
           git commit -m "Generate Blender model variants and original stereo audio"
-          git pull --rebase origin main
-          git push
+          # Keep this workflow serialized with the full asset builder and tolerate main moving.
+          for attempt in 1 2 3 4 5 6 7 8; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              echo "Generated models pushed successfully on attempt $attempt."
+              exit 0
+            fi
+            echo "main moved during push; retrying after rebase (attempt $attempt/8)."
+            sleep $((attempt * 3))
+          done
+          echo "Could not publish generated models after 8 rebased attempts."
+          exit 1
