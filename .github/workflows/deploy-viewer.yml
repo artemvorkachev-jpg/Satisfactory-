@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - ".github/workflows/deploy-viewer.yml"
+      - ".github/workflows/deploy-viewer.yml"\n      - "game/**"\n      - "index.html"\n      - "viewer/**"
   workflow_run:
     workflows: ["Build Blender asset blockouts"]
     types: [completed]
