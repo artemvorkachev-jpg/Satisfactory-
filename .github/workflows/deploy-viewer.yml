@@ -1,12 +1,6 @@
 name: Deploy Satisfactory 3D viewer
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "viewer/**"
-      - "index.html"
-      - ".github/workflows/deploy-viewer.yml"
   workflow_run:
     workflows: ["Build Blender asset blockouts"]
     types: [completed]
