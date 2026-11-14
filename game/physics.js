@@ -7,6 +7,9 @@ const staticBodies = new WeakMap();
 let colliderCount = 0;
 let staticObjectCount = 0;
 let dynamicBodyCount = 0;
+let meshColliderCount = 0;
+const staticPartCounts = new WeakMap();
+const staticMeshParts = new WeakMap();
 
 export async function initPhysics() {
   if (world) return world;
@@ -77,7 +80,89 @@ export function addStaticCollider(object, options = {}) {
     colliderCount++;
   }
   staticBodies.set(object, body);
+  staticPartCounts.set(object, parts.length);
   staticObjectCount++;
+}
+
+
+export function addStaticModelCollider(root, options = {}) {
+  if (!root || !world || !RAPIER || staticBodies.has(root)) return null;
+  root.updateWorldMatrix(true, true);
+
+  const inverseRoot = new THREE.Matrix4().copy(root.matrixWorld).invert();
+  const candidates = [];
+  root.traverse(object => {
+    if (!object.isMesh || !object.geometry?.attributes?.position) return;
+    const attribute = object.geometry.attributes.position;
+    if (attribute.count < 12) return;
+    const localMatrix = new THREE.Matrix4().multiplyMatrices(inverseRoot, object.matrixWorld);
+    const stride = Math.max(1, Math.ceil(attribute.count / 320));
+    const points = [];
+    for (let i = 0; i < attribute.count; i += stride) {
+      const point = new THREE.Vector3().fromBufferAttribute(attribute, i).applyMatrix4(localMatrix);
+      if (Number.isFinite(point.x) && Number.isFinite(point.y) && Number.isFinite(point.z)) {
+        points.push(point.x, point.y, point.z);
+      }
+    }
+    if (points.length >= 36) candidates.push({ points, vertices: attribute.count });
+  });
+
+  candidates.sort((a, b) => b.vertices - a.vertices);
+  const selected = candidates.slice(0, 6);
+  const worldPosition = root.getWorldPosition(new THREE.Vector3());
+  const body = world.createRigidBody(
+    RAPIER.RigidBodyDesc.fixed().setTranslation(worldPosition.x, worldPosition.y, worldPosition.z)
+  );
+  let created = 0;
+  for (const candidate of selected) {
+    const descriptor = RAPIER.ColliderDesc.convexHull(new Float32Array(candidate.points));
+    if (!descriptor) continue;
+    descriptor.setFriction(options.friction ?? 0.86).setRestitution(0);
+    world.createCollider(descriptor, body);
+    created++;
+  }
+
+  if (created === 0) {
+    const bounds = new THREE.Box3().setFromObject(root);
+    if (!bounds.isEmpty()) {
+      const size = bounds.getSize(new THREE.Vector3());
+      const center = bounds.getCenter(new THREE.Vector3()).applyMatrix4(inverseRoot);
+      const descriptor = RAPIER.ColliderDesc.cuboid(
+        Math.max(0.08, size.x * 0.5),
+        Math.max(0.08, size.y * 0.5),
+        Math.max(0.08, size.z * 0.5)
+      ).setTranslation(center.x, center.y, center.z);
+      descriptor.setFriction(options.friction ?? 0.86).setRestitution(0);
+      world.createCollider(descriptor, body);
+      created = 1;
+    }
+  }
+
+  if (created === 0) {
+    world.removeRigidBody(body);
+    return null;
+  }
+  staticBodies.set(root, body);
+  staticPartCounts.set(root, created);
+  staticMeshParts.set(root, created);
+  staticObjectCount++;
+  colliderCount += created;
+  meshColliderCount += created;
+  return body;
+}
+
+export function removeStaticCollider(object) {
+  const body = staticBodies.get(object);
+  if (!body || !world) return false;
+  world.removeRigidBody(body);
+  const parts = staticPartCounts.get(object) || 0;
+  colliderCount = Math.max(1, colliderCount - parts);
+  staticObjectCount = Math.max(0, staticObjectCount - 1);
+  meshColliderCount = Math.max(0, meshColliderCount - (staticMeshParts.get(object) || 0));
+  staticBodies.delete(object);
+  staticPartCounts.delete(object);
+  staticMeshParts.delete(object);
+  return true;
 }
 
 export function createPlayerBody(x, feetY, z) {
@@ -131,5 +216,5 @@ export function physicsAvailable() {
 }
 
 export function getPhysicsStats() {
-  return { available: !!world, staticObjects: staticObjectCount, colliders: colliderCount, dynamicBodies: dynamicBodyCount, pendingStatic: pendingStatic.length };
+  return { available: !!world, staticObjects: staticObjectCount, colliders: colliderCount, meshColliders: meshColliderCount, dynamicBodies: dynamicBodyCount, pendingStatic: pendingStatic.length };
 }
