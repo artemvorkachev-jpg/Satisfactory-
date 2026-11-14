@@ -121,6 +121,12 @@ jobs:
       - name: Generate Railway variants
         run: PYTHONPATH=/usr/lib/python3/dist-packages blender --background --python-use-system-env --python tools/blender/generate_railway_variants.py
 
+      - name: Apply UVs and original PBR texture maps to every model family
+        run: |
+          while IFS= read -r -d '' file; do
+            env PYTHONPATH=/usr/lib/python3/dist-packages blender --background "$file" --python-use-system-env --python tools/blender/apply_pbr_textures.py
+          done < <(find assets/models -type f -name "*_four_variants.blend" -print0)
+
       - name: Render four-variant review sheets
         run: |
           mkdir -p assets/models/previews
