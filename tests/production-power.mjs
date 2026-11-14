@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { simulatePowerGrid } from "../game/production.js";
+import { simulatePowerGrid, createMachineState, setMachineRecipe, tickMachine, transferBelt } from "../game/production.js";
 
 const generator = { userData: { machine: { id: "gen-1", type: "Biomass Burner", fuel: { Biomass: 1 } } }, position: { x: 0, y: 0, z: 0 } };
 const pole = { userData: { powerPoleId: "pole-1" }, position: { x: 1, y: 0, z: 0 } };
@@ -43,3 +43,40 @@ state = simulatePowerGrid([generator, nearlyEmpty, smelter, secondConsumer], [po
 assert.equal(state.capacity, 60);
 assert.equal(smelter.userData.machine.powered, true);
 assert.equal(secondConsumer.userData.machine.powered, true);
+
+// Production must consume recipe inputs and put the correct products into the output buffer.
+const smelterProcess = createMachineState("Smelter", "smelter-process");
+assert.equal(setMachineRecipe(smelterProcess, "Iron Ingot"), true);
+smelterProcess.input["Iron Ore"] = 2;
+tickMachine(smelterProcess, 2.1);
+assert.equal(smelterProcess.input["Iron Ore"], 1);
+assert.equal(smelterProcess.output["Iron Ingot"], 1);
+assert.ok(Math.abs(smelterProcess.elapsed - 0.1) < 1e-8);
+
+// The constructor converts three ingots into two plates on its six-second recipe.
+const constructorProcess = createMachineState("Constructor", "constructor-process");
+assert.equal(setMachineRecipe(constructorProcess, "Iron Plate"), true);
+constructorProcess.input["Iron Ingot"] = 3;
+tickMachine(constructorProcess, 6);
+assert.equal(constructorProcess.input["Iron Ingot"], 0);
+assert.equal(constructorProcess.output["Iron Plate"], 2);
+
+// A Miner stops on an exhausted deposit and never creates negative resource amounts.
+const minerProcess = createMachineState("Miner", "miner-process", "Iron Ore");
+minerProcess.nodeRemaining = 1;
+tickMachine(minerProcess, 1.1);
+assert.equal(minerProcess.nodeRemaining, 0);
+assert.equal(minerProcess.output["Iron Ore"], 1);
+tickMachine(minerProcess, 2);
+assert.equal(minerProcess.nodeRemaining, 0);
+assert.equal(minerProcess.output["Iron Ore"], 1);
+
+// The Mk.1 conveyor transfers buffered products at one item per second.
+const beltSource = { output: { "Iron Ingot": 2 } };
+const beltTarget = { input: {} };
+const beltProcess = { item: "Iron Ingot", elapsed: 0, itemsPerSecond: 1, active: true };
+assert.equal(transferBelt(beltProcess, beltSource, beltTarget, 1.1), 1);
+assert.equal(transferBelt(beltProcess, beltSource, beltTarget, 0.9), 1);
+assert.equal(beltSource.output["Iron Ingot"], 0);
+assert.equal(beltTarget.input["Iron Ingot"], 2);
+console.log("Machine production, miner depletion and conveyor tests passed.");
