@@ -1355,8 +1355,8 @@
         "c": "assets/models/creatures/fauna-grass-sprite/fauna-grass-sprite_variant_c.glb"
       },
       "preview": "assets/models/previews/fauna-grass-sprite_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-leaf-bug",
@@ -1369,8 +1369,8 @@
         "c": "assets/models/creatures/fauna-leaf-bug/fauna-leaf-bug_variant_c.glb"
       },
       "preview": "assets/models/previews/fauna-leaf-bug_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-lizard-doggo",
@@ -1397,8 +1397,8 @@
         "b": "assets/models/creatures/fauna-non-flying-bird/fauna-non-flying-bird_variant_b.glb"
       },
       "preview": "assets/models/previews/fauna-non-flying-bird_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-nuclear-hog",
@@ -1411,8 +1411,8 @@
         "a": "assets/models/creatures/fauna-nuclear-hog/fauna-nuclear-hog_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-nuclear-hog_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-power-slug-blue",
@@ -1425,8 +1425,8 @@
         "d": "assets/models/creatures/fauna-power-slug-blue/fauna-power-slug-blue_variant_d.glb"
       },
       "preview": "assets/models/previews/fauna-power-slug-blue_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-power-slug-purple",
@@ -1440,7 +1440,7 @@
       },
       "preview": "assets/models/previews/fauna-power-slug-purple_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-power-slug-yellow",
@@ -1453,8 +1453,8 @@
         "d": "assets/models/creatures/fauna-power-slug-yellow/fauna-power-slug-yellow_variant_d.glb"
       },
       "preview": "assets/models/previews/fauna-power-slug-yellow_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "d",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-space-giraffe-tick-penguin-whale",
@@ -1467,8 +1467,8 @@
         "a": "assets/models/creatures/fauna-space-giraffe-tick-penguin-whale/fauna-space-giraffe-tick-penguin-whale_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-space-giraffe-tick-penguin-whale_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-spitter-aquatic",
@@ -1481,8 +1481,8 @@
         "a": "assets/models/creatures/fauna-spitter-aquatic/fauna-spitter-aquatic_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-spitter-aquatic_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-spitter-desert",
@@ -1495,8 +1495,8 @@
         "a": "assets/models/creatures/fauna-spitter-desert/fauna-spitter-desert_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-spitter-desert_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-spitter-forest",
@@ -1509,8 +1509,8 @@
         "c": "assets/models/creatures/fauna-spitter-forest/fauna-spitter-forest_variant_c.glb"
       },
       "preview": "assets/models/previews/fauna-spitter-forest_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-spitter-red-forest",
@@ -1523,8 +1523,8 @@
         "a": "assets/models/creatures/fauna-spitter-red-forest/fauna-spitter-red-forest_variant_a.glb"
       },
       "preview": "assets/models/previews/fauna-spitter-red-forest_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "d",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "fauna-spore-flower-creature",
@@ -1537,8 +1537,8 @@
         "b": "assets/models/creatures/fauna-spore-flower-creature/fauna-spore-flower-creature_variant_b.glb"
       },
       "preview": "assets/models/previews/fauna-spore-flower-creature_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "cup",
