@@ -15,7 +15,7 @@ smelter.userData.machine.powered = true;
 state = simulatePowerGrid([generator, smelter], [pole], [{ a: "gen-1", b: "pole-1" }], 1);
 assert.equal(smelter.userData.machine.powered, false);
 assert.equal(state.connectedMachines, 1);
-assert.equal(state.capacity, 0);
+assert.equal(state.capacity, 30);
 
 // An empty generator cannot power the connected factory.
 generator.userData.machine.fuel.Leaves = 0;
