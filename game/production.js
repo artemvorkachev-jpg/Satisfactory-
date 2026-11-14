@@ -26,13 +26,16 @@ export function createMachineState(type, id, nodeType = null) {
 
 export function canRunRecipe(machine) {
   const recipe = RECIPES[machine.type]?.[machine.recipe];
-  return !!recipe && Object.entries(recipe.inputs).every(([item, count]) => (machine.input[item] || 0) >= count);
+  if (!recipe) return false;
+  const hasInputs = Object.entries(recipe.inputs).every(([item, count]) => (machine.input[item] || 0) >= count);
+  const hasOutputSpace = Object.entries(recipe.output).every(([item, count]) => (machine.output[item] || 0) + count <= 100);
+  return hasInputs && hasOutputSpace;
 }
 
 export function tickMachine(machine, dt) {
   if (!machine.active || dt <= 0) return;
   if (machine.type === "Miner") {
-    if (!machine.nodeType || machine.nodeRemaining <= 0) return;
+    if (!machine.nodeType || machine.nodeRemaining <= 0 || (machine.output[machine.nodeType] || 0) >= 100) return;
     machine.elapsed += dt;
     while (machine.elapsed >= 1 && machine.nodeRemaining > 0) {
       machine.elapsed -= 1;
