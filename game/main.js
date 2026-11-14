@@ -1,4 +1,8 @@
-import * as THREE from "three";\nimport {GLTFLoader} from "three/addons/loaders/GLTFLoader.js";\nconst gltfLoader=new GLTFLoader();\nconst modelPaths={Hub:"../assets/models/buildings/hub/hub_variant_a.glb",Miner:"../assets/models/buildings/miner/miner_variant_a.glb",PortableMiner:"../assets/models/portable_miner/portable_miner_variant_a.glb",Smelter:"../assets/models/buildings/smelter/smelter_variant_a.glb",Constructor:"../assets/models/buildings/constructor/constructor_variant_a.glb",Storage:"../assets/models/infrastructure/storage_container/storage_container_variant_a.glb",BiomassBurner:"../assets/models/buildings/biomass-burner/biomass-burner_variant_a.glb"};\nfunction attachModel(parent,path,targetWidth=3){if(!path)return;gltfLoader.load(path,g=>{const obj=g.scene;const b=new THREE.Box3().setFromObject(obj);const size=b.getSize(new THREE.Vector3());const center=b.getCenter(new THREE.Vector3());const scale=targetWidth/Math.max(size.x,size.z,0.01);obj.scale.setScalar(scale);obj.position.set(-center.x*scale,-b.min.y*scale,-center.z*scale);obj.traverse(o=>{if(o.isMesh){o.castShadow=true;o.receiveShadow=true}});parent.add(obj)},undefined,e=>console.warn("Model load failed:",path,e));}
+import * as THREE from "three";
+import {GLTFLoader} from "three/addons/loaders/GLTFLoader.js";
+const gltfLoader=new GLTFLoader();
+const modelPaths={Hub:"../assets/models/buildings/hub/hub_variant_a.glb",Miner:"../assets/models/buildings/miner/miner_variant_a.glb",PortableMiner:"../assets/models/portable_miner/portable_miner_variant_a.glb",Smelter:"../assets/models/buildings/smelter/smelter_variant_a.glb",Constructor:"../assets/models/buildings/constructor/constructor_variant_a.glb",Storage:"../assets/models/infrastructure/storage_container/storage_container_variant_a.glb",BiomassBurner:"../assets/models/buildings/biomass-burner/biomass-burner_variant_a.glb"};
+function attachModel(parent,path,targetWidth=3){if(!path)return;gltfLoader.load(path,g=>{const obj=g.scene;const b=new THREE.Box3().setFromObject(obj);const size=b.getSize(new THREE.Vector3());const center=b.getCenter(new THREE.Vector3());const scale=targetWidth/Math.max(size.x,size.z,0.01);obj.scale.setScalar(scale);obj.position.set(-center.x*scale,-b.min.y*scale,-center.z*scale);obj.traverse(o=>{if(o.isMesh){o.castShadow=true;o.receiveShadow=true}});parent.add(obj)},undefined,e=>console.warn("Model load failed:",path,e));}
 
 const $=s=>document.querySelector(s);
 const scene=new THREE.Scene();scene.background=new THREE.Color(0x8ca8b1);scene.fog=new THREE.Fog(0x8ca8b1,55,190);
@@ -38,7 +42,7 @@ box(g,0,.9,0,2.8,1.8,2.5,c);box(g,0,1.95,-.2,1.7,.35,1.5,0x25343b);box(g,0,1.5,1
 if(type==="Miner"){const head=box(g,0,2.6,0,.8,1.1,.8,0x8d9996);head.rotation.z=.2}
 if(type==="Smelter"){box(g,0,2.2,0,.8,.35,.8,0xf18b35)}
 if(type==="Constructor"){const arm=box(g,.8,2.15,0,.25,1.4,.25,0xc5a04e);arm.rotation.z=-.4}
-world.add(g);machines.push(g);return g}
+world.add(g);attachModel(g,modelPaths[visualOverride||type],3.1);machines.push(g);return g}
 const clock=new THREE.Clock();
 function ui(message){$("#message").textContent=message||""}
 function invText(){const entries=Object.entries(inventory).filter(([,v])=>v>0);$("#inventory").innerHTML="<b>Инвентарь</b><br>"+(entries.length?entries.map(([k,v])=>(labels[k]||k)+": "+v).join(" · "):"пусто")}
