@@ -97,32 +97,32 @@ const world=new THREE.Group();scene.add(world);createGroundFoliage(world);
 function createGroundFoliage(parent){
  let foliageSeed=0x51a7f1;const rnd=()=>{foliageSeed=(foliageSeed*1664525+1013904223)>>>0;return foliageSeed/4294967296};
  const vertices=[];
- for(let blade=0;blade<3;blade++){
+ for(let blade=0;blade<5;blade++){
   const angle=blade*Math.PI*2/3,dx=Math.cos(angle),dz=Math.sin(angle),px=-dz*.045,pz=dx*.045;
-  const bx=dx*.018,bz=dz*.018,h=.23+blade*.025;
+  const bx=dx*.022,bz=dz*.022,h=.25+blade*.025;
   vertices.push(px,0,pz,-px,0,-pz,bx,h,bz);
  }
  const geometry=new THREE.BufferGeometry();
  geometry.setAttribute("position",new THREE.Float32BufferAttribute(vertices,3));geometry.computeVertexNormals();
  const material=new THREE.MeshStandardMaterial({color:0xffffff,roughness:1,side:THREE.DoubleSide});
- const count=2450,grass=new THREE.InstancedMesh(geometry,material,count),dummy=new THREE.Object3D();
+ const count=10000,grass=new THREE.InstancedMesh(geometry,material,count),dummy=new THREE.Object3D();
  for(let i=0;i<count;i++){
-  const a=rnd()*Math.PI*2,r=14+Math.sqrt(rnd())*112,h=.65+rnd()*1.25;
+  const a=rnd()*Math.PI*2,r=14+Math.sqrt(rnd())*145,h=.72+rnd()*1.38;
   dummy.position.set(Math.cos(a)*r,.015,Math.sin(a)*r);dummy.rotation.set(0,rnd()*Math.PI*2,0);
   dummy.scale.set(.65+rnd()*.6,h,.65+rnd()*.6);dummy.updateMatrix();grass.setMatrixAt(i,dummy.matrix);
-  const col=new THREE.Color().setHSL(.235+rnd()*.075,.28+rnd()*.22,.25+rnd()*.2);grass.setColorAt(i,col);
+  const col=new THREE.Color().setHSL(.225+rnd()*.085,.42+rnd()*.28,.30+rnd()*.20);grass.setColorAt(i,col);
  }
  grass.instanceMatrix.needsUpdate=true;if(grass.instanceColor)grass.instanceColor.needsUpdate=true;
  grass.castShadow=false;grass.receiveShadow=true;parent.add(grass);
 
- const flowerGeometry=new THREE.DodecahedronGeometry(.045,0);
+ const flowerGeometry=new THREE.DodecahedronGeometry(.055,0);
  const flowerMaterial=new THREE.MeshStandardMaterial({color:0xe5cf64,roughness:.9});
- const flowerCount=260,flowers=new THREE.InstancedMesh(flowerGeometry,flowerMaterial,flowerCount);
+ const flowerCount=520,flowers=new THREE.InstancedMesh(flowerGeometry,flowerMaterial,flowerCount);
  for(let i=0;i<flowerCount;i++){
-  const a=rnd()*Math.PI*2,r=12+Math.sqrt(rnd())*112;
+  const a=rnd()*Math.PI*2,r=12+Math.sqrt(rnd())*145;
   dummy.position.set(Math.cos(a)*r,.07,Math.sin(a)*r);dummy.rotation.set(rnd(),rnd()*Math.PI*2,rnd());
   const s=.65+rnd()*.85;dummy.scale.set(s,s,s);dummy.updateMatrix();flowers.setMatrixAt(i,dummy.matrix);
-  flowers.setColorAt(i,new THREE.Color().setHSL(.12+rnd()*.035,.48+rnd()*.32,.48+rnd()*.2));
+  flowers.setColorAt(i,new THREE.Color().setHSL(.115+rnd()*.035,.58+rnd()*.32,.50+rnd()*.22));
  }
  flowers.instanceMatrix.needsUpdate=true;if(flowers.instanceColor)flowers.instanceColor.needsUpdate=true;
  parent.add(flowers);
@@ -131,7 +131,7 @@ function createGroundFoliage(parent){
  const rockMaterial=new THREE.MeshStandardMaterial({color:0xffffff,roughness:.96});
  const rockCount=190,rocks=new THREE.InstancedMesh(rockGeometry,rockMaterial,rockCount);
  for(let i=0;i<rockCount;i++){
-  const a=rnd()*Math.PI*2,r=16+Math.sqrt(rnd())*112;
+  const a=rnd()*Math.PI*2,r=16+Math.sqrt(rnd())*145;
   dummy.position.set(Math.cos(a)*r,.1,Math.sin(a)*r);dummy.rotation.set(rnd()*.3,rnd()*Math.PI*2,rnd()*.3);
   const s=.25+rnd()*.95;dummy.scale.set(s,.3+rnd()*.55,s*(.65+rnd()*.8));dummy.updateMatrix();rocks.setMatrixAt(i,dummy.matrix);
   rocks.setColorAt(i,new THREE.Color().setHSL(.53+rnd()*.06,.08+rnd()*.11,.34+rnd()*.2));
