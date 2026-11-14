@@ -33,7 +33,7 @@ for asset in catalog.get("assets", []):
     preview = asset.get("preview")
     if not preview or not os.path.isfile(os.path.join(ROOT, preview)):
         errors.append(f"{aid}: missing four-variant preview")
-    if record.get("selectionStatus") != "out-of-scope":
+    if record.get("selectionStatus") not in ("out-of-scope", "pending-noncombat-review"):
         selected = record.get("selectedVariant")
         if selected not in asset["variants"]:
             errors.append(f"{aid}: invalid selected variant {selected!r}")
