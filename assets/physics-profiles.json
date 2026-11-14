@@ -281,7 +281,7 @@
       "shape": "compound-boxes",
       "worldCollider": true,
       "interaction": "named-ports-and-snap-points",
-      "implementationStatus": "rapier-static-proxy-v2",
+      "implementationStatus": "prototype",
       "validationStatus": "runtime-self-check-enabled",
       "physicsStatus": "rapier-static-proxy-v2"
     },
@@ -342,7 +342,7 @@
       "shape": "compound-boxes",
       "worldCollider": true,
       "interaction": "named-ports-and-snap-points",
-      "implementationStatus": "rapier-static-proxy-v2",
+      "implementationStatus": "prototype",
       "validationStatus": "runtime-self-check-enabled",
       "physicsStatus": "rapier-static-proxy-v2"
     },
@@ -511,7 +511,7 @@
       "shape": "compound-boxes",
       "worldCollider": true,
       "interaction": "named-ports-and-snap-points",
-      "implementationStatus": "rapier-static-proxy-v2",
+      "implementationStatus": "prototype",
       "validationStatus": "runtime-self-check-enabled",
       "physicsStatus": "rapier-static-proxy-v2"
     },
@@ -644,7 +644,7 @@
       "shape": "compound-boxes",
       "worldCollider": true,
       "interaction": "named-ports-and-snap-points",
-      "implementationStatus": "rapier-static-proxy-v2",
+      "implementationStatus": "prototype",
       "validationStatus": "runtime-self-check-enabled",
       "physicsStatus": "rapier-static-proxy-v2"
     },
@@ -909,7 +909,7 @@
       "shape": "compound-boxes",
       "worldCollider": true,
       "interaction": "named-ports-and-snap-points",
-      "implementationStatus": "rapier-static-proxy-v2",
+      "implementationStatus": "prototype",
       "validationStatus": "runtime-self-check-enabled",
       "physicsStatus": "rapier-static-proxy-v2"
     },
@@ -3502,7 +3502,7 @@
       "shape": "compound-boxes",
       "worldCollider": true,
       "interaction": "resource-node-snap-and-interaction",
-      "implementationStatus": "rapier-static-proxy-v2",
+      "implementationStatus": "prototype",
       "validationStatus": "runtime-self-check-enabled",
       "physicsStatus": "rapier-static-proxy-v2"
     },
@@ -3563,7 +3563,7 @@
       "shape": "capsule-or-compound",
       "worldCollider": true,
       "interaction": "harvest-trigger",
-      "implementationStatus": "rapier-static-proxy-v2",
+      "implementationStatus": "prototype",
       "validationStatus": "runtime-self-check-enabled",
       "physicsStatus": "rapier-static-proxy-v2"
     },
@@ -3612,7 +3612,7 @@
       "shape": "capsule-or-compound",
       "worldCollider": true,
       "interaction": "harvest-trigger",
-      "implementationStatus": "rapier-static-proxy-v2",
+      "implementationStatus": "prototype",
       "validationStatus": "runtime-self-check-enabled",
       "physicsStatus": "rapier-static-proxy-v2"
     },
@@ -3625,7 +3625,7 @@
       "shape": "capsule-or-compound",
       "worldCollider": true,
       "interaction": "harvest-trigger",
-      "implementationStatus": "rapier-static-proxy-v2",
+      "implementationStatus": "prototype",
       "validationStatus": "runtime-self-check-enabled",
       "physicsStatus": "rapier-static-proxy-v2"
     },
