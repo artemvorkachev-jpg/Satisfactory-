@@ -5,9 +5,34 @@ const browser = await chromium.launch({ headless: true, args: ["--no-sandbox"] }
 try {
   const page = await browser.newPage({ viewport: { width: 1280, height: 800 } });
   const pageErrors = [];
+  const consoleErrors = [];
+  const failedRequests = [];
+  const badResponses = [];
   page.on("pageerror", error => pageErrors.push(error.message));
-  await page.goto("http://127.0.0.1:4173/game/", { waitUntil: "domcontentloaded", timeout: 60000 });
-  await page.waitForSelector("#game canvas", { timeout: 30000 });
+  page.on("console", message => { if (message.type() === "error") consoleErrors.push(message.text()); });
+  page.on("requestfailed", request => failedRequests.push({ url: request.url(), error: request.failure()?.errorText || "request failed" }));
+  page.on("response", response => { if (response.status() >= 400) badResponses.push({ url: response.url(), status: response.status() }); });
+  const response = await page.goto("http://127.0.0.1:4173/game/", { waitUntil: "domcontentloaded", timeout: 60000 });
+  try {
+    await page.waitForSelector("#game canvas", { timeout: 30000 });
+  } catch (error) {
+    const dom = await page.evaluate(() => ({
+      readyState: document.readyState,
+      title: document.title,
+      gameElement: !!document.querySelector("#game"),
+      gameMarkup: document.querySelector("#game")?.innerHTML?.slice(0, 300),
+      moduleScript: document.querySelector('script[type="module"]')?.src || null,
+      orientation: window.matchMedia("(orientation: portrait)").matches ? "portrait" : "landscape",
+      importMap: document.querySelector('script[type="importmap"]')?.textContent?.slice(0, 500) || null
+    })).catch(() => null);
+    throw new Error("Game canvas did not initialize. HTTP=" + response?.status() +
+      " DOM=" + JSON.stringify(dom) +
+      " PAGE_ERRORS=" + JSON.stringify(pageErrors) +
+      " CONSOLE_ERRORS=" + JSON.stringify(consoleErrors) +
+      " FAILED_REQUESTS=" + JSON.stringify(failedRequests) +
+      " BAD_RESPONSES=" + JSON.stringify(badResponses) +
+      " WAIT_ERROR=" + error.message);
+  }
   await page.waitForFunction(() => {
     const state = window.__SATISFACTORY_PHYSICS__?.();
     return state?.available === true && state?.assets?.loadedModels >= 2 && state?.meshColliders > 0;
