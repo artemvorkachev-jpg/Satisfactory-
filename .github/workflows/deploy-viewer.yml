@@ -4,7 +4,10 @@ on:
   push:
     branches: [main]
     paths:
-      - ".github/workflows/deploy-viewer.yml"\n      - "game/**"\n      - "index.html"\n      - "viewer/**"
+      - ".github/workflows/deploy-viewer.yml"
+      - "game/**"
+      - "index.html"
+      - "viewer/**"
   workflow_run:
     workflows: ["Build Blender asset blockouts"]
     types: [completed]
@@ -42,7 +45,8 @@ jobs:
           rm -rf _site
           mkdir -p _site
           cp index.html _site/index.html
-          cp -R viewer _site/viewer\n          cp -R game _site/game
+          cp -R viewer _site/viewer
+          cp -R game _site/game
           python3 - <<'PY'
           import json, os, shutil
           root = os.getcwd()
