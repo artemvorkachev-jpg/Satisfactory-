@@ -16,7 +16,7 @@ permissions:
 
 jobs:
   deploy:
-    if: (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success') && (github.event_name != 'push' || hashFiles('viewer/catalog.json') != '')
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     permissions:
       contents: read
