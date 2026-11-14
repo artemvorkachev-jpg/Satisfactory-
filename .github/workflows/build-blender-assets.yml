@@ -143,7 +143,10 @@ jobs:
       - name: Build searchable browser viewer catalogue
         run: python3 tools/blender/build_viewer_catalog.py
 
-      - name: Validate all model variants and selected defaults\n        run: python3 tools/blender/validate_model_selection.py\n\n      - name: Commit Blender sources, GLB exports and preview sheets
+      - name: Validate all model variants and selected defaults
+        run: python3 tools/blender/validate_model_selection.py
+
+      - name: Commit Blender sources, GLB exports and preview sheets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
