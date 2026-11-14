@@ -77,7 +77,10 @@ jobs:
           texture_root = os.path.join(root, "assets", "textures")
           if os.path.isdir(texture_root):
               shutil.copytree(texture_root, os.path.join(site, "assets", "textures"), dirs_exist_ok=True)
+          os.makedirs(os.path.join(site, "assets"), exist_ok=True)
+          shutil.copy2(os.path.join(root, "assets", "model-selection.json"), os.path.join(site, "assets", "model-selection.json"))
           print("Viewer assets copied:", len(copied))
+          print("Model selection manifest copied.")
           PY
           test -f _site/viewer/catalog.json
           echo "Viewer catalogue entries: $(python3 -c 'import json; print(json.load(open("_site/viewer/catalog.json"))["count"])')"
