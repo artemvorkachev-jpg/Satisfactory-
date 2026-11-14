@@ -1276,8 +1276,8 @@
         "a": "assets/models/creatures/fauna-alpha-hog/fauna-alpha-hog_variant_a.glb",
         "c": "assets/models/creatures/fauna-alpha-hog/fauna-alpha-hog_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1292,8 +1292,8 @@
         "c": "assets/models/creatures/fauna-alpha-spitter-aquatic/fauna-alpha-spitter-aquatic_variant_c.glb",
         "a": "assets/models/creatures/fauna-alpha-spitter-aquatic/fauna-alpha-spitter-aquatic_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1308,8 +1308,8 @@
         "c": "assets/models/creatures/fauna-alpha-spitter-desert/fauna-alpha-spitter-desert_variant_c.glb",
         "d": "assets/models/creatures/fauna-alpha-spitter-desert/fauna-alpha-spitter-desert_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1324,8 +1324,8 @@
         "d": "assets/models/creatures/fauna-alpha-spitter-forest/fauna-alpha-spitter-forest_variant_d.glb",
         "b": "assets/models/creatures/fauna-alpha-spitter-forest/fauna-alpha-spitter-forest_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1340,8 +1340,8 @@
         "d": "assets/models/creatures/fauna-alpha-spitter-red-forest/fauna-alpha-spitter-red-forest_variant_d.glb",
         "a": "assets/models/creatures/fauna-alpha-spitter-red-forest/fauna-alpha-spitter-red-forest_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "d",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1357,7 +1357,7 @@
         "b": "assets/models/creatures/fauna-alpha-stinger/fauna-alpha-stinger_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1373,7 +1373,7 @@
         "d": "assets/models/creatures/fauna-baby-stinger-cave/fauna-baby-stinger-cave_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1388,8 +1388,8 @@
         "a": "assets/models/creatures/fauna-baby-stinger-normal/fauna-baby-stinger-normal_variant_a.glb",
         "b": "assets/models/creatures/fauna-baby-stinger-normal/fauna-baby-stinger-normal_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1404,8 +1404,8 @@
         "d": "assets/models/creatures/fauna-beetle/fauna-beetle_variant_d.glb",
         "b": "assets/models/creatures/fauna-beetle/fauna-beetle_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1420,8 +1420,8 @@
         "b": "assets/models/creatures/fauna-cave-bat/fauna-cave-bat_variant_b.glb",
         "d": "assets/models/creatures/fauna-cave-bat/fauna-cave-bat_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1436,8 +1436,8 @@
         "c": "assets/models/creatures/fauna-cliff-hog/fauna-cliff-hog_variant_c.glb",
         "a": "assets/models/creatures/fauna-cliff-hog/fauna-cliff-hog_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1452,8 +1452,8 @@
         "d": "assets/models/creatures/fauna-elite-flying-crab-hatcher/fauna-elite-flying-crab-hatcher_variant_d.glb",
         "a": "assets/models/creatures/fauna-elite-flying-crab-hatcher/fauna-elite-flying-crab-hatcher_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1469,7 +1469,7 @@
         "b": "assets/models/creatures/fauna-elite-gas-stinger/fauna-elite-gas-stinger_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1484,8 +1484,8 @@
         "d": "assets/models/creatures/fauna-fluffy-tailed-hog/fauna-fluffy-tailed-hog_variant_d.glb",
         "c": "assets/models/creatures/fauna-fluffy-tailed-hog/fauna-fluffy-tailed-hog_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1500,8 +1500,8 @@
         "c": "assets/models/creatures/fauna-flying-bird/fauna-flying-bird_variant_c.glb",
         "a": "assets/models/creatures/fauna-flying-bird/fauna-flying-bird_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "d",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1516,8 +1516,8 @@
         "a": "assets/models/creatures/fauna-flying-crab/fauna-flying-crab_variant_a.glb",
         "c": "assets/models/creatures/fauna-flying-crab/fauna-flying-crab_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1532,8 +1532,8 @@
         "b": "assets/models/creatures/fauna-flying-crab-hatcher/fauna-flying-crab-hatcher_variant_b.glb",
         "d": "assets/models/creatures/fauna-flying-crab-hatcher/fauna-flying-crab-hatcher_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1548,8 +1548,8 @@
         "b": "assets/models/creatures/fauna-giant-flying-manta/fauna-giant-flying-manta_variant_b.glb",
         "d": "assets/models/creatures/fauna-giant-flying-manta/fauna-giant-flying-manta_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1884,8 +1884,8 @@
         "a": "assets/models/flora/flora-beryl-nut/flora-beryl-nut_variant_a.glb",
         "d": "assets/models/flora/flora-beryl-nut/flora-beryl-nut_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1901,7 +1901,7 @@
         "d": "assets/models/flora/flora-flower-petals/flora-flower-petals_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1916,8 +1916,8 @@
         "c": "assets/models/flora/flora-general-plant-clusters/flora-general-plant-clusters_variant_c.glb",
         "b": "assets/models/flora/flora-general-plant-clusters/flora-general-plant-clusters_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1932,8 +1932,8 @@
         "b": "assets/models/flora/flora-leaves/flora-leaves_variant_b.glb",
         "a": "assets/models/flora/flora-leaves/flora-leaves_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1948,8 +1948,8 @@
         "a": "assets/models/flora/flora-mycelia/flora-mycelia_variant_a.glb",
         "d": "assets/models/flora/flora-mycelia/flora-mycelia_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1964,8 +1964,8 @@
         "b": "assets/models/flora/flora-paleberry/flora-paleberry_variant_b.glb",
         "a": "assets/models/flora/flora-paleberry/flora-paleberry_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1981,7 +1981,7 @@
         "a": "assets/models/flora/flora-round-blue-cap-mushroom/flora-round-blue-cap-mushroom_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -1996,8 +1996,8 @@
         "b": "assets/models/flora/flora-spore-flower/flora-spore-flower_variant_b.glb",
         "c": "assets/models/flora/flora-spore-flower/flora-spore-flower_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2012,8 +2012,8 @@
         "d": "assets/models/flora/flora-vine-ladder/flora-vine-ladder_variant_d.glb",
         "a": "assets/models/flora/flora-vine-ladder/flora-vine-ladder_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2028,8 +2028,8 @@
         "b": "assets/models/flora/flora-vines/flora-vines_variant_b.glb",
         "c": "assets/models/flora/flora-vines/flora-vines_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -2044,8 +2044,8 @@
         "a": "assets/models/flora/flora-wood/flora-wood_variant_a.glb",
         "d": "assets/models/flora/flora-wood/flora-wood_variant_d.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
