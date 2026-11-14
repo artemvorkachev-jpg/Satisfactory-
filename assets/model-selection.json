@@ -29,8 +29,8 @@
         "a": "assets/models/blade_runners/blade_runners_variant_a.glb",
         "c": "assets/models/blade_runners/blade_runners_variant_c.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -46,7 +46,7 @@
         "b": "assets/models/buildings/alien-power-augmenter/alien-power-augmenter_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -62,7 +62,7 @@
         "a": "assets/models/buildings/angled-frame-window/angled-frame-window_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -94,7 +94,7 @@
         "b": "assets/models/buildings/awesome-shop/awesome-shop_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -110,7 +110,7 @@
         "c": "assets/models/buildings/basic-shelf-unit/basic-shelf-unit_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -221,7 +221,6 @@
         "a": "assets/models/buildings/constructor/constructor_variant_a.glb",
         "b": "assets/models/buildings/constructor/constructor_variant_b.glb"
       },
-      "selectedVariant": "b",
       "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
@@ -318,7 +317,7 @@
         "c": "assets/models/buildings/crafting-bench/crafting-bench_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -334,7 +333,7 @@
         "a": "assets/models/buildings/dimensional-depot-uploader/dimensional-depot-uploader_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -350,7 +349,7 @@
         "c": "assets/models/buildings/drone-port/drone-port_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -414,7 +413,7 @@
         "d": "assets/models/buildings/fuel-generator/fuel-generator_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -430,7 +429,7 @@
         "b": "assets/models/buildings/geothermal-generator/geothermal-generator_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -462,7 +461,7 @@
         "a": "assets/models/buildings/hypertube-supports/hypertube-supports_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -478,7 +477,7 @@
         "b": "assets/models/buildings/indicator-light/indicator-light_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -494,7 +493,7 @@
         "a": "assets/models/buildings/industrial-fluid-buffer/industrial-fluid-buffer_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -510,7 +509,7 @@
         "a": "assets/models/buildings/jump-pad/jump-pad_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -526,7 +525,7 @@
         "d": "assets/models/buildings/ladder/ladder_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -541,8 +540,8 @@
         "d": "assets/models/buildings/large-fan/large-fan_variant_d.glb",
         "b": "assets/models/buildings/large-fan/large-fan_variant_b.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -558,7 +557,7 @@
         "d": "assets/models/buildings/lights/lights_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -574,7 +573,7 @@
         "a": "assets/models/buildings/lookout-tower/lookout-tower_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -590,7 +589,7 @@
         "d": "assets/models/buildings/mam/mam_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -606,7 +605,7 @@
         "b": "assets/models/buildings/manufacturer/manufacturer_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -638,7 +637,7 @@
         "d": "assets/models/buildings/nuclear-power-plant/nuclear-power-plant_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -654,7 +653,7 @@
         "c": "assets/models/buildings/oil_extractor/oil_extractor_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -670,7 +669,7 @@
         "b": "assets/models/buildings/packager/packager_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -686,7 +685,7 @@
         "c": "assets/models/buildings/particle_accelerator/particle_accelerator_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -702,7 +701,7 @@
         "c": "assets/models/buildings/personal-storage-box/personal-storage-box_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -718,7 +717,7 @@
         "b": "assets/models/buildings/personnel-elevator/personnel-elevator_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -734,7 +733,7 @@
         "c": "assets/models/buildings/pillars/pillars_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -750,7 +749,7 @@
         "d": "assets/models/buildings/pipeline-support/pipeline-support_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -766,7 +765,7 @@
         "c": "assets/models/buildings/portal/portal_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -782,7 +781,7 @@
         "d": "assets/models/buildings/power-line/power-line_variant_d.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -798,7 +797,7 @@
         "b": "assets/models/buildings/priority-merger/priority-merger_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -814,7 +813,7 @@
         "b": "assets/models/buildings/priority-power-switch/priority-power-switch_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -830,7 +829,7 @@
         "a": "assets/models/buildings/programmable-splitter/programmable-splitter_variant_a.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -846,7 +845,7 @@
         "b": "assets/models/buildings/quantum_encoder/quantum_encoder_variant_b.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -862,7 +861,7 @@
         "c": "assets/models/buildings/radar-tower/radar-tower_variant_c.glb"
       },
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
@@ -877,8 +876,8 @@
         "c": "assets/models/buildings/ramps/ramps_variant_c.glb",
         "a": "assets/models/buildings/ramps/ramps_variant_a.glb"
       },
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b",
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial",
       "detailStatus": "blockout",
       "physicsStatus": "not-started"
     },
