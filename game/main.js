@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import {GLTFLoader} from "three/addons/loaders/GLTFLoader.js";
-import {initPhysics,addStaticCollider,createPlayerBody,stepPlayer,getPhysicsStats} from "./physics.js";
+import {initPhysics,addStaticCollider,createPlayerBody,stepPlayer,getPhysicsStats,probeDown} from "./physics.js";
 import {createMachineState,tickMachine,setMachineRecipe,transferBelt,RECIPES} from "./production.js";
 const gltfLoader=new GLTFLoader();
 const modelPaths={Hub:"../assets/models/buildings/hub/hub_variant_b.glb",Miner:"../assets/models/buildings/miner/miner_variant_b.glb",PortableMiner:"../assets/models/portable_miner/portable_miner_variant_b.glb",Smelter:"../assets/models/buildings/smelter/smelter_variant_b.glb",Constructor:"../assets/models/buildings/constructor/constructor_variant_b.glb",Storage:"../assets/models/infrastructure/storage_container/storage_container_variant_b.glb",BiomassBurner:"../assets/models/buildings/biomass-burner/biomass-burner_variant_b.glb",ConveyorBelt:"../assets/models/infrastructure/conveyor_belt/conveyor_belt_variant_b.glb"};
@@ -30,7 +30,7 @@ const recipes={
 };
 let yaw=0,pitch=0,moveX=0,moveY=0,velocityY=0,onGround=true,menuMode="",selectedNode=null,selectedMachine=null,buildType=null,buildGhost=null,lastSave=0;
 const player={position:new THREE.Vector3(0,1.7,8),speed:8};
-window.__SATISFACTORY_PHYSICS__=()=>getPhysicsStats();
+window.__SATISFACTORY_PHYSICS__=()=>({...getPhysicsStats(),player:{x:player.position.x,y:player.position.y,z:player.position.z,grounded:onGround},probeDown});
 let playerBody=null,jumpQueued=false;
 initPhysics().then(()=>{playerBody=createPlayerBody(player.position.x,0,player.position.z);}).catch(e=>console.warn("Physics initialization failed",e));
 const keys={};const raycaster=new THREE.Raycaster();const center=new THREE.Vector2(0,0);
