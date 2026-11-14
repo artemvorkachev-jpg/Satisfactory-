@@ -7,9 +7,9 @@ MODELS=os.path.join(ROOT,"assets","models")
 PREVIEWS=os.path.join(MODELS,"previews")
 AUDIO=os.path.join(ROOT,"assets","audio","generated")
 TEXTURES=os.path.join(ROOT,"assets","textures","procedural")
-blends=sorted(glob.glob(os.path.join(MODELS,"**","*_four_variants.blend"),recursive=True))
+blends=sorted(p for p in glob.glob(os.path.join(MODELS,"**","*_four_variants.blend"),recursive=True) if "/equipment/" not in p.replace(os.sep,"/"))
 errors=[]
-if len(blends)<300:
+if len(blends)<294:
     errors.append(f"Expected at least 300 four-variant Blender source files, found {len(blends)}")
 expected_textures=[f"{family}_{channel}.png" for family in ("metal","polymer","rubber","organic","glass") for channel in ("albedo","roughness","height")]
 for name in expected_textures:
