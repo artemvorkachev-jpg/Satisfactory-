@@ -19,9 +19,9 @@ const pbrTextures = Object.fromEntries(["metal","organic","polymer","rubber","gl
     return texture;
   };
   return [kind, {
-    map: load("albedo_v2", THREE.SRGBColorSpace),
-    roughnessMap: load("roughness_v2"),
-    heightMap: load("height_v2")
+    map: load("albedo", THREE.SRGBColorSpace),
+    roughnessMap: load("roughness"),
+    heightMap: load("height")
   }];
 }));
 
