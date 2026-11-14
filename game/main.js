@@ -89,9 +89,7 @@ function showMenu(mode){
   grid.append(b);
  };
  if(mode==="build"){
-  for(const [name,description,cost,count,stage] of buildItems){
-   if(progression.stage>=stage)addButton(name,description,()=>startBuild(name));
-  }
+  for(const [name,description] of buildItems)addButton(name,description,()=>startBuild(name));
   const reserved=new Set(["smelter","constructor","storage_container","biomass-burner","power_pole","power-line","conveyor_belt","portable_miner","miner","hub"]);
   const catalog=assetWorld?.constructionCatalog||[];
   const query=search.value.trim().toLowerCase(),kind=category.value;
@@ -104,9 +102,7 @@ function showMenu(mode){
    ?"Основные установки и "+extras.length+" моделей каталога. Фильтр помогает быстро найти объект."
    :"Каталог моделей ещё загружается. Основные установки уже доступны.";
  }else{
-  for(const [name,description,cost,count,stage] of craftItems){
-   if(progression.stage>=stage)addButton(name,description,()=>craftItem(name));
-  }
+  for(const [name,description] of craftItems)addButton(name,description,()=>craftItem(name));
  }
  $("#menuStatus").textContent="Ресурсы: "+Object.entries(inventory).filter(([,v])=>v).map(([k,v])=>(labels[k]||k)+" "+v).join(", ");
 }
@@ -164,6 +160,12 @@ function updateMachines(dt){powerStats=simulatePowerGrid(machines,powerPoles,pow
 function updatePrompt(){const t=targetObject();if(buildType){$("#prompt").textContent="Разместить "+buildType+" · E";return}if(t?.userData.node)$("#prompt").textContent="Ресурсный узел: "+(labels[t.userData.node.type]||t.userData.node.type)+" · E — собрать";else if(t?.userData.machine)$("#prompt").textContent=t.userData.machine.type+" · E — взаимодействовать";else if(t?.userData.asset)$("#prompt").textContent=t.userData.asset.name+" · E — осмотреть";else $("#prompt").textContent="HUB / площадка · исследуйте окрестности"}
 function save(silent=false){const data={version:2,inventory,progression,resources:assetWorld?.getResourceState?.()||{},player:{x:player.position.x,y:player.position.y,z:player.position.z,yaw,pitch},powerPoles:powerPoles.map(g=>({id:g.userData.powerPoleId,x:g.position.x,y:g.position.y,z:g.position.z})),powerConnections:powerConnections.map(c=>({a:c.a,b:c.b})),machines:machines.map(g=>({type:g.userData.machine.type,x:g.position.x,y:g.position.y,z:g.position.z,recipe:g.userData.machine.recipe,input:g.userData.machine.input,output:g.userData.machine.output,elapsed:g.userData.machine.elapsed,nodeType:g.userData.machine.node?.userData.node?.type,nodeId:g.userData.machine.node?.userData.node?.id,nodeRemaining:g.userData.machine.nodeRemaining,fuel:g.userData.machine.fuel||{}})),belts:belts.map(b=>({from:machines.findIndex(g=>g.userData.machine===b.source),to:machines.findIndex(g=>g.userData.machine===b.target),item:b.item})),builtAssets:assetWorld?.getPlacedConstruction?.()||[]};localStorage.setItem("satisfactory-web-save-v1",JSON.stringify(data));if(!silent)ui("Сохранение записано на этом устройстве.");lastSave=Date.now()}
 function load(){try{const d=JSON.parse(localStorage.getItem("satisfactory-web-save-v1"));if(!d)return;Object.assign(inventory,d.inventory||{});Object.assign(progression,d.progression||{});pendingResourceState=d.resources||{};pendingPlacedAssets=Array.isArray(d.builtAssets)?d.builtAssets:[];assetWorld?.setResourceState?.(pendingResourceState);Object.assign(player.position,d.player||{});yaw=d.player?.yaw||0;pitch=d.player?.pitch||0;for(const pole of d.powerPoles||[]){const g=new THREE.Group();g.position.set(pole.x,pole.y,pole.z);g.userData.powerPoleId=pole.id;world.add(g);attachModel(g,modelPaths.PowerPole,2.2);powerPoles.push(g)}for(const x of d.machines||[]){const g=makeMachine(x.type,new THREE.Vector3(x.x,x.y,x.z));g.userData.machine.recipe=x.recipe;g.userData.machine.input=x.input||x.buffer||{};g.userData.machine.buffer=g.userData.machine.input;g.userData.machine.output=x.output||{};g.userData.machine.fuel=x.fuel||{};g.userData.machine.elapsed=x.elapsed||0;g.userData.machine.nodeRemaining=x.nodeRemaining??Infinity;if(x.nodeId)g.userData.machine.pendingNodeId=x.nodeId;else if(x.nodeType)g.userData.machine.nodeType=x.nodeType;}for(const c of d.powerConnections||[]){const ga=[...machines,...powerPoles].find(g=>(g.userData.machine?.id||g.userData.powerPoleId)===c.a),gb=[...machines,...powerPoles].find(g=>(g.userData.machine?.id||g.userData.powerPoleId)===c.b);if(ga&&gb){const curve=new THREE.LineCurve3(ga.position.clone().add(new THREE.Vector3(0,2,0)),gb.position.clone().add(new THREE.Vector3(0,2,0)));const wire=new THREE.Mesh(new THREE.TubeGeometry(curve,12,.035,6,false),mat(0x252a2b,.45,.4));world.add(wire);powerConnections.push({...c,wire})}}for(const b of d.belts||[]){const from=machines[b.from],to=machines[b.to];if(from&&to){makeBelt(from,to);belts[belts.length-1].item=b.item||null}}invText();updateProgression()}catch(e){console.warn("Save load failed",e)}}
+$("#menuSearch").addEventListener("input",()=>{if(menuMode==="build")showMenu("build")});
+$("#menuCategory").addEventListener("change",()=>{if(menuMode==="build")showMenu("build")});
+const orientationButton=$("#orientationButton");
+orientationButton.addEventListener("click",async()=>{
+ try{if(window.screen?.orientation?.lock)await window.screen.orientation.lock("landscape")}catch(error){console.info("Landscape lock is not available in this browser; rotate the device manually.",error)}
+});
 $("#craft").onclick=()=>showMenu("craft");$("#build").onclick=()=>showMenu("build");$("#save").onclick=save;$("#help").onclick=()=>{ui("Движение — левый стик · обзор — проводите пальцем по правой половине · действие — взаимодействие/установка · прыжок — отдельная кнопка.");};$("#closeMenu").onclick=closeMenu;$("#interact").onclick=interact;$("#menuBtn").onclick=()=>showMenu("build");$("#jump").addEventListener("pointerdown",e=>{e.preventDefault();jumpBuffer=0.28;},{passive:false});
 addEventListener("keydown",e=>{if(e.code==="Space")e.preventDefault();keys[e.code]=true;if(e.code==="KeyE")interact();if(e.code==="Space"&&!e.repeat)jumpBuffer=0.28;if(e.code==="Escape")closeMenu()});addEventListener("keyup",e=>keys[e.code]=false);
 let pointerLocked=false;renderer.domElement.addEventListener("click",()=>{if(innerWidth>850&&renderer.domElement.requestPointerLock)renderer.domElement.requestPointerLock()});document.addEventListener("pointerlockchange",()=>pointerLocked=document.pointerLockElement===renderer.domElement);document.addEventListener("mousemove",e=>{if(pointerLocked){yaw-=e.movementX*.0022;pitch=Math.max(-1.35,Math.min(1.35,pitch-e.movementY*.0022))}});
