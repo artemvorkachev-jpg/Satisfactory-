@@ -6,6 +6,7 @@ const pendingStatic = [];
 const staticBodies = new WeakMap();
 let colliderCount = 0;
 let staticObjectCount = 0;
+let dynamicBodyCount = 0;
 
 export async function initPhysics() {
   if (world) return world;
@@ -34,6 +35,7 @@ function colliderParts(size, shape) {
     const radius = Math.max(0.12, Math.min(hx, hz) * 0.82);
     return [{ shape: "capsule", halfHeight: Math.max(0.08, hy - radius), radius, y: 0 }];
   }
+  if (shape === "cylinder") return [{ shape: "cylinder", halfHeight: hy, radius: Math.max(0.12, Math.min(hx, hz)) }];
   if (shape === "compound-building") {
     // Three low-poly tiers approximate a machine/building silhouette without colliding with bolts or trim.
     return [
@@ -64,6 +66,8 @@ export function addStaticCollider(object, options = {}) {
     let desc;
     if (part.shape === "capsule") {
       desc = RAPIER.ColliderDesc.capsule(part.halfHeight, part.radius);
+    } else if (part.shape === "cylinder") {
+      desc = RAPIER.ColliderDesc.cylinder(part.halfHeight, part.radius);
     } else {
       desc = RAPIER.ColliderDesc.cuboid(part.x, part.y, part.z);
     }
@@ -93,6 +97,7 @@ export function createPlayerBody(x, feetY, z) {
     body
   );
   colliderCount++;
+  dynamicBodyCount++;
   return body;
 }
 
@@ -102,12 +107,16 @@ export function stepPlayer(body, vx, vz, jump, dt) {
   world.timestep = t;
   const current = body.linvel();
   const pos = body.translation();
-  const grounded = pos.y <= 0.9 && current.y <= 0.5;
+  const ray = new RAPIER.Ray({ x: pos.x, y: pos.y, z: pos.z }, { x: 0, y: -1, z: 0 });
+  const floorHit = world.castRay(ray, 1.02, true, undefined, undefined, undefined, body);
+  const grounded = !!floorHit && current.y <= 0.5;
   body.setLinvel({ x: vx, y: jump && grounded ? 8.0 : current.y, z: vz }, true);
   world.step();
   const p = body.translation();
   const v = body.linvel();
-  return { x: p.x, y: p.y - 0.86, z: p.z, grounded: p.y <= 0.9 && v.y <= 0.5 };
+  const probe = new RAPIER.Ray({ x: p.x, y: p.y, z: p.z }, { x: 0, y: -1, z: 0 });
+  const afterHit = world.castRay(probe, 1.02, true, undefined, undefined, undefined, body);
+  return { x: p.x, y: p.y - 0.86, z: p.z, grounded: !!afterHit && v.y <= 0.5 };
 }
 
 export function physicsAvailable() {
@@ -115,5 +124,5 @@ export function physicsAvailable() {
 }
 
 export function getPhysicsStats() {
-  return { available: !!world, staticObjects: staticObjectCount, colliders: colliderCount };
+  return { available: !!world, staticObjects: staticObjectCount, colliders: colliderCount, dynamicBodies: dynamicBodyCount, pendingStatic: pendingStatic.length };
 }
