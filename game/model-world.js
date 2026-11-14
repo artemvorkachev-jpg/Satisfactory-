@@ -25,7 +25,7 @@ const pbrTextures = Object.fromEntries(["metal","organic","polymer","rubber","gl
   }];
 }));
 
-function applyPbrTextures(root, category) {
+export function applyPbrTextures(root, category = "buildings") {
   root.traverse(object => {
     if (!object.isMesh || !object.material) return;
     const list = Array.isArray(object.material) ? object.material : [object.material];
