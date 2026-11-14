@@ -3,7 +3,7 @@ import { simulatePowerGrid } from "../game/production.js";
 
 const generator = { userData: { machine: { id: "gen-1", type: "Biomass Burner", fuel: { Leaves: 1 } } }, position: { x: 0, y: 0, z: 0 } };
 const pole = { userData: { powerPoleId: "pole-1" }, position: { x: 1, y: 0, z: 0 } };
-const smelter = { userData: { machine: { id: "smelter-1", type: "Smelter", powered: false } }, position: { x: 2, y: 0, z: 0 } };
+const smelter = { userData: { machine: { id: "smelter-1", type: "Smelter", recipe: "Iron Ingot", input: { "Iron Ore": 1 }, output: {}, powered: false } }, position: { x: 2, y: 0, z: 0 } };
 let state = simulatePowerGrid([generator, smelter], [pole], [{ a: "gen-1", b: "pole-1" }, { a: "pole-1", b: "smelter-1" }], 1);
 assert.equal(smelter.userData.machine.powered, true);
 assert.equal(state.capacity, 30);
