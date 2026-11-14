@@ -12,8 +12,8 @@ if not stem.endswith("_four_variants"): raise RuntimeError("Expected *_four_vari
 
 scene=bpy.context.scene
 scene.render.engine="BLENDER_WORKBENCH"
-scene.render.resolution_x=960
-scene.render.resolution_y=540
+scene.render.resolution_x=720
+scene.render.resolution_y=405
 scene.render.resolution_percentage=100
 scene.render.image_settings.file_format="PNG"
 scene.render.image_settings.color_mode="RGBA"
@@ -30,6 +30,14 @@ scene.display.shading.curvature_valley_factor=1.0
 scene.display.shading.background_type="WORLD"
 scene.display.shading.show_specular_highlight=True
 scene.render.film_transparent=False
+
+# Weighted Normal modifiers do not improve Workbench asset-review sheets.
+# Disabling them here avoids Blender 4.0 Auto Smooth warnings during headless previews.
+for obj in scene.objects:
+    for modifier in obj.modifiers:
+        if modifier.type == "WEIGHTED_NORMAL":
+            modifier.show_viewport = False
+            modifier.show_render = False
 
 # Workbench uses material viewport colors and does not need EEVEE shader compilation.
 points=[]
