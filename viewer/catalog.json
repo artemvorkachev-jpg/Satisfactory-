@@ -3889,8 +3889,8 @@
         "a": "assets/models/resources/bauxite_node/bauxite_node_variant_a.glb"
       },
       "preview": "assets/models/previews/bauxite_node_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "caterium_ore_node",
@@ -3903,8 +3903,8 @@
         "b": "assets/models/resources/caterium_ore_node/caterium_ore_node_variant_b.glb"
       },
       "preview": "assets/models/previews/caterium_ore_node_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "coal_node",
@@ -3917,8 +3917,8 @@
         "d": "assets/models/resources/coal_node/coal_node_variant_d.glb"
       },
       "preview": "assets/models/previews/coal_node_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "copper_ore_node",
@@ -3945,8 +3945,8 @@
         "b": "assets/models/resources/cracked_resource_boulder/cracked_resource_boulder_variant_b.glb"
       },
       "preview": "assets/models/previews/cracked_resource_boulder_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "crude_oil_node",
@@ -3959,8 +3959,8 @@
         "c": "assets/models/resources/crude_oil_node/crude_oil_node_variant_c.glb"
       },
       "preview": "assets/models/previews/crude_oil_node_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "geyser",
@@ -3973,8 +3973,8 @@
         "c": "assets/models/resources/geyser/geyser_variant_c.glb"
       },
       "preview": "assets/models/previews/geyser_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "iron_ore_node",
@@ -4015,8 +4015,8 @@
         "c": "assets/models/resources/raw_quartz_node/raw_quartz_node_variant_c.glb"
       },
       "preview": "assets/models/previews/raw_quartz_node_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "resource_well_main",
@@ -4029,8 +4029,8 @@
         "b": "assets/models/resources/resource_well_main/resource_well_main_variant_b.glb"
       },
       "preview": "assets/models/previews/resource_well_main_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "a",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "resource_well_satellite",
@@ -4044,7 +4044,7 @@
       },
       "preview": "assets/models/previews/resource_well_satellite_four_variants_preview.png",
       "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "sam_node",
@@ -4057,8 +4057,8 @@
         "d": "assets/models/resources/sam_node/sam_node_variant_d.glb"
       },
       "preview": "assets/models/previews/sam_node_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "sulfur_node",
@@ -4071,8 +4071,8 @@
         "b": "assets/models/resources/sulfur_node/sulfur_node_variant_b.glb"
       },
       "preview": "assets/models/previews/sulfur_node_four_variants_preview.png",
-      "selectedVariant": "b",
-      "selectionStatus": "provisional-default-b"
+      "selectedVariant": "c",
+      "selectionStatus": "preview-reviewed-initial"
     },
     {
       "id": "tractor",
