@@ -136,8 +136,6 @@ def texture_material(mat):
         if any(link.from_node in old_height for link in node.inputs["Height"].links):
             old_bumps.append(node)
 
-    if old_mix:
-        nodes.remove(old_mix)
     for node in old_bumps + old_albedo + old_roughness + old_height:
         if node.name in nodes:
             nodes.remove(node)
