@@ -1,0 +1,75 @@
+import * as THREE from "three";
+
+const $=s=>document.querySelector(s);
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x8ca8b1);scene.fog=new THREE.Fog(0x8ca8b1,55,190);
+const camera=new THREE.PerspectiveCamera(72,innerWidth/innerHeight,.1,500);camera.position.set(0,2,8);
+const renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:"high-performance"});renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.6));renderer.setSize(innerWidth,innerHeight);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;$("#game").append(renderer.domElement);
+scene.add(new THREE.HemisphereLight(0xd8edff,0x43513b,2));
+const sun=new THREE.DirectionalLight(0xffefcf,2.5);sun.position.set(-35,55,25);sun.castShadow=true;sun.shadow.mapSize.set(1024,1024);scene.add(sun);
+const mat=(color,roughness=.85)=>new THREE.MeshStandardMaterial({color,roughness});
+const ground=new THREE.Mesh(new THREE.PlaneGeometry(260,260),mat(0x657b50));ground.rotation.x=-Math.PI/2;ground.receiveShadow=true;scene.add(ground);
+const grid=new THREE.GridHelper(240,120,0x64735d,0x718263);grid.position.y=.012;grid.material.opacity=.15;grid.material.transparent=true;scene.add(grid);
+const world=new THREE.Group();scene.add(world);
+const resourceNodes=[];const machines=[];const inventory={Leaves:0,Wood:0,"Iron Ore":0,"Copper Ore":0,Limestone:0,"Iron Ingot":0,"Iron Plate":0,"Iron Rod":0,Wire:0,Cable:0,Concrete:0,ReinforcedIronPlate:0,Cable:0};
+const labels={"Iron Ore":"Железная руда","Copper Ore":"Медная руда","Limestone":"Известняк","Leaves":"Листья","Wood":"Древесина","Iron Ingot":"Железный слиток","Iron Plate":"Железная пластина","Iron Rod":"Железный стержень","Wire":"Проволока","Cable":"Кабель","Concrete":"Бетон","ReinforcedIronPlate":"Усиленная железная пластина"};
+const recipes={
+ "Iron Ingot":{inputs:{"Iron Ore":1},time:2,machine:"Smelter"},
+ "Iron Plate":{inputs:{"Iron Ingot":3},time:6,machine:"Constructor"},
+ "Iron Rod":{inputs:{"Iron Ingot":1},time:4,machine:"Constructor"},
+ "Wire":{inputs:{"Copper Ore":1},time:4,machine:"Constructor"},
+ "Cable":{inputs:{Wire:2},time:2,machine:"Constructor"},
+ "Concrete":{inputs:{Limestone:3},time:4,machine:"Constructor"}
+};
+let yaw=0,pitch=0,moveX=0,moveY=0,velocityY=0,onGround=true,menuMode="",selectedNode=null,selectedMachine=null,buildType=null,buildGhost=null,lastSave=0;
+const player={position:new THREE.Vector3(0,1.7,8),speed:8};
+const keys={};const raycaster=new THREE.Raycaster();const center=new THREE.Vector2(0,0);
+function box(parent,x,y,z,sx,sy,sz,color){const m=new THREE.Mesh(new THREE.BoxGeometry(sx,sy,sz),mat(color));m.position.set(x,y,z);m.castShadow=true;m.receiveShadow=true;parent.add(m);return m}
+function makeTree(x,z,scale=1){const g=new THREE.Group();g.position.set(x,0,z);world.add(g);const trunk=new THREE.Mesh(new THREE.CylinderGeometry(.16*scale,.23*scale,2.1*scale,7),mat(0x59412d));trunk.position.y=1.05*scale;trunk.castShadow=true;g.add(trunk);for(let i=0;i<3;i++){const crown=new THREE.Mesh(new THREE.ConeGeometry((1.1-i*.18)*scale,2.1*scale,7),mat([0x315b3a,0x3e7045,0x4a7947][i]));crown.position.y=(2.2+i*.68)*scale;crown.castShadow=true;g.add(crown)}}
+function makeRock(x,z,color=0x777d78,s=1){const g=new THREE.Group();g.position.set(x,0,z);world.add(g);const r=new THREE.Mesh(new THREE.DodecahedronGeometry(s,1),mat(color));r.position.y=s*.6;r.scale.set(1,.8,1.15);r.castShadow=true;r.receiveShadow=true;g.add(r);return g}
+function node(type,x,z,amount=240){const colors={"Iron Ore":0x777f84,"Copper Ore":0xb56e3d,"Limestone":0xc8c5ad};const g=makeRock(x,z,colors[type],1.35);g.userData.node={type,amount};resourceNodes.push(g)}
+// Starter site: readable resource cluster, forest edge, landing pod and HUB-like field terminal.
+for(let i=0;i<100;i++){const a=i*2.399,r=18+Math.sqrt(i)*4;makeTree(Math.cos(a)*r,Math.sin(a)*r,.7+(i%4)*.13)}
+for(let i=0;i<34;i++){const a=i*2.4,r=22+(i%6)*5;makeRock(Math.cos(a)*r,Math.sin(a)*r,0x68726e,.7+(i%3)*.2)}
+node("Iron Ore",-9,-8,900);node("Iron Ore",-13,-5,900);node("Copper Ore",11,-9,600);node("Limestone",7,12,900);node("Limestone",11,14,900);
+const hub=new THREE.Group();hub.position.set(0,0,-1);world.add(hub);box(hub,0,1.5,0,5,3.2,4,0x4b5960);box(hub,0,3.3,0,3.2,.45,2.8,0xc2c9c6);box(hub,0,1.7,2.06,2.2,1.5,.12,0x1c2d37);box(hub,-1.65,2.5,2.08,.45,.22,.12,0xf2b300);box(hub,1.65,2.5,2.08,.45,.22,.12,0xf2b300);
+const pad=new THREE.Mesh(new THREE.CylinderGeometry(2.7,3.1,.4,12),mat(0x737e83));pad.position.set(0,.2,4.5);world.add(pad);box(world,0,1.25,4.5,1.5,2.1,1.3,0xd6d8d1);
+function makeMachine(type,pos){const g=new THREE.Group();g.position.copy(pos);g.userData.machine={type,recipe:null,buffer:{},progress:0,output:{},powered:false};const c=type==="Miner"?0x67777a:type==="Smelter"?0x4c5960:type==="Constructor"?0x59686d:0x64736c;
+box(g,0,.9,0,2.8,1.8,2.5,c);box(g,0,1.95,-.2,1.7,.35,1.5,0x25343b);box(g,0,1.5,1.27,1.1,.45,.08,0xf2b300);
+if(type==="Miner"){const head=box(g,0,2.6,0,.8,1.1,.8,0x8d9996);head.rotation.z=.2}
+if(type==="Smelter"){box(g,0,2.2,0,.8,.35,.8,0xf18b35)}
+if(type==="Constructor"){const arm=box(g,.8,2.15,0,.25,1.4,.25,0xc5a04e);arm.rotation.z=-.4}
+world.add(g);machines.push(g);return g}
+const clock=new THREE.Clock();
+function ui(message){$("#message").textContent=message||""}
+function invText(){const entries=Object.entries(inventory).filter(([,v])=>v>0);$("#inventory").innerHTML="<b>Инвентарь</b><br>"+(entries.length?entries.map(([k,v])=>(labels[k]||k)+": "+v).join(" · "):"пусто")}
+function showMenu(mode){menuMode=mode;$("#menu").style.display="grid";const grid=$("#menuGrid");grid.replaceChildren();$("#menuTitle").textContent=mode==="build"?"Строительство":"Ручное производство";$("#menuInfo").textContent=mode==="build"?"Постройка доступна рядом с HUB. Выберите объект.":"Рецепты раннего этапа. Для машинного производства сначала постройте установку.";
+const items=mode==="build"?[
+["Portable Miner","Переносной добытчик","Iron Ore",8],["Smelter","Плавильня","Iron Plate",8],["Constructor","Конструктор","Iron Rod",8],["Storage","Контейнер","Iron Plate",6],["Biomass Burner","Биомассовый генератор","Iron Rod",8]
+]:[
+["Iron Plate","3 слитка → 1 пластина","Iron Ingot",3],["Iron Rod","1 слиток → 1 стержень","Iron Ingot",1],["Wire","1 медная руда → 1 проволока","Copper Ore",1],["Concrete","3 известняка → 1 бетон","Limestone",3]
+];
+for(const [name,desc,cost,n] of items){const b=document.createElement("button");b.innerHTML="<b>"+name+"</b><br><span class='small'>"+desc+"</span>";b.addEventListener("click",()=>mode==="build"?startBuild(name):craftItem(name));grid.append(b)}
+$("#menuStatus").textContent="Ресурсы: "+Object.entries(inventory).filter(([,v])=>v).map(([k,v])=>(labels[k]||k)+" "+v).join(", ");
+}
+function closeMenu(){$("#menu").style.display="none";menuMode=""}
+function craftItem(name){const r=recipes[name];if(!r){ui("Этот рецепт пока не открыт.");return}for(const [k,v] of Object.entries(r.inputs)){if((inventory[k]||0)<v){ui("Не хватает: "+(labels[k]||k));return}}for(const [k,v] of Object.entries(r.inputs))inventory[k]-=v;inventory[name]=(inventory[name]||0)+1;invText();ui("Изготовлено: "+(labels[name]||name));}
+function startBuild(type){const costs={"Portable Miner":{"Iron Plate":4,"Iron Rod":4},"Smelter":{"Iron Plate":5,"Iron Rod":8},"Constructor":{"Iron Plate":6,"Iron Rod":8},"Storage":{"Iron Plate":4,"Iron Rod":4},"Biomass Burner":{"Iron Plate":8,"Iron Rod":10}};const c=costs[type];for(const [k,v] of Object.entries(c))if((inventory[k]||0)<v){ui("Для "+type+" не хватает "+(labels[k]||k)+": "+v);return}for(const [k,v] of Object.entries(c))inventory[k]-=v;buildType=type;closeMenu();ui("Наведите на землю и нажмите E, чтобы установить: "+type);invText()}
+function buildAt(){if(!buildType)return;const dir=new THREE.Vector3();camera.getWorldDirection(dir);const p=player.position.clone().add(dir.multiplyScalar(5));p.y=0;p.x=Math.round(p.x/2)*2;p.z=Math.round(p.z/2)*2;if(Math.hypot(p.x-player.position.x,p.z-player.position.z)>8){ui("Слишком далеко для строительства.");return}const type=buildType==="Portable Miner"?"Miner":buildType;const m=makeMachine(type,p);buildType=null;ui(type+" установлен. Подойдите и нажмите E для настройки.");}
+function interact(){if(buildType){buildAt();return}const target=targetObject();if(!target){ui("Здесь нет объекта для взаимодействия.");return}
+if(target.userData.node){const n=target.userData.node;if(n.amount<=0){ui("Узел истощён.");return}n.amount-=25;inventory[n.type]=(inventory[n.type]||0)+25;invText();ui("Собрано 25: "+(labels[n.type]||n.type));return}
+if(target.userData.machine){selectedMachine=target;const m=target.userData.machine;if(m.type==="Miner"){m.recipe="Iron Ore";ui("Добытчик: нужен ресурсный узел под машиной. Пока ручной режим.");}else{const options=Object.keys(recipes).filter(k=>recipes[k].machine===m.type);if(options.length){const next=options.find(k=>k===m.recipe)||options[0];m.recipe=next;ui(m.type+": рецепт "+next+". Нажмите E ещё раз, чтобы переключить рецепт.");}else ui("Контейнер: хранение ресурсов будет подключено в следующем этапе.");}return}
+ui("HUB: ранняя производственная площадка. Ручное изготовление доступно через «Крафт».");
+}
+function targetObject(){raycaster.setFromCamera(center,camera);const candidates=[...resourceNodes,...machines,hub];const hits=raycaster.intersectObjects(candidates,true);if(!hits.length)return null;let o=hits[0].object;while(o.parent&&o.parent!==world&&!o.userData.node&&!o.userData.machine)o=o.parent;if(o.userData.node||o.userData.machine)return o;return hub}
+function updateMachines(dt){for(const g of machines){const m=g.userData.machine;if(!m.recipe)continue;const r=recipes[m.recipe];if(!r)continue;for(const [k,v] of Object.entries(r.inputs))if((m.buffer[k]||0)<v){if((inventory[k]||0)>=v){inventory[k]-=v;m.buffer[k]=(m.buffer[k]||0)+v}}if(Object.entries(r.inputs).every(([k,v])=>(m.buffer[k]||0)>=v)){m.progress+=dt;if(m.progress>=r.time){m.progress=0;for(const [k,v] of Object.entries(r.inputs))m.buffer[k]-=v;inventory[m.recipe]=(inventory[m.recipe]||0)+1}}}invText()}
+function move(dt){const forward=new THREE.Vector3(-Math.sin(yaw),0,-Math.cos(yaw));const right=new THREE.Vector3(Math.cos(yaw),0,-Math.sin(yaw));const v=new THREE.Vector3();v.addScaledVector(forward,moveY);v.addScaledVector(right,moveX);if(keys.KeyW)v.add(forward);if(keys.KeyS)v.sub(forward);if(keys.KeyD)v.add(right);if(keys.KeyA)v.sub(right);if(v.lengthSq())v.normalize().multiplyScalar(player.speed*dt);player.position.add(v);velocityY-=22*dt;player.position.y+=velocityY*dt;if(player.position.y<1.7){player.position.y=1.7;velocityY=0;onGround=true}camera.position.copy(player.position);camera.rotation.order="YXZ";camera.rotation.y=yaw;camera.rotation.x=pitch}
+function updatePrompt(){const t=targetObject();if(buildType){$("#prompt").textContent="Разместить "+buildType+" · E";return}if(t?.userData.node)$("#prompt").textContent="Ресурсный узел: "+(labels[t.userData.node.type]||t.userData.node.type)+" · E — собрать";else if(t?.userData.machine)$("#prompt").textContent=t.userData.machine.type+" · E — взаимодействовать";else $("#prompt").textContent="HUB / площадка · исследуйте окрестности"}
+function save(){const data={inventory,player:{x:player.position.x,y:player.position.y,z:player.position.z,yaw,pitch},machines:machines.map(g=>({type:g.userData.machine.type,x:g.position.x,y:g.position.y,z:g.position.z,recipe:g.userData.machine.recipe,buffer:g.userData.machine.buffer}))};localStorage.setItem("satisfactory-web-save-v1",JSON.stringify(data));ui("Сохранение записано на этом устройстве.");lastSave=Date.now()}
+function load(){try{const d=JSON.parse(localStorage.getItem("satisfactory-web-save-v1"));if(!d)return;Object.assign(inventory,d.inventory||{});Object.assign(player.position,d.player||{});yaw=d.player?.yaw||0;pitch=d.player?.pitch||0;for(const x of d.machines||[]){const g=makeMachine(x.type,new THREE.Vector3(x.x,x.y,x.z));g.userData.machine.recipe=x.recipe;g.userData.machine.buffer=x.buffer||{}}invText()}catch(e){console.warn("Save load failed",e)}}
+$("#craft").onclick=()=>showMenu("craft");$("#build").onclick=()=>showMenu("build");$("#save").onclick=save;$("#help").onclick=()=>{ui("ПК: WASD, мышь, E — взаимодействие, Space — прыжок. Телефон: левый стик — движение, кнопки справа — обзор/действие.");};$("#closeMenu").onclick=closeMenu;$("#interact").onclick=interact;$("#menuBtn").onclick=()=>showMenu("build");$("#jump").onclick=()=>{if(onGround){velocityY=8;onGround=false}};$("#look").onclick=()=>ui("Проведите пальцем по правой части экрана для обзора.");
+addEventListener("keydown",e=>{keys[e.code]=true;if(e.code==="KeyE")interact();if(e.code==="Space"&&onGround){velocityY=8;onGround=false}if(e.code==="Escape")closeMenu()});addEventListener("keyup",e=>keys[e.code]=false);
+let pointerLocked=false;renderer.domElement.addEventListener("click",()=>{if(innerWidth>850&&renderer.domElement.requestPointerLock)renderer.domElement.requestPointerLock()});document.addEventListener("pointerlockchange",()=>pointerLocked=document.pointerLockElement===renderer.domElement);document.addEventListener("mousemove",e=>{if(pointerLocked){yaw-=e.movementX*.0022;pitch=Math.max(-1.35,Math.min(1.35,pitch-e.movementY*.0022))}});
+let lookTouch=null;renderer.domElement.addEventListener("touchstart",e=>{const t=e.changedTouches[0];if(t.clientX>innerWidth*.48)lookTouch={id:t.identifier,x:t.clientX,y:t.clientY}},{passive:true});renderer.domElement.addEventListener("touchmove",e=>{if(!lookTouch)return;for(const t of e.changedTouches)if(t.identifier===lookTouch.id){yaw-=(t.clientX-lookTouch.x)*.006;pitch=Math.max(-1.25,Math.min(1.25,pitch-(t.clientY-lookTouch.y)*.006));lookTouch.x=t.clientX;lookTouch.y=t.clientY}},{passive:true});renderer.domElement.addEventListener("touchend",()=>lookTouch=null,{passive:true});
+const stick=$("#stick"),nub=$("#nub");let stickId=null;stick.addEventListener("pointerdown",e=>{stickId=e.pointerId;stick.setPointerCapture(stickId);stickMove(e)});stick.addEventListener("pointermove",e=>{if(e.pointerId===stickId)stickMove(e)});stick.addEventListener("pointerup",stickEnd);stick.addEventListener("pointercancel",stickEnd);function stickMove(e){const r=stick.getBoundingClientRect(),dx=e.clientX-(r.left+r.width/2),dy=e.clientY-(r.top+r.height/2),len=Math.hypot(dx,dy),scale=Math.min(1,44/(len||1));nub.style.transform="translate("+dx*scale+"px,"+dy*scale+"px)";moveX=dx/44;moveY=-dy/44;const l=Math.hypot(moveX,moveY);if(l>1){moveX/=l;moveY/=l}}function stickEnd(){stickId=null;moveX=moveY=0;nub.style.transform="translate(0,0)"}
+load();invText();let t=0;function animate(){requestAnimationFrame(animate);const dt=Math.min(clock.getDelta(),.04);move(dt);updateMachines(dt);if(Date.now()-lastSave>120000&&lastSave)save();t+=dt;if(t>.18){updatePrompt();t=0}renderer.render(scene,camera)}animate();
+addEventListener("resize",()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)});
