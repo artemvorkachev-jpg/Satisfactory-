@@ -155,7 +155,23 @@ const recipes={
 };
 let yaw=0,pitch=0,moveX=0,moveY=0,velocityY=0,onGround=true,menuMode="",selectedNode=null,selectedMachine=null,buildType=null,buildGhost=null,lastSave=0,toastTimer=0;
 const player={position:new THREE.Vector3(0,1.7,8),speed:8};
-window.__SATISFACTORY_PHYSICS__=()=>({...getPhysicsStats(),player:{x:player.position.x,y:player.position.y,z:player.position.z,grounded:onGround},probeDown,assets:assetWorld?.getStats()||null});
+window.__SATISFACTORY_PHYSICS__=()=>({
+ ...getPhysicsStats(),
+ player:{x:player.position.x,y:player.position.y,z:player.position.z,grounded:onGround},
+ probeDown,
+ assets:assetWorld?.getStats()||null,
+ worldSurface:{
+  colorMap:!!groundMaterial.map,
+  roughnessMap:!!groundMaterial.roughnessMap,
+  bumpMap:!!groundMaterial.bumpMap,
+  foliageInstances:world.children.filter(object=>object.isInstancedMesh).reduce((sum,object)=>sum+object.count,0)
+ },
+ resources:assetWorld?.getResourceDiagnostics?.()||[]
+});
+window.__SATISFACTORY_SET_RESOURCE_AMOUNT__=(id,amount)=>{
+ const target=assetWorld?.getObjects().find(object=>object.userData.asset?.placementId===id);
+ return target?assetWorld.setNodeAmount(target,amount):false;
+};
 let playerBody=null,jumpBuffer=0;
 initPhysics().then(async()=>{playerBody=createPlayerBody(player.position.x,0,player.position.z);assetWorld=await createAssetWorld(world,{skipIds:["hub"],onProgress:stats=>{const label=$("#objective");if(label&&progression.stage===0)label.textContent="После высадки: исследуйте биом · найдите железо, медь и известняк · природа загружена "+stats.loadedModels+"/"+stats.placedModels}});assetWorld.setResourceState(pendingResourceState);for(const item of pendingPlacedAssets){assetWorld.placeConstruction(item.id,new THREE.Vector3(item.x,item.y,item.z),item.rotationY||0).catch(e=>console.warn("Saved model restore failed",item.id,e))}assetWorld.update(player.position);ui("Окружение загружено. Исследуйте территорию и начинайте строить фабрику.");}).catch(e=>{console.warn("World/physics initialization failed",e);ui("Не удалось загрузить окружение планеты: "+e.message)});
 const keys={};const raycaster=new THREE.Raycaster();const center=new THREE.Vector2(0,0);
