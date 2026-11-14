@@ -12,6 +12,7 @@ on:
       - "game/**"
       - "index.html"
       - "viewer/**"
+      - "tests/**"
   workflow_run:
     workflows: ["Build Blender asset blockouts"]
     types: [completed]
