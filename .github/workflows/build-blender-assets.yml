@@ -130,10 +130,24 @@ jobs:
           done < <(find assets/models -path "assets/models/equipment" -prune -o -type f -name "*_four_variants.blend" -print0)
 
       - name: Render four-variant review sheets
+        shell: bash
         run: |
           mkdir -p assets/models/previews
           find assets/models -path "assets/models/equipment" -prune -o -type f -name "*_four_variants.blend" -print0 | while IFS= read -r -d '' file; do
-            xvfb-run -a env LIBGL_ALWAYS_SOFTWARE=1 PYTHONPATH=/usr/lib/python3/dist-packages blender --background "$file" --python-use-system-env --python tools/blender/render_single_asset_preview_workbench.py
+            stem="$(basename "${file%_four_variants.blend}")"
+            preview="assets/models/previews/${stem}_four_variants_preview.png"
+            backup="${preview}.previous"
+            if [[ -s "$preview" ]]; then cp "$preview" "$backup"; fi
+            if ! timeout --signal=TERM --kill-after=10s 45s xvfb-run -a env LIBGL_ALWAYS_SOFTWARE=1 PYTHONPATH=/usr/lib/python3/dist-packages blender --background "$file" --python-use-system-env --python tools/blender/render_single_asset_preview_workbench.py; then
+              echo "::warning::Workbench preview timed out for $file; keeping the previously verified preview."
+              if [[ -s "$backup" ]]; then mv "$backup" "$preview"; else
+                rm -f "$preview"
+                echo "::error::No verified fallback preview exists for $file."
+                exit 1
+              fi
+            else
+              rm -f "$backup"
+            fi
           done
 
       - name: Verify every model family and stereo audio files
