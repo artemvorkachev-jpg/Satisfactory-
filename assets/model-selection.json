@@ -16,7 +16,7 @@
       "Selected variants must be checked together at in-world scale before final approval."
     ]
   },
-  "selectionPolicy": "One default variant is assigned for every current catalogue family. Items marked provisional have not yet had all four preview variants manually reviewed; do not treat those choices as final.",
+  "selectionPolicy": "One default variant is recorded only for manually reviewed, in-scope non-combat assets. Unreviewed item families remain pending with no selected variant and are hidden from the comparison viewer. A preview review is an initial visual choice, not final in-world approval.",
   "assets": [
     {
       "id": "blade_runners",
