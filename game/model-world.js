@@ -125,7 +125,16 @@ export async function createAssetWorld(parent, options = {}) {
   const response = await fetch("../viewer/catalog.json", { cache: "no-cache" });
   if (!response.ok) throw new Error("Не удалось загрузить каталог моделей: " + response.status);
   const catalog = await response.json();
-  const assets = catalog.assets || [];
+  const selectionResponse = await fetch("../assets/model-selection.json", { cache: "no-cache" });
+  if (!selectionResponse.ok) throw new Error("Не удалось загрузить манифест выбора моделей: " + selectionResponse.status);
+  const selection = await selectionResponse.json();
+  const selectionById = new Map((selection.assets || []).map(asset => [asset.id, asset]));
+  const allAssets = catalog.assets || [];
+  const assets = allAssets.map(asset => {
+    const review = selectionById.get(asset.id);
+    if (!review || !review.selectedVariant || review.selectionStatus === "pending-noncombat-review") return null;
+    return { ...asset, selectedVariant: review.selectedVariant, selectionStatus: review.selectionStatus };
+  }).filter(Boolean);
   const skipIds = new Set(options.skipIds || ["hub"]);
   const placements = makePlacements(assets, skipIds);
   const loader = new GLTFLoader();
@@ -192,8 +201,8 @@ export async function createAssetWorld(parent, options = {}) {
 
   function getStats() {
     return {
-      catalogFamilies: assets.length,
-      selectedFamilies: assets.filter(asset => asset.selectedVariant && asset.variants?.[asset.selectedVariant]).length,
+      catalogFamilies: allAssets.length,
+      selectedFamilies: assets.length,
       placedModels: placements.length + skipIds.size,
       loadedModels: loaded.size,
       loadingModels: loading.size,
