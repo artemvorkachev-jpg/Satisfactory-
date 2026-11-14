@@ -15,6 +15,7 @@ scene.render.engine="BLENDER_WORKBENCH"
 scene.render.resolution_x=720
 scene.render.resolution_y=405
 scene.render.resolution_percentage=100
+print("Workbench review preview: 720x405; weighted-normal modifiers disabled", flush=True)
 scene.render.image_settings.file_format="PNG"
 scene.render.image_settings.color_mode="RGBA"
 scene.render.image_settings.compression=18
