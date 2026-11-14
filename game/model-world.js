@@ -139,6 +139,24 @@ export async function createAssetWorld(parent, options = {}) {
         variant: placement.asset.selectedVariant,
         kind: placement.kind
       };
+      const resourceTypes = {
+        iron_ore_node: "Iron Ore", copper_ore_node: "Copper Ore", limestone_node: "Limestone",
+        coal_node: "Coal", caterium_ore_node: "Caterium Ore", bauxite_node: "Bauxite",
+        crude_oil_node: "Crude Oil", raw_quartz_node: "Raw Quartz", sulfur_node: "Sulfur",
+        sam_node: "SAM", resource_well_main: "Resource Well", resource_well_satellite: "Resource Well",
+        geyser: "Geothermal Geyser", cracked_resource_boulder: "Resource Boulder"
+      };
+      if (placement.kind === "resource") {
+        const resourceType = resourceTypes[placement.asset.id];
+        if (resourceType) wrapper.userData.node = { type: resourceType, amount: 600 };
+      } else if (placement.kind === "flora") {
+        const floraId = placement.asset.id;
+        const harvestType = floraId.includes("wood") || floraId.includes("bacon") ? "Wood" :
+          floraId.includes("beryl") ? "Beryl Nut" :
+          floraId.includes("paleberry") ? "Paleberry" :
+          floraId.includes("agaric") ? "Bacon Agaric" : "Leaves";
+        wrapper.userData.node = { type: harvestType, amount: 80 };
+      }
       const model = gltf.scene;
       const bounds = new THREE.Box3().setFromObject(model);
       const size = bounds.getSize(new THREE.Vector3());
