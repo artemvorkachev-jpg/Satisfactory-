@@ -5,6 +5,7 @@ let world = null;
 const pendingStatic = [];
 const staticBodies = new WeakMap();
 let colliderCount = 0;
+let staticObjectCount = 0;
 
 export async function initPhysics() {
   if (world) return world;
@@ -72,6 +73,7 @@ export function addStaticCollider(object, options = {}) {
     colliderCount++;
   }
   staticBodies.set(object, body);
+  staticObjectCount++;
 }
 
 export function createPlayerBody(x, feetY, z) {
@@ -113,5 +115,5 @@ export function physicsAvailable() {
 }
 
 export function getPhysicsStats() {
-  return { available: !!world, staticObjects: staticBodies ? colliderCount - 2 : 0, colliders: colliderCount };
+  return { available: !!world, staticObjects: staticObjectCount, colliders: colliderCount };
 }
