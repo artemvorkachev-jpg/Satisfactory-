@@ -1990,8 +1990,9 @@
       "shape": "oriented-boxes",
       "worldCollider": true,
       "interaction": "connection-points",
-      "implementationStatus": "planned",
-      "validationStatus": "not-tested"
+      "implementationStatus": "prototype",
+      "validationStatus": "runtime-self-check-enabled",
+      "physicsStatus": "rapier-static-proxy-v2"
     },
     {
       "id": "consumable-bacon-agaric",
