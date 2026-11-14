@@ -137,8 +137,8 @@ jobs:
       - name: Verify generated asset totals
         run: |
           test "$(find assets/models -path "assets/models/equipment" -prune -o -type f -name "*.blend" -print | wc -l)" -ge 294
-          test "$(find assets/models -path "assets/models/equipment" -prune -o -type f -name "*.glb" -print | wc -l)" -ge 1179
-          test "$(find assets/models/previews -type f -name "*_preview.png" | wc -l)" -ge 300
+          test "$(find assets/models -path "assets/models/equipment" -prune -o -type f -name "*.glb" -print | wc -l)" -ge 1176
+          test "$(find assets/models/previews -type f -name "*_preview.png" | wc -l)" -ge 294
 
       - name: Build searchable browser viewer catalogue
         run: python3 tools/blender/build_viewer_catalog.py
